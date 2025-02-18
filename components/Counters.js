@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 "use client";
 
 const pricingPlans = [
@@ -46,7 +45,6 @@ const pricingPlans = [
 ];
 
 
-/// 
 const Counters = () => {
   return (
     <section className="tf__counter tf__counter_2 pt_190" id="portfolio">
@@ -113,63 +111,3 @@ const Counters = () => {
 };
 
 export default Counters;
-=======
-"use client";
-import { istiUtility } from "@/utility";
-import Counter from "./Counter";
-
-const countersData = [
-  { id: 1, icon: "fas fa-users-cog", title: "Team member", value: "200" },
-  { id: 2, icon: "fas fa-users-cog", title: "Winning award", value: "20" },
-  {
-    id: 3,
-    icon: "fas fa-users-cog",
-    title: "Complete project",
-    value: "100000000",
-  },
-  { id: 4, icon: "fas fa-users-cog", title: "Client review", value: "900" },
-];
-
-const NumberFormatter = ({ number, unit }) => {
-  const { mainNumber, unit: numberUnit } = istiUtility.formatNumber(number);
-
-  return (
-    <span className="counter">
-      <Counter end={mainNumber} />
-      {numberUnit}+
-    </span>
-  );
-};
-
-const Counters = () => {
-  return (
-    <section className="tf__counter tf__counter_2 pt_190" id="portfolio">
-      <div className="container">
-        <div className="row justify-content-between">
-          {countersData.map((item, index) => (
-            <div className="col-xxl-3 col-md-6 col-xl-3" key={item.id}>
-              <div
-                className="tf__single_counter tf__single_counter_2"
-                data-animation="fade-left"
-                data-offset={100}
-                data-delay={index * 0.25}
-              >
-                <h4>
-                  <span className="counter">
-                    <NumberFormatter number={item.value} />
-                  </span>
-                </h4>
-                <p>{item.title}</p>
-                <h5 className="tf__counter_icon tf__counter_icon_2">
-                  <i className={item.icon} aria-hidden="true" />
-                </h5>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-export default Counters;
->>>>>>> 95ff9be6638ae07803b864c70523b545a06de5b8

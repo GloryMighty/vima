@@ -1,9 +1,15 @@
-<<<<<<< HEAD
 "use client";
 import { useState } from 'react';
 import CountUp from "react-countup";
 
-// Simple counter component that starts counting when mounted
+/**
+ * Counter component that animates a number counting up from 0
+ * Uses react-countup for smooth animation and starts when mounted
+ * @param {Object} props
+ * @param {number} props.end - The final number to count up to
+ * @param {number} props.decimals - Number of decimal places to show
+ * @param {string} props.extraClass - Additional CSS classes to apply
+ */
 const Counter = ({ end, decimals, extraClass }) => {
   const [hasStarted, setHasStarted] = useState(false);
 
@@ -21,32 +27,3 @@ const Counter = ({ end, decimals, extraClass }) => {
 };
 
 export default Counter;
-=======
-"use client";
-import CountUp from "react-countup";
-import ReactVisibilitySensor from "react-visibility-sensor";
-const Counter = ({ end, decimals, extraClass }) => {
-  return (
-    <CountUp
-      end={end ? end : 100}
-      duration={3}
-      decimals={decimals ? decimals : 0}
-    >
-      {({ countUpRef, start }) => (
-        <ReactVisibilitySensor onChange={start} delayedCall>
-          <span
-            className={`counter ${extraClass}`}
-            data-from="0"
-            data-to={end}
-            ref={countUpRef}
-          >
-            count
-          </span>
-        </ReactVisibilitySensor>
-      )}
-    </CountUp>
-  );
-};
-
-export default Counter;
->>>>>>> 95ff9be6638ae07803b864c70523b545a06de5b8
