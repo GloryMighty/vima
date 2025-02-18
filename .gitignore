@@ -1,0 +1,59 @@
+# Dependency directories
+node_modules/
+.pnp/
+.pnp.js
+
+# Next.js build output
+.next/
+out/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+.DS_Store
+*.pem
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Testing
+/coverage
+*.lcov
+
+# Production build
+/build
+/dist
+
+# Miscellaneous
+.vercel
+.turbo
+.cache
+<<<<<<< HEAD
+
+# Additional exclusions
+*.log
+.env*
+.eslintcache
+.stylelintcache
+.eslintrc.cache
+.next/cache/
+*.tsbuildinfo
+.vercel/
+.contentlayer/generated
+=======
+>>>>>>> 95ff9be6638ae07803b864c70523b545a06de5b8
