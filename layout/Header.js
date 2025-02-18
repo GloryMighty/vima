@@ -38,16 +38,15 @@ const Header1 = ({ homepage }) => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <a className="nav-link active text_hover_animaiton" href="#">
-<<<<<<< HEAD
+            <li className="nav-item active">
+              <Link href="/" className="nav-link text_hover_animaiton">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text_hover_animaiton" href="#projects">
-                Gallery
-              </a>
+              <Link href="/about" className="nav-link text_hover_animaiton">
+                About Us
+              </Link>
             </li>
             <li className="nav-item">
               <Link href="/pricing" className="nav-link text_hover_animaiton">
@@ -55,65 +54,20 @@ const Header1 = ({ homepage }) => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text_hover_animaiton" href="/contact">
-                Contact
-              </Link>
-=======
-                Home <i className="far fa-angle-down" />
-              </a>
-              <ul className="tf__dropdown">
-                <li>
-                  <Link href="/">Multipage</Link>
-                </li>
-                <li>
-                  <Link href="/index-2">Onepage</Link>
-                </li>
-              </ul>
->>>>>>> 95ff9be6638ae07803b864c70523b545a06de5b8
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text_hover_animaiton" href="#about">
-                About Us
-              </a>
-            </li>
-            <li className="nav-item">
-<<<<<<< HEAD
-              <a className="nav-link text_hover_animaiton" href="#">
-                Blog <i className="far fa-angle-download" />
-=======
-              <Link href="/pricing" className="nav-link text_hover_animaiton">
-                Services
-              </Link>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text_hover_animaiton" href="#projects">
+              <Link href="/projects" className="nav-link text_hover_animaiton">
                 Projects
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text_hover_animaiton" href="#">
-                Blog <i className="far fa-angle-down" />
->>>>>>> 95ff9be6638ae07803b864c70523b545a06de5b8
-              </a>
-              <ul className="tf__dropdown">
-                <li>
-                  <Link href="/blog">blog</Link>
-                </li>
-<<<<<<< HEAD
-              </ul>
-            </li>
-=======
-                <li>
-                  <Link href="/blog-details">blog details</Link>
-                </li>
-              </ul>
+              <Link href="/blog" className="nav-link text_hover_animaiton">
+                Blog
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text_hover_animaiton" href="/contact">
+              <Link href="/contact" className="nav-link text_hover_animaiton">
                 Contact
               </Link>
             </li>
->>>>>>> 95ff9be6638ae07803b864c70523b545a06de5b8
           </ul>
         </div>
       </div>
@@ -131,44 +85,44 @@ const Header2 = () => {
       <div className="container-fluid">
         <ul className="tf__main_manu_2">
           <li>
-            <a href="#" className="tf__logo_2">
+            <Link href="/" className="tf__logo_2">
               <img src="images/logo_3.png" alt="logo" className="img-fluid" />
-            </a>
+            </Link>
           </li>
           <li className="active">
-            <a href="#home">
+            <Link href="#home">
               <i className="isti-home-21" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#about">
+            <Link href="#about">
               <i className="isti-user-square-converted" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#portfolio">
+            <Link href="#portfolio">
               <i className="isti-briefcase" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#service">
+            <Link href="#service">
               <i className="isti-clipboard" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#testimonial">
+            <Link href="#testimonial">
               <i className="isti-quote-down-square" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#blog">
+            <Link href="#blog">
               <i className="isti-path" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#contact">
+            <Link href="#contact">
               <i className="isti-messages" />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
