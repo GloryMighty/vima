@@ -1,28 +1,37 @@
+"use client";
+
 import Breadcrumbs from "@/components/Breadcrumbs";
 import IstiLayout from "@/layout/IstiLayout";
-<<<<<<< HEAD
-import Link from "next/link";
-const page = () => {
+import { useState } from "react";
+
+const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log({
+      name,
+      email,
+      phone,
+      subject,
+      message,
+    });
+  };
+
   return (
     <IstiLayout>
-      <Breadcrumbs pageTitle={"Our contacts"} />{" "}
-=======
-const page = () => {
-  return (
-    <IstiLayout>
-      <Breadcrumbs pageTitle={"Contact Us"} />{" "}
->>>>>>> 95ff9be6638ae07803b864c70523b545a06de5b8
+      <Breadcrumbs pageTitle="Contact Us" />
       <section className="tf__main_contact pt_130 pb_150">
         <div className="container">
           <div className="row">
             <div className="col-xl-8 col-lg-7">
               <div className="tf__contact_img" data-animation="img-blur">
                 <img
-<<<<<<< HEAD
                   src="images/istanbul.jpg"
-=======
-                  src="images/contact_img.jpg"
->>>>>>> 95ff9be6638ae07803b864c70523b545a06de5b8
                   alt="contact img"
                   className="img-fluid w-100"
                 />
@@ -34,13 +43,7 @@ const page = () => {
                 <div className="tf__contact_text_address">
                   <h3>Istanbul Office</h3>
                   <h5>Web Development Address</h5>
-                  <p className="mb_15">
-                    Right Down Here
-                  </p>
-<<<<<<< HEAD
-                  <p>+90 507 071 12 59</p>
-                  <p>+90 507 071 12 59</p>
-=======
+                  <p className="mb_15">Right Down Here</p>
                   <p>(603) 555-012345678</p>
                   <p>(603) 555-012345678</p>
                 </div>
@@ -50,19 +53,16 @@ const page = () => {
                 <div className="tf__contact_text_address">
                   <h3>Istanbul Office</h3>
                   <h5>Web Development Address</h5>
-                  <p className="mb_15">
-                    Right Down Here
-                  </p>
+                  <p className="mb_15">Right Down Here</p>
                   <p>(603) 555-012345678</p>
                   <p>(603) 555-012345678</p>
                 </div>
-              </div>  
+              </div>
               <div className="tf__emargency_contact">
                 <div className="tf__emargency_contact_bg">
                   <p>Emergcy Contact</p>
                   <p>Emergcy Contact</p>
                   <span>+88 123 456 7653</span>
->>>>>>> 95ff9be6638ae07803b864c70523b545a06de5b8
                 </div>
               </div>
             </div>
@@ -76,13 +76,9 @@ const page = () => {
                     do you have any question?
                   </h2>
                   <p>
-<<<<<<< HEAD
-                    We will derive the best results for your business in shortest time. Don't hesitate to reach us out! 
-=======
                     For your car we will do everything advice, repairs and
                     maintenance. We are the some preferred choice by many car
                     owners because
->>>>>>> 95ff9be6638ae07803b864c70523b545a06de5b8
                   </p>
                   <ul className="d-flex flex-wrap">
                     <li>
@@ -109,31 +105,56 @@ const page = () => {
                 </div>
               </div>
               <div className="col-lg-8">
-                <form className="tf__main_contact_area_text">
+                <form className="tf__main_contact_area_text" onSubmit={handleSubmit}>
                   <div className="row">
                     <div className="col-xl-6 col-lg-6">
-                      <input type="text" placeholder="Your Name" />
+                      <input
+                        type="text"
+                        placeholder="Your Name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                      />
                     </div>
                     <div className="col-xl-6 col-lg-6">
-                      <input type="email" placeholder="Your Email" />
+                      <input
+                        type="email"
+                        placeholder="Your Email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                      />
                     </div>
                     <div className="col-xl-6 col-lg-6">
-                      <input type="text" placeholder="Phone Number" />
+                      <input
+                        type="text"
+                        placeholder="Phone Number"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
+                      />
                     </div>
                     <div className="col-xl-6 col-lg-6">
-                      <input type="text" placeholder="Subject" />
+                      <input
+                        type="text"
+                        placeholder="Subject"
+                        value={subject}
+                        onChange={(e) => setSubject(e.target.value)}
+                      />
                     </div>
                     <div className="col-xl-12">
-                      <input type="text" placeholder="Service" />
+                      <input
+                        type="text"
+                        placeholder="Service"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                      />
                     </div>
                     <div className="col-xl-12">
-                      <textarea placeholder="Your Message" defaultValue={""} />
+                      <textarea
+                        placeholder="Your Message"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                      />
                     </div>
                     <div className="col-xl-12">
-<<<<<<< HEAD
-                      
-=======
->>>>>>> 95ff9be6638ae07803b864c70523b545a06de5b8
                       <button className="tf__common_btn tf__contactarea_btn">
                         Submit Now
                       </button>
@@ -148,8 +169,5 @@ const page = () => {
     </IstiLayout>
   );
 };
-export default page;
-<<<<<<< HEAD
 
-=======
->>>>>>> 95ff9be6638ae07803b864c70523b545a06de5b8
+export default Contact;

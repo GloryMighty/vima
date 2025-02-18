@@ -3,7 +3,6 @@ import { Home2Banner } from "@/components/Banner";
 import { Blog2 } from "@/components/Blog";
 <<<<<<< HEAD
 import Pricing from "@/components/Pricing";
-=======
 import Counters from "@/components/Counters";
 >>>>>>> 95ff9be6638ae07803b864c70523b545a06de5b8
 import { Experiance2 } from "@/components/Experiance";
@@ -19,9 +18,6 @@ const page = () => {
       <About2 />
       <Skills2 />
       <Portfolio2 />
-<<<<<<< HEAD
-      <Pricing />
-=======
       <Counters />
 >>>>>>> 95ff9be6638ae07803b864c70523b545a06de5b8
       <Service2 />

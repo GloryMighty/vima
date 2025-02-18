@@ -30,11 +30,7 @@ const PricingPage = () => {
       ]
     },
     {
-<<<<<<< HEAD
       title: "Premium Plan",
-=======
-      title: "VIP Experience",
->>>>>>> 95ff9be6638ae07803b864c70523b545a06de5b8
       price: "$999",
       priceSubtext: "starting from",
       features: [
