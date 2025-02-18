@@ -1,4 +1,3 @@
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollTrigger, SplitText } from "@/lib/plugins";
 import Lenis from "@studio-freight/lenis";
 import { gsap } from "gsap";
