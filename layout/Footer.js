@@ -168,7 +168,7 @@ const Footer2 = () => {
           </div>
           <div className="col-xl-2 col-md-6 col-lg-3">
             <div className="tf__footer_middle">
-              <h4>All Service</h4>
+              <h4>We do</h4>
               <ul>
                 <li>
                   <Link href="/pricing?service=next-js" className="text_hover_animaiton">
@@ -200,6 +200,16 @@ const Footer2 = () => {
                     Web Development
                   </Link>
                 </li>
+                <li>
+                  <Link href="/pricing?service=ai-solutions" className="text_hover_animaiton">
+                    AI Solutions
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/pricing?service=mobile-applications" className="text_hover_animaiton">
+                    Mobile Applications
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -211,15 +221,14 @@ const Footer2 = () => {
                   <i className="far fa-map-marker-alt" />
                  Istanbul
                 </h5>
-                <p>Somewhere here</p>
               </div>
               <div className="tf__footer_right_address">
                 <h5>
                   <i className="fal fa-phone-alt" />
-                  Lets Talk us
+                  Contact us
                 </h5>
-                <p>(603) 555-012345678</p>
-                <p>(603) 555-012345678</p>
+                <p>+90 507 071 12 59</p>
+                <p>+90 535 676 58 99</p>
               </div>
             </div>
           </div>

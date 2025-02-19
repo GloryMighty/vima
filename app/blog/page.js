@@ -1,21 +1,13 @@
-"use client";
-
 import Breadcrumbs from "@/components/Breadcrumbs";
 import IstiLayout from "@/layout/IstiLayout";
 import TravelCarousel from '@/components/TravelCarousel';
 import BeautyCarousel from '@/components/BeautyCarousel';
 import PersonalCarousel from '@/components/PersonalCarousel';
-import { useEffect } from 'react';
-import { scrollToBlog } from '@/utils/scrollToBlogs';
 
 const page = () => {
-  useEffect(() => {
-    scrollToBlog();
-  }, []);
-
   return (
     <IstiLayout>
-      <Breadcrumbs pageTitle={"More Information Here"} />
+      <Breadcrumbs pageTitle={"OUR PROJECTS"} />
       <section className="tf__blog_clasic pt_115 pb_150">
         <div className="container">
           <div className="row">
@@ -215,7 +207,7 @@ const page = () => {
                       February 19, 2025
                     </p>
                     <a href="blog-details.html">
-                      Invest in Your Future with the  Web Application
+                      Invest in Your Future, have a Web Application!
                     </a>
                   </div>
                 </div>

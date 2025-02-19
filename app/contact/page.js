@@ -43,19 +43,19 @@ const Contact = () => {
                 <div className="tf__contact_text_address">
                   <h3>Istanbul Office</h3>
                   <h5>Web Development Address</h5>
-                  <p className="mb_15">Right Down Here</p>
-                  <p>(603) 555-012345678</p>
-                  <p>(603) 555-012345678</p>
+                  <p className="mb_15">Levent</p>
+                  <p>+90 507 071 12 59</p>
+                  <p>+90 535 676 58 99</p>
                 </div>
               </div>
               <div className="tf__contact_text d-flex gap-3">
                 <span>02</span>
                 <div className="tf__contact_text_address">
                   <h3>Istanbul Office</h3>
-                  <h5>Web Development Address</h5>
-                  <p className="mb_15">Right Down Here</p>
-                  <p>(603) 555-012345678</p>
-                  <p>(603) 555-012345678</p>
+                  <h5>Sales Office</h5>
+                  <p className="mb_15">Nisantasi</p>
+                  <p>+90 507 071 12 59</p>
+                  <p>+90 535 676 58 99</p>
                 </div>
               </div>
               <div className="tf__emargency_contact">

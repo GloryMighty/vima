@@ -27,7 +27,7 @@ const Testomonial = () => {
                     className="img-fluid w-100"
                   />
                 </div>
-                <h4>Batuhan</h4>
+                <h4>Batuhan Sezar</h4>
                 <span>Application user</span>
                 <p>
                  Interesting idea flawlessly implemented into reality with great attention to detail and creativity. I like the application because of efficiency and powerful AI solutions! 

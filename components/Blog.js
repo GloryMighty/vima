@@ -3,7 +3,7 @@
 const blogs = [
   {
     id: 1,
-    title: "These cases are perfectly simple and easy",
+    title: "Visual example of Basic Website",
     author: "VIMA Web",
     comments: 5,
     date: "17 February, 2025",
@@ -11,18 +11,18 @@ const blogs = [
   },
   {
     id: 2,
-    title: "which is the same as saying through shrinking from toil",
+    title: "Advanced Solution for business owners",
     author: "VIMA Solutions",
     comments: 5,
-    date: "15 February, 2023",
+    date: "15 February, 2025",
     img: "/images/turitmed2.png",
   },
   {
     id: 3,
-    title: "when our power of choice is design untrammelled and when",
+    title: "Premium Plan comprehensive implementation",
     author: "VIMA Solutions",
     comments: 5,
-    date: "31 December, 2023",
+    date: "31 December, 2025",
     img: "/images/slav1.png",
   },
 ];
