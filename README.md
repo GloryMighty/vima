@@ -1,29 +1,36 @@
-# Vima React Project
+# Vima Web Solutions
 
-## Project Overview
-Vima is a modern, responsive web application built with Next.js, developed by Vima Web Development Agency, leveraging cutting-edge web technologies to create an engaging user experience.
+## 🌍 Company Overview
+Vima Web Solutions is a dynamic web development agency with over 13 years of entrepreneurial experience. We specialize in creating customized, modern web applications that transform digital visions into reality.
 
-## 🚀 Features
-- Responsive design
-- Modern UI components
-- Smooth animations
-- Integration with various libraries and tools
+## 🚀 Our Expertise
+- **Programming Languages**: C++, JavaScript, CSS, PHP, TypeScript, HTML
+- **Core Technologies**: Next.js, React, Node.js, PostgreSQL
+- **Specialties**: AI Integration, Full-Stack Development, Multilingual Web Solutions
+
+## 🌐 Global Presence
+- **Locations**: Pietarsaari, Finland and Istanbul, Turkey
+- **Languages**: Support in English, Arabic, Finnish, Russian, Swedish, and Turkish
+
+## 💡 Company Values
+- **Work Ethics**: Customer-oriented, honest, diligent, transparent, and efficient
+- **Technology Philosophy**: Programming languages are tools to accomplish desired results
+- **Adaptability**: Serving businesses of all sizes with flexible, customized solutions
 
 ## 🛠 Tech Stack
 - **Framework**: Next.js
+- **Frontend**: React
+- **Backend**: Node.js
+- **Database**: PostgreSQL
+- **AI Integration**: Google Gemini
 - **Styling**: Bootstrap
-- **Animation**: 
-  - Framer Motion
-  - Lenis Smooth Scrolling
-- **Icons**: FontAwesome
-- **3D Graphics**: Spline Runtime
+- **Animation**: Framer Motion
 
-## 📦 Dependencies
-Key dependencies include:
+## 📦 Key Dependencies
 - `@fortawesome/react-fontawesome`
 - `@splinetool/react-spline`
 - `framer-motion`
-- `bootstrap`
+- `@google/generative-ai`
 
 ## 🔧 Getting Started
 
@@ -52,22 +59,25 @@ npm install
 - `app/`: Next.js page components
 - `components/`: Reusable React components
 - `layout/`: Layout-related components
-- `utility/`: Utility functions and helpers
+- `api/`: API route handlers and server-side logic
 
 ## 🌐 Deployment
 Easily deployable on Vercel, Netlify, or any Next.js compatible hosting platform.
 
-## 🤝 Contributing
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## 🤝 Our Approach
+- Fast website development
+- Customized solutions
+- Multilingual support
+- Transparent pricing
+- No hidden costs
+
+## 📞 Contact Us
+- **Email**: vimawebsolutions@gmail.com
+- **WhatsApp**: +905070711259
+- **Website**: [Contact Form](/contact)
 
 ## 📄 License
 Distributed under the MIT License.
 
-## 📞 Contact
-Vima Web Development Agency
-
-Project Link: [https://github.com/GloryMighty/vima](https://github.com/GloryMighty/vima)
+## 🌟 Why Choose Vima?
+We transform your digital vision into a professional, efficient, and visually stunning web solution. With our international team, cutting-edge technologies, and customer-first approach, we're not just building websites – we're creating digital experiences.

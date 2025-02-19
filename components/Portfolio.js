@@ -9,10 +9,8 @@ const portfolioData = {
     { id: 2, src: "/images/land.png" },
     { id: 3, src: "/images/land1.png" },
     { id: 4, src: "/images/pars.png" },
-    { id: 5, src: "/images/slav2.png" },
-    { id: 6, src: "/images/mockmac.png" }, 
-    { id: 7, src: "/images/mockmac1.png"},
-    { id: 8, src: "/images/mockmac2.png"},  
+    // For later use     { id: 5, src: "/images/slav2.png" },{ id: 6, src: "/images/mockmac.png" }, { id: 7, src: "/images/mockmac1.png"},{ id: 8, src: "/images/mockmac2.png"},  
+
   ],
 };
 

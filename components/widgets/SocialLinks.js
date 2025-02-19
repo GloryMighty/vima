@@ -3,8 +3,8 @@
 import React, { useState, useCallback } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faPhone, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faShareAlt } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope, faShareAlt, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { showSuccessToast, showErrorToast } from '../utils/toast'
 
 

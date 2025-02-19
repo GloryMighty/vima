@@ -53,7 +53,7 @@ const PricingPage = () => {
         <div className="container position-relative z-1">
           <div className="row">
             <div className="col-12 text-center text-white">
-              <h1> <br />   PRICING OF</h1>
+              <h1> <br />   PRICING</h1>
               <p>Tailored solutions for your digital success</p>
             </div>
           </div>
