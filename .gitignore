@@ -43,7 +43,6 @@ yarn-error.log*
 .vercel
 .turbo
 .cache
-<<<<<<< HEAD
 
 # Additional exclusions
 *.log
@@ -55,5 +54,3 @@ yarn-error.log*
 *.tsbuildinfo
 .vercel/
 .contentlayer/generated
-=======
->>>>>>> 95ff9be6638ae07803b864c70523b545a06de5b8

@@ -209,9 +209,9 @@ const Footer2 = () => {
               <div className="tf__footer_right_address">
                 <h5>
                   <i className="far fa-map-marker-alt" />
-                  UX Design Address
+                 Istanbul
                 </h5>
-                <p>2464 Royal Ln. Mesa, New Jersey 45463 America.</p>
+                <p>Somewhere here</p>
               </div>
               <div className="tf__footer_right_address">
                 <h5>

@@ -14,8 +14,8 @@ const page = () => {
       <About />
       <Portfolio />
       <Testomonial />
-      <Experiance />
       <Blog />
+      <Experiance />
     </IstiLayout>
   );
 };

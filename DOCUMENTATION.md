@@ -38,7 +38,6 @@ isti/
 - Includes sticky navigation functionality
 - Responsive design with mobile menu support
 
-<<<<<<< HEAD
 ## Index Page Rendering in Next.js
 
 In this Next.js 13+ project, the index page (homepage) is rendered through a combination of key files:
@@ -136,8 +135,6 @@ In this Next.js 13+ project, the index page (homepage) is rendered through a com
 - Configurable through environment variables
 - Supports multiple safety settings for AI responses
 
-=======
->>>>>>> 95ff9be6638ae07803b864c70523b545a06de5b8
 ## Development
 
 ### Running the Project
