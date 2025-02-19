@@ -2,7 +2,7 @@
 
 const blogs = [
   {
-    id: 1,
+    id: 2,
     title: "Visual example of Basic Website",
     author: "VIMA Web",
     comments: 5,
@@ -10,7 +10,7 @@ const blogs = [
     img: "/images/showcasemed1.png",
   },
   {
-    id: 2,
+    id: 1,
     title: "Advanced Solution for business owners",
     author: "VIMA Solutions",
     comments: 5,

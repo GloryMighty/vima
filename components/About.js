@@ -1,3 +1,5 @@
+import Particles from '/public/effects/particles';
+
 const aboutData = {
   title: "Visual Journey through our Portfolio",
   subtitle: "making this the first true generator on the Internet",
@@ -35,4 +37,3 @@ const About = () => {
   );
 };
 export default About;
-

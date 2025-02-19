@@ -21,7 +21,7 @@ const page = () => {
                       <li>Showcase</li>
                       <li>Comment (8)</li>
                     </ul>
-                    <a className="blog_title" href="#blog-1">
+                    <a className="blog_title" href="#1">
                       Advanced project for a Turkish Travel Company
                     </a>
                     <p>
@@ -29,7 +29,7 @@ const page = () => {
                       Handling SEO and optimizing website performance for optimal user experience, the website includes translation to 3 languages (Arabic, English and Turkish), ensuring flawless navigation of every user. 
                     </p>
                     <div className="tf__blog_link d-flex flex-wrap justify-content-between">
-                      <a href="#" className="tf__blog_share">
+                      <a href="https:/tur.it.com/" className="tf__blog_share">
                         <i className="far fa-share-alt" />
                       </a>
                     </div>
@@ -43,15 +43,15 @@ const page = () => {
                       <li>Showcase</li>
                       <li>Comment (12)</li>
                     </ul>
-                    <a className="blog_title" href="#blog-2">
+                    <a className="blog_title" href="#2">
                       Basic Plan implementation for Beauty Salon 
                     </a>
                     <p>
                       Graceful demonstration of one-page Website development, showcasing the power of responsive design and user-friendly navigation.
                       Clean and well-structured landing page, focused on clients conversion due to simplicity of the features and pricings.
-                    </p>
+                    </p>  
                     <div className="tf__blog_link d-flex flex-wrap justify-content-between">
-                      <a href="#" className="tf__blog_share">
+                      <a href="https:/showcase.it.com/" className="tf__blog_share">
                         <i className="far fa-share-alt" />
                       </a>
                     </div>
@@ -65,7 +65,7 @@ const page = () => {
                       <li>Showcase</li>
                       <li>Comment (12)</li>
                     </ul>
-                    <a className="blog_title" href="#blog-3">
+                    <a className="blog_title" href="#3">
                       Comprehensive solution example of Premium Website
                     </a>
                     <p>
@@ -74,7 +74,7 @@ const page = () => {
                       Implemented AI Chatbot Capabilities provide navigation support as well as improve conversion. 
                     </p>
                     <div className="tf__blog_link d-flex flex-wrap justify-content-between">
-                      <a href="#" className="tf__blog_share">
+                      <a href="https://viacheslav.my" className="tf__blog_share">
                         <i className="far fa-share-alt" />
                       </a>
                     </div>
@@ -168,7 +168,7 @@ const page = () => {
                       <i className="fas fa-calendar-alt" />
                       February 15, 2022
                     </p>
-                    <a href="blog-details.html">
+                    <a href="https://showcase.it.com">
                       Explore basic options for your Business
                     </a>
                   </div>
@@ -177,7 +177,7 @@ const page = () => {
                       <i className="fas fa-calendar-alt" />
                       February 17,  2025
                     </p>
-                    <a href="blog-details.html">
+                    <a href="https://tur.it.com">
                       Advanced solution for smart business owners
                     </a>
                   </div>
@@ -186,7 +186,7 @@ const page = () => {
                       <i className="fas fa-calendar-alt" />
                       February 19, 2025
                     </p>
-                    <a href="blog-details.html">
+                    <a href="https://viacheslav.my">
                       Invest in Your Future, have a Web Application!
                     </a>
                   </div>

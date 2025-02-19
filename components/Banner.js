@@ -1,11 +1,3 @@
-const HomeData = {
-  name: "Mezbah",
-  title: " CREATIVE DESIGNER BASED IN USA",
-  desc: "As a passionate UI/UX Designer, I thrive on creating beautiful and intuitive digital experiences that delight users.",
-  cvUrl: "#",
-  videoUrl: "",
-};
-
 export const Home1Banner = () => {
   return (
     <section
@@ -52,50 +44,3 @@ export const Home1Banner = () => {
   );
 };
 
-export const Home2Banner = () => {
-  return (
-    <section
-      id="home"
-      className="tf__banner tf__banner_2 bg-fixed"
-      style={{ background: "(images/logo_1.jpg)" }}
-    >
-      <div className="container h-100">
-        <div className="row align-items-center h-100">
-          <div className="col-xl-6 col-lg-8">
-            <div className="tf__banner_text tf__banner_text_2">
-              <h3 data-text-animation="rotate-in">Hello I'm Mezbah</h3>
-              <h1 data-text-animation="rotate-in">
-                CREATIVE DESIGNER BASED IN USA
-              </h1>
-              <p>
-                As a passionate UI/UX Designer, I thrive on creating beautiful
-                and intuitive digital experiences that delight users.
-              </p>
-              <ul className="d-flex flex-wrap">
-                <li>
-                  <a
-                    href="#"
-                    className="tf__common_btn d-flex align-items-center download_btn"
-                  >
-                    Download Cv <i className="isti-download" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    className="tf__common_btn tf___video_btn venobox"
-                    data-autoplay="true"
-                    data-vbtype="video"
-                    href="https://youtu.be/668nUCeBHyY?si=sHtcsCQRzAET5GOt"
-                  >
-                    <i className="fa-sharp fa-solid fa-circle-play" />
-                    Watch The Video
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};

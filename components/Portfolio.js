@@ -38,24 +38,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
-export const Portfolio2 = () => {
-  return (
-    <section className="tf__portfolio_2 pt_20" id="portfolio">
-      <div className="container">
-        <div className="row">
-          <div className="col-xl-4 col-lg-5">
-            <div className="tf__portfolio_text">
-              <h5>Portfolio</h5>
-              <h2>Our Latest Works</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-                cupiditate aperiam.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
