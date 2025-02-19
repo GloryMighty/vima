@@ -4,7 +4,7 @@ import React, { useState, useCallback } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faShareNodes } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faShareAlt } from '@fortawesome/free-solid-svg-icons'
 import { showSuccessToast, showErrorToast } from '../utils/toast'
 
 // Social links data for easy maintenance
@@ -66,7 +66,7 @@ const SocialLinksWidget = () => {
         whileTap={{ scale: 0.9 }}
       >
         <FontAwesomeIcon
-          icon={faShareNodes}
+          icon={faShareAlt}
           className="w-5 h-5 text-[#32CD32] fill-[#32CD32]"
           style={{ 
             transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)', 

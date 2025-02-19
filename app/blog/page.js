@@ -177,28 +177,28 @@ const page = () => {
                   <div className="tf__recent_post">
                     <p>
                       <i className="fas fa-calendar-alt" />
-                      October 19, 2022
+                      February 15, 2022
                     </p>
                     <a href="blog-details.html">
-                      Protect What Matters Most to You with Insurance
+                      Explore basic options for your Business
                     </a>
                   </div>
                   <div className="tf__recent_post">
                     <p>
                       <i className="fas fa-calendar-alt" />
-                      October 19, 2022
+                      February 17,  2025
                     </p>
                     <a href="blog-details.html">
-                      Your Safety Net for Life's Unexpected Moments
+                      Advanced solution for smart business owners
                     </a>
                   </div>
                   <div className="tf__recent_post">
                     <p>
                       <i className="fas fa-calendar-alt" />
-                      October 19, 2022
+                      February 19, 2025
                     </p>
                     <a href="blog-details.html">
-                      Invest in Your Future with the Right Insurance
+                      Invest in Your Future with the  Web Application
                     </a>
                   </div>
                 </div>

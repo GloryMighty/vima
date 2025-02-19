@@ -1,7 +1,7 @@
-# Isti React Project
+# Vima React Project
 
 ## Project Overview
-Isti is a modern, responsive web application built with Next.js, leveraging cutting-edge web technologies to create an engaging user experience.
+Vima is a modern, responsive web application built with Next.js, developed by Vima Web Development Agency, leveraging cutting-edge web technologies to create an engaging user experience.
 
 ## 🚀 Features
 - Responsive design
@@ -34,8 +34,8 @@ Key dependencies include:
 ### Installation
 1. Clone the repository
 ```bash
-git clone https://github.com/GloryMighty/isti.git
-cd isti
+git clone https://github.com/GloryMighty/vima.git
+cd vima
 ```
 
 2. Install dependencies
@@ -68,6 +68,6 @@ Easily deployable on Vercel, Netlify, or any Next.js compatible hosting platform
 Distributed under the MIT License.
 
 ## 📞 Contact
-Adam Chernov - [Your Email or LinkedIn]
+Vima Web Development Agency
 
-Project Link: [https://github.com/GloryMighty/isti](https://github.com/GloryMighty/isti)
+Project Link: [https://github.com/GloryMighty/vima](https://github.com/GloryMighty/vima)
