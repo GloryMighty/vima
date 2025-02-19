@@ -1,10 +1,18 @@
+"use client";
+
 import Breadcrumbs from "@/components/Breadcrumbs";
 import IstiLayout from "@/layout/IstiLayout";
 import TravelCarousel from '@/components/TravelCarousel';
 import BeautyCarousel from '@/components/BeautyCarousel';
 import PersonalCarousel from '@/components/PersonalCarousel';
+import { useEffect } from 'react';
+import { scrollToBlog } from '@/utils/scrollToBlogs';
 
 const page = () => {
+  useEffect(() => {
+    scrollToBlog();
+  }, []);
+
   return (
     <IstiLayout>
       <Breadcrumbs pageTitle={"More Information Here"} />
@@ -13,22 +21,15 @@ const page = () => {
           <div className="row">
             <div className="col-lg-8">
               <div className="tf__blog_clasic_left">
-                <div className="tf__single_blog_clasic">
+                <div className="tf__single_blog_clasic" id="blog-1">
                   <TravelCarousel />
-                </div>
-                <div className="tf__single_blog_clasic">
-                  <div
-                    className="tf__blog_clasic_img"
-                    data-animation="img-blur"
-                  >
-                  </div>
                   <div className="tf__blog_clasic_text">
                     <ul className="d-flex flex-wrap">
                       <li>By VIMA</li>
                       <li>Showcase</li>
                       <li>Comment (8)</li>
                     </ul>
-                    <a className="blog_title" href="blog-details.html">
+                    <a className="blog_title" href="#blog-1">
                       Advanced project for a Turkish Travel Company
                     </a>
                     <p>
@@ -42,7 +43,7 @@ const page = () => {
                     </div>
                   </div>
                 </div>
-                <div className="tf__single_blog_clasic">
+                <div className="tf__single_blog_clasic" id="blog-2">
                   <BeautyCarousel />
                   <div className="tf__blog_clasic_text">
                     <ul className="d-flex flex-wrap">
@@ -50,7 +51,7 @@ const page = () => {
                       <li>Showcase</li>
                       <li>Comment (12)</li>
                     </ul>
-                    <a className="blog_title" href="blog-details.html">
+                    <a className="blog_title" href="#blog-2">
                       Basic Plan implementation for Beauty Salon 
                     </a>
                     <p>
@@ -64,20 +65,15 @@ const page = () => {
                     </div>
                   </div>
                 </div>
-                <div className="tf__single_blog_clasic">
-                  <div
-                    className="tf__blog_clasic_img"
-                    data-animation="img-blur"
-                  >
-                    <PersonalCarousel />
-                  </div>
+                <div className="tf__single_blog_clasic" id="blog-3">
+                  <PersonalCarousel />
                   <div className="tf__blog_clasic_text">
                     <ul className="d-flex flex-wrap">
                       <li>By VIMA</li>
                       <li>Showcase</li>
                       <li>Comment (12)</li>
                     </ul>
-                    <a className="blog_title" href="blog-details.html">
+                    <a className="blog_title" href="#blog-3">
                       Comprehensive solution example of Premium Website
                     </a>
                     <p>
@@ -86,12 +82,33 @@ const page = () => {
                       Implemented AI Chatbot Capabilities provide navigation support as well as improve conversion. 
                     </p>
                     <div className="tf__blog_link d-flex flex-wrap justify-content-between">
-                      <a
-                        href="blog-details.html"
-                        className="tf__common_btn tf__blog_btn"
-                      >
-                        read more
+                      <a href="#" className="tf__blog_share">
+                        <i className="far fa-share-alt" />
                       </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="tf__single_blog_clasic" id="blog-4">
+                  <div
+                    className="tf__blog_clasic_img"
+                    data-animation="img-blur"
+                  >
+                  </div>
+                  <div className="tf__blog_clasic_text">
+                    <ul className="d-flex flex-wrap">
+                      <li>By VIMA</li>
+                      <li>Showcase</li>
+                      <li>Comment (12)</li>
+                    </ul>
+                    <a className="blog_title" href="#blog-4">
+                      Comprehensive solution example of Premium Website
+                    </a>
+                    <p>
+                      A comprehensive solution example of a Premium Website, showcasing the power of Website Development and its impact on user engagement and satisfaction.
+                      The website features a modern and responsive design, ensuring a seamless user experience across all devices.
+                      Implemented AI Chatbot Capabilities provide navigation support as well as improve conversion. 
+                    </p>
+                    <div className="tf__blog_link d-flex flex-wrap justify-content-between">
                       <a href="#" className="tf__blog_share">
                         <i className="far fa-share-alt" />
                       </a>

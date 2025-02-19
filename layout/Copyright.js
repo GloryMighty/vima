@@ -16,11 +16,6 @@ const Copyright = () => {
                   Privacy Policy
                 </a>
               </li>
-              <li>
-                <a href="#" className="text_hover_animaiton">
-                  Sitemap
-                </a>
-              </li>
             </ul>
           </div>
         </div>

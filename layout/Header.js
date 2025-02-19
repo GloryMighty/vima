@@ -54,11 +54,6 @@ const Header1 = ({ homepage }) => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/projects" className="nav-link text_hover_animaiton">
-                Projects
-              </Link>
-            </li>
-            <li className="nav-item">
               <Link href="/blog" className="nav-link text_hover_animaiton">
                 Blog
               </Link>

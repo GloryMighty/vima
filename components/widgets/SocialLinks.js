@@ -3,22 +3,24 @@
 import React, { useState, useCallback } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faPhone, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faShareAlt } from '@fortawesome/free-solid-svg-icons'
 import { showSuccessToast, showErrorToast } from '../utils/toast'
+
+
 
 // Social links data for easy maintenance
 const socialLinks = [
   {
     icon: faWhatsapp,
-    href: "https://wa.me/358451333953",
+    href: "https://wa.me/+905070711259",
     label: "WhatsApp",
     color: "text-[#32CD32] hover:text-[#32CD32]",
   },
   {
-    icon: faGithub,
-    href: "https://github.com/GloryMighty",
-    label: "GitHub",
+    icon: faEnvelope,
+    href: "mailto:vimawebsolutions@gmail.com",
+    label: "Email",
     color: "text-[#32CD32] hover:text-[#32CD32]",
   },
   {
@@ -28,17 +30,17 @@ const socialLinks = [
     color: "text-[#32CD32] hover:text-[#32CD32]",
   },
   {
-    icon: faTwitter,
-    href: "https://twitter.com/allhopeisgo",
-    label: "Twitter",
+    icon: faGithub,
+    href: "https://github.com/GloryMighty",
+    label: "GitHub",
     color: "text-[#32CD32] hover:text-[#32CD32]",
-  },
+  },  
   {
-    icon: faEnvelope,
-    href: "mailto:mamatovviacheslav@gmail.com",
-    label: "Email",
+    icon: faPhone,
+    href: "tel:+905070711259",
+    label: "Phone",
     color: "text-[#32CD32] hover:text-[#32CD32]",
-  },
+  }
 ]
 
 const SocialLinksWidget = () => {
@@ -70,7 +72,7 @@ const SocialLinksWidget = () => {
           className="w-5 h-5 text-[#32CD32] fill-[#32CD32]"
           style={{ 
             transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)', 
-            transition: 'transform 0.3s ease',
+            transition: 'transform 0.9s ease',
             color: '#32CD32'
           }}
         />
