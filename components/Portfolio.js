@@ -5,10 +5,14 @@ const portfolioData = {
   sub_title: "gallery",
   desc: "Explore our latest works in our portfolio",
   items: [
-    { id: 4, src: "/images/beauty.png" },
-    { id: 5, src: "/images/land.png" },
-    { id: 6, src: "/images/land1.png" },
-    { id: 7, src: "/images/pars.png" },
+    { id: 1, src: "/images/beauty.png" },
+    { id: 2, src: "/images/land.png" },
+    { id: 3, src: "/images/land1.png" },
+    { id: 4, src: "/images/pars.png" },
+    { id: 5, src: "/images/slav2.png" },
+    { id: 6, src: "/images/mockmac.png" }, 
+    { id: 7, src: "/images/mockmac1.png"},
+    { id: 8, src: "/images/mockmac2.png"},  
   ],
 };
 
