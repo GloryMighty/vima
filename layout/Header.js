@@ -44,6 +44,12 @@ const Header1 = ({ homepage }) => {
         <div 
           className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} 
           id="navbarSupportedContent"
+          style={{
+            position: 'fixed',
+            right: '0',
+            width: '20%', 
+            height: '100%',
+          }}
         >
           <ul className="navbar-nav ms-auto">
             <li className="nav-item active">
