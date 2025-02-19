@@ -5,21 +5,95 @@ import IstiLayout from "@/layout/IstiLayout";
 import { useState } from "react";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
+  const [submitStatus, setSubmitStatus] = useState({
+    loading: false,
+    success: false,
+    error: null
+  });
 
-  const handleSubmit = (e) => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const validateForm = () => {
+    const { name, email, message } = formData;
+    const errors = [];
+
+    if (!name.trim()) errors.push('Name is required');
+    if (!email.trim()) errors.push('Email is required');
+    if (!email.includes('@')) errors.push('Invalid email format');
+    if (!message.trim()) errors.push('Message is required');
+
+    return errors;
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log({
-      name,
-      email,
-      phone,
-      subject,
-      message,
-    });
+    
+    // Validate form
+    const validationErrors = validateForm();
+    if (validationErrors.length > 0) {
+      setSubmitStatus({
+        loading: false,
+        success: false,
+        error: validationErrors.join(', ')
+      });
+      return;
+    }
+
+    // Set loading state
+    setSubmitStatus({ loading: true, success: false, error: null });
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        // Reset form on success
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        });
+        setSubmitStatus({ 
+          loading: false, 
+          success: true, 
+          error: null 
+        });
+      } else {
+        setSubmitStatus({ 
+          loading: false, 
+          success: false, 
+          error: result.message 
+        });
+      }
+    } catch (error) {
+      setSubmitStatus({ 
+        loading: false, 
+        success: false, 
+        error: 'Network error. Please try again.' 
+      });
+    }
   };
 
   return (
@@ -69,32 +143,26 @@ const Contact = () => {
                 <div className="tf__common_heading tf__contact_heading">
                   <h5>Contact us</h5>
                   <h2 data-text-animation="rotate-in">
-                    do you have any question?
+                    Do you have any question?
                   </h2>
                   <p>
-                    For your car we will do everything advice, repairs and
-                    maintenance. We are the some preferred choice by many car
-                    owners because
+                    We will provide top-level services and elevate your brand with our expertise.
+                    Join our group of successful entrepreneurs and experience the difference with our advanced Web Development!
                   </p>
                   <ul className="d-flex flex-wrap">
                     <li>
-                      <a href="#">
-                        <i className="fab fa-facebook-f" aria-hidden="true" />
+                      <a href="https://wa.me/+905070711259">
+                        <i className="fab fa-whatsapp" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fab fa-twitter" aria-hidden="true" />
+                      <a href="tel:+905070711259">
+                        <i className="fab fa-viber" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i className="fab fa-instagram" aria-hidden="true" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-pinterest-p" />
+                      <a href="mailto:vimawebsolutions@gmail.com">
+                        <i className="fab fa-telegram" aria-hidden="true" />
                       </a>
                     </li>
                   </ul>
@@ -107,52 +175,70 @@ const Contact = () => {
                       <input
                         type="text"
                         placeholder="Your Name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
+                        value={formData.name}
+                        onChange={handleChange}
+                        name="name"
+                        required
                       />
                     </div>
                     <div className="col-xl-6 col-lg-6">
                       <input
                         type="email"
                         placeholder="Your Email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                        value={formData.email}
+                        onChange={handleChange}
+                        name="email"
+                        required
                       />
                     </div>
                     <div className="col-xl-6 col-lg-6">
                       <input
                         type="text"
                         placeholder="Phone Number"
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
+                        value={formData.phone}
+                        onChange={handleChange}
+                        name="phone"
                       />
                     </div>
                     <div className="col-xl-6 col-lg-6">
                       <input
                         type="text"
                         placeholder="Subject"
-                        value={subject}
-                        onChange={(e) => setSubject(e.target.value)}
-                      />
-                    </div>
-                    <div className="col-xl-12">
-                      <input
-                        type="text"
-                        placeholder="Service"
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
+                        value={formData.subject}
+                        onChange={handleChange}
+                        name="subject"
                       />
                     </div>
                     <div className="col-xl-12">
                       <textarea
                         placeholder="Your Message"
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
+                        value={formData.message}
+                        onChange={handleChange}
+                        name="message"
+                        required
                       />
                     </div>
+                    {submitStatus.error && (
+                      <div className="col-12">
+                        <div className="alert alert-danger">
+                          {submitStatus.error}
+                        </div>
+                      </div>
+                    )}
+                    {submitStatus.success && (
+                      <div className="col-12">
+                        <div className="alert alert-success">
+                          Message sent successfully! We'll get back to you soon.
+                        </div>
+                      </div>
+                    )}
                     <div className="col-xl-12">
-                      <button className="tf__common_btn tf__contactarea_btn">
-                        Submit Now
+                      <button 
+                        type="submit" 
+                        className="tf__common_btn tf__contactarea_btn"
+                        disabled={submitStatus.loading}
+                      >
+                        {submitStatus.loading ? 'Sending...' : 'Submit Now'}
                       </button>
                     </div>
                   </div>

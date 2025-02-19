@@ -93,6 +93,10 @@
     display: none !important;
   }
 
+  .tf__portfolio .prevArrow {
+    left: 102%;
+  }
+
   .tf__single_counter {
     padding: 25px 50px;
   }
@@ -1291,6 +1295,7 @@
   }
 
   /* blog start */
+
   .tf__blog_text_hp2 p {
     top: -428px;
   }
@@ -1773,5 +1778,103 @@
 
   .tf__banner_text_2 {
     padding-bottom: 0;
+  }
+}
+
+@media (max-width: 991.99px) {
+  .tf__main_menu .navbar {
+    position: relative;
+  }
+
+  .tf__main_menu .navbar-toggler {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1100;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tf__main_menu .navbar-toggler .menu_icon_bar,
+  .tf__main_menu .navbar-toggler .close_icon_close {
+    font-size: 20px;
+    color: var(--colorPrimary);
+    line-height: 1;
+  }
+
+  .tf__main_menu .navbar-collapse.show {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%; /* Narrow width */
+    height: 100%;
+    background-color: rgba(199, 211, 0, 0.95);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: menuSlideIn 0.3s ease-out;
+    overflow-y: auto;
+    box-shadow: -4px 0 15px rgba(0,0,0,0.1);
+    padding: 0;
+    margin-right: 0;
+    border-left: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .tf__main_menu .navbar-collapse.show .navbar-nav {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tf__main_menu .navbar-collapse.show .nav-item {
+    margin: 5px 0;
+    padding: 5px 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+
+  .tf__main_menu .navbar-collapse.show .nav-item:hover {
+    background-color: rgba(255,255,255,0.1);
+  }
+
+  .tf__main_menu .navbar-collapse.show .nav-link {
+    color: #0c0c08;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 15px;
+    display: block;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .tf__main_menu .navbar-collapse.show .nav-link:hover {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  /* Ensure close icon is visible and clickable */
+  .tf__main_menu .navbar-toggler .close_icon_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1200;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  @keyframes menuSlideIn {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 }

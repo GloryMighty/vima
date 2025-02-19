@@ -18,6 +18,15 @@ const ChatWidget = dynamic(() => import('../components/widgets/ChatWidget'), { s
 export const metadata = {
   title: "VIMA Web Development",
   description: "Professional developers with unique approach and exceptional sense of style",
+  icons: {
+    icon: '/app/favicon.ico',
+    shortcut: '/app/favicon.ico',
+    apple: '/app/favicon.ico',
+  },
+  openGraph: {
+    title: "VIMA Web Development",
+    description: "Professional developers with unique approach and exceptional sense of style",
+  },
 };
 
 const poppins = Poppins({

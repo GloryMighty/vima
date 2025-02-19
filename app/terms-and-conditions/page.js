@@ -8,6 +8,8 @@ import IstiLayout from '@/layout/IstiLayout';
 export default function TermsAndConditions() {
   return (
     <IstiLayout>
+      <br />
+      <br />
       <div className="container py-5">
         <h1 className="mb-4 text-center">Terms and Conditions of Use</h1>
         
@@ -30,8 +32,8 @@ export default function TermsAndConditions() {
           </p>
         </section>
 
-        <section className="mb-5">
-          <h2 className="mt-4">3. User Account and Responsibilities</h2>
+        <section className="text-white">
+          <h2 className="text-white">3. User Account and Responsibilities</h2>
           <ul>
             <li>You must provide accurate and complete information when creating an account.</li>
             <li>You are responsible for maintaining the confidentiality of your account credentials.</li>
@@ -56,15 +58,13 @@ export default function TermsAndConditions() {
             non-exclusive, worldwide, royalty-free license to use, reproduce, and 
             distribute such content.
           </p>
-          <p>
-            You agree not to:
-            <ul>
-              <li>Post content that is unlawful, harmful, threatening, or obscene</li>
-              <li>Impersonate any person or entity</li>
-              <li>Interfere with or disrupt the Service</li>
-              <li>Attempt to gain unauthorized access to any part of the Service</li>
-            </ul>
-          </p>
+          <p className="text-white">You agree not to:</p>
+          <ul className="text-white">
+            <li>Post content that is unlawful, harmful, threatening, or obscene</li>
+            <li>Impersonate any person or entity</li>
+            <li>Interfere with or disrupt the Service</li>
+            <li>Attempt to gain unauthorized access to any part of the Service</li>
+          </ul>
         </section>
 
         <section className="mb-5">
@@ -98,9 +98,9 @@ export default function TermsAndConditions() {
           <p>
             For any questions about these Terms, please contact us at:
             <br />
-            Email: legal@vima.solutions
+            Email: vimawebsolutions@gmail.com
             <br />
-            Address: Silicon Valley, California, USA
+            Address: Istanbul Valley, California, USA
           </p>
         </section>
 

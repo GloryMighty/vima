@@ -8,6 +8,8 @@ import IstiLayout from '@/layout/IstiLayout';
 export default function PrivacyPolicy() {
   return (
     <IstiLayout>
+      <br />
+      <br />  
       <div className="container py-5">
         <h1 className="mb-4">Privacy Policy</h1>
         <div className="content">

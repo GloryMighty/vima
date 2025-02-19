@@ -784,7 +784,7 @@ button:focus {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .tf__team_skills_bar_single p {

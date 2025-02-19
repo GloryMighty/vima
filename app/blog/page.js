@@ -86,26 +86,6 @@ const page = () => {
                     data-animation="img-blur"
                   >
                   </div>
-                  <div className="tf__blog_clasic_text">
-                    <ul className="d-flex flex-wrap">
-                      <li>By VIMA</li>
-                      <li>Showcase</li>
-                      <li>Comment (12)</li>
-                    </ul>
-                    <a className="blog_title" href="#blog-4">
-                      Comprehensive solution example of Premium Website
-                    </a>
-                    <p>
-                      A comprehensive solution example of a Premium Website, showcasing the power of Website Development and its impact on user engagement and satisfaction.
-                      The website features a modern and responsive design, ensuring a seamless user experience across all devices.
-                      Implemented AI Chatbot Capabilities provide navigation support as well as improve conversion. 
-                    </p>
-                    <div className="tf__blog_link d-flex flex-wrap justify-content-between">
-                      <a href="#" className="tf__blog_share">
-                        <i className="far fa-share-alt" />
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
               <div id="tf__pagination">
