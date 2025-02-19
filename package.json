@@ -18,6 +18,7 @@
     "@google/generative-ai": "^0.21.0",
     "@nivo/core": "^0.88.0",
     "@nivo/line": "^0.88.0",
+    "@react-spring/web": "^9.7.5",
     "@splinetool/react-spline": "^4.0.0",
     "@splinetool/runtime": "^1.9.68",
     "@studio-freight/lenis": "^1.0.42",

@@ -17,7 +17,7 @@ export const Home1Banner = () => {
           </div>
           <div className="col-xxl-5 col-xl-6 ms-auto">
             <div className="tf__banner_text">
-              <h3 className="banner_title">We are VIMA</h3>
+              <h3 className="banner_title">WE ARE VIMA</h3>
               <h1 className="banner_title">PASSIONATE WEBSITE DEVELOPERS</h1>
               <p>
                 As driven Website Developers, We thrive on creating beautiful
