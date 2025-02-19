@@ -59,11 +59,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="tf__emargency_contact">
-                <div className="tf__emargency_contact_bg">
-                  <p>Emergcy Contact</p>
-                  <p>Emergcy Contact</p>
-                  <span>+88 123 456 7653</span>
-                </div>
+              
               </div>
             </div>
           </div>

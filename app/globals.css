@@ -10,9 +10,27 @@ html {
   align-items: center;
   width: 100%;
   margin-top: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(0, 255, 187, 0.1));
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.impact-highlight:hover {
+  transform: scale(1.02);
+}
+
+.impact-highlight > strong {
+  color: #007bff;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .impact-highlight > div {
   width: 100%;
   height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
 }

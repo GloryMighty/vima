@@ -62,7 +62,7 @@ export default function About() {
           <div className="row mt-5 align-items-start">
             <div className="col-12 mb-4">
               <div className="tf__about_clasic_text">
-                <h2 className="about_title">
+                <h2 className="tf_about_title">
                   Driving Business Growth Through Intelligent Technology
                 </h2>
                 <p>
@@ -84,7 +84,7 @@ export default function About() {
           <div className="row mt-5 align-items-start">
             <div className="col-12 mb-4">
               <div className="section-title text-center mb-4">
-                <h3>Our Commitment to Your Success</h3>
+                <h3>OUR COMMITMENT TO YOUR SUCCESS</h3>
               </div>
             </div>
             {[

@@ -212,8 +212,8 @@ const page = () => {
                   </div>
                 </div>
                 <div className="tf_blog_contact">
-                  <p>Aliquam sto, posuere loborti viverra atti ullamcorper</p>
-                  <a href="#" className="tf__common_btn tf_blog_contact_btn">
+                  <p>Make your dream come true!</p>
+                  <a href="/contact" className="tf__common_btn tf_blog_contact_btn">
                     Contact Us
                   </a>
                 </div>
