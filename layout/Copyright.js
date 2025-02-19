@@ -4,15 +4,15 @@ const Copyright = () => {
       <div className="container">
         <div className="col-xl-12">
           <div className="tf__main_copyright d-flex flex-wrap justify-content-between">
-            <p>© VIMA Web Solutions 2025 | All Rights Reserved</p>
+            <p> VIMA Web Solutions 2025 | All Rights Reserved</p>
             <ul className="d-flex flex-wrap">
               <li>
-                <a href="#" className="text_hover_animaiton">
-                  Trams &amp; Condition
+                <a href="/terms-and-conditions" className="text_hover_animaiton">
+                  Terms &amp; Condition
                 </a>
               </li>
               <li>
-                <a href="#" className="text_hover_animaiton">
+                <a href="/privacy-policy" className="text_hover_animaiton">
                   Privacy Policy
                 </a>
               </li>

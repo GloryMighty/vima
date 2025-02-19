@@ -2,10 +2,18 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"],
-      "@/components/*": ["./components/*"],
-      "@css/*": ["./public/css/*"],
-      "@istiIcon/*": ["./public/isti-icon/*"]
+      "@/*": [
+        "./*"
+      ],
+      "@/components/*": [
+        "./components/*"
+      ],
+      "@css/*": [
+        "./public/css/*"
+      ],
+      "@istiIcon/*": [
+        "./public/isti-icon/*"
+      ]
     },
     "lib": [
       "dom",
@@ -27,7 +35,8 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "strictNullChecks": true
   },
   "include": [
     "next-env.d.ts",
