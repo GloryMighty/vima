@@ -2,6 +2,8 @@
 
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import { getImagePath } from '@/utility/imageUtils';
+import { useTranslations } from 'next-intl';
 
 // Carousel component for Personal images showcasing comprehensive solution example
 export default function PersonalCarousel() {
@@ -40,7 +42,8 @@ export default function PersonalCarousel() {
     <div 
       ref={carouselRef}
       id="personalCarousel" 
-      className="carousel slide carousel-fade" 
+      className="carousel slide carousel-fade"
+      suppressHydrationWarning={true}
     >
       {/* Carousel indicators */}
       <div className="carousel-indicators">

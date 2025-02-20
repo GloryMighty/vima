@@ -4,7 +4,7 @@
 Vima Web Solutions is a dynamic web development agency with over 13 years of entrepreneurial experience. We specialize in creating customized, modern web applications that transform digital visions into reality.
 
 ## 🚀 Our Expertise
-- **Programming Languages**: C++, JavaScript, CSS, PHP, TypeScript, HTML
+- **Programming Languages**: Python JavaScript, CSS, PHP, TypeScript, HTML
 - **Core Technologies**: Next.js, React, Node.js, PostgreSQL
 - **Specialties**: AI Integration, Full-Stack Development, Multilingual Web Solutions
 

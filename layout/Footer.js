@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export const Footer = (footer) => {
   switch (footer) {
@@ -14,33 +15,34 @@ export const Footer = (footer) => {
 };
 
 const Footer1 = () => {
+  const t = useTranslations('Layout.Footer');
   return (
     <section className="tf__contact pb_80">
       <div className="container">
         <div className="row">
           <div className="col-xl-6 col-md-12">
             <div className="tf__contact_area">
-              <h4 data-text-animation="rotate-in">IF YOU WANT TO UPDATE ?</h4>
+              <h4 data-text-animation="rotate-in">{t('subscribe_question')}</h4>
               <h4 data-text-animation="rotate-in" data-delay=".25">
-                STAY CONECTED!
+                {t('stay_connected')}
               </h4>
               <div className="tf__contact_mail">
-                <input type="text" placeholder="Enter email address" />
+                <input type="text" placeholder={t('email_placeholder')} />
                 <a href="#" className="tf__subscribtion">
-                  SUBSCRIBE NOW
+                  {t('subscribe_now')}
                 </a>
               </div>
               <div className="row justify-content-between">
                 <div className="col-xl-5 col-md-5">
                   <div className="tf__contact_address">
-                    <h4>Contact Me</h4>
+                    <h4>{t('contact_me')}</h4>
                     <div className="tf__single_address d-flex flex-wrap">
                       <span>
                         <i className="fa-sharp fa-solid fa-paper-plane" />
                       </span>
                       <div className="tf__address_area">
-                        <p>Old city street,USA</p>
-                        <p>1212 New york-3500</p>
+                        <p>{t('address.line1')}</p>
+                        <p>{t('address.line2')}</p>
                       </div>
                     </div>
                     <div className="tf__single_address d-flex flex-wrap">

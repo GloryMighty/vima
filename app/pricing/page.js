@@ -76,7 +76,7 @@ const PricingPage = () => {
                         <li key={featureIndex} style={{ fontSize: '17px', fontWeight: '500', color: '#2c2c2c', lineHeight: '1.6', padding: '12px 15px', margin: '8px 0', background: 'rgba(255, 255, 255, 0.95)', borderRadius: '6px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)' }}>{feature}</li>
                       ))}
                     </ul>
-                    <a href="#" className="tf__common_btn">
+                    <a href="/pricing" className="tf__common_btn">
                       Choose Plan
                       <i className="fa-solid fa-arrow-right-long" />
                     </a>

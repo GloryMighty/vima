@@ -1,4 +1,7 @@
+import { useTranslations } from 'next-intl';
+
 export const Home1Banner = () => {
+  const t = useTranslations("Banner");
   return (
     <section
       className="tf__banner pt_100 pl_60 pr_60 bg-fixed"
@@ -17,11 +20,10 @@ export const Home1Banner = () => {
           </div>
           <div className="col-xxl-5 col-xl-6 ms-auto">
             <div className="tf__banner_text">
-              <h3 className="banner_title">WE ARE VIMA</h3>
-              <h1 className="banner_title">PASSIONATE WEBSITE DEVELOPERS</h1>
+              <h3 className="banner_title">{t('we_are_vima')}</h3>
+              <h1 className="banner_title">{t('passionate_website_developers')}</h1>
               <p>
-                As driven Website Developers, We thrive on creating beautiful
-                and intuitive digital experiences that delight users.
+                {t('banner_paragraph')}
               </p>
               <ul className="d-flex flex-wrap">
                 <li>
@@ -32,7 +34,7 @@ export const Home1Banner = () => {
                     href="https://youtu.be/668nUCeBHyY?si=sHtcsCQRzAET5GOt"
                   >
                     <i className="fa-sharp fa-solid fa-circle-play" />
-                    Watch The Video
+                    {t('watch_video')}
                   </a>
                 </li>
               </ul>
@@ -43,4 +45,3 @@ export const Home1Banner = () => {
     </section>
   );
 };
-

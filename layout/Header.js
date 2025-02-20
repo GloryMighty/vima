@@ -1,7 +1,9 @@
 "use client";
 import { istiUtility } from "@/utility";
-import Link from 'next/link';
 import { useEffect, useState } from "react";
+import { useTranslations } from 'next-intl';
+import { Link, usePathname, useRouter } from '../config/navigation';
+import LanguageSelector from '@/components/LanguageSelector';
 
 const Header = ({ onePage, homepage }) => {
   useEffect(() => {
@@ -14,18 +16,42 @@ const Header = ({ onePage, homepage }) => {
 export default Header;
 
 const Header1 = ({ homepage }) => {
-  // State to manage mobile menu visibility
+  const t = useTranslations('Header');
+  const pathname = usePathname();
+  const router = useRouter();
+  
+  /**
+   * Check if the current path matches the navigation link
+   * This handles both exact matches and nested routes
+   */
+  const isActiveLink = (path) => {
+    return pathname.endsWith(path);
+  };
+
+  // Mobile menu state management
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Toggle mobile menu
+  /**
+   * Toggle mobile menu visibility
+   * Also used by the language selector in mobile view
+   */
   const toggleMobileMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  /**
+   * Handle navigation with proper locale preservation
+   * Closes mobile menu after navigation
+   */
+  const handleNavigation = (path) => {
+    toggleMobileMenu();
+    router.push(path);
   };
 
   return (
     <nav className="navbar navbar-expand-lg tf__main_menu pl_50 pr_60 main_menu">
       <div className={`container${homepage ? "-fluid" : ""}`}>
-        <Link className="navbar-brand" href="/">
+        <Link className="navbar-brand" href="/" onClick={() => handleNavigation('/')}>
           <img src="images/logo.png" alt="logo" className="img-fluid w-100" />
         </Link>
         <button
@@ -46,30 +72,33 @@ const Header1 = ({ homepage }) => {
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item active">
-              <Link href="/" className="nav-link text_hover_animaiton" onClick={toggleMobileMenu}>
-                Home
+            <li className={`nav-item ${isActiveLink('/') ? 'active' : ''}`}>
+              <Link href="/" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/')}>
+                {t('HOME')}
               </Link>
             </li>
-            <li className="nav-item">
-              <Link href="/about" className="nav-link text_hover_animaiton" onClick={toggleMobileMenu}>
-                About Us
+            <li className={`nav-item ${isActiveLink('/about') ? 'active' : ''}`}>
+              <Link href="/about" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/about')}>
+                {t('ABOUT')}
               </Link>
             </li>
-            <li className="nav-item">
-              <Link href="/pricing" className="nav-link text_hover_animaiton" onClick={toggleMobileMenu}>
-                Pricing
+            <li className={`nav-item ${isActiveLink('/pricing') ? 'active' : ''}`}>
+              <Link href="/pricing" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/pricing')}>
+                {t('PRICING')}
               </Link>
             </li>
-            <li className="nav-item">
-              <Link href="/blog" className="nav-link text_hover_animaiton" onClick={toggleMobileMenu}>
-                Blog
+            <li className={`nav-item ${isActiveLink('/blog') ? 'active' : ''}`}>
+              <Link href="/blog" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/blog')}>
+                {t('BLOG')}
               </Link>
             </li>
-            <li className="nav-item">
-              <Link href="/contact" className="nav-link text_hover_animaiton" onClick={toggleMobileMenu}>
-                Contact
+            <li className={`nav-item ${isActiveLink('/contact') ? 'active' : ''}`}>
+              <Link href="/contact" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/contact')}>
+                {t('CONTACT')}
               </Link>
+            </li>
+            <li className="nav-item ms-3">
+              <LanguageSelector />
             </li>
           </ul>
         </div>

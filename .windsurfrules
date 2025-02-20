@@ -1,0 +1,5 @@
+Reference the project rules in Readme.MD, TranslationImplementation.md, LanguageCurrent.md, Current.md, Documentation.md
+Instead of next.config.js we use next.config.mjs. Please remember it. 
+Our middleware file is written as middleware.ts which means on typescript, instead of javascript. Please remember it. 
+Our translation is going good and there are only few adjustments for english localization left. Please try to reference other locales from [locale] folder to understand the logic and use the same logic of keywords for english locale. 
+Always reference the mentioned earlier rules and basics. 

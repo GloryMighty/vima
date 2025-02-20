@@ -2,6 +2,13 @@
 
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+import { 
+  getLocalizedCarouselImages, 
+  defaultCarouselConfig,
+  travelImagePaths 
+} from '@/utility/carouselUtils';
+import { getImagePath } from '@/utility/imageUtils';
 
 // Carousel component for Travel images
 export default function TravelCarousel() {
@@ -26,7 +33,9 @@ export default function TravelCarousel() {
     importBootstrapCarousel();
   }, []);
 
-  // Array of travel image paths
+  const t = useTranslations('Blog');
+
+  // Array of travel image paths - will be localized by getImagePath
   const travelImages = [
     '/images/VimaProj/Travel/1.png',
     '/images/VimaProj/Travel/2.png',
@@ -39,7 +48,8 @@ export default function TravelCarousel() {
     <div 
       ref={carouselRef}
       id="travelCarousel" 
-      className="carousel slide carousel-fade" 
+      className="carousel slide carousel-fade"
+      suppressHydrationWarning={true}
     >
       {/* Carousel indicators */}
       <div className="carousel-indicators">

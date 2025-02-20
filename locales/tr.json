@@ -1,0 +1,199 @@
+{
+  "Header": {
+    "HOME": "Ana Sayfa",
+    "ABOUT": "Hakkımızda",
+    "PRICING": "Fiyatlandırma",
+    "BLOG": "Blog",
+    "CONTACT": "İletişim",
+    "TERMS_AND_CONDITIONS": "Kullanım Koşulları",
+    "PRIVACY_POLICY": "Gizlilik Politikası",
+    "TERMS_AND_CONDITIONS_LINK": "https://example.com/terms-and-conditions",
+    "PRIVACY_POLICY_LINK": "https://example.com/privacy-policy"
+  },
+  "Banner": {
+    "we_are_vima": "VIMA'YIZ",
+    "passionate_website_developers": "TUTKULU WEB SİTESİ GELİŞTİRİCİLERİ",
+    "banner_paragraph": "Tutkulu Web Sitesi Geliştiricileri olarak, kullanıcıları memnun eden güzel ve sezgisel dijital deneyimler yaratmaktan keyif alıyoruz.",
+    "watch_video": "Videoyu İzle"
+  },
+  "About": {
+    "immerse_in": "keşfet",
+    "title": "Portföyümüzde Görsel Bir Yolculuk",
+    "bio": "Hakkımızda ve çalışmalarımız hakkında bilgi.",
+    "page_title": "HAKKIMIZDA",
+    "main_title": "Akıllı Teknoloji ile İş Büyümesini Yönlendirme",
+    "main_paragraph_1": "Günümüzün rekabetçi ortamında, işletmeler sadece yazılıma değil, somut sonuçlar üreten akıllı çözümlere ihtiyaç duyuyor. İleri düzey AI ve UI teknolojilerimiz, operasyonel verimliliğinizi dönüştürmek, üretkenliği artırmak ve benzeri görülmemiş iş büyümesinin önünü açmak için özenle tasarlanmıştır.",
+    "main_paragraph_2": "Sadece teknoloji üretmiyoruz; işletmelere pazarlarında kritik bir avantaj sağlayan stratejik avantajlar yaratıyoruz. Gelişmiş AI yeteneklerini sezgisel kullanıcı arayüzleriyle sorunsuz bir şekilde entegre ederek, karmaşık zorlukları optimize edilmiş fırsatlara dönüştürüyoruz.",
+    "commitment_title": "BAŞARINIZA OLAN BAĞLILIĞIMIZ",
+    "ai_insights": {
+      "title": "AI Destekli İçgörüler",
+      "description": "Alt çizginizi doğrudan etkileyen veri odaklı kararlar almak için öngörücü analitiği kullanın.",
+      "impact": "%40'a varan gelişmiş karar verme doğruluğu"
+    },
+    "ui_ux": {
+      "title": "Sezgisel UI/UX",
+      "description": "Sorunsuz tasarlanmış arayüzlerle öğrenme eğrilerini azaltın ve kullanıcı adaptasyonunu artırın.",
+      "impact": "%25 daha hızlı kullanıcı adaptasyonu ve etkileşimi"
+    },
+    "scalable": {
+      "title": "Ölçeklenebilir Çözümler",
+      "description": "İşinizle birlikte büyüyen, uzun vadeli teknolojik uygunluğu sağlayan özel teknolojiler.",
+      "impact": "Her boyutta ve sektörde işletmeye uyarlanabilir"
+    },
+    "chart": {
+      "quarter": "Çeyrek",
+      "growth": "Büyüme"
+    },
+    "cta_button": "Danışma Talep Et"
+  },
+  "Experience": {
+    "pricing": {
+      "sub_heading": "Fiyatlandırma Planları",
+      "heading": "Planınızı Seçin",
+      "plans": {
+        "basic": {
+          "title": "Temel Plan",
+          "price": "$299",
+          "price_subtext": "başlayan fiyatlarla",
+          "features": "İlk Danışma|Tasarım ve üretim|Kendi sunucunuzda barındırma|Basit web sitesi tasarımı|2 Dil"
+        },
+        "advanced": {
+          "title": "Gelişmiş Plan",
+          "price": "$599",
+          "price_subtext": "başlayan fiyatlarla",
+          "features": "Hazır çözüm|Yılda 3 ÜCRETSİZ güncelleme|1 yıl ÜCRETSİZ sunucu dahil|Ayda 3 ÜCRETSİZ blog yazısı ile SEO|Daha iyi dijital varlık|Gelişmiş web sitesi tasarımı|3 Dil"
+        },
+        "vip": {
+          "title": "VIP Deneyim",
+          "price": "$999",
+          "price_subtext": "başlayan fiyatlarla",
+          "features": "Gelişmiş Plandaki Her Şey, ARTI|Premium alan adı dahil|Sınırsız güncelleme talebi|AI Chatbot Entegrasyonu|Üstün web sitesi tasarımı|Kullanıcı kimlik doğrulama|2 yıl barındırma|5 Dile kadar"
+        }
+      },
+      "choose_plan": "Planı Seç"
+    }
+  },
+  "Portfolio": {
+    "sub_title": "Galeri",
+    "title": "Son Portföy",
+    "description": "Portföyümüzde son çalışmalarımızı keşfedin",
+    "image_alt": "Portföy proje görseli",
+    "items": {
+      "beauty": {
+        "title": "Güzellik Salonu Web Sitesi",
+        "description": "Güzellik salonu için modern ve zarif web sitesi tasarımı"
+      },
+      "land": {
+        "title": "Emlak Platformu",
+        "description": "Emlak listeleme ve yönetim platformu"
+      },
+      "land1": {
+        "title": "Emlak Vitrin",
+        "description": "Etkileşimli emlak görüntüleme deneyimi"
+      },
+      "pars": {
+        "title": "Restoran Web Sitesi",
+        "description": "Lüks bir restoran için dijital varlık"
+      }
+    }
+  },
+  "Blog": {
+    "section_title": "TÜM Bloglar",
+    "heading": "Vizyondan Gerçeğe: Başarılarımızın Portföyü",
+    "by_author": "{author} tarafından",
+    "page_title": "PROJELERİMİZ",
+    "read_more": "DEVAMINI OKU",
+    "by": "Yazan",
+    "comments": "Yorum ({count})",
+    "comments_count": "Yorum ({count})",
+    "search": "Ara",
+    "search_placeholder": "Arama teriminizi girin...",
+    "category": {
+      "title": "Kategori",
+      "showcase": "Vitrin"
+    },
+    "categories": {
+      "web_designer": "Web Tasarımcısı",
+      "graphics_designer": "Grafik Tasarımcısı",
+      "web_developer": "Web Geliştirici",
+      "ui_ux_designer": "UI/UX Tasarımcısı"
+    },
+    "posts": {
+      "travel": {
+        "author": "VIMA Web",
+        "title": "Türk Seyahat Şirketi için Gelişmiş Proje",
+        "content": "Turkish Travel için gelişmiş ve duyarlı UI tasarımı, Web Sitesi Geliştirmede modern yaklaşımı sergiliyor. SEO'yu yöneterek ve optimum kullanıcı deneyimi için web sitesi performansını optimize ederek, web sitesi 3 dile (Arapça, İngilizce ve Türkçe) çeviri içeriyor, her kullanıcının kusursuz navigasyonunu sağlıyor."
+      },
+      "beauty": {
+        "author": "VIMA Web",
+        "title": "Güzellik Salonu için Temel Plan Uygulaması",
+        "content": "Tek sayfalık Web Sitesi geliştirmenin zarif bir gösterimi, duyarlı tasarımın gücünü sergiliyor. Özelliklerin ve fiyatlandırmanın basitliği sayesinde müşteri dönüşümüne odaklanan temiz ve iyi yapılandırılmış iniş sayfası."
+      },
+      "premium": {
+        "author": "VIMA Takım",
+        "title": "Premium Web Sitesi için Kapsamlı Çözüm Örneği",
+        "content": "Web Sitesi Geliştirmenin gücünü ve kullanıcı etkileşimi ve memnuniyeti üzerindeki etkisini gösteren Premium Web Sitesinin kapsamlı bir çözüm örneği. Web sitesi, tüm cihazlarda sorunsuz bir kullanıcı deneyimi sağlayan modern ve duyarlı bir tasarıma sahip. Uygulanan AI Chatbot Yetenekleri, navigasyon desteği sağlamanın yanı sıra dönüşümü de iyileştiriyor."
+      }
+    },
+    "recent_posts": {
+      "title": "Son gönderiler",
+      "basic": "İşletmeniz için temel seçenekleri keşfedin",
+      "advanced": "Akıllı işletme sahipleri için gelişmiş çözüm",
+      "future": "Geleceğinize Yatırım Yapın, bir Web Uygulamasına Sahip Olun!"
+    },
+    "contact": {
+      "message": "Hayallerinizi gerçeğe dönüştürün!",
+      "button": "Bize Ulaşın"
+    },
+    "tags": {
+      "title": "Etiketler"
+    }
+  },
+  "Layout": {
+    "Copyright": {
+     "text": " 2025 VIMA. Tüm hakları saklıdır."
+    }
+  },
+  "Testimonial": {
+    "section_title": "Referanslar",
+    "heading": "Müşterilerimiz Ne Diyor"
+  },
+  "Contact": {
+    "page_title": "Bize Ulaşın",
+    "image_alt": "iletişim görseli",
+    "offices": {
+      "dev": {
+        "title": "İstanbul Ofisi",
+        "type": "Web Geliştirme Adresi",
+        "location": "Levent"
+      },
+      "sales": {
+        "title": "İstanbul Ofisi",
+        "type": "Satış Ofisi",
+        "location": "Nişantaşı"
+      }
+    },
+    "form": {
+      "title": "Bize Ulaşın",
+      "question": "Herhangi bir sorunuz var mı?",
+      "description": "Üst düzey hizmetler sunacak ve uzmanlığımızla markanızı yükselteceğiz. Başarılı girişimciler grubumuza katılın ve gelişmiş Web Geliştirme ile farkı deneyimleyin!",
+      "name_placeholder": "Adınız",
+      "email_placeholder": "E-posta Adresiniz",
+      "phone_placeholder": "Telefon Numarası",
+      "subject_placeholder": "Konu",
+      "message_placeholder": "Mesajınız",
+      "sending": "Gönderiliyor...",
+      "submit": "Şimdi Gönder",
+      "success_message": "Mesaj başarıyla gönderildi! En kısa sürede size geri döneceğiz."
+    },
+    "validation": {
+      "name_required": "Ad gereklidir",
+      "email_required": "E-posta gereklidir",
+      "invalid_email": "Geçersiz e-posta formatı",
+      "message_required": "Mesaj gereklidir"
+    },
+    "errors": {
+      "network": "Ağ hatası. Lütfen tekrar deneyin."
+    }
+  }
+}

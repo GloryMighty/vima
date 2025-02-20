@@ -1,56 +1,49 @@
+import { useTranslations } from 'next-intl';
+import { getImagePath } from '@/utility/imageUtils';
+
+/**
+ * Partner logos displayed in the experience section
+ * Each logo has a unique ID and source path
+ */
+// Transform logo paths to ensure they work across all locales
 const logos = [
-  { id: 1, src: "/images/brand_1.png" },
-  { id: 2, src: "/images/brand_2.png" },
-  { id: 3, src: "/images/brand_3.png" },
-  { id: 4, src: "/images/brand_4.png" },
-  { id: 5, src: "/images/brand_5.png" },
+  { id: 1, src: getImagePath("/images/brand_1.png") },
+  { id: 2, src: getImagePath("/images/brand_2.png") },
+  { id: 3, src: getImagePath("/images/brand_3.png") },
+  { id: 4, src: getImagePath("/images/brand_4.png") },
+  { id: 5, src: getImagePath("/images/brand_5.png") },
 ];
 
+/**
+ * Pricing plan configuration
+ * Each plan maps to a translation key in the locale files
+ * Translation structure for each plan:
+ * - title: Plan name
+ * - price: Plan price
+ * - price_subtext: Additional price information
+ * - features: Array of features included in the plan
+ */
 const pricingPlans = [
-  {
-    title: "Basic Plan",
-    price: "$299",
-    priceSubtext: "starting from",
-    features: [
-      "Initial Consultation",
-      "Design and production",
-      "Hosting on Your server",
-      "Simple website design",
-      "2 Languages"
-    ]
-  },
-  {
-    title: "Advanced Plan",
-    price: "$599",
-    priceSubtext: "starting from",
-    features: [
-      "Ready to go solution",
-      "3 Updates a year for FREE",
-      "1 year FREE hosted server included",
-      "SEO with 3 FREE blog posts a month",
-      "Better digital presence",
-      "Advanced website design",
-      "3 Languages"
-    ]
-  },
-  {
-    title: "VIP Experience",
-    price: "$999",
-    priceSubtext: "starting from",
-    features: [
-      "Everything in Advanced, PLUS",
-      "Premium domain included",
-      "Unlimited updates on request",
-      "AI Chatbot Integration",
-      "Superior website design",
-      "Users authentication",
-      "2 years of hosting",
-      "Up to 5 Languages"
-    ]
-  }
+  { key: 'basic' },
+  { key: 'advanced' },
+  { key: 'vip' }
 ];
 
+/**
+ * Experience component displaying partner logos and pricing plans
+ * Uses translations for multi-language support
+ *
+ * Translation structure:
+ * - logo_alt: Alt text for partner logos
+ * - pricing:
+ *   - sub_heading: Pricing section subheading
+ *   - heading: Pricing section main heading
+ *   - choose_plan: Text for the plan selection button
+ *   - plans: Object containing plan details (see pricingPlans comment)
+ */
 const Experiance = () => {
+  // Initialize translations for the Experience namespace
+  const t = useTranslations('Experience');
   return (
     <section className="tf__experiance pt_50 pb_50">
       <div className="container-fluid">
@@ -69,7 +62,7 @@ const Experiance = () => {
                 >
                   <img
                     src={logo.src}
-                    alt="company logo"
+                    alt={t('logo_alt')}
                     className="img-fluid w-100"
                   />
                 </div>
@@ -83,8 +76,8 @@ const Experiance = () => {
           <div className="row">
             <div className="col-12 wow fadeInUp">
               <div className="tf__section_heading mb_40">
-                <h5 className="tf__sub_heading">Our Pricing</h5>
-                <h2 className="tf__heading">Choose Your Plan</h2>
+                <h5 className="tf__sub_heading">{t('pricing.sub_heading')}</h5>
+                <h2 className="tf__heading">{t('pricing.heading')}</h2>
               </div>
             </div>
           </div>
@@ -103,18 +96,19 @@ const Experiance = () => {
                 >
                   <div className="tf__pricing_header">
                     <h3 style={{ fontSize: '28px', fontWeight: '700', color: '#1a1a1a', marginBottom: '15px' }}>
-                      {plan.title}
+                      {t(`pricing.plans.${plan.key}.title`)}
                     </h3>
                     <h2 style={{ fontSize: '42px', fontWeight: '800', color: '#000', marginBottom: '20px' }}>
-                      {plan.price}
+                      {t(`pricing.plans.${plan.key}.price`)}
                       <span style={{ fontSize: '18px', fontWeight: '500', color: '#444' }}>
-                        {' '}{plan.priceSubtext}
+                        {' '}{t(`pricing.plans.${plan.key}.price_subtext`)}
                       </span>
                     </h2>
                   </div>
                   <div className="tf__pricing_body">
                     <ul style={{ listStyle: 'none', padding: 0 }}>
-                      {plan.features.map((feature, featureIndex) => (
+                      {/* Map through translated features for each plan */}
+                      {t(`pricing.plans.${plan.key}.features`).split('|').map((feature, featureIndex) => (
                         <li 
                           key={featureIndex}
                           style={{ 
@@ -134,7 +128,7 @@ const Experiance = () => {
                       ))}
                     </ul>
                     <a href="#" className="tf__common_btn" style={{ marginTop: '20px', display: 'inline-block' }}>
-                      Choose Plan
+                      {t('pricing.choose_plan')}
                       <i className="fa-solid fa-arrow-right-long" style={{ marginLeft: '10px' }} />
                     </a>
                   </div>
@@ -150,7 +144,16 @@ const Experiance = () => {
 
 export default Experiance;
 
+/**
+ * Secondary Experience component for additional brand display
+ * Uses translations for multi-language support
+ *
+ * Translation structure:
+ * - brand_alt: Alt text for brand logos
+ */
 export const Experiance2 = () => {
+  // Initialize translations for the Experience namespace
+  const t = useTranslations('Experience');
   const brands = [
     { id: 1, img: "images/brand_6.png" },
     { id: 2, img: "images/brand_7.png" },
@@ -186,7 +189,7 @@ export const Experiance2 = () => {
                   <div className="tf__single_brand">
                     <img
                       src={item.img}
-                      alt="brand"
+                      alt={t('brand_alt')}
                       className="img-fluid w-100"
                     />
                   </div>

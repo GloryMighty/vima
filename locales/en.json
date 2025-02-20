@@ -1,0 +1,216 @@
+{
+  "Header": {
+    "HOME": "Home",
+    "ABOUT": "About Us",
+    "PRICING": "Pricing",
+    "BLOG": "Blog",
+    "CONTACT": "Contact",
+    "TERMS_AND_CONDITIONS": "Terms and Conditions",
+    "PRIVACY_POLICY": "Privacy Policy",
+    "TERMS_AND_CONDITIONS_LINK": "https://example.com/terms-and-conditions",
+    "PRIVACY_POLICY_LINK": "https://example.com/privacy-policy"
+  },
+  "Banner": {
+    "we_are_vima": "WE ARE VIMA",
+    "passionate_website_developers": "PASSIONATE WEBSITE DEVELOPERS",
+    "banner_paragraph": "As driven Website Developers, We thrive on creating beautiful and intuitive digital experiences that delight users.",
+    "watch_video": "Watch The Video"
+  },
+  "About": {
+    "immerse_in": "immerse in",
+    "title": "Visual Journey through our Portfolio",
+    "bio": "Information about us and our work.",
+    "page_title": "ABOUT US",
+    "main_title": "Driving Business Growth Through Intelligent Technology",
+    "main_paragraph_1": "In today's competitive landscape, businesses need more than just software – they need intelligent solutions that drive tangible results. Our cutting-edge AI and UI technologies are meticulously designed to transform your operational efficiency, boost productivity, and unlock unprecedented business growth.",
+    "main_paragraph_2": "We don't just create technology; we craft strategic advantages that give businesses a critical edge in their markets. By seamlessly integrating advanced AI capabilities with intuitive user interfaces, we turn complex challenges into streamlined opportunities.",
+    "commitment_title": "OUR COMMITMENT TO YOUR SUCCESS",
+    "ai_insights": {
+      "title": "AI-Driven Insights",
+      "description": "Leverage predictive analytics to make data-driven decisions that directly impact your bottom line.",
+      "impact": "Up to 40% improved decision-making accuracy"
+    },
+    "ui_ux": {
+      "title": "Intuitive UI/UX",
+      "description": "Reduce learning curves and increase user adoption with seamlessly designed interfaces.",
+      "impact": "25% faster user onboarding and engagement"
+    },
+    "scalable": {
+      "title": "Scalable Solutions",
+      "description": "Custom technologies that grow with your business, ensuring long-term technological relevance.",
+      "impact": "Adaptable to businesses of all sizes and industries"
+    },
+    "chart": {
+      "quarter": "Quarter",
+      "growth": "Growth"
+    },
+    "cta_button": "Schedule a Consultation"
+  },
+  "Blog": {
+    "section_title": "Our Projects",
+    "by_author": "By {author}",
+    "heading": "Deliver excellence in every detail",
+    "page_title": "BLOG",
+    "search": "Search",
+    "search_placeholder": "Search blog posts...",
+    "category": {
+      "title": "Categories"
+    },
+    "tags": {
+      "title": "Tags",
+      "showcase": "Showcase"
+    },
+    "categories": {
+      "web_designer": "Web Designer",
+      "graphics_designer": "Graphics Designer", 
+      "web_developer": "Web Developer",
+      "ui_ux_designer": "UI/UX Designer"
+    },
+    "recent_posts": {
+      "title": "Recent Posts",
+      "basic": "Basic Web Development",
+      "advanced": "Advanced Web Development",
+      "future": "Future of Web Development"
+    },
+    "contact": {
+      "message": "Need help with your project?",
+      "button": "Contact Us"
+    },
+    "by": "By",
+    "comment": "Comment",
+    "comments": "Comments ({count})",
+    "comments_count": "{count, plural, =0 {No comments} =1 {# Comment} other {# Comments}}",
+    "read_more": "Read More",
+    "image_alt": "Blog Post Image",
+    "posts": {
+      "travel": {
+        "title": "Turkish Travel as an Advanced example",
+        "content": "Experience the magic of modern design implemented with seamless simplicity for amazing customers navigation. The advanced and responsive UI design showcases the contemporary approach to Website Development, with SEO optimization and translation support for Arabic, English, and Turkish languages.",
+        "author": "VIMA Team"
+      },
+      "beauty": {
+        "title": "Basic Plan for a Beauty Salon",
+        "content": "Elegantly designed landing page showcasing the main advantages of your business including services, pricing and google maps widget. A graceful demonstration of one-page Website development, showcasing responsive design principles. Clean and well-structured design ensures optimization for client conversion.",
+        "author": "VIMA Team"
+      },
+      "premium": {
+        "title": "Premium Website Solution",
+        "content": "Premium implementation of a comprehensive Web Application with multiple pages handling SEO with metadata and hrefs translation, showcasing Web Development excellence. Featuring modern and responsive design, seamless user experience across all devices, and integrated AI Chatbot capabilities for enhanced navigation and engaging user experience. The chatbot is equipped with personalized data, wrapped in a user-friendly interface and is ready to provide instant answers to user inquiries. Ultimate choise for businesses seeking cutting-edge technology and exceptional user experience.",
+        "author": "VIMA Team"
+      }
+    }
+  },
+
+  "Experience": {
+    "pricing": {
+      "sub_heading": "PRICING PLANS",
+      "heading": "Choose Your Plan",
+      "plans": {
+        "basic": {
+          "title": "Basic Plan",
+          "price": "$299",
+          "price_subtext": "starting from",
+          "features": "Initial Consultation|Design and production|Hosting on your own server|Simple website design|2 Languages"
+        },
+        "advanced": {
+          "title": "Advanced Plan",
+          "price": "$599",
+          "price_subtext": "starting from",
+          "features": "Ready to go solution|3 FREE updates per year|1 year FREE server included|SEO with 3 FREE blog posts per year|Better digital presence|Advanced website design|3 Languages"
+        },
+        "vip": {
+          "title": "Premium Plan",
+          "price": "$999",
+          "price_subtext": "starting from",
+          "features": "Everything in Advanced PLUS|Premium domain included|Unlimited update requests|AI Chatbot Integration|Superior website design|User authentication|2 years hosting|Up to 5 Languages"
+        }
+      },
+      "choose_plan": "CHOOSE PLAN"
+    }
+  },
+  "Portfolio": {
+    "title": "Latest Portfolio",
+    "sub_title": "Gallery",
+    "description": "Explore our latest works in our portfolio",
+    "image_alt": "Portfolio project image",
+    "items": {
+      
+      }   
+  },
+  "Testimonial": {
+    "section_title": "Testimonials",
+    "heading": "What our clients say?",
+    "image_alt": "Client testimonial image",
+    "testimonials": {
+      "batuhan": {
+        "name": "Batuhan Sezar",
+        "role": "Application user",
+        "content": "Interesting idea flawlessly implemented into reality with great attention to detail and creativity. I like the application because of efficiency and powerful AI solutions!"
+      },
+      "sarah": {
+        "name": "Sarah Kim",
+        "role": "Startup Founder",
+        "content": "This AI-powered solution has been a game-changer for our team. It streamlines complex workflows and provides insights that would have taken weeks to uncover manually."
+      },
+      "michael": {
+        "name": "Michael Rodriguez",
+        "role": "Product Manager",
+        "content": "Incredibly intuitive and powerful. The AI capabilities have helped our team make data-driven decisions faster and more accurately than ever before."
+      }
+    }
+  },
+  "Layout": {
+    "Copyright": {
+      "text": " 2025 VIMA. All rights reserved.",
+      "all_rights_reserved": "All rights reserved"
+    }
+  },
+  "Contact": {
+    "page_title": "Contact Us",
+    "image_alt": "contact image",
+    "offices": {
+      "dev": {
+        "title": "Istanbul Office",
+        "type": "Web Development Address",
+        "location": "Levent"
+      },
+      "sales": {
+        "title": "Istanbul Office",
+        "type": "Sales Office",
+        "location": "Nisantasi"
+      }
+    },
+    "form": {
+      "title": "Contact us",
+      "question": "Do you have any question?",
+      "description": "We will provide top-level services and elevate your brand with our expertise. Join our group of successful entrepreneurs and experience the difference with our advanced Web Development!",
+      "name_placeholder": "Your Name",
+      "email_placeholder": "Your Email",
+      "phone_placeholder": "Phone Number",
+      "subject_placeholder": "Subject",
+      "message_placeholder": "Your Message",
+      "sending": "Sending...",
+      "submit": "Submit Now",
+      "success_message": "Message sent successfully! We'll get back to you soon."
+    },
+    "validation": {
+      "name_required": "Name is required",
+      "email_required": "Email is required",
+      "invalid_email": "Invalid email format",
+      "message_required": "Message is required"
+    },
+    "errors": {
+      "network": "Network error. Please try again."
+    }
+  },
+  "Language": {
+    "select_language": "Select Language",
+    "current_language": "English",
+    "language_changed": "Language changed successfully",
+    "available_languages": {
+      "en": "English",
+      "es": "Spanish",
+      "fr": "French"
+    }
+  }
+}

@@ -101,7 +101,7 @@ const Pricing = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href="#" className="tf__common_btn" style={{ marginTop: '20px', display: 'inline-block' }}>
+                  <a href="/contact" className="tf__common_btn" style={{ marginTop: '20px', display: 'inline-block' }}>
                     Choose Plan
                     <i className="fa-solid fa-arrow-right-long" style={{ marginLeft: '10px' }} />
                   </a>

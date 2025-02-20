@@ -1,10 +1,25 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // Enable strict mode for better performance
-  reactStrictMode: true,
+import createNextIntlPlugin from 'next-intl/plugin';
 
-  // Configure page extensions
-  pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
+const withNextIntl = createNextIntlPlugin();
+
+/** @type {import('next').NextConfig} */
+const config = {
+  reactStrictMode: true,
+  
+  /**
+   * Configure image handling and optimization
+   * - Ensures images are served from correct paths
+   * - Handles locale-prefixed image requests
+   */
+  async rewrites() {
+    return [
+      // Handle locale-prefixed image paths
+      {
+        source: '/:locale/images/:path*',
+        destination: '/images/:path*',
+      },
+    ];
+  },
 };
 
-export default nextConfig;
+export default withNextIntl(config);

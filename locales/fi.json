@@ -1,0 +1,200 @@
+{
+  "Header": {
+    "HOME": "Koti",
+    "ABOUT": "Tietoa",
+    "PRICING": "Hinnoittelu",
+    "BLOG": "Blogi",
+    "CONTACT": "Yhteystiedot",
+    "TERMS_AND_CONDITIONS": "Käyttöehdot",
+    "PRIVACY_POLICY": "Tietosuojakäytäntö",
+    "TERMS_AND_CONDITIONS_LINK": "https://example.com/terms-and-conditions",
+    "PRIVACY_POLICY_LINK": "https://example.com/privacy-policy"
+  },
+  "Experience": {
+    "pricing": {
+      "sub_heading": "Hinnoittelusuunnitelmat",
+      "heading": "Valitse Suunnitelmasi",
+      "plans": {
+        "basic": {
+          "title": "Perussuunnitelma",
+          "price": "$299",
+          "price_subtext": "alkaen",
+          "features": "Alkukonsultaatio|Suunnittelu ja tuotanto|Isännöinti omalla palvelimella|Yksinkertainen verkkosivusto|2 kieltä"
+        },
+        "advanced": {
+          "title": "Edistynyt Suunnitelma",
+          "price": "$599",
+          "price_subtext": "alkaen",
+          "features": "Käyttövalmis ratkaisu|3 ILMAISTA päivitystä vuodessa|1 vuosi ILMAISTA palvelintilaa|SEO ja 3 ILMAISTA blogikirjoitusta kuukaudessa|Parempi digitaalinen läsnäolo|Edistynyt verkkosivuston suunnittelu|3 kieltä"
+        },
+        "vip": {
+          "title": "Premium-Suunnitelma",
+          "price": "$999",
+          "price_subtext": "alkaen",
+          "features": "Kaikki Edistyneestä suunnitelmasta, PLUS|Premium verkkotunnus sisältyy|Rajattomat päivitykset pyyntöstä|AI Chatbot-integraatio|Ensiluokkainen verkkosivuston suunnittelu|Käyttäjätunnistus|2 vuotta isännöintiä|Jopa 5 kieltä"
+        }
+      },
+      "choose_plan": "Valitse Suunnitelma"
+    }
+  },
+  "Portfolio": {
+    "sub_title": "Galleria",
+    "title": "Viimeisin Portfolio",
+    "description": "Tutustu viimeisimpiin töihimme portfoliossamme",
+    "image_alt": "Portfolioprojektin kuva",
+    "items": {
+      "beauty": {
+        "title": "Kauneushoitolan Verkkosivusto",
+        "description": "Moderni ja tyylikäs verkkosivuston suunnittelu kauneushoitolalle"
+      },
+      "land": {
+        "title": "Kiinteistöalusta",
+        "description": "Kiinteistöjen listaus- ja hallinta-alusta"
+      },
+      "land1": {
+        "title": "Kiinteistönäyttö",
+        "description": "Interaktiivinen kiinteistöjen katselukokemus"
+      },
+      "pars": {
+        "title": "Ravintolan Verkkosivusto",
+        "description": "Digitaalinen läsnäolo fine dining -ravintolalle"
+      }
+    }
+  },
+  "Banner": {
+    "we_are_vima": "ME OLEMME VIMA",
+    "passionate_website_developers": "INTOHIMOISET KOODARIT",
+    "banner_paragraph": "Intohimoisina verkkosivukehittäjinä luomme kauniita ja intuitiivisia digitaalisia sivustoja, jotka vangitsevat vierailijoiden huomion.",
+    "watch_video": "Katso video"
+  },
+  "About": {
+    "immerse_in": "tutustu",
+    "title": "Visuaalinen matka sivuillemme",
+    "bio": "Tietoa meistä ja työstämme",
+    "page_title": "TIETOA MEISTÄ",
+    "main_title": "Liiketoiminnan kasvun edistäminen älykkään teknologian avulla",
+    "main_paragraph_1": "Nykyisessä kilpailukykyisessä ympäristössä yritykset tarvitsevat muutakin kuin pelkkää ohjelmistoa - ne tarvitsevat älykkäitä ratkaisuja, jotka tuottavat konkreettisia tuloksia. Huippuluokan tekoäly- ja käyttöliittymäteknologiamme on suunniteltu huolellisesti muuttamaan toimintasi tehokkuutta, lisäämään tuottavuutta ja avaamaan ennennäkemätöntä liiketoiminnan kasvua.",
+    "main_paragraph_2": "Emme vain luo teknologiaa; muokkaamme strategisia etuja, jotka antavat yrityksille ratkaisevan edun markkinoillaan. Yhdistämällä saumattomasti edistyneet tekoälyominaisuudet intuitiivisiin käyttöliittymiin, muutamme monimutkaiset haasteet sujuviksi mahdollisuuksiksi.",
+    "commitment_title": "SITOUTUMISEMME MENESTYKSEESI",
+    "ai_insights": {
+      "title": "Tekoälypohjaiset näkemykset",
+      "description": "Hyödynnä ennustavaa analytiikkaa dataohjattuihin päätöksiin, jotka vaikuttavat suoraan tulokseesi.",
+      "impact": "Jopa 40% parempi päätöksenteon tarkkuus"
+    },
+    "ui_ux": {
+      "title": "Intuitiivinen käyttöliittymä",
+      "description": "Vähennä oppimiskäyrää ja lisää käyttäjien omaksumista saumattomasti suunnitelluilla käyttöliittymillä.",
+      "impact": "25% nopeampi käyttäjien perehdytys ja sitoutuminen"
+    },
+    "scalable": {
+      "title": "Skaalautuvat ratkaisut",
+      "description": "Räätälöidyt teknologiat, jotka kasvavat yrityksesi mukana, varmistaen pitkäaikaisen teknologisen merkittävyyden.",
+      "impact": "Mukautettavissa kaiken kokoisille yrityksille ja toimialoille"
+    },
+    "chart": {
+      "quarter": "Vuosineljännes",
+      "growth": "Kasvu"
+    },
+    "cta_button": "Varaa konsultaatio"
+  },
+  "Blog": {
+    "section_title": "KAIKKI Blogit",
+    "heading": "Visiosta Valmiiksi - Pari Esimerkkiä",
+    "by_author": "Kirjoittaja {author}",
+    "page_title": "PROJEKTIMME",
+    "read_more": "LUE LISÄÄ",
+    "by": "Kirjoittaja",
+    "comments_count": "Kommenttia ({count})",
+    "comments": "Kommenttia ({count})",
+    "search": "Haku",
+    "search_placeholder": "Syötä hakusana...",
+    "category": {
+      "title": "Kategoria",
+      "showcase": "Näyteikkuna"
+    },
+    "categories": {
+      "web_designer": "Verkkosuunnittelija",
+      "graphics_designer": "Graafinen suunnittelija",
+      "web_developer": "Verkkokehittäjä",
+      "ui_ux_designer": "Käyttöliittymäsuunnittelija"
+    },
+    "posts": {
+      "travel": {
+        "author": "VIMA Web",
+        "title": "Edistynyt projekti turkkilaiselle matkailuyritykselle",
+        "content": "Edistynyt ja responsiivinen käyttöliittymäsuunnittelu Turkish Travelille, esitellen modernin lähestymistavan verkkokehitykseen. Hakukoneoptimoinnin ja verkkosivuston suorituskyvyn optimoinnin hallinta optimaalisen käyttäjäkokemuksen saavuttamiseksi, verkkosivusto sisältää käännöksen 3 kielelle (arabia, englanti ja turkki), varmistaen sujuvan navigoinnin jokaiselle käyttäjälle."
+      },
+      "beauty": {
+        "author": "VIMA Web",
+        "title": "Perussuunnitelman toteutus kauneushoitolalle",
+        "content": "Tyylikäs esimerkki yhden sivun verkkosivuston kehityksestä, esitellen responsiivisen suunnittelun voiman. Puhdas ja hyvin jäsennelty laskeutumissivu, keskittyen asiakkaiden konversioon ominaisuuksien ja hinnoittelun yksinkertaisuuden ansiosta."
+      },
+      "premium": {
+        "author": "VIMA Web",
+        "title": "Kattava ratkaisuesimerkki Premium-verkkosivustosta",
+        "content": "Kattava ratkaisuesimerkki Premium-verkkosivustosta, esitellen verkkokehityksen voiman ja sen vaikutuksen käyttäjien sitoutumiseen ja tyytyväisyyteen. Verkkosivusto sisältää modernin ja responsiivisen suunnittelun, varmistaen saumattoman käyttäjäkokemuksen kaikilla laitteilla. Toteutetut tekoälypohjaisen chatbotin ominaisuudet tarjoavat navigointitukea sekä parantavat konversiota."
+      }
+    },
+    "recent_posts": {
+      "title": "Viimeisimmät julkaisut",
+      "basic": "Tutustu yrityksesi perusvaihtoehtoihin",
+      "advanced": "Edistynyt ratkaisu älykkäille yrittäjille",
+      "future": "Sijoita tulevaisuuteesi, hanki verkkosovellus!"
+    },
+    "contact": {
+      "message": "Toteuta unelmasi!",
+      "button": "Ota yhteyttä"
+    },
+    "tags": {
+      "title": "Tunnisteet"
+    }
+  },
+  
+  "Layout": {
+    "Copyright": {
+      "text": " 2025 VIMA. Kaikki oikeudet pidätetään."
+    }
+  },
+  "Testimonial": {
+    "section_title": "Suositukset",
+    "heading": "Mitä Asiakkaat Sanovat"
+  },
+  "Contact": {
+    "page_title": "Ota yhteyttä",
+    "image_alt": "yhteydenotto kuva",
+    "offices": {
+      "dev": {
+        "title": "Istanbulin toimisto",
+        "type": "Verkkokehityksen osoite",
+        "location": "Levent"
+      },
+      "sales": {
+        "title": "Istanbulin toimisto",
+        "type": "Myyntitoimisto",
+        "location": "Nisantasi"
+      }
+    },
+    "form": {
+      "title": "Ota yhteyttä",
+      "question": "Onko sinulla kysyttävää?",
+      "description": "Tarjoamme huipputason palveluita ja nostamme brändisi asiantuntemuksellamme. Liity menestyvien yrittäjien joukkoomme ja koe ero edistyneellä verkkokehityksellämme!",
+      "name_placeholder": "Nimesi",
+      "email_placeholder": "Sähköpostiosoitteesi",
+      "phone_placeholder": "Puhelinnumero",
+      "subject_placeholder": "Aihe",
+      "message_placeholder": "Viestisi",
+      "sending": "Lähetetään...",
+      "submit": "Lähetä nyt",
+      "success_message": "Viesti lähetetty onnistuneesti! Palaamme asiaan pian."
+    },
+    "validation": {
+      "name_required": "Nimi vaaditaan",
+      "email_required": "Sähköpostiosoite vaaditaan",
+      "invalid_email": "Virheellinen sähköpostiosoite",
+      "message_required": "Viesti vaaditaan"
+    },
+    "errors": {
+      "network": "Verkkovirhe. Yritä uudelleen."
+    }
+  }
+}
