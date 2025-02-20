@@ -127,9 +127,9 @@ const Experiance = () => {
                         </li>
                       ))}
                     </ul>
-                    <a href="#" className="tf__common_btn" style={{ marginTop: '20px', display: 'inline-block' }}>
+                    <a href="https://wa.me/+905070711259" className="tf__common_btn" style={{ marginTop: '20px', display: 'inline-block' }}>
                       {t('pricing.choose_plan')}
-                      <i className="fa-solid fa-arrow-right-long" style={{ marginLeft: '10px' }} />
+                      <i className="fa-solid" style={{ marginLeft: '10px' }} />
                     </a>
                   </div>
                 </div>
