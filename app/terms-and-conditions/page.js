@@ -16,7 +16,7 @@ export default function TermsAndConditions() {
         <section className="mb-5">
           <h2 className="mt-4">1. Acceptance of Terms</h2>
           <p>
-            By accessing and using the VIMA Web Solutions platform (the "Service"), 
+            By accessing and using the VIMA Web Solutions platform (the &quot;Service&quot;), 
             you agree to be bound by these Terms and Conditions. If you do not agree 
             with these terms, you should not use our Service.
           </p>

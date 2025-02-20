@@ -97,9 +97,7 @@ const Header1 = ({ homepage }) => {
                 {t('CONTACT')}
               </Link>
             </li>
-            <li className="nav-item ms-3">
-              <LanguageSelector />
-            </li>
+            <LanguageSelector />
           </ul>
         </div>
       </div>

@@ -1,5 +1,6 @@
 "use client";
 import { useTranslations } from 'next-intl';
+import { Link } from '@/config/navigation';
 import Breadcrumbs from "@/components/Breadcrumbs";
 import IstiLayout from "@/layout/IstiLayout";
 import TravelCarousel from '@/components/TravelCarousel';
@@ -160,9 +161,9 @@ const Page = () => {
                 </div>
                 <div className="tf_blog_contact">
                   <p>{t('contact.message')}</p>
-                  <a href="/contact" className="tf__common_btn tf_blog_contact_btn">
+                  <Link href="/contact" className="tf__common_btn tf_blog_contact_btn">
                     {t('contact.button')}
-                  </a>
+                  </Link>
                 </div>
                 <div className="tf__blog_common_header">
                   <h5>{t('tags.title')}</h5>

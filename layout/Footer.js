@@ -178,6 +178,16 @@ const Footer2 = () => {
                 <div className="col-6">
                   <ul>
                     <li>
+                      <Link href="/pricing?service=domain-hosting" className="text_hover_animaiton">
+                        Domain Hosting
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/pricing?service=ai-integrations" className="text_hover_animaiton">
+                        AI Integrations
+                      </Link>
+                    </li>
+                    <li>
                       <Link href="/pricing?service=next-js" className="text_hover_animaiton">
                         Next.js Development
                       </Link>
@@ -191,12 +201,7 @@ const Footer2 = () => {
                       <Link href="/pricing?service=web-animation" className="text_hover_animaiton">
                         Web Animation
                       </Link>
-                    </li>
-                    <li>
-                      <Link href="/pricing?service=interactive-design" className="text_hover_animaiton">
-                        Interactive Design
-                      </Link>
-                    </li>
+                    </li>              
                   </ul>
                 </div>
                 <div className="col-6">
@@ -214,6 +219,11 @@ const Footer2 = () => {
                     <li>
                       <Link href="/pricing?service=ai-solutions" className="text_hover_animaiton">
                         AI Solutions
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/pricing?service=interactive-design" className="text_hover_animaiton">
+                        Interactive Design
                       </Link>
                     </li>
                     <li>

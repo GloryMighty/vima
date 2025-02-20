@@ -3,6 +3,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import IstiLayout from "@/layout/IstiLayout";
 import Image from "next/image";
 import dynamic from 'next/dynamic';
+import { Link } from '@/config/navigation'; // Import Link from next-intl for localized routing
 
 // Dynamically import Nivo to ensure client-side rendering
 const NivoLine = dynamic(() => import('@nivo/line').then((mod) => mod.ResponsiveLine), {
@@ -183,9 +184,10 @@ export default function About() {
           <div className="row mt-5">
             <div className="col-12 text-center">
               <div className="tf__blog_link">
-                <a href="/contact" className="common_btn">
+                { /* Use next-intl Link for localized routing */ }
+                <Link href="/contact" className="common_btn">
                   Schedule a Consultation
-                </a>
+                </Link>
               </div>
             </div>
           </div>

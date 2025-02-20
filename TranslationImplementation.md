@@ -23,6 +23,16 @@ The typical file structure for a Next.js project using next-intl10:
         └── [locale]
             ├── layout.tsx
             └── page.tsx
+
+## Current Language Support
+- **Completed**: EN, RU, FI
+- **In Progress**: AR, TR
+- **Validation**: All completed translations have passed QA checks
+- **Reference Files**:
+  - EN: `/locale/en.json`
+  - RU: `/locale/ru.json`
+  - FI: `/locale/fi.json`
+
 3. Configuration
 
 next.config.js: Configure Next.js to use the next-intl plugin3.
@@ -89,6 +99,16 @@ function Greeting() {
 
 next-intl provides internationalized routing for Next.js1. The layout and page modules are moved within the [locale] folder to make all pages locale-aware6.
 
+## Navigation Integration
+```typescript
+// config/navigation.ts
+export const NAV_LINKS = [
+  { path: '/', label: 'home' },
+  { path: '/about', label: 'about' },
+  { path: '/blog', label: 'blog' },
+  { path: '/contact', label: 'contact' }
+];
+```
 7. ICU Message Syntax
 
 next-intl uses ICU message syntax for localized messages with interpolation, plurals, and rich text2.
@@ -106,4 +126,3 @@ To switch between languages, explicitly instruct the application to switch the l
 Type Safety: next-intl offers type safety with autocompletion for message keys1.
 
 Performance: next-intl is performance-focused, using the App Router and Server Components1.
-

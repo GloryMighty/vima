@@ -1,6 +1,7 @@
 import Particles from '/public/effects/particles';
 import { useTranslations } from 'next-intl';
 import { getImagePath } from '@/utility/imageUtils';
+import Image from 'next/image';
 
 const aboutData = {
   title: "Visual Journey through our Portfolio",
@@ -27,11 +28,13 @@ const About = () => {
           </div>
           <div className="col-xl-8 col-lg-8 mb-4">
             <div className="tf__about_img">
-              <img
+              <Image
                 src={getImagePath(aboutData.image)}
                 alt={t('image_alt')}
                 className="img-fluid w-100 parallax-image"
-                loading="lazy"
+                width={800}
+                height={600}
+                priority={false}
               />
             </div>
           </div>

@@ -1,5 +1,7 @@
 "use client";
 
+import { Link } from '@/config/navigation'; // Import Link for localized routing
+
 const pricingPlans = [
   {
     title: "Basic Plan",
@@ -101,10 +103,11 @@ const Pricing = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href="/contact" className="tf__common_btn" style={{ marginTop: '20px', display: 'inline-block' }}>
+                  { /* Use next-intl Link for localized navigation */ }
+                  <Link href="/contact" className="tf__common_btn" style={{ marginTop: '20px', display: 'inline-block' }}>
                     Choose Plan
                     <i className="fa-solid fa-arrow-right-long" style={{ marginLeft: '10px' }} />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

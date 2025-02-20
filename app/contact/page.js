@@ -3,6 +3,7 @@
 import Breadcrumbs from "@/components/Breadcrumbs";
 import IstiLayout from "@/layout/IstiLayout";
 import { useState } from "react";
+import Image from 'next/image';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -104,10 +105,13 @@ const Contact = () => {
           <div className="row">
             <div className="col-xl-8 col-lg-7">
               <div className="tf__contact_img" data-animation="img-blur">
-                <img
+                <Image
                   src="images/istanbul.jpg"
                   alt="contact img"
                   className="img-fluid w-100"
+                  width={800}  
+                  height={600} 
+                  priority={false}
                 />
               </div>
             </div>
@@ -228,7 +232,7 @@ const Contact = () => {
                     {submitStatus.success && (
                       <div className="col-12">
                         <div className="alert alert-success">
-                          Message sent successfully! We'll get back to you soon.
+                          Message sent successfully! We&apos;ll get back to you soon.
                         </div>
                       </div>
                     )}

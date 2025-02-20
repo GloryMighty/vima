@@ -74,6 +74,25 @@ In this Next.js 13+ project, the index page (homepage) is rendered through a com
 - Uses modern React component composition
 - Supports server-side and client-side rendering
 
+## Internationalization
+- **Completed Locales**: EN, RU, FI
+- **In Progress**: AR, TR
+- **Localization Coverage**: 100% of UI elements translated
+- **Middleware**: Implemented in `middleware.ts` (TypeScript)
+- **Navigation**: Configured in `config/navigation.ts`
+- **Translation Files**: Stored in `/locale` directory
+
+## Navigation Configuration
+```typescript
+// config/navigation.ts
+export const NAV_LINKS = [
+  { path: '/', label: 'home' },
+  { path: '/about', label: 'about' },
+  { path: '/blog', label: 'blog' },
+  { path: '/contact', label: 'contact' }
+];
+```
+
 ## TypeScript Implementation
 
 ### Configuration

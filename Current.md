@@ -3,26 +3,38 @@
 ## Project Overview
 - **Name**: Vima React
 - **Version**: 0.1.0
-- **Framework**: Next.js (v14.1.0)
 - **Language**: TypeScript
 - **Package Manager**: NPM
 
+## Core Architecture
+- **Framework**: Next.js v14.1.0 (TypeScript)
+- **State Management**: Context API
+- **Internationalization**: next-intl (multi-language support)
+- **UI Library**: React Bootstrap
+
 ## Project Structure
 ### Key Directories
-- `/app`: Main application routes and pages
+- `/app/[locale]`: Main application routes and pages
 - `/components`: Reusable React components
 - `/layout`: Layout-related components
 - `/context`: Application context management
 - `/components/widgets`: Specialized widget components
 
 ### Main Pages
-1. Home Page (`/app/page.js`)
-2. About Page (`/app/about/page.js`)
-3. Blog Page (`/app/blog/page.js`)
-4. Contact Page (`/app/contact/page.js`)
-5. Pricing Page (`/app/pricing/page.js`)
-6. Privacy Policy (`/app/privacy-policy/page.js`)
-7. Terms and Conditions (`/app/terms-and-conditions/page.js`)
+1. Home Page (`/app/[locale]/page.js`)
+2. About Page (`/app/[locale]/about/page.js`)
+3. Blog Page (`/app/[locale]/blog/page.js`)
+4. Contact Page (`/app/[locale]/contact/page.js`)
+5. Pricing Page (`/app/[locale]/pricing/page.js`)
+
+## Key Features
+1. Responsive layout system
+2. Smooth animations (GSAP/Framer Motion)
+3. Content sliders (Swiper/Slick)
+4. AI integration (Google Generative AI)
+5. Performance optimizations:
+   - Lenis smooth scrolling
+   - Studio Freight libraries
 
 ## Key Dependencies
 ### UI & Design
@@ -58,23 +70,33 @@
 - Lenis (smooth scrolling)
 - Studio Freight libraries
 
+## Development Setup
+```bash
+npm run dev  # Start development server
+npm run build  # Create production build
+npm run lint  # Run ESLint
+```
+
+## Localization Status
+- ✅ Completed: EN, RU, FI
+- 🚧 In Progress: AR, TR
+- Translation files: `/locales/[lang].json`
+- Navigation: `config/navigation.ts`
+- Hook: `hooks/useLocalizedContent.js`
+
 ## Development Scripts
-- `dev`: Start development server
-- `build`: Create production build
-- `start`: Start production server
-- `lint`: Run ESLint
 - `clean`: Remove `.next` directory
 
 ## Browser Compatibility
 - Configured to disable Node.js specific modules in browser environment
 - Uses modern React (v18) ecosystem
 
-## Recommended Next Steps
-1. Complete feature implementations
-2. Add comprehensive testing
-3. Optimize performance
-4. Enhance internationalization support
-5. Implement robust error handling
+## Next Steps
+1. Complete EN locale finalization
+2. Add Jest testing framework
+3. Implement error boundary components
+4. Optimize asset loading
+5. Enhance documentation
 
 ## Notes
 - Project is in early development stage (v0.1.0)

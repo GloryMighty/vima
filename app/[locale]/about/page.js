@@ -1,5 +1,6 @@
 "use client";
 import { useTranslations } from 'next-intl';
+import { Link } from '@/config/navigation';
 import Breadcrumbs from "@/components/Breadcrumbs";
 import IstiLayout from "@/layout/IstiLayout";
 import Image from "next/image";
@@ -180,9 +181,9 @@ export default function About() {
           <div className="row mt-5">
             <div className="col-12 text-center">
               <div className="tf__blog_link">
-                <a href="/contact" className="common_btn">
+                <Link href="/contact" className="common_btn">
                   {t('cta_button')}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -564,8 +564,6 @@ button:focus {
   color: var(--colorBlack);
 }
 
-/* manu end */
-
 /* banner start */
 .tf__banner {
   background-position: center !important;
@@ -575,9 +573,6 @@ button:focus {
   position: relative;
 }
 
-.tf__banner div {
-  /* height: 100%; */
-}
 
 .tf__banner_img {
   width: 750px;
