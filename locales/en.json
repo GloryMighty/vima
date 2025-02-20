@@ -205,14 +205,20 @@
     }
   },
   "Language": {
-    "select_language": "Select Language",
-    "current_language": "English",
-    "language_changed": "Language changed successfully",
-    "available_languages": {
-      "en": "English",
-      "es": "Spanish",
-      "fr": "French"
-    }
+    "select": "Select Language",
+    "current": "Current Language",
+    "available": "Available Languages",
+    "en": "English",
+    "ru": "Russian",
+    "tr": "Turkish", 
+    "ar": "Arabic",
+    "fi": "Finnish"
+  },
+  "Errors": {
+    "MISSING_MESSAGE": "Translation not found",
+    "GENERIC_ERROR": "An unexpected error occurred",
+    "NETWORK_ERROR": "Network connection error",
+    "UNAUTHORIZED": "You do not have access to this resource"
   },
   "TermsAndConditions": {
     "title": "Terms and Conditions of Use",
@@ -283,11 +289,5 @@
       "heading": "3. Data Protection",
       "description": "We implement appropriate technical and organizational measures to protect your personal information against unauthorized or unlawful processing."
     }
-  },
-  "Errors": {
-    "MISSING_MESSAGE": "Translation not found",
-    "GENERIC_ERROR": "An unexpected error occurred",
-    "NETWORK_ERROR": "Network connection error",
-    "UNAUTHORIZED": "You are not authorized to access this resource"
   }
 }

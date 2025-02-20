@@ -18,10 +18,60 @@ const ChatWidget = dynamic(() => import('../components/widgets/ChatWidget'), { s
 export const metadata = {
   title: "VIMA Web Development",
   description: "Professional developers with unique approach and exceptional sense of style",
+  keywords: [
+    "web development", 
+    "AI-powered websites", 
+    "custom web solutions", 
+    "full-stack development", 
+    "responsive design", 
+    "Next.js", 
+    "React", 
+    "multilingual websites"
+  ],
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en': '/en',
+      'tr': '/tr',
+      'fi': '/fi',
+      'ar': '/ar',
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
+    }
+  },
   openGraph: {
     title: "VIMA Web Development",
     description: "Professional developers with unique approach and exceptional sense of style",
+    url: "https://vima.dev",
+    siteName: "VIMA Web Solutions",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630
+      }
+    ],
+    locale: "en_US",
+    type: "website"
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "VIMA Web Development",
+    description: "Professional developers with unique approach and exceptional sense of style",
+    images: ["/images/twitter-image.jpg"]
+  },
+  alternates: {
+    canonical: "https://vima.dev"
+  }
 };
 
 const poppins = Poppins({

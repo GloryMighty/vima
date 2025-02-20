@@ -66,28 +66,29 @@
     "watch_video": "Katso video"
   },
   "About": {
-    "immerse_in": "tutustu",
-    "title": "Visuaalinen matka sivuillemme",
-    "bio": "Tietoa meistä ja työstämme",
-    "page_title": "TIETOA MEISTÄ",
-    "main_title": "Liiketoiminnan kasvun edistäminen älykkään teknologian avulla",
-    "main_paragraph_1": "Nykyisessä kilpailukykyisessä ympäristössä yritykset tarvitsevat muutakin kuin pelkkää ohjelmistoa - ne tarvitsevat älykkäitä ratkaisuja, jotka tuottavat konkreettisia tuloksia. Huippuluokan tekoäly- ja käyttöliittymäteknologiamme on suunniteltu huolellisesti muuttamaan toimintasi tehokkuutta, lisäämään tuottavuutta ja avaamaan ennennäkemätöntä liiketoiminnan kasvua.",
-    "main_paragraph_2": "Emme vain luo teknologiaa; muokkaamme strategisia etuja, jotka antavat yrityksille ratkaisevan edun markkinoillaan. Yhdistämällä saumattomasti edistyneet tekoälyominaisuudet intuitiivisiin käyttöliittymiin, muutamme monimutkaiset haasteet sujuviksi mahdollisuuksiksi.",
-    "commitment_title": "SITOUTUMISEMME MENESTYKSEESI",
+    "immerse_in": "sukella",
+    "title": "Visuaalinen matka portfolioomme",
+    "bio": "Tietoa meistä ja töistämme.",
+    "page_title": "MEISTÄ",
+    "image_alt": "VIMA-tiimin Portfolio",
+    "main_title": "Liiketoiminnan kasvattaminen älykkäillä teknologioilla",
+    "main_paragraph_1": "Nykyisessä kilpailuympäristössä yrityksille tarvitaan enemmän kuin pelkkää ohjelmistoa – tarvitaan älykkäitä ratkaisuja, jotka tuottavat konkreettisia tuloksia. Kehittyneet tekoäly- ja käyttöliittymäteknologiamme on huolellisesti suunniteltu muuntamaan operatiivista tehokkuutta, lisäämään tuottavuutta ja vapauttamaan ennennäkemätöntä liiketoiminnan kasvua.",
+    "main_paragraph_2": "Me emme vain luo teknologiaa, vaan luomme strategisia etuja, jotka antavat yrityksille kriittisen edun markkinoilla. Integroimalla saumattomasti kehittyneet tekoälyn ominaisuudet intuitiivisiin käyttöliittymiin, muutamme monimutkaiset haasteet optimoiduiksi mahdollisuuksiksi.",
+    "commitment_title": "SITOUTUMISEMME MENESTYKSEENNE",
     "ai_insights": {
-      "title": "Tekoälypohjaiset näkemykset",
-      "description": "Hyödynnä ennustavaa analytiikkaa dataohjattuihin päätöksiin, jotka vaikuttavat suoraan tulokseesi.",
-      "impact": "Jopa 40% parempi päätöksenteon tarkkuus"
+      "title": "Tekoälyn tuottamat oivallukset",
+      "description": "Hyödynnä ennustavaa analytiikkaa tehdäksesi dataohjautuvia päätöksiä, jotka suoraan vaikuttavat tulokseesi.",
+      "impact": "Jopa 40% parannus päätöksenteon tarkkuudessa"
     },
     "ui_ux": {
-      "title": "Intuitiivinen käyttöliittymä",
-      "description": "Vähennä oppimiskäyrää ja lisää käyttäjien omaksumista saumattomasti suunnitelluilla käyttöliittymillä.",
-      "impact": "25% nopeampi käyttäjien perehdytys ja sitoutuminen"
+      "title": "Intuitiivinen UI/UX",
+      "description": "Vähennä oppimiskäyrää ja lisää käyttäjien omaksumista huolellisesti suunnitelluilla käyttöliittymillä.",
+      "impact": "25% nopeampi käyttäjien omaksuminen ja sitoutuminen"
     },
     "scalable": {
       "title": "Skaalautuvat ratkaisut",
-      "description": "Räätälöidyt teknologiat, jotka kasvavat yrityksesi mukana, varmistaen pitkäaikaisen teknologisen merkittävyyden.",
-      "impact": "Mukautettavissa kaiken kokoisille yrityksille ja toimialoille"
+      "description": "Räätälöidyt teknologiat, jotka kasvavat yrityksesi mukana, varmistaen pitkäaikaisen teknologisen relevanssin.",
+      "impact": "Mukautuvat eri kokoisten ja toimialojen yrityksiin"
     },
     "chart": {
       "quarter": "Vuosineljännes",
@@ -145,7 +146,8 @@
     },
     "tags": {
       "title": "Tunnisteet"
-    }
+    },
+    "image_alt": "Blogin projektikuva"
   },
   
   "Layout": {
@@ -272,6 +274,16 @@
     "MISSING_MESSAGE": "Käännöstä ei löytynyt",
     "GENERIC_ERROR": "Odottamaton virhe tapahtui",
     "NETWORK_ERROR": "Verkkoyhteysvirhe",
-    "UNAUTHORIZED": "Sinulla ei ole oikeutta käyttää tätä resurssia"
+    "UNAUTHORIZED": "Sinulla ei ole pääsyä tähän resurssiin"
+  },
+  "Language": {
+    "select": "Valitse kieli",
+    "current": "Nykyinen kieli",
+    "available": "Käytettävissä olevat kielet",
+    "en": "Englanti",
+    "ru": "Venäjä",
+    "tr": "Turkki", 
+    "ar": "Arabia",
+    "fi": "Suomi"
   }
 }

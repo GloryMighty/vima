@@ -2885,11 +2885,6 @@ html.lenis {
   height: 100%;
 }
 
-[data-text-animation] {
-  /* opacity: 0;
-  overflow: hidden; */
-}
-
 .line {
   overflow: hidden;
 }

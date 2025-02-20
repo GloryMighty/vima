@@ -42,7 +42,8 @@
       "quarter": "Çeyrek",
       "growth": "Büyüme"
     },
-    "cta_button": "Danışma Talep Et"
+    "cta_button": "Danışma Talep Et",
+    "image_alt": "VIMA Takım Portfolyosu"
   },
   "Experience": {
     "pricing": {
@@ -145,7 +146,8 @@
     },
     "tags": {
       "title": "Etiketler"
-    }
+    },
+    "image_alt": "Blog Post Image"
   },
   "Layout": {
     "Copyright": {
@@ -155,8 +157,9 @@
     }
   },
   "Testimonial": {
-    "section_title": "Referanslar",
-    "heading": "Müşterilerimiz Ne Diyor"
+    "section_title": "Müşteri Yorumları",
+    "heading": "Müşterilerimiz Ne Diyor?",
+    "image_alt": "Müşteri yorumu resmi"
   },
   "Contact": {
     "page_title": "Bize Ulaşın",
@@ -271,5 +274,15 @@
     "GENERIC_ERROR": "Beklenmedik bir hata oluştu",
     "NETWORK_ERROR": "Ağ bağlantı hatası",
     "UNAUTHORIZED": "Bu kaynağa erişim izniniz yok"
+  },
+  "Language": {
+    "select": "Dil Seç",
+    "current": "Mevcut Dil",
+    "available": "Kullanılabilir Diller",
+    "en": "İngilizce",
+    "ru": "Rusça",
+    "tr": "Türkçe", 
+    "ar": "Arapça",
+    "fi": "Fince"
   }
 }
