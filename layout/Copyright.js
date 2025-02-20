@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 const Copyright = () => {
   const t = useTranslations('Layout.Copyright');
@@ -10,14 +11,14 @@ const Copyright = () => {
             <p>{t('text')}</p>
             <ul className="d-flex flex-wrap">
               <li>
-                <a href="/terms-and-conditions" className="text_hover_animaiton">
-                  Terms &amp; Condition
-                </a>
+                <Link href="/terms-and-conditions" className="text_hover_animaiton">
+                  {t('terms_and_conditions')}
+                </Link>
               </li>
               <li>
-                <a href="/privacy-policy" className="text_hover_animaiton">
-                  Privacy Policy
-                </a>
+                <Link href="/privacy-policy" className="text_hover_animaiton">
+                  {t('privacy_policy')}
+                </Link>
               </li>
             </ul>
           </div>

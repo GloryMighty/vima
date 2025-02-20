@@ -6,9 +6,7 @@
     "BLOG": "Blogi",
     "CONTACT": "Yhteystiedot",
     "TERMS_AND_CONDITIONS": "Käyttöehdot",
-    "PRIVACY_POLICY": "Tietosuojakäytäntö",
-    "TERMS_AND_CONDITIONS_LINK": "https://example.com/terms-and-conditions",
-    "PRIVACY_POLICY_LINK": "https://example.com/privacy-policy"
+    "PRIVACY_POLICY": "Tietosuojakäytäntö"
   },
   "Experience": {
     "pricing": {
@@ -152,7 +150,9 @@
   
   "Layout": {
     "Copyright": {
-      "text": " 2025 VIMA. Kaikki oikeudet pidätetään."
+      "text": " 2025 VIMA. Kaikki oikeudet pidätetään.",
+      "terms_and_conditions": "Käyttöehdot",
+      "privacy_policy": "Tietosuojakäytäntö"
     }
   },
   "Testimonial": {
@@ -196,5 +196,81 @@
     "errors": {
       "network": "Verkkovirhe. Yritä uudelleen."
     }
+  },
+  "TermsAndConditions": {
+    "title": "Käyttöehdot",
+    "acceptance": {
+      "heading": "1. Ehtojen hyväksyminen",
+      "description": "Käyttämällä VIMA Web Solutions -alustaa (\"Palvelu\") hyväksyt nämä käyttöehdot. Jos et hyväksy näitä ehtoja, älä käytä Palvelua."
+    },
+    "changes": {
+      "heading": "2. Ehtojen muutokset",
+      "description": "VIMA Web Solutions pidättää oikeuden muuttaa näitä Ehtoja milloin tahansa. Ilmoitamme merkittävistä muutoksista julkaisemalla uudet Ehdot tällä sivulla. Palvelun jatkuva käyttö muutosten jälkeen merkitsee uusien Ehtojen hyväksymistä."
+    },
+    "userAccount": {
+      "heading": "3. Käyttäjätili ja vastuut",
+      "responsibilities": {
+        "item1": "Antaa tarkat ja täydelliset tiedot tilin luomisen yhteydessä",
+        "item2": "Säilyttää tilisi tunnistetietojen luottamuksellisuus",
+        "item3": "Vastata kaikista tilisi alla tapahtuvista toiminnoista",
+        "item4": "Olla vähintään 13 vuotta vanha käyttääksesi Palvelua"
+      }
+    },
+    "intellectualProperty": {
+      "heading": "4. Immateriaalioikeudet",
+      "description": "Kaikki sisältö, ominaisuudet ja toiminnallisuudet ovat ja pysyvät VIMA Web Solutions -yhtiön ja sen lisenssinantajien yksinomaisena omaisuutena. Tavaramerkkejämme ja toimintatyyliämme ei saa käyttää ilman etukäteen annettua kirjallista lupaa."
+    },
+    "userContent": {
+      "heading": "5. Käyttäjäsisältö ja käyttäytyminen",
+      "description": "Lähettämällä sisältöä Palveluumme myönnät VIMA Web Solutions -yhtiölle ei-yksinomaisen, maailmanlaajuisen, rojaltivapaan käyttöoikeuden käyttää, jäljentää ja levittää kyseistä sisältöä.",
+      "prohibited": "Sitoudut siihen, että et:",
+      "prohibitedItems": {
+        "item1": "Julkaise sisältöä, joka on lainvastainen, haitallinen, uhkaava tai säädytön",
+        "item2": "Tee itsesi toiseksi henkilöksi tai yhteisöksi",
+        "item3": "Häiritse tai keskeytä Palvelua",
+        "item4": "Yritä saada luvattomasti käyttöoikeutta mihinkään Palvelun osaan"
+      }
+    },
+    "limitationOfLiability": {
+      "heading": "6. Vastuunrajoitus",
+      "description": "VIMA Web Solutions ei ole vastuussa mistään epäsuorista, satunnaisista, erityisistä, seurannaisista tai rangaistusluonteisista vahingoista, jotka johtuvat Palvelumme käytöstä tai liittyvät siihen."
+    },
+    "termination": {
+      "heading": "7. Lopettaminen",
+      "description": "Voimme välittömästi lopettaa tai keskeyttää tilisi ja Palvelun käyttöoikeutesi ilman ennakkoilmoitusta tai vastuuta mistä tahansa syystä, mukaan lukien näiden Ehtojen rikkominen."
+    },
+    "governingLaw": {
+      "heading": "8. Sovellettava laki",
+      "description": "Näitä Ehtoja säännellään sen lainkäyttöalueen laeilla, jossa VIMA Web Solutions sijaitsee, ottamatta huomioon lainvalintasäännöksiä."
+    },
+    "contactInformation": {
+      "heading": "9. Yhteystiedot",
+      "description": "Jos sinulla on kysyttävää näistä Ehdoista, ota yhteyttä:",
+      "email": "Sähköposti: vimawebsolutions@gmail.com",
+      "address": "Osoite: Istanbul Valley, Kalifornia, USA"
+    },
+    "lastUpdated": "Viimeksi päivitetty: Helmikuu 2025"
+  },
+  "PrivacyPolicy": {
+    "title": "Tietosuojakäytäntö",
+    "introduction": "VIMA Web Solutions on sitoutunut suojelemaan yksityisyyttäsi. Tämä tietosuojakäytäntö selittää, miten keräämme, käytämme ja suojaamme henkilökohtaisia tietojasi.",
+    "informationCollected": {
+      "heading": "1. Keräämämme tiedot",
+      "description": "Keräämme tiedot, jotka annat meille suoraan, kuten luodessasi tilin, käyttäessäsi palveluitamme tai ollessa yhteydessä meihin."
+    },
+    "informationUsage": {
+      "heading": "2. Miten käytämme tietojasi",
+      "description": "Käytämme keräämiämme tietoja palveluidemme tarjoamiseen, ylläpitoon ja parantamiseen, kommunikointiin kanssasi ja lakisääteisten velvoitteiden noudattamiseen."
+    },
+    "dataProtection": {
+      "heading": "3. Tietosuoja",
+      "description": "Toteutamme asianmukaiset tekniset ja organisatoriset toimenpiteet henkilökohtaisten tietojesi suojaamiseksi luvattomalta tai laittomalta käsittelyltä."
+    }
+  },
+  "Errors": {
+    "MISSING_MESSAGE": "Käännöstä ei löytynyt",
+    "GENERIC_ERROR": "Odottamaton virhe tapahtui",
+    "NETWORK_ERROR": "Verkkoyhteysvirhe",
+    "UNAUTHORIZED": "Sinulla ei ole oikeutta käyttää tätä resurssia"
   }
 }

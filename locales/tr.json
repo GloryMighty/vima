@@ -5,10 +5,8 @@
     "PRICING": "Fiyatlandırma",
     "BLOG": "Blog",
     "CONTACT": "İletişim",
-    "TERMS_AND_CONDITIONS": "Kullanım Koşulları",
-    "PRIVACY_POLICY": "Gizlilik Politikası",
-    "TERMS_AND_CONDITIONS_LINK": "https://example.com/terms-and-conditions",
-    "PRIVACY_POLICY_LINK": "https://example.com/privacy-policy"
+    "TERMS_AND_CONDITIONS": "Kullanım Şartları",
+    "PRIVACY_POLICY": "Gizlilik Politikası"
   },
   "Banner": {
     "we_are_vima": "VIMA'YIZ",
@@ -151,7 +149,9 @@
   },
   "Layout": {
     "Copyright": {
-     "text": " 2025 VIMA. Tüm hakları saklıdır."
+      "text": " 2025 VIMA. Tüm hakları saklıdır.",
+      "terms_and_conditions": "Şartlar ve Koşullar",
+      "privacy_policy": "Gizlilik Politikası"
     }
   },
   "Testimonial": {
@@ -195,5 +195,81 @@
     "errors": {
       "network": "Ağ hatası. Lütfen tekrar deneyin."
     }
+  },
+  "TermsAndConditions": {
+    "title": "Kullanım Şartları",
+    "acceptance": {
+      "heading": "1. Şartların Kabulü",
+      "description": "VIMA Web Solutions platformunu (\"Hizmet\") kullanarak bu Kullanım Şartlarını kabul etmiş olursunuz. Bu şartları kabul etmiyorsanız, Hizmetimizi kullanmamalısınız."
+    },
+    "changes": {
+      "heading": "2. Şartlarda Değişiklikler",
+      "description": "VIMA Web Solutions, bu Şartları her zaman değiştirme hakkını saklı tutar. Önemli değişiklikler hakkında, yeni Şartları bu sayfada yayınlayarak bilgilendirme yapacağız. Değişikliklerden sonra Hizmeti kullanmaya devam etmeniz, yeni Şartları kabul ettiğiniz anlamına gelir."
+    },
+    "userAccount": {
+      "heading": "3. Kullanıcı Hesabı ve Sorumlulukları",
+      "responsibilities": {
+        "item1": "Hesap oluştururken doğru ve eksiksiz bilgi sağlamak",
+        "item2": "Hesap kimlik bilgilerinizin gizliliğini korumak",
+        "item3": "Hesabınız altında gerçekleşen tüm faaliyetlerden sorumlu olmak",
+        "item4": "Hizmetimizi kullanmak için en az 13 yaşında olmak"
+      }
+    },
+    "intellectualProperty": {
+      "heading": "4. Fikri Mülkiyet Hakları",
+      "description": "Tüm içerik, özellikler ve işlevsellik VIMA Web Solutions ve lisans verenlerinin münhasır mülkiyetinde kalacaktır. Ticari markalarımız ve iş stilimiz, önceden yazılı izin alınmadan kullanılamaz."
+    },
+    "userContent": {
+      "heading": "5. Kullanıcı İçeriği ve Davranışı",
+      "description": "Hizmetimize içerik göndererek, VIMA Web Solutions'a söz konusu içeriği kullanma, çoğaltma ve dağıtma için münhasır olmayan, dünya çapında, telif ücretsiz bir lisans vermiş olursunuz.",
+      "prohibited": "Aşağıdakileri yapmamayı kabul edersiniz:",
+      "prohibitedItems": {
+        "item1": "Yasadışı, zararlı, tehditkar veya müstehcen içerik yayınlamak",
+        "item2": "Herhangi bir kişi veya kuruluşun kimliğine bürünmek",
+        "item3": "Hizmeti kesintiye uğratmak veya engellemek",
+        "item4": "Hizmetin herhangi bir bölümüne yetkisiz erişim sağlamaya çalışmak"
+      }
+    },
+    "limitationOfLiability": {
+      "heading": "6. Sorumluluk Sınırlaması",
+      "description": "VIMA Web Solutions, Hizmetimizin kullanımından kaynaklanan veya bununla ilgili olan dolaylı, arızi, özel, sonuçsal veya cezai tazminatlardan sorumlu değildir."
+    },
+    "termination": {
+      "heading": "7. Sonlandırma",
+      "description": "Herhangi bir sebepten dolayı, bu Şartları ihlal etmeniz de dahil olmak üzere, hesabınızı ve Hizmet erişiminizi önceden bildirimde bulunmaksızın ve herhangi bir sorumluluk taşımaksızın derhal sonlandırabilir veya askıya alabiliriz."
+    },
+    "governingLaw": {
+      "heading": "8. Yürürlük Hukuku",
+      "description": "Bu Şartlar, VIMA Web Solutions'ın merkez ofisinin bulunduğu yargı alanının kanunlarına tabi olacak, çatışan hukuk hükümleri dikkate alınmayacaktır."
+    },
+    "contactInformation": {
+      "heading": "9. İletişim Bilgileri",
+      "description": "Bu Şartlar hakkında herhangi bir sorunuz varsa, lütfen bizimle iletişime geçin:",
+      "email": "E-posta: vimawebsolutions@gmail.com",
+      "address": "Adres: Istanbul Valley, Kaliforniya, ABD"
+    },
+    "lastUpdated": "Son Güncelleme: Şubat 2025"
+  },
+  "PrivacyPolicy": {
+    "title": "Gizlilik Politikası",
+    "introduction": "VIMA Web Solutions olarak, gizliliğinizi korumaya kararlıyız. Bu Gizlilik Politikası, kişisel bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklar.",
+    "informationCollected": {
+      "heading": "1. Topladığımız Bilgiler",
+      "description": "Hesap oluşturduğunuzda, hizmetlerimizi kullandığınızda veya bizimle iletişime geçtiğinizde doğrudan bize sağladığınız bilgileri topluyoruz."
+    },
+    "informationUsage": {
+      "heading": "2. Bilgilerinizi Nasıl Kullanıyoruz",
+      "description": "Topladığımız bilgileri hizmetlerimizi sağlamak, sürdürmek ve geliştirmek, sizinle iletişim kurmak ve yasal yükümlülüklere uymak için kullanıyoruz."
+    },
+    "dataProtection": {
+      "heading": "3. Veri Koruma",
+      "description": "Kişisel bilgilerinizi yetkisiz veya yasadışı işlemlerden korumak için uygun teknik ve organizasyonel önlemler uyguluyoruz."
+    }
+  },
+  "Errors": {
+    "MISSING_MESSAGE": "Çeviri bulunamadı",
+    "GENERIC_ERROR": "Beklenmedik bir hata oluştu",
+    "NETWORK_ERROR": "Ağ bağlantı hatası",
+    "UNAUTHORIZED": "Bu kaynağa erişim izniniz yok"
   }
 }

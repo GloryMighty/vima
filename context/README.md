@@ -3,34 +3,36 @@
 ## 🌍 Company Overview
 Vima Web Solutions is a dynamic web development agency with over 13 years of entrepreneurial experience. We specialize in creating customized, modern web applications that transform digital visions into reality.
 
-## 🚀 Our Expertise
+### 🚀 Our Expertise
 - **Programming Languages**: Python JavaScript, CSS, PHP, TypeScript, HTML
 - **Core Technologies**: Next.js, React, Node.js, PostgreSQL
 - **Specialties**: AI Integration, Full-Stack Development, Multilingual Web Solutions
 
-## 🌐 Global Presence
+#### 🌐 Global Presence
 - **Locations**: Pietarsaari, Finland and Istanbul, Turkey
 - **Languages**: Support in English, Arabic, Finnish, Russian, Swedish, and Turkish
 
-## 💡 Company Values
+#### 💡 Company Values
 - **Work Ethics**: Customer-oriented, honest, diligent, transparent, and efficient
 - **Technology Philosophy**: Programming languages are tools to accomplish desired results
 - **Adaptability**: Serving businesses of all sizes with flexible, customized solutions
 
-## 🛠 Tech Stack
+#### 🛠 Tech Stack
 - **Framework**: Next.js
 - **Frontend**: React
 - **Backend**: Node.js
 - **Database**: PostgreSQL
 - **AI Integration**: Google Gemini
-- **Styling**: Bootstrap
-- **Animation**: Framer Motion
+- **Styling**: Bootstrap, Tailwind CSS, CSS
+- **Animation**: Framer Motion, React Spring, Splinetool
+- **Localization**: Next-Intl, i18next
 
 ## 📦 Key Dependencies
 - `@fortawesome/react-fontawesome`
 - `@splinetool/react-spline`
 - `framer-motion`
 - `@google/generative-ai`
+- `i18next`
 
 ## 🔧 Getting Started
 

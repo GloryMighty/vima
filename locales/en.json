@@ -6,9 +6,7 @@
     "BLOG": "Blog",
     "CONTACT": "Contact",
     "TERMS_AND_CONDITIONS": "Terms and Conditions",
-    "PRIVACY_POLICY": "Privacy Policy",
-    "TERMS_AND_CONDITIONS_LINK": "https://example.com/terms-and-conditions",
-    "PRIVACY_POLICY_LINK": "https://example.com/privacy-policy"
+    "PRIVACY_POLICY": "Privacy Policy"
   },
   "Banner": {
     "we_are_vima": "WE ARE VIMA",
@@ -162,6 +160,8 @@
   "Layout": {
     "Copyright": {
       "text": " 2025 VIMA. All rights reserved.",
+      "terms_and_conditions": "Terms & Conditions",
+      "privacy_policy": "Privacy Policy",
       "all_rights_reserved": "All rights reserved"
     }
   },
@@ -212,5 +212,81 @@
       "es": "Spanish",
       "fr": "French"
     }
+  },
+  "TermsAndConditions": {
+    "title": "Terms and Conditions of Use",
+    "acceptance": {
+      "heading": "1. Acceptance of Terms",
+      "description": "By accessing and using the VIMA Web Solutions platform (the \"Service\"), you agree to be bound by these Terms and Conditions. If you do not agree with these terms, you should not use our Service."
+    },
+    "changes": {
+      "heading": "2. Changes to Terms",
+      "description": "VIMA Web Solutions reserves the right to modify these Terms at any time. We will provide notice of any significant changes by posting the new Terms on this page. Your continued use of the Service after changes constitutes acceptance of the new Terms."
+    },
+    "userAccount": {
+      "heading": "3. User Account and Responsibilities",
+      "responsibilities": {
+        "item1": "Provide accurate and complete information when creating an account",
+        "item2": "Maintain the confidentiality of your account credentials",
+        "item3": "Accept responsibility for all activities under your account",
+        "item4": "Be at least 13 years old to use our Service"
+      }
+    },
+    "intellectualProperty": {
+      "heading": "4. Intellectual Property Rights",
+      "description": "All content, features, and functionality are and will remain the exclusive property of VIMA Web Solutions and its licensors. Our trademarks and trade dress may not be used without prior written permission."
+    },
+    "userContent": {
+      "heading": "5. User Content and Conduct",
+      "description": "By submitting content to our Service, you grant VIMA Web Solutions a non-exclusive, worldwide, royalty-free license to use, reproduce, and distribute such content.",
+      "prohibited": "You agree not to:",
+      "prohibitedItems": {
+        "item1": "Post content that is unlawful, harmful, threatening, or obscene",
+        "item2": "Impersonate any person or entity",
+        "item3": "Interfere with or disrupt the Service",
+        "item4": "Attempt to gain unauthorized access to any part of the Service"
+      }
+    },
+    "limitationOfLiability": {
+      "heading": "6. Limitation of Liability",
+      "description": "VIMA Web Solutions shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to the use of our Service."
+    },
+    "termination": {
+      "heading": "7. Termination",
+      "description": "We may terminate or suspend your account and access to the Service immediately, without prior notice or liability, for any reason, including if you breach these Terms."
+    },
+    "governingLaw": {
+      "heading": "8. Governing Law",
+      "description": "These Terms shall be governed by the laws of the jurisdiction where VIMA Web Solutions is headquartered, without regard to its conflict of law provisions."
+    },
+    "contactInformation": {
+      "heading": "9. Contact Information",
+      "description": "For any questions about these Terms, please contact us at:",
+      "email": "Email: vimawebsolutions@gmail.com",
+      "address": "Address: Istanbul Valley, California, USA"
+    },
+    "lastUpdated": "Last Updated: February 2025"
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "introduction": "At VIMA Web Solutions, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information.",
+    "informationCollected": {
+      "heading": "1. Information We Collect",
+      "description": "We collect information that you provide directly to us, such as when you create an account, use our services, or communicate with us."
+    },
+    "informationUsage": {
+      "heading": "2. How We Use Your Information",
+      "description": "We use the information we collect to provide, maintain, and improve our services, to communicate with you, and to comply with legal obligations."
+    },
+    "dataProtection": {
+      "heading": "3. Data Protection",
+      "description": "We implement appropriate technical and organizational measures to protect your personal information against unauthorized or unlawful processing."
+    }
+  },
+  "Errors": {
+    "MISSING_MESSAGE": "Translation not found",
+    "GENERIC_ERROR": "An unexpected error occurred",
+    "NETWORK_ERROR": "Network connection error",
+    "UNAUTHORIZED": "You are not authorized to access this resource"
   }
 }
