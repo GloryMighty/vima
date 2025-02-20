@@ -157,7 +157,8 @@
   },
   "Testimonial": {
     "section_title": "Suositukset",
-    "heading": "Mitä Asiakkaat Sanovat"
+    "heading": "Mitä Asiakkaat Sanovat",
+    "image_alt": "Asiakkaan suosittelukuva"
   },
   "Contact": {
     "page_title": "Ota yhteyttä",

@@ -155,8 +155,9 @@
     }
   },
   "Testimonial": {
-    "section_title": "آراء العملاء",
-    "heading": "ماذا يقول عملاؤنا"
+    "section_title": "الشهادات",
+    "heading": "ماذا يقول عملاؤنا؟",
+    "image_alt": "صورة شهادة العميل"
   },
   "Contact": {
     "page_title": "اتصل بنا",

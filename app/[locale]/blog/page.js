@@ -69,7 +69,7 @@ const Page = () => {
   ];
 
   const tags = [
-    'designer', 'Developer', 'UI/UX', 'Graphics', 'web', 'python', 'developer'
+    'designer', 'Developer', 'UI/UX', 'Graphics', 'web', 'python'
   ];
 
   return (

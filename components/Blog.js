@@ -1,6 +1,7 @@
 "use client";
 import { useTranslations } from 'next-intl';
 import { getImagePath } from '@/utility/imageUtils';
+import Image from 'next/image';
 
 /**
  * Blog component displaying latest blog posts
@@ -74,11 +75,13 @@ const Blog = () => {
                     href={`/blog#blog-${item.id}`}
                     data-cursor='<i class="fa-light fa-arrow-up-right"></i>'
                   >
-                    <img
+                    <Image
                       src={getImagePath(item.img)}
                       alt={t('image_alt')}
                       className="img-fluid w-100"
-                      loading="lazy" // Add lazy loading for better performance
+                      loading="lazy"
+                      width={500}
+                      height={300}
                     />
                   </a>
                   <p>{item.date}</p>

@@ -2,6 +2,7 @@
 import { sliderProps } from "@/utility/sliderProps";
 import Slider from "react-slick";
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 /**
  * Portfolio slider component
@@ -16,10 +17,12 @@ const PortfolioSlider = ({ sliderItems }) => {
         <div className="col-xl-6" key={item.id}>
           <div className="tf__portfolio_item">
             <div className="tf__portfolio_img">
-              <img
+              <Image
                 src={item.src}
                 alt={t('image_alt')}
                 className="img-fluid w-100"
+                width={600}
+                height={400}
               />
             </div>
           </div>

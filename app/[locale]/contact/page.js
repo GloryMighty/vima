@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import Breadcrumbs from "@/components/Breadcrumbs";
 import IstiLayout from "@/layout/IstiLayout";
 import { useState } from "react";
+import Image from 'next/image';
 
 const Contact = () => {
   const t = useTranslations('Contact');
@@ -121,10 +122,12 @@ const Contact = () => {
           <div className="row">
             <div className="col-xl-8 col-lg-7">
               <div className="tf__contact_img" data-animation="img-blur">
-                <img
-                  src="images/istanbul.jpg"
+                <Image
+                  src="/images/istanbul.jpg"
                   alt={t('image_alt')}
                   className="img-fluid w-100"
+                  width={800}
+                  height={600}
                 />
               </div>
             </div>

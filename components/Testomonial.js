@@ -2,6 +2,7 @@
 import { sliderProps } from "@/utility/sliderProps";
 import Slider from "react-slick";
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 
 /**
  * Testimonial component displaying client feedback
@@ -30,22 +31,22 @@ const Testomonial = () => {
   const testimonials = [
     {
       id: 1,
-      image: 'images/testimonial_1.png',
+      image: '/images/testimonial_1.png',
       translationKey: 'batuhan'
     },
     {
       id: 2,
-      image: 'images/testimonial_2.png',
+      image: '/images/testimonial_2.png',
       translationKey: 'sarah'
     },
     {
       id: 3,
-      image: 'images/testimonial_3.png',
+      image: '/images/testimonial_3.png',
       translationKey: 'michael'
     },
     { 
       id: 4,
-      image: 'images/testimonial_4.png',
+      image: '/images/testimonial_4.png',
       translationKey: 'kerem'
     }
   ];
@@ -70,10 +71,12 @@ const Testomonial = () => {
               <div className="col-xl-6" key={testimonial.id}>
                 <div className="tf__single_testimonial">
                   <div className="tf__single_testimonial_img">
-                    <img
+                    <Image
                       src={testimonial.image}
                       alt={t('image_alt')}
                       className="img-fluid w-100"
+                      width={200}
+                      height={200}
                     />
                   </div>
                   <h4>
