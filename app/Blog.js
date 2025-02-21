@@ -24,7 +24,7 @@ const blogs = [
     author: "VIMA Web",
     comments: 5,
     date: "17 February, 2025",
-    img: "showcasemed1.png",
+    img: "ShowcaseMed1.png",
   },
   {
     id: 1,
@@ -32,7 +32,7 @@ const blogs = [
     author: "VIMA Solutions",
     comments: 5,
     date: "15 February, 2025",
-    img: "turitmed2.png",
+    img: "TuritMed2.png",
   },
   {
     id: 3,
