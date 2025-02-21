@@ -20,6 +20,26 @@ const config = {
       },
     ];
   },
+
+  // Production Optimizations
+  productionBrowserSourceMaps: false,
+  
+  // Performance and Caching
+  experimental: {
+    optimizePackageImports: ['@/components', '@/app'],
+    serverComponentsExternalPackages: ['sharp', 'ejs'],
+  },
+
+  // Webpack Configuration
+  webpack: (config, { isServer }) => {
+    // Improve performance by minimizing and optimizing chunks
+    config.optimization.minimize = true;
+    
+    return config;
+  },
+
+  // Compression and Asset Optimization
+  compress: true,
 };
 
 export default withNextIntl(config);

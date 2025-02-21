@@ -3,9 +3,9 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/config/navigation';
 import Breadcrumbs from "@/components/Breadcrumbs";
 import IstiLayout from "@/layout/IstiLayout";
-import TravelCarousel from '@/components/TravelCarousel';
-import BeautyCarousel from '@/components/BeautyCarousel';
-import PersonalCarousel from '@/components/PersonalCarousel';
+import TravelCarousel from '@/app/TravelCarousel';
+import BeautyCarousel from '@/app/BeautyCarousel';
+import PersonalCarousel from '@/app/PersonalCarousel';
 
 const Page = () => {
   const t = useTranslations('Blog');
