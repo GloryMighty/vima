@@ -2,6 +2,7 @@
 
 import Breadcrumbs from '@/components/Breadcrumbs';
 import IstiLayout from '@/layout/IstiLayout';
+import Iridiscence from '@/public/effects/descence';
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 
@@ -13,13 +14,48 @@ const PricingPage = () => {
   return (
     <IstiLayout>
       <Breadcrumbs pageTitle={t('sub_heading')} />
-      <section className="tf__pricing pt_120 pb_120">
-        <div className="container">
+      <section 
+        className="tf__pricing pt_120 pb_120" 
+        style={{ 
+          position: 'relative', 
+          overflow: 'hidden' 
+        }}
+      >
+        <Iridiscence
+          color={[0.3, 0.8, 0.3]} // Green tint
+          speed={0.5}
+          amplitude={0.05}
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            zIndex: 0
+          }}
+        />
+        <div 
+          className="container" 
+          style={{ 
+            position: 'relative', 
+            zIndex: 1 
+          }}
+        >
           <div className="row">
             <div className="col-xl-12">
               <div className="tf__section_heading mb_40">
-                <h5 className="tf__sub_heading">{t('sub_heading')}</h5>
-                <h2 className="tf__heading">{t('heading')}</h2>
+                <h5 
+                  className="tf__sub_heading" 
+                  style={{ color: '#ffffff' }}
+                >
+                  {t('sub_heading')}
+                </h5>
+                <h2 
+                  className="tf__heading" 
+                  style={{ color: '#ffffff' }}
+                >
+                  {t('heading')}
+                </h2>
               </div>
             </div>
           </div>
@@ -33,7 +69,8 @@ const PricingPage = () => {
                     borderRadius: '15px',
                     padding: '40px 30px',
                     height: '100%',
-                    marginBottom: '30px'
+                    marginBottom: '30px',
+                    backdropFilter: 'blur(10px)'
                   }}
                 >
                   <div className="tf__pricing_header">

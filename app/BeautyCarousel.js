@@ -17,7 +17,7 @@ export default function BeautyCarousel() {
 
   return (
     <div 
-      ref={carouselRef}
+      ref={carselRef}
       id="beautyCarousel" 
       className="carousel slide carousel-fade" 
     >
