@@ -1,7 +1,6 @@
 import {Inter} from 'next/font/google';
 import {NextIntlClientProvider} from 'next-intl';
 import {notFound} from 'next/navigation';
-import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 import {locales} from '../../config/navigation';
 
 const inter = Inter({subsets: ['latin']});
@@ -15,8 +14,7 @@ export default async function LocaleLayout({children, params: {locale}}) {
   // Validate that the incoming `locale` parameter is valid
   if (!['en', 'tr', 'fi', 'ar'].includes(locale)) notFound();
 
-  // Enable static rendering
-  unstable_setRequestLocale(locale);
+
 
   let messages;
   try {

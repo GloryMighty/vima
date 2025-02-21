@@ -167,7 +167,7 @@
     }
   },
   "Contact": {
-    "page_title": "Contact Us",
+    "page_title": "CONTACT US",
     "image_alt": "contact image",
     "offices": {
       "dev": {
@@ -182,7 +182,7 @@
       }
     },
     "form": {
-      "title": "Contact us",
+      "title": "CONTACT US",
       "question": "Do you have any question?",
       "description": "We will provide top-level services and elevate your brand with our expertise. Join our group of successful entrepreneurs and experience the difference with our advanced Web Development!",
       "name_placeholder": "Your Name",

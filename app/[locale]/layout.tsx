@@ -2,7 +2,6 @@ import {Inter} from 'next/font/google';
 import {NextIntlClientProvider} from 'next-intl';
 import {locales} from '../../config/navigation';
 import {notFound} from 'next/navigation';
-import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
 
 // Global CSS imports
 import "@css/font-awesome-pro.css";
