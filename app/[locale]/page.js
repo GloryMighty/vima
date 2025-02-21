@@ -2,7 +2,7 @@
 import About from "@/components/About";
 import { Home1Banner } from "@/components/Banner";
 import Blog from "@/components/Blog";
-import Experiance from "@/components/Experiance";
+import Experiance from "@/components/Prices";
 import Portfolio from "@/components/Portfolio";
 import Testomonial from "@/components/Testomonial";
 import IstiLayout from "@/layout/IstiLayout";
