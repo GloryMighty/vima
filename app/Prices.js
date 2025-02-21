@@ -50,8 +50,9 @@ const Experiance = () => {
           <div className="row">
             <div className="col-12 wow fadeInUp">
               <div className="tf__section_heading mb_40">
-                <h5 className="tf__sub_heading" style={{ color: '#ffffff' }}>{t('pricing.sub_heading')}</h5>
-                <h2 className="tf__heading" style={{ color: '#ffffff' }}>{t('pricing.heading')}</h2>
+                
+                <h5 className="tf__sub_heading">{t('pricing.sub_heading')}</h5>
+                <h2 className="tf__heading">{t('pricing.heading')}</h2>
               </div>
             </div>
           </div>

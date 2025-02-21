@@ -25,8 +25,8 @@ export default function About() {
                 <h2 data-text-animation="rotate-in" data-split="word">
                   {t('main_title')}
                 </h2>
-                <p>{t('main_paragraph_1')}</p>
-                <p>{t('main_paragraph_2')}</p>
+                <h5>{t('main_paragraph_1')}</h5>
+                <h5>{t('main_paragraph_2')}</h5>
               </div>
             </div>
 
