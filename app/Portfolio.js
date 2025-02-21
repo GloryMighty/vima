@@ -1,4 +1,4 @@
-import PortfolioSlider from "../components/PortfolioSlider";
+import PortfolioSlider from "app/PortfolioSlider";
 import { useTranslations } from 'next-intl';
 import { getImagePath } from '@/utility/imageUtils';
 
