@@ -23,8 +23,8 @@ const page = () => {
       <About />
       <Portfolio />
       <Testomonial />
-      <Blog />
       <Experiance />
+      <Blog />
     </IstiLayout>
   );
 };
