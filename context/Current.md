@@ -5,20 +5,37 @@
 - **Version**: 0.1.0
 - **Language**: TypeScript
 - **Package Manager**: NPM
+- **Development Environment**: Next.js with TypeScript
 
 ## Core Architecture
-- **Framework**: Next.js v14.1.0 (TypeScript)
+- **Framework**: Next.js v14.1.0
+- **Configuration**: 
+  - Uses `next.config.mjs` for configuration
+  - TypeScript-based middleware (`middleware.ts`)
 - **State Management**: Context API
-- **Internationalization**: next-intl (multi-language support)
+- **Internationalization**: 
+  - Library: `next-intl`
+  - Localization strategy: Dynamic routing with `[locale]`
 - **UI Library**: React Bootstrap
 
 ## Project Structure
 ### Key Directories
-- `/app/[locale]`: Main application routes and pages
+- `/app`: Main application structure
+  - `/[locale]`: Localized page routes
+    - Supports dynamic language-based routing
+    - Contains page-specific implementations
+  - `/api`: API route handlers
 - `/components`: Reusable React components
 - `/layout`: Layout-related components
 - `/context`: Application context management
-- `/components/widgets`: Specialized widget components
+- `/config`: Configuration files
+  - `navigation.ts`: Central navigation configuration
+
+### Localization Strategy
+- Locales managed in `/app/[locale]`
+- Translations follow consistent keyword logic
+- Supports multiple language variants
+- Minimal text changes between locales
 
 ### Main Pages
 1. Home Page (`/app/[locale]/page.js`)
@@ -26,6 +43,8 @@
 3. Blog Page (`/app/[locale]/blog/page.js`)
 4. Contact Page (`/app/[locale]/contact/page.js`)
 5. Pricing Page (`/app/[locale]/pricing/page.js`)
+6. Privacy Policy (`/app/[locale]/privacy-policy/page.js`)
+7. Terms and Conditions (`/app/[locale]/terms-and-conditions/page.js`)
 
 ## Key Features
 1. Responsive layout system
@@ -35,6 +54,7 @@
 5. Performance optimizations:
    - Lenis smooth scrolling
    - Studio Freight libraries
+6. Comprehensive internationalization support
 
 ## Key Dependencies
 ### UI & Design
@@ -91,14 +111,22 @@ npm run lint  # Run ESLint
 - Configured to disable Node.js specific modules in browser environment
 - Uses modern React (v18) ecosystem
 
+## Development Best Practices
+- Modular and focused component design
+- Consistent naming conventions
+- Comprehensive code documentation
+- Performance and user experience prioritized
+
+## Future Improvements
+- Continuous localization refinement
+- Performance optimization
+- Enhanced AI integration
+- Accessibility improvements
+
 ## Next Steps
-1. Complete EN locale finalization
-2. Add Jest testing framework
-3. Implement error boundary components
-4. Optimize asset loading
-5. Enhance documentation
+1. SEO Optimization for each page
 
 ## Notes
-- Project is in early development stage (v0.1.0)
+- Project is in production stage (v1.0.0)
 - Focuses on modular, clean, and simple code implementation
 - Prioritizes core functionality before optimization
