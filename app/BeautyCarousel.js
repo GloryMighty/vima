@@ -7,25 +7,6 @@ import Image from 'next/image';
 export default function BeautyCarousel() {
   const carouselRef = useRef(null);
 
-  useEffect(() => {
-    // Dynamically import Bootstrap's Carousel module
-    const importBootstrapCarousel = async () => {
-      if (typeof window !== 'undefined') {
-        const bootstrap = await import('bootstrap');
-        if (carouselRef.current) {
-          // Initialize the carousel
-          new bootstrap.Carousel(carouselRef.current, {
-            interval: 3000,  // Change image every 3 seconds
-            ride: true,      // Start automatic cycling
-            pause: false     // Don't pause on hover
-          });
-        }
-      }
-    };
-
-    importBootstrapCarousel();
-  }, []);
-
   // Array of beauty image paths
   const beautyImages = [
     '/images/VimaProj/Beauty/1.png',

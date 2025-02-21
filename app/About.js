@@ -1,4 +1,3 @@
-import Particles from '/public/effects/particles';
 import { useTranslations } from 'next-intl';
 import { getImagePath } from '@/utility/imageUtils';
 import Image from 'next/image';
