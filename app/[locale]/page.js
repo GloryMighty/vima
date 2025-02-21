@@ -4,7 +4,7 @@ import { Home1Banner } from "@/components/Banner";
 import Blog from "@/components/Blog";
 import Experiance from "@/components/Prices";
 import Portfolio from "@/components/Portfolio";
-import Testomonial from "@/components/Testomonial";
+import Testomonial from "@/components/Testemonial";
 import IstiLayout from "@/layout/IstiLayout";
 
 const page = () => {

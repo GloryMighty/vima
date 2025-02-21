@@ -1,14 +1,7 @@
-'use client';
 
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { 
-  getLocalizedCarouselImages, 
-  defaultCarouselConfig,
-  travelImagePaths 
-} from '@/utility/carouselUtils';
-import { getImagePath } from '@/utility/imageUtils';
 
 // Carousel component for Travel images
 export default function TravelCarousel() {

@@ -26,7 +26,7 @@ const Page = () => {
       Carousel: BeautyCarousel,
       author: t('posts.beauty.author'),
       category: t('categories.web_designer'),
-      commentsCount: 12,
+      commentsCount: 10,
       title: t('posts.beauty.title'),
       content: t('posts.beauty.content'),
       link: 'https:/showcase.it.com/'

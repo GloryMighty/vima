@@ -1,9 +1,5 @@
-'use client';
-
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
-import { getImagePath } from '@/utility/imageUtils';
-import { useTranslations } from 'next-intl';
 
 // Carousel component for Beauty images
 export default function BeautyCarousel() {

@@ -1,4 +1,3 @@
-"use client";
 import { sliderProps } from "@/utility/sliderProps";
 import Slider from "react-slick";
 import { useTranslations } from 'next-intl';
