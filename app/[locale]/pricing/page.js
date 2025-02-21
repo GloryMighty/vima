@@ -52,6 +52,8 @@ const PricingPage = () => {
                 </h5>
                 <h2 
                   className="tf__heading" 
+                  data-text-animation="rotate-in" 
+                  data-split="word"
                   style={{ color: '#ffffff' }}
                 >
                   {t('heading')}
