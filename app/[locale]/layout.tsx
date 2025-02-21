@@ -21,6 +21,9 @@ import { ToastContainer } from 'react-toastify';
 const ChatWidget = dynamic(() => import('../../components/widgets/ChatWidget'), { ssr: false });
 const SocialLinksWidget = dynamic(() => import('../../components/widgets/SocialLinks'), { ssr: false });
 
+// Helmet imports
+import HelmetWrapper from './HelmetWrapper';
+
 // Google Font configuration - Consistent typography across the application
 const inter = Inter({subsets: ['latin']});
 
@@ -105,25 +108,28 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        {/* NextIntl Provider - Manages internationalization context */}
-        <NextIntlClientProvider 
-          locale={locale} 
-          messages={messages} 
-          timeZone="Europe/London"
-          defaultTranslationValues={{
-            // Provide default values for translations to prevent rendering errors
-            name: 'Guest',
-            // Add more default translation values as needed
-          }}
-        >
-          {/* Main content rendering */}
-          {children}
-          
-          {/* Global widgets - Consistently available across all pages */}
-          <ToastContainer />
-          <ChatWidget />
-          <SocialLinksWidget />
-        </NextIntlClientProvider>
+        {/* HelmetWrapper - Manages dynamic metadata */}
+        <HelmetWrapper>
+          {/* NextIntl Provider - Manages internationalization context */}
+          <NextIntlClientProvider 
+            locale={locale} 
+            messages={messages} 
+            timeZone="Europe/London"
+            defaultTranslationValues={{
+              // Provide default values for translations to prevent rendering errors
+              name: 'Guest',
+              // Add more default translation values as needed
+            }}
+          >
+            {/* Main content rendering */}
+            {children}
+            
+            {/* Global widgets - Consistently available across all pages */}
+            <ToastContainer />
+            <ChatWidget />
+            <SocialLinksWidget />
+          </NextIntlClientProvider>
+        </HelmetWrapper>
       </body>
     </html>
   );

@@ -5,6 +5,7 @@ import IstiLayout from '@/layout/IstiLayout';
 import Iridiscence from '@/public/effects/descence';
 import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
+import ClientHelmet from '@/components/ClientHelmet';
 
 const PricingPage = () => {
   const t = useTranslations('Experience.pricing');
@@ -13,6 +14,11 @@ const PricingPage = () => {
 
   return (
     <IstiLayout>
+      <ClientHelmet 
+        title={`${t('meta_title')} | Vima Web Solutions`}
+        description={t('meta_description')}
+        keywords={t('meta_keywords')}
+      />
       <Breadcrumbs pageTitle={t('sub_heading')} />
       <section 
         className="tf__pricing pt_120 pb_120" 

@@ -6,6 +6,7 @@ import IstiLayout from "@/layout/IstiLayout";
 import TravelCarousel from '@/app/TravelCarousel';
 import BeautyCarousel from '@/app/BeautyCarousel';
 import PersonalCarousel from '@/app/PersonalCarousel';
+import ClientHelmet from '@/components/ClientHelmet';
 
 const Page = () => {
   const t = useTranslations('Blog');
@@ -74,6 +75,11 @@ const Page = () => {
 
   return (
     <IstiLayout>
+      <ClientHelmet 
+        title={`${t('meta_title')} | Vima Web Solutions`}
+        description={t('meta_description')}
+        keywords={t('meta_keywords')}
+      />
       <Breadcrumbs pageTitle={t('page_title')} />
       <section className="tf__blog_clasic pt_115 pb_150">
         <div className="container">

@@ -43,7 +43,10 @@
       "quarter": "Quarter",
       "growth": "Growth"
     },
-    "cta_button": "Schedule a Consultation"
+    "cta_button": "Schedule a Consultation",
+    "meta_title": "About Us | Vima Web Solutions - AI-Powered Web Development",
+    "meta_description": "Discover Vima Web Solutions, experts in AI-driven web development, multilingual solutions, and innovative digital experiences that transform businesses.",
+    "meta_keywords": "web development, AI integration, multilingual websites, digital transformation, UI/UX design, business technology solutions"
   },
   "Blog": {
     "section_title": "Our Projects",
@@ -97,7 +100,10 @@
         "content": "Premium implementation of a comprehensive Web Application with multiple pages handling SEO with metadata and hrefs translation, showcasing Web Development excellence. Featuring modern and responsive design, seamless user experience across all devices, and integrated AI Chatbot capabilities for enhanced navigation and engaging user experience. The chatbot is equipped with personalized data, wrapped in a user-friendly interface and is ready to provide instant answers to user inquiries. Ultimate choise for businesses seeking cutting-edge technology and exceptional user experience.",
         "author": "VIMA Team"
       }
-    }
+    },
+    "meta_title": "Blog | Vima Web Solutions - Web Development Insights and Innovations",
+    "meta_description": "Explore our blog featuring cutting-edge web development insights, AI innovations, design trends, and expert perspectives that drive digital transformation.",
+    "meta_keywords": "web development blog, AI innovations, design trends, digital transformation, web technologies, technology insights"
   },
 
   "Experience": {
@@ -124,7 +130,10 @@
           "features": "Everything in Advanced PLUS|Premium domain included|Unlimited update requests|AI Chatbot Integration|Superior website design|User authentication|2 years hosting|Up to 5 Languages"
         }
       },
-      "choose_plan": "CHOOSE PLAN"
+      "choose_plan": "CHOOSE PLAN",
+      "meta_title": "Pricing | Vima Web Solutions - Flexible Web Development Packages",
+      "meta_description": "Choose from our tailored web development packages designed to meet your business needs. From basic to premium solutions, find the perfect plan for your digital transformation.",
+      "meta_keywords": "web development pricing, website packages, digital transformation, AI integration, multilingual websites, business technology solutions"
     }
   },
   "Portfolio": {
@@ -160,7 +169,7 @@
   },
   "Layout": {
     "Copyright": {
-      "text": "FI25101203, ©2025 VIMA Web Solutions. All rights reserved.",
+      "text": "FI25101203, 2025 VIMA Web Solutions. All rights reserved.",
       "terms_and_conditions": "Terms & Conditions",
       "privacy_policy": "Privacy Policy",
       "all_rights_reserved": "All rights reserved"
@@ -202,7 +211,10 @@
     },
     "errors": {
       "network": "Network error. Please try again."
-    }
+    },
+    "meta_title": "Contact Us | Vima Web Solutions - Get in Touch with AI Web Experts",
+    "meta_description": "Connect with our expert team of web developers and AI specialists. Discuss your digital transformation needs, get personalized solutions, and take the first step towards innovative technology.",
+    "meta_keywords": "contact web developers, AI technology consultation, digital transformation inquiry, web solutions support, multilingual website experts, technology consultation"
   },
   "Language": {
     "select": "Select Language",
@@ -272,7 +284,10 @@
       "email": "Email: vimawebsolutions@gmail.com",
       "address": "Address: Istanbul Valley, California, USA"
     },
-    "lastUpdated": "Last Updated: February 2025"
+    "lastUpdated": "Last Updated: February 2025",
+    "meta_title": "Terms and Conditions | Vima Web Solutions - Legal Framework for Digital Services",
+    "meta_description": "Review our comprehensive Terms and Conditions that outline the legal framework, user responsibilities, and guidelines for using Vima Web Solutions' digital services and AI technologies.",
+    "meta_keywords": "terms of service, legal conditions, digital services agreement, user responsibilities, AI technology terms, web development legal guidelines"
   },
   "PrivacyPolicy": {
     "title": "Privacy Policy",
@@ -288,6 +303,14 @@
     "dataProtection": {
       "heading": "3. Data Protection",
       "description": "We implement appropriate technical and organizational measures to protect your personal information against unauthorized or unlawful processing."
-    }
+    },
+    "meta_title": "Privacy Policy | Vima Web Solutions - Data Protection and User Privacy",
+    "meta_description": "Learn about our comprehensive privacy policy that ensures the protection of your personal data, outlines our data collection practices, and demonstrates our commitment to user privacy and security.",
+    "meta_keywords": "privacy policy, data protection, user data privacy, digital services privacy, AI technology data handling, web development data security"
+  },
+  "HomePage": {
+    "meta_title": "Vima Web Solutions - AI-Powered Web Development and Digital Transformation",
+    "meta_description": "Transform your business with cutting-edge web development, AI integration, and multilingual solutions. Unlock growth through intelligent technology and intuitive design.",
+    "meta_keywords": "web development, AI integration, digital transformation, multilingual websites, UI/UX design, business technology solutions"
   }
 }

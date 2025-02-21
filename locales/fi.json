@@ -32,7 +32,10 @@
           "features": "Kaikki Edistyneestä suunnitelmasta, PLUS|Premium verkkotunnus sisältyy|Rajattomat päivitykset pyyntöstä|AI Chatbot-integraatio|Ensiluokkainen verkkosivuston suunnittelu|Käyttäjätunnistus|2 vuotta isännöintiä|Jopa 5 kieltä"
         }
       },
-      "choose_plan": "Valitse Suunnitelma"
+      "choose_plan": "Valitse Suunnitelma",
+      "meta_title": "Hinnoittelu | Vima Web Solutions - Joustavat verkkokehityspaketit",
+      "meta_description": "Valitse räätälöidyistä verkkokehityspaketeistamme, jotka on suunniteltu vastaamaan liiketoimintasi tarpeita. Perusratkaisuista premium-ratkaisuihin, löydä täydellinen suunnitelma digitaaliseen muodonmuutokseesi.",
+      "meta_keywords": "verkkokehityksen hinnoittelu, verkkosivustopaketit, digitaalinen muodonmuutos, tekoälyn integrointi, monikieliset verkkosivustot, liiketoiminnan teknologiaratkaisut"
     }
   },
   "Portfolio": {
@@ -94,7 +97,10 @@
       "quarter": "Vuosineljännes",
       "growth": "Kasvu"
     },
-    "cta_button": "Varaa konsultaatio"
+    "cta_button": "Varaa konsultaatio",
+    "meta_title": "Meistä | Vima Web Solutions - Tekoälyavusteinen verkkokehitys",
+    "meta_description": "Tutustu Vima Web Solutionsiin, asiantuntijoihin tekoälyvetoisessa verkkokehityksessä, monikielisissä ratkaisuissa ja innovatiivisissa digitaalisissa kokemuksissa, jotka muuttavat liiketoimintaa.",
+    "meta_keywords": "verkkokehitys, tekoälyn integrointi, monikieliset verkkosivustot, digitaalinen muodonmuutos, käyttöliittymäsuunnittelu, liiketoiminnan teknologiaratkaisut"
   },
   "Blog": {
     "section_title": "KAIKKI Blogit",
@@ -147,12 +153,15 @@
     "tags": {
       "title": "Tunnisteet"
     },
-    "image_alt": "Blogin projektikuva"
+    "image_alt": "Blogin projektikuva",
+    "meta_title": "Blogi | Vima Web Solutions - Verkkokehityksen oivallukset ja innovaatiot",
+    "meta_description": "Tutustu blogiimme, joka tarjoaa huipputason verkkokehityksen näkemyksiä, tekoälyn innovaatioita, suunnittelutrendejä ja asiantuntijoiden näkökulmia, jotka ajavat digitaalista muodonmuutosta.",
+    "meta_keywords": "verkkokehityksen blogi, tekoälyn innovaatiot, suunnittelutrendit, digitaalinen muodonmuutos, verkkoteknologiat, teknologiset näkemykset"
   },
   
   "Layout": {
     "Copyright": {
-      "text": "FI25101203, ©2025 VIMA Web Solutions. Kaikki oikeudet pidätetään.",
+      "text": "FI25101203, 2025 VIMA Web Solutions. Kaikki oikeudet pidätetään.",
       "terms_and_conditions": "Käyttöehdot",
       "privacy_policy": "Tietosuojakäytäntö"
     }
@@ -198,7 +207,10 @@
     },
     "errors": {
       "network": "Verkkovirhe. Yritä uudelleen."
-    }
+    },
+    "meta_title": "Ota yhteyttä | Vima Web Solutions - Ota yhteyttä verkkoteknologia- ja AI-asiantuntijoihin",
+    "meta_description": "Ota yhteyttä asiantuntijatyöryhmäämme, joka koostuu verkkokehittäjistä ja tekoälyn erikoisasiantuntijoista. Keskustele digitaalisesta muodonmuutoksestasi, saa räätälöityjä ratkaisuja ja ota ensimmäinen askel kohti innovatiivista teknologiaa.",
+    "meta_keywords": "ota yhteyttä verkkokehittäjiin, tekoälyn teknologiakonsultaatio, digitaalisen muodonmuutoksen tiedustelu, verkkosivustoratkaisujen tuki, monikielisten verkkosivustojen asiantuntijat, teknologiakonsultaatio"
   },
   "TermsAndConditions": {
     "title": "Käyttöehdot",
@@ -252,7 +264,10 @@
       "email": "Sähköposti: vimawebsolutions@gmail.com",
       "address": "Osoite: Istanbul Valley, Kalifornia, USA"
     },
-    "lastUpdated": "Viimeksi päivitetty: Helmikuu 2025"
+    "lastUpdated": "Viimeksi päivitetty: Helmikuu 2025",
+    "meta_title": "Käyttöehdot | Vima Web Solutions - Digitaalisten palveluiden oikeudellinen kehys",
+    "meta_description": "Tutustu kattaviin käyttöehtoihimme, jotka määrittelevät oikeudellisen kehyksen, käyttäjän vastuut ja ohjeet Vima Web Solutionsin digitaalisten palveluiden ja tekoälyn teknologioiden käyttämiseen.",
+    "meta_keywords": "palveluehdot, oikeudelliset ehdot, digitaalisten palveluiden sopimus, käyttäjän vastuut, tekoälyn teknologian ehdot, verkkokehityksen oikeudelliset ohjeet"
   },
   "PrivacyPolicy": {
     "title": "Tietosuojakäytäntö",
@@ -268,7 +283,10 @@
     "dataProtection": {
       "heading": "3. Tietosuoja",
       "description": "Toteutamme asianmukaiset tekniset ja organisatoriset toimenpiteet henkilökohtaisten tietojesi suojaamiseksi luvattomalta tai laittomalta käsittelyltä."
-    }
+    },
+    "meta_title": "Tietosuojakäytäntö | Vima Web Solutions - Tietosuoja ja käyttäjän yksityisyys",
+    "meta_description": "Tutustu kattavaan tietosuojakäytäntöömme, joka varmistaa henkilökohtaisten tietojesi suojaamisen, selvittää tietojen keräyskäytäntömme ja osoittaa sitoutumisemme käyttäjän yksityisyyteen ja turvallisuuteen.",
+    "meta_keywords": "tietosuojakäytäntö, tietosuoja, käyttäjän tietosuoja, digitaalisten palveluiden tietosuoja, tekoälyn teknologian tietojen käsittely, verkkokehityksen tietoturva"
   },
   "Errors": {
     "MISSING_MESSAGE": "Käännöstä ei löytynyt",
@@ -285,5 +303,10 @@
     "tr": "Turkki", 
     "ar": "Arabia",
     "fi": "Suomi"
+  },
+  "HomePage": {
+    "meta_title": "Vima Web Solutions - Tekoälyavusteinen verkkokehitys ja digitaalinen muodonmuutos",
+    "meta_description": "Muuta liiketoimintaasi huipputason verkkokehityksellä, tekoälyn integroinnilla ja monikielisillä ratkaisuilla. Avaa kasvun mahdollisuudet älykästä teknologiaa ja intuitiivista suunnittelua hyödyntäen.",
+    "meta_keywords": "verkkokehitys, tekoälyn integrointi, digitaalinen muodonmuutos, monikieliset verkkosivustot, käyttöliittymäsuunnittelu, liiketoiminnan teknologiaratkaisut"
   }
 }

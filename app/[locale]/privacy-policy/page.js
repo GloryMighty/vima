@@ -5,12 +5,18 @@
  */
 import { useTranslations } from 'next-intl';
 import IstiLayout from '@/layout/IstiLayout';
+import ClientHelmet from '@/components/ClientHelmet';
 
 export default function PrivacyPolicy() {
   const t = useTranslations('PrivacyPolicy');
 
   return (
     <IstiLayout>
+      <ClientHelmet 
+        title={`${t('meta_title')} | Vima Web Solutions`}
+        description={t('meta_description')}
+        keywords={t('meta_keywords')}
+      />
       <br />
       <br />  
       <div className="container py-5">

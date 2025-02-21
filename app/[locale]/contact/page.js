@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import IstiLayout from "@/layout/IstiLayout";
 import { useState } from "react";
 import Image from 'next/image';
+import ClientHelmet from '@/components/ClientHelmet';
 
 const Contact = () => {
   const t = useTranslations('Contact');
@@ -116,6 +117,11 @@ const Contact = () => {
 
   return (
     <IstiLayout>
+      <ClientHelmet 
+        title={`${t('meta_title')} | Vima Web Solutions`}
+        description={t('meta_description')}
+        keywords={t('meta_keywords')}
+      />
       <Breadcrumbs pageTitle={t('page_title')} />
       <section className="tf__main_contact pt_130 pb_150">
         <div className="container">

@@ -5,17 +5,23 @@ import { Link } from '@/config/navigation';
 import Breadcrumbs from "@/components/Breadcrumbs";
 import IstiLayout from "@/layout/IstiLayout";
 import dynamic from 'next/dynamic';
+import ClientHelmet from '@/components/ClientHelmet';
 
 // Dynamically import Nivo to ensure client-side rendering
 const NivoLine = dynamic(() => import('@nivo/line').then((mod) => mod.ResponsiveLine), {
   ssr: false,
 });
 
-export default function About() {
+export default function AboutPage() {
   const t = useTranslations('About');
   
   return (
     <IstiLayout>
+      <ClientHelmet 
+        title={`${t('meta_title')} | Vima Web Solutions`}
+        description={t('meta_description')}
+        keywords={t('meta_keywords')}
+      />
       <Breadcrumbs pageTitle={t('page_title')} />
       <section className="tf__about pt_150 pb_150" id="about">
         <div className="container">

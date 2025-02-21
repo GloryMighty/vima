@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const aboutData = {
   title: "Visual Journey through our Portfolio",
-  subtitle: "making this the first true generator on the Internet",
+  subtitle: "Web Solutions for your business elevations",
   bio: "",
   // Path to the dojo image in public directory
   image: "/images/dojo.png",
@@ -19,7 +19,7 @@ const About = () => {
           <div className="col-xl-4 col-lg-4 mb-4">
             <div className="tf__common_heading tf__about_text">
               <h5>{t('immerse_in')}</h5>
-              <h2 data-text-animation="rotate-in" data-split="word">
+              <h2 data-text-animation="rotate" data-split="word">
                 {t('title')}
               </h2>
               <p>{t('bio')}</p>

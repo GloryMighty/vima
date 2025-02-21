@@ -43,7 +43,10 @@
       "growth": "Büyüme"
     },
     "cta_button": "Danışma Talep Et",
-    "image_alt": "VIMA Takım Portfolyosu"
+    "image_alt": "VIMA Takım Portfolyosu",
+    "meta_title": "Hakkımızda | Vima Web Solutions - Yapay Zeka Destekli Web Geliştirme",
+    "meta_description": "Vima Web Solutions'ı keşfedin, yapay zeka destekli web geliştirme, çok dilli çözümler ve işletmeleri dönüştüren yenilikçi dijital deneyimler konusunda uzmanlar.",
+    "meta_keywords": "web geliştirme, yapay zeka entegrasyonu, çok dilli web siteleri, dijital dönüşüm, kullanıcı arayüzü tasarımı, iş teknoloji çözümleri"
   },
   "Experience": {
     "pricing": {
@@ -69,7 +72,10 @@
           "features": "Gelişmiş Plandaki Her Şey, ARTI|Premium alan adı dahil|Sınırsız güncelleme talebi|AI Chatbot Entegrasyonu|Üstün web sitesi tasarımı|Kullanıcı kimlik doğrulama|2 yıl barındırma|5 Dile kadar"
         }
       },
-      "choose_plan": "Planı Seç"
+      "choose_plan": "Planı Seç",
+      "meta_title": "Fiyatlandırma | Vima Web Solutions - Esnek Web Geliştirme Paketleri",
+      "meta_description": "İşletmenizin ihtiyaçlarını karşılamak için özel olarak tasarlanmış web geliştirme paketlerimizden seçin. Temel çözümlerden premium çözümlere, dijital dönüşümünüz için mükemmel planı bulun.",
+      "meta_keywords": "web geliştirme fiyatlandırması, web sitesi paketleri, dijital dönüşüm, yapay zeka entegrasyonu, çok dilli web siteleri, iş teknoloji çözümleri"
     }
   },
   "Portfolio": {
@@ -147,11 +153,14 @@
     "tags": {
       "title": "Etiketler"
     },
-    "image_alt": "Blog Post Image"
+    "image_alt": "Blog Post Image",
+    "meta_title": "Blog | Vima Web Solutions - Web Geliştirme İçgörüleri ve İnovasyonları",
+    "meta_description": "Dijital dönüşümü tetikleyen, keskin web geliştirme içgörüleri, yapay zeka inovasyonları, tasarım trendleri ve uzman bakış açılarını içeren blogumuzu keşfedin.",
+    "meta_keywords": "web geliştirme blogu, yapay zeka inovasyonları, tasarım trendleri, dijital dönüşüm, web teknolojileri, teknoloji içgörüleri"
   },
   "Layout": {
     "Copyright": {
-      "text": "FI25101203, ©2025 VIMA Web Solutions. Tüm hakları saklıdır.",
+      "text": "FI25101203, 2025 VIMA Web Solutions. Tüm hakları saklıdır.",
       "terms_and_conditions": "Şartlar ve Koşullar",
       "privacy_policy": "Gizlilik Politikası"
     }
@@ -197,7 +206,10 @@
     },
     "errors": {
       "network": "Ağ hatası. Lütfen tekrar deneyin."
-    }
+    },
+    "meta_title": "Bize Ulaşın | Vima Web Solutions - Web ve AI Uzmanlarıyla İletişime Geçin",
+    "meta_description": "Web geliştiriciler ve AI uzmanlarımızdan oluşan profesyonel ekibimizle iletişime geçin. Dijital dönüşüm ihtiyaçlarınızı görüşün, kişiselleştirilmiş çözümler alın ve yenilikçi teknolojiye doğru ilk adımı atın.",
+    "meta_keywords": "web geliştiricilerle iletişim, AI teknoloji danışmanlığı, dijital dönüşüm sorgusu, web çözümleri desteği, çok dilli web sitesi uzmanları, teknoloji danışmanlığı"
   },
   "TermsAndConditions": {
     "title": "Kullanım Şartları",
@@ -251,7 +263,10 @@
       "email": "E-posta: vimawebsolutions@gmail.com",
       "address": "Adres: Istanbul Valley, Kaliforniya, ABD"
     },
-    "lastUpdated": "Son Güncelleme: Şubat 2025"
+    "lastUpdated": "Son Güncelleme: Şubat 2025",
+    "meta_title": "Kullanım Şartları | Vima Web Solutions - Dijital Hizmetler için Yasal Çerçeve",
+    "meta_description": "Vima Web Solutions'ın dijital hizmetlerini ve AI teknolojilerini kullanmak için yasal çerçeveyi, kullanıcı sorumluluklarını ve yönergeleri açıklayan kapsamlı Kullanım Şartlarımızı gözden geçirin.",
+    "meta_keywords": "hizmet şartları, yasal koşullar, dijital hizmetler sözleşmesi, kullanıcı sorumlulukları, AI teknoloji şartları, web geliştirme yasal yönergeleri"
   },
   "PrivacyPolicy": {
     "title": "Gizlilik Politikası",
@@ -267,7 +282,10 @@
     "dataProtection": {
       "heading": "3. Veri Koruma",
       "description": "Kişisel bilgilerinizi yetkisiz veya yasadışı işlemlerden korumak için uygun teknik ve organizasyonel önlemler uyguluyoruz."
-    }
+    },
+    "meta_title": "Gizlilik Politikası | Vima Web Solutions - Veri Koruması ve Kullanıcı Gizliliği",
+    "meta_description": "Kişisel verilerinizin korunmasını sağlayan, veri toplama uygulamalarımızı açıklayan ve kullanıcı gizliliği ve güvenliğine olan bağlılığımızı gösteren kapsamlı gizlilik politikamızı öğrenin.",
+    "meta_keywords": "gizlilik politikası, veri koruması, kullanıcı veri gizliliği, dijital hizmetler gizliliği, AI teknolojisi veri işleme, web geliştirme veri güvenliği"
   },
   "Errors": {
     "MISSING_MESSAGE": "Çeviri bulunamadı",
@@ -284,5 +302,10 @@
     "tr": "Türkçe", 
     "ar": "Arapça",
     "fi": "Fince"
+  },
+  "HomePage": {
+    "meta_title": "Vima Web Solutions - Yapay Zeka Destekli Web Geliştirme ve Dijital Dönüşüm",
+    "meta_description": "Gelişmiş web geliştirme, yapay zeka entegrasyonu ve çok dilli çözümlerle işletmenizi dönüştürün. Akıllı teknoloji ve sezgisel tasarımla büyüme potansiyelini açığa çıkarın.",
+    "meta_keywords": "web geliştirme, yapay zeka entegrasyonu, dijital dönüşüm, çok dilli web siteleri, kullanıcı arayüzü tasarımı, iş teknoloji çözümleri"
   }
 }
