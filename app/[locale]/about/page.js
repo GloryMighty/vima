@@ -20,12 +20,12 @@ export default function About() {
       <section className="tf__about pt_150 pb_150" id="about">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-xl-4 col-lg-4 mb-4">
-              <div className="tf__common_heading tf__about_text">
-                <h2 data-text-animation="rotate-in" data-split="word">
+            <div className="col-12 col-md-6 col-lg-4 mb-4">
+              <div className="tf__common_heading tf__about_text text-left text-md-start">
+                <h2 data-text-animation="rotate-in" data-split="word" className="mb-3">
                   {t('main_title')}
                 </h2>
-                <h5>{t('main_paragraph_1')}</h5>
+                <h6 className="mb-2">{t('main_paragraph_1')}</h6>
                 <h5>{t('main_paragraph_2')}</h5>
               </div>
             </div>
