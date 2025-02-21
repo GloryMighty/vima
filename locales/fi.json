@@ -10,29 +10,29 @@
   },
   "Experience": {
     "pricing": {
-      "sub_heading": "Hinnoittelusuunnitelmat",
+      "sub_heading": "Hinnoittelu",
       "heading": "Valitse Suunnitelmasi",
       "plans": {
         "basic": {
-          "title": "Perussuunnitelma",
-          "price": "$299",
+          "title": "Basic Plan",
+          "price": "299€",
           "price_subtext": "alkaen",
-          "features": "Alkukonsultaatio|Suunnittelu ja tuotanto|Isännöinti omalla palvelimella|Yksinkertainen verkkosivusto|2 kieltä"
+          "features": "Alkukonsultaatio|Suunnittelu ja tuotanto|Hostaus teidän palvelimella|Moderni ja hieno verkkosivusto|2 kieltä"
         },
         "advanced": {
-          "title": "Edistynyt Suunnitelma",
-          "price": "$599",
+          "title": "Advanced Plan",
+          "price": "599€",
           "price_subtext": "alkaen",
-          "features": "Käyttövalmis ratkaisu|3 ILMAISTA päivitystä vuodessa|1 vuosi ILMAISTA palvelintilaa|SEO ja 3 ILMAISTA blogikirjoitusta kuukaudessa|Parempi digitaalinen läsnäolo|Edistynyt verkkosivuston suunnittelu|3 kieltä"
+          "features": "Avaimet käteen ratkaisu|3 ILMAISTA päivitystä vuodessa|1 vuoden ILMAINEN hostaus|SEO ja 3 ILMAISTA blogikirjoitusta vuodessa|Parempi digitaalinen näkyvyys|Erittäin laadukas verkkosivuston suunnittelu|3 kieltä"
         },
         "vip": {
-          "title": "Premium-Suunnitelma",
-          "price": "$999",
+          "title": "Premium Plan",
+          "price": "999€",
           "price_subtext": "alkaen",
-          "features": "Kaikki Edistyneestä suunnitelmasta, PLUS|Premium verkkotunnus sisältyy|Rajattomat päivitykset pyyntöstä|AI Chatbot-integraatio|Ensiluokkainen verkkosivuston suunnittelu|Käyttäjätunnistus|2 vuotta isännöintiä|Jopa 5 kieltä"
+          "features": "Kaikki Advanced Plan:issa ja lisäksi:|Premium verkkotunnus (com/fi..)|5 Ilmaista päivitystä|AI Chatbot-integraatio|Huipputason animoitu verkkosivusto|Käyttäjätunnukset|2 Vuoden sivustohostaus|Jopa 5 kieltä"
         }
       },
-      "choose_plan": "Valitse Suunnitelma",
+      "choose_plan": "Valitse Taso",
       "meta_title": "Hinnoittelu | Vima Web Solutions - Joustavat verkkokehityspaketit",
       "meta_description": "Valitse räätälöidyistä verkkokehityspaketeistamme, jotka on suunniteltu vastaamaan liiketoimintasi tarpeita. Perusratkaisuista premium-ratkaisuihin, löydä täydellinen suunnitelma digitaaliseen muodonmuutokseesi.",
       "meta_keywords": "verkkokehityksen hinnoittelu, verkkosivustopaketit, digitaalinen muodonmuutos, tekoälyn integrointi, monikieliset verkkosivustot, liiketoiminnan teknologiaratkaisut"
@@ -40,13 +40,13 @@
   },
   "Portfolio": {
     "sub_title": "Galleria",
-    "title": "Viimeisin Portfolio",
-    "description": "Tutustu viimeisimpiin töihimme portfoliossamme",
+    "title": "Uusimmat projektit",
+    "description": "Tutustu uusimpiin töihimme portfoliossamme",
     "image_alt": "Portfolioprojektin kuva",
     "items": {
       "beauty": {
         "title": "Kauneushoitolan Verkkosivusto",
-        "description": "Moderni ja tyylikäs verkkosivuston suunnittelu kauneushoitolalle"
+        "description": "Moderni ja tyylikäs verkkosivusto kauneushoitolalle"
       },
       "land": {
         "title": "Kiinteistöalusta",
@@ -65,22 +65,22 @@
   "Banner": {
     "we_are_vima": "ME OLEMME VIMA",
     "passionate_website_developers": "INTOHIMOISET KOODARIT",
-    "banner_paragraph": "Intohimoisina verkkosivukehittäjinä luomme kauniita ja intuitiivisia digitaalisia sivustoja, jotka vangitsevat vierailijoiden huomion.",
+    "banner_paragraph": "Intohimoisina verkkosivukehittäjinä luomme kauniita ja intuitiivisia verkkosivustoja, jotka vangitsevat vierailijoiden huomion.",
     "watch_video": "Katso video"
   },
   "About": {
     "immerse_in": "sukella",
-    "title": "Visuaalinen matka portfolioomme",
+    "title": "Visuaalinen matka projekteihimme",
     "bio": "Tietoa meistä ja töistämme.",
     "page_title": "MEISTÄ",
     "image_alt": "VIMA-tiimin Portfolio",
-    "main_title": "Liiketoiminnan kasvattaminen älykkäillä teknologioilla",
-    "main_paragraph_1": "Nykyisessä kilpailuympäristössä yrityksille tarvitaan enemmän kuin pelkkää ohjelmistoa – tarvitaan älykkäitä ratkaisuja, jotka tuottavat konkreettisia tuloksia. Kehittyneet tekoäly- ja käyttöliittymäteknologiamme on huolellisesti suunniteltu muuntamaan operatiivista tehokkuutta, lisäämään tuottavuutta ja vapauttamaan ennennäkemätöntä liiketoiminnan kasvua.",
-    "main_paragraph_2": "Me emme vain luo teknologiaa, vaan luomme strategisia etuja, jotka antavat yrityksille kriittisen edun markkinoilla. Integroimalla saumattomasti kehittyneet tekoälyn ominaisuudet intuitiivisiin käyttöliittymiin, muutamme monimutkaiset haasteet optimoiduiksi mahdollisuuksiksi.",
+    "main_title": "Liiketoiminnan kasvattaminen älykkäillä ratkaisuilla",
+    "main_paragraph_1": "Nykyisessä kilpailutilanteessa yritykset tarvitsevat enemmän kuin pelkkää ohjelmistoa – tarvitaan älykkäitä ratkaisuja, jotka tuottavat konkreettisia tuloksia. Kehittyneet tekoäly- ja käyttöliittymäteknologiamme on suunniteltu lisäämään operatiivista tehokkuutta, kasvattamaan tuottavuutta ja mahdollistamaan ennennäkemätöntä liiketoiminnan kasvua.",
+    "main_paragraph_2": "Me emme vain luo teknologiaa, vaan luomme strategisia etuja, jotka antavat yrityksille kriittisen edun markkinoilla. Integroimalla saumattomasti kehittyneet tekoälyn ominaisuudet intuitiivisiin käyttöliittymiin, muutamme monimutkaiset haasteet mahdollisuuksiksi.",
     "commitment_title": "SITOUTUMISEMME MENESTYKSEENNE",
     "ai_insights": {
-      "title": "Tekoälyn tuottamat oivallukset",
-      "description": "Hyödynnä ennustavaa analytiikkaa tehdäksesi dataohjautuvia päätöksiä, jotka suoraan vaikuttavat tulokseesi.",
+      "title": "Tekoälyn Hyödyntäminen",
+      "description": "Hyödynnä ennakoivaa analytiikkaa tehdäksesi dataan perustuvia päätöksiä, jotka suoraan vaikuttavat tulokseesi.",
       "impact": "Jopa 40% parannus päätöksenteon tarkkuudessa"
     },
     "ui_ux": {
@@ -90,7 +90,7 @@
     },
     "scalable": {
       "title": "Skaalautuvat ratkaisut",
-      "description": "Räätälöidyt teknologiat, jotka kasvavat yrityksesi mukana, varmistaen pitkäaikaisen teknologisen relevanssin.",
+      "description": "Räätälöidyt teknologiat, jotka kasvavat yrityksesi mukana, varmistaen pitkän aikavälin teknologisen hyödyn.",
       "impact": "Mukautuvat eri kokoisten ja toimialojen yrityksiin"
     },
     "chart": {
@@ -126,7 +126,7 @@
     "posts": {
       "travel": {
         "author": "VIMA Web",
-        "title": "Edistynyt projekti turkkilaiselle matkailuyritykselle",
+        "title": "Advanced Plan turkkilaiselle matkailuyritykselle",
         "content": "Edistynyt ja responsiivinen käyttöliittymäsuunnittelu Turkish Travelille, esitellen modernin lähestymistavan verkkokehitykseen. Hakukoneoptimoinnin ja verkkosivuston suorituskyvyn optimoinnin hallinta optimaalisen käyttäjäkokemuksen saavuttamiseksi, verkkosivusto sisältää käännöksen 3 kielelle (arabia, englanti ja turkki), varmistaen sujuvan navigoinnin jokaiselle käyttäjälle."
       },
       "beauty": {
@@ -142,8 +142,8 @@
     },
     "recent_posts": {
       "title": "Viimeisimmät julkaisut",
-      "basic": "Tutustu yrityksesi perusvaihtoehtoihin",
-      "advanced": "Edistynyt ratkaisu älykkäille yrittäjille",
+      "basic": "Tutustu yrityksesi vaihtoehtoihin",
+      "advanced": "Edistynyt ratkaisu yrittäjille",
       "future": "Sijoita tulevaisuuteesi, hanki verkkosovellus!"
     },
     "contact": {
@@ -158,10 +158,9 @@
     "meta_description": "Tutustu blogiimme, joka tarjoaa huipputason verkkokehityksen näkemyksiä, tekoälyn innovaatioita, suunnittelutrendejä ja asiantuntijoiden näkökulmia, jotka ajavat digitaalista muodonmuutosta.",
     "meta_keywords": "verkkokehityksen blogi, tekoälyn innovaatiot, suunnittelutrendit, digitaalinen muodonmuutos, verkkoteknologiat, teknologiset näkemykset"
   },
-  
   "Layout": {
     "Copyright": {
-      "text": "FI25101203, 2025 VIMA Web Solutions. Kaikki oikeudet pidätetään.",
+      "text": " 2025 VIMA. Kaikki oikeudet pidätetään.",
       "terms_and_conditions": "Käyttöehdot",
       "privacy_policy": "Tietosuojakäytäntö"
     }
@@ -178,18 +177,18 @@
       "dev": {
         "title": "Istanbulin toimisto",
         "type": "Verkkokehityksen osoite",
-        "location": "Levent"
+        "location": "Osmanbey"
       },
       "sales": {
-        "title": "Istanbulin toimisto",
+        "title": "Suomen toimisto",
         "type": "Myyntitoimisto",
-        "location": "Nisantasi"
+        "location": "Pietarsaari"
       }
     },
     "form": {
       "title": "Ota yhteyttä",
       "question": "Onko sinulla kysyttävää?",
-      "description": "Tarjoamme huipputason palveluita ja nostamme brändisi asiantuntemuksellamme. Liity menestyvien yrittäjien joukkoomme ja koe ero edistyneellä verkkokehityksellämme!",
+      "description": "Tarjoamme huipputason palveluita ja teemme brändisi tunnetuksi asiantuntemuksellamme. Liity menestyvien yrittäjien joukkoomme ja koe ero edistyneellä verkkokehityksellämme!",
       "name_placeholder": "Nimesi",
       "email_placeholder": "Sähköpostiosoitteesi",
       "phone_placeholder": "Puhelinnumero",
@@ -206,11 +205,12 @@
       "message_required": "Viesti vaaditaan"
     },
     "errors": {
-      "network": "Verkkovirhe. Yritä uudelleen."
-    },
-    "meta_title": "Ota yhteyttä | Vima Web Solutions - Ota yhteyttä verkkoteknologia- ja AI-asiantuntijoihin",
+      "network": "Verkkovirhe. Yritä uudelleen.",
+      "meta_title": "Ota yhteyttä | Vima Web Solutions - Ota yhteyttä verkkoteknologia- ja AI-asiantuntijoihin",
     "meta_description": "Ota yhteyttä asiantuntijatyöryhmäämme, joka koostuu verkkokehittäjistä ja tekoälyn erikoisasiantuntijoista. Keskustele digitaalisesta muodonmuutoksestasi, saa räätälöityjä ratkaisuja ja ota ensimmäinen askel kohti innovatiivista teknologiaa.",
     "meta_keywords": "ota yhteyttä verkkokehittäjiin, tekoälyn teknologiakonsultaatio, digitaalisen muodonmuutoksen tiedustelu, verkkosivustoratkaisujen tuki, monikielisten verkkosivustojen asiantuntijat, teknologiakonsultaatio"
+ 
+    }
   },
   "TermsAndConditions": {
     "title": "Käyttöehdot",
@@ -241,7 +241,7 @@
       "prohibited": "Sitoudut siihen, että et:",
       "prohibitedItems": {
         "item1": "Julkaise sisältöä, joka on lainvastainen, haitallinen, uhkaava tai säädytön",
-        "item2": "Tee itsesi toiseksi henkilöksi tai yhteisöksi",
+        "item2": "Tekeydy toiseksi henkilöksi tai yhteisöksi",
         "item3": "Häiritse tai keskeytä Palvelua",
         "item4": "Yritä saada luvattomasti käyttöoikeutta mihinkään Palvelun osaan"
       }
@@ -262,12 +262,13 @@
       "heading": "9. Yhteystiedot",
       "description": "Jos sinulla on kysyttävää näistä Ehdoista, ota yhteyttä:",
       "email": "Sähköposti: vimawebsolutions@gmail.com",
-      "address": "Osoite: Istanbul Valley, Kalifornia, USA"
+      "address": "Osoite: Istanbul, Turkki / Pietarsaari, Suomi"
     },
     "lastUpdated": "Viimeksi päivitetty: Helmikuu 2025",
     "meta_title": "Käyttöehdot | Vima Web Solutions - Digitaalisten palveluiden oikeudellinen kehys",
     "meta_description": "Tutustu kattaviin käyttöehtoihimme, jotka määrittelevät oikeudellisen kehyksen, käyttäjän vastuut ja ohjeet Vima Web Solutionsin digitaalisten palveluiden ja tekoälyn teknologioiden käyttämiseen.",
     "meta_keywords": "palveluehdot, oikeudelliset ehdot, digitaalisten palveluiden sopimus, käyttäjän vastuut, tekoälyn teknologian ehdot, verkkokehityksen oikeudelliset ohjeet"
+ 
   },
   "PrivacyPolicy": {
     "title": "Tietosuojakäytäntö",
@@ -282,11 +283,11 @@
     },
     "dataProtection": {
       "heading": "3. Tietosuoja",
-      "description": "Toteutamme asianmukaiset tekniset ja organisatoriset toimenpiteet henkilökohtaisten tietojesi suojaamiseksi luvattomalta tai laittomalta käsittelyltä."
-    },
+      "description": "Toteutamme asianmukaiset tekniset ja organisatoriset toimenpiteet henkilökohtaisten tietojesi suojaamiseksi luvattomalta tai laittomalta käsittelyltä.",
     "meta_title": "Tietosuojakäytäntö | Vima Web Solutions - Tietosuoja ja käyttäjän yksityisyys",
     "meta_description": "Tutustu kattavaan tietosuojakäytäntöömme, joka varmistaa henkilökohtaisten tietojesi suojaamisen, selvittää tietojen keräyskäytäntömme ja osoittaa sitoutumisemme käyttäjän yksityisyyteen ja turvallisuuteen.",
     "meta_keywords": "tietosuojakäytäntö, tietosuoja, käyttäjän tietosuoja, digitaalisten palveluiden tietosuoja, tekoälyn teknologian tietojen käsittely, verkkokehityksen tietoturva"
+    }
   },
   "Errors": {
     "MISSING_MESSAGE": "Käännöstä ei löytynyt",

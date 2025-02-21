@@ -383,10 +383,24 @@ export const istiUtility = {
     });
   },
   scrollTextAnimation() {
-    let typeSplit = new SplitType("[data-text-animation]", {
-      types: "lines,words, chars",
-      className: "line",
-    });
+    // Check for Arabic locale
+    const isArabic = document.documentElement.lang === 'ar';
+
+    let typeSplit;
+    if (isArabic) {
+      // Custom handling for Arabic text
+      typeSplit = new SplitType("[data-text-animation]", {
+        types: "lines",  // Only split by lines for Arabic
+        className: "line",
+      });
+    } else {
+      // Existing splitting for other languages
+      typeSplit = new SplitType("[data-text-animation]", {
+        types: "lines,words,chars",
+        className: "line",
+      });
+    }
+
     const animations = document.querySelectorAll("[data-text-animation]");
     animations.forEach((animation) => {
       let direction =
@@ -396,7 +410,7 @@ export const istiUtility = {
         delay = animation.getAttribute("data-delay") || 0,
         scroll = animation.getAttribute("data-scroll") || 1,
         stagger = animation.getAttribute("data-stagger") || 0.6,
-        split = animation.getAttribute("data-split") || "line",
+        split = isArabic ? "line" : (animation.getAttribute("data-split") || "line"),
         ease = animation.getAttribute("data-ease") || "power2.out";
       switch (direction) {
         case "slide-up":

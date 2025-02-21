@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import Iridiscence from '@/public/effects/descence';
+import { textChangeRangeIsUnchanged } from 'typescript';
 
 /**
  * Pricing plan configuration
@@ -74,7 +75,7 @@ const Experiance = () => {
                     marginBottom: '30px'
                     }}
                   >
-                    <div className="tf__pricing_header">
+                    <div className="tf__pricing_header" data-text-animation="rotate-in" data-split="char">
                       <h3 style={{ fontSize: '28px', fontWeight: '700', color: '#1a1a1a', marginBottom: '15px' }}>
                         {t(`pricing.plans.${plan.key}.title`)}
                       </h3>
@@ -85,9 +86,10 @@ const Experiance = () => {
                         </span>
                       </h2>
                     </div>
-                    <div className="tf__pricing_body">
+                    <div className="tf__pricing_body" data-text-animation="slide-down" data-split="word"> 
                       <ul style={{ listStyle: 'none', padding: 0 }}>
                         {/* Map through translated features for each plan */}
+                        <div data-text-animation="fade-bottom"></div>
                         {t(`pricing.plans.${plan.key}.features`).split('|').map((feature, featureIndex) => (
                           <li 
                             key={featureIndex}
@@ -100,8 +102,7 @@ const Experiance = () => {
                               margin: '8px 0',
                               background: 'rgba(255, 255, 255, 0.95)',
                               borderRadius: '6px',
-                              boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)'
-                            
+                              boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
                             }}
                           >   
                             {feature}

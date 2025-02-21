@@ -646,18 +646,23 @@ button:focus {
 
 .tf__about_text {
   margin-top: 80px;
-  width: 608px !important;
+  width: auto;
+  max-width: 100%;
   position: relative;
   z-index: 2;
 }
 
 .tf__about_text h2 {
   margin-bottom: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .tf__about_text p {
   margin-top: 45px;
   line-height: 25px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .tf__about_img {

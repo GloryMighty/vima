@@ -53,7 +53,7 @@ const Portfolio = () => {
           <div className="col-xl-4 my-auto order-xl-2 order-1">
             <div className="tf__common_heading tf__portfolio_heading">
               <h5>{t('sub_title')}</h5>
-              <h2 data-text-animation="rotate-in">{t('title')}</h2>
+              <h2 data-text-animation="slide-from-right" data-split="line">{t('title')}</h2>
               <p>{t('description')}</p>
             </div>
           </div>
