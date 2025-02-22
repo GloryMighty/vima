@@ -11,7 +11,7 @@ export const Home1Banner = () => {
       <div className="container-fluid h-100">
         <div className="row align-items-center h-500">
           <div className="col-xxl-6 col-xl-6">
-            <div className="tf__banner_img">
+            <div className="tf__about_img">
               <Image
                 src="/images/hero.jpg"
                 alt="portfolio img"
