@@ -1,5 +1,4 @@
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 
 export const Home1Banner = () => {
   const t = useTranslations("Banner");
@@ -8,7 +7,7 @@ export const Home1Banner = () => {
       className="tf__banner pt_100 pl_60 pr_60 bg-fixed"
       style={{ background: "url(images/background.jpg)" }}
     >
-      <div className="container-fluid h-50">
+      <div className="container">
         <div className="row align-items-center">
           <div className="col-xxl-5 col-xl-6 ms-auto">
             <div className="tf__banner_text">
