@@ -48,8 +48,16 @@ const Header1 = ({ homepage }) => {
     router.push(path);
   };
 
+  // Mobile menu styles to ensure it fits within the viewport and prevents horizontal scrolling
+  const mobileMenuStyles = {
+    overflowX: 'hidden',
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+  };
+
   return (
-    <nav className="navbar navbar-expand-lg tf__main_menu pl_50 pr_60 main_menu">
+    <nav className="navbar navbar-expand-lg tf__main_menu pl_50 pr_60 main_menu" style={mobileMenuStyles}>
       <div className={`container${homepage ? "-fluid" : ""}`}>
         <Link className="navbar-brand" href="/" onClick={() => handleNavigation('/')}>
           <img src="images/logo.png" alt="logo" className="img-fluid w-100" />
