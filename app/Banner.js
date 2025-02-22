@@ -10,7 +10,7 @@ export const Home1Banner = () => {
     >
       <div className="container-fluid h-100">
         <div className="row align-items-center h-500">
-          <div className="col-xxl-6 col-xl-6" style={{ zIndex: 1000 }}>
+          <div className="col-xxl-6 col-xl-6">
             <div className="tf__banner_img">
               <Image
                 src="/images/hero.jpg"

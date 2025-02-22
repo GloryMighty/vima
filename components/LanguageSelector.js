@@ -84,7 +84,7 @@ const LanguageSelector = () => {
           padding: '5px 13px',  // Reduce padding
           fontSize: '12px',     // Reduce font size
           lineHeight: '1.2',    // Tighten line height
-          height: 'auto',        // Allow height to adjust to content
+          height: '',        // Allow height to adjust to content
           borderRadius: '50%'
         }}
         aria-haspopup="listbox"
@@ -112,7 +112,9 @@ const LanguageSelector = () => {
                   fontSize: '11px',      // Reduce font size for dropdown items
                   lineHeight: '1.2',    // Tighten line height
                   height: 'auto',        // Allow height to adjust to content
-                  borderRadius: '50%'
+                  borderRadius: '50%',
+                  display: 'block',      // Ensure buttons stack vertically
+                  width: '100%',         // Full width for each button
                 }}
               >
                 <span className="tf__language_flag">{languages[locale].flag}</span>

@@ -1,0 +1,75 @@
+/* Ensure the menu items remain in a row on all screen sizes */
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+/* Adjust spacing for smaller screens */
+@media (max-width: 767px) {
+  .navbar-nav {
+    gap: 2px;
+    padding: 0 5px;
+  }
+  .nav-link {
+    font-size: 0.7rem !important;
+  }
+}
+
+/* Position LanguageSelector */
+.language-selector-container {
+  position: absolute; /* Position it absolutely within the navbar */
+  right: 10px; /* Adjust this value to move it more to the right */
+  top: 5px; /* Keep it aligned with the navbar */
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.tf__language_dropdown {
+  position: absolute; /* Position dropdown relative to button */
+  top: 30px; /* Move dropdown down to avoid interrupting the header */
+  left: 0px; /* Align dropdown with the LanguageSelector button */
+  z-index: 1000; /* Ensure dropdown is above other elements */
+}
+
+.nav-link {
+  font-size: 1rem !important;
+}
+
+/* Responsive font size for nav links */
+@media (max-width: 1200px) {
+  .nav-link {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-link {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-link {
+    font-size: 0.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-link {
+    font-size: 0.15rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .nav-link {
+    font-size: 0.1rem !important;
+  }
+}
+
+.pr_60 {
+  padding-right: 0px !important;
+}
