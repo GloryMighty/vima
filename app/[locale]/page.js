@@ -8,6 +8,7 @@ import Testomonial from "app/Testemonial";
 import IstiLayout from "@/layout/IstiLayout";
 import { useTranslations } from 'next-intl';
 import ClientHelmet from '@/components/ClientHelmet';
+import Head from 'next/head';
 
 const page = () => {
   const t = useTranslations('HomePage');
@@ -19,6 +20,10 @@ const page = () => {
         description={t('meta_description')}
         keywords={t('meta_keywords')}
       />
+      <Head>
+        <meta name="google-site-verification" content="SehANDDhj3LTVodEsYzH4X4CN6LMUH_q_KvNrMaZA9o" />
+        <meta name="google-site-verification" content="google-search-console-verification-token" />
+      </Head>
       <Home1Banner />
       <About />
       <Portfolio />

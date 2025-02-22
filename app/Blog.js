@@ -39,7 +39,7 @@ const blogs = [
     key: "premium",
     author: "VIMA Solutions",
     comments: 5,
-    date: "31 December, 2025",
+    date: "19 February, 2025",
     img: "slav1.png",
   },
 ];
