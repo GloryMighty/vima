@@ -32,10 +32,10 @@ const About = () => {
               <Image
                 src={getImagePath(aboutData.image)}
                 alt={t('image_alt')}
-                className="img-fluid w-100 parallax-image"
                 width={800}
                 height={600}
                 priority={false}
+                className="img-fluid w-100 parallax-image"
               />
             </div>
           </div>

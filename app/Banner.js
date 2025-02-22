@@ -6,15 +6,15 @@ export const Home1Banner = () => {
   return (
     <section
       className="tf__banner pt_100 pl_60 pr_60 bg-fixed"
-      style={{ background: "url(images/banner_bg.jpg)" }}
+      style={{ background: "url(images/background.jpg)" }}
     >
       <div className="container-fluid h-100">
-        <div className="row align-items-center h-500">
+        <div className="row align-items-center">
           <div className="col-xxl-6 col-xl-6">
-            <div className="tf__about_img">
+            <div className="tf__banner_img">
               <Image
                 src="/images/hero.jpg"
-                alt="portfolio img"
+                alt="hero img"
                 className="img-fluid w-100 parallax-image"
                 width={1200}
                 height={800}
