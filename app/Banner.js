@@ -24,8 +24,6 @@ export const Home1Banner = () => {
                 <li>
                   <a
                     className="tf__common_btn tf___video_btn venobox"
-                    data-autoplay="true"
-                    data-vbtype="video"
                     href="https://youtu.be/668nUCeBHyY?si=sHtcsCQRzAET5GOt"
                   >
                     <i className="fa-sharp fa-solid fa-circle-play" />

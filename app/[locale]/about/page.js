@@ -32,7 +32,7 @@ export default function AboutPage() {
                 <h2 data-text-animation="rotate-in" data-split="word" className="mb-3">
                   {t('main_title')}
                 </h2>
-                <h5 className="mb-2">{t('main_paragraph_1')}</h5>
+                <h5 className="mb-1">{t('main_paragraph_1')}</h5>
               </div>
             </div>
 
@@ -57,7 +57,7 @@ export default function AboutPage() {
                       title: t('ai_insights.title'),
                       description: t('ai_insights.description'),
                       impact: t('ai_insights.impact'),
-                      image: "/images/ai.jpg"
+                      image: "/images/ai.png"
                     },
                     {
                       title: t('ui_ux.title'),
@@ -69,12 +69,11 @@ export default function AboutPage() {
                       title: t('scalable.title'),
                       description: t('scalable.description'),
                       impact: t('scalable.impact'),
-                      image: "/images/scale.webp"
+                      image: "/images/scale.png"
                     }
                   ].map((item, index) => (
                     <div className="col-12 col-md-4 mb-4" key={index}>
                       <div className="testimonial-item d-flex flex-column align-items-center">
-                      <h1 className="mt-3" data-text-animation="scrub" data-split="char" style={{ textTransform: 'uppercase' }}>{item.title}</h1>
                         <img src={item.image} alt={item.title} className="img-fluid mb-3" style={{ maxWidth: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
                         <h5 className="text-center">{item.description}</h5>
                         <br />
