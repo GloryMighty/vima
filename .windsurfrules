@@ -4,6 +4,5 @@ Our middleware file is written as middleware.ts which means on typescript, inste
 Our translation is going good and there are only few adjustments for english localization left. Please try to reference other locales from [locale] folder to understand the logic and use the same logic of keywords for english locale. 
 Remember that the main logic of our application is based on the localized pages, mainly from /app/[locale] folder.
 Always reference the mentioned earlier rules and basics. 
-When you add details to the files, don't change the text of localization files. It's extremely important.
-The current state of to-production dependencies is fully compatible with the Vercel deployments. Such as tsconfig, next.config.mjs, and similar. Don't reconfigure them. 
+The current state of to-production dependencies is fully compatible with the Vercel deployments. Such as tsconfig, next.config.mjs, and similar.
 Our main styling is defined in /styles , /css folders. 

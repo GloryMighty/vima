@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import IstiLayout from "@/layout/IstiLayout";
 import dynamic from 'next/dynamic';
 import ClientHelmet from '@/components/ClientHelmet';
+import Image from 'next/image';
 
 // Dynamically import Nivo to ensure client-side rendering
 const NivoLine = dynamic(() => import('@nivo/line').then((mod) => mod.ResponsiveLine), {
@@ -31,11 +32,24 @@ export default function AboutPage() {
                 <h2 data-text-animation="rotate-in" data-split="word" className="mb-3">
                   {t('main_title')}
                 </h2>
-                <h6 className="mb-2">{t('main_paragraph_1')}</h6>
-                <h5>{t('main_paragraph_2')}</h5>
+                <h5 className="mb-2">{t('main_paragraph_1')}</h5>
               </div>
             </div>
 
+
+            <div className="col-xl-8 col-lg-8 mb-4">
+            <div className="tf__blog_details_img">
+              <Image
+                src="/images/mockmac1.png"
+                alt={t('image_alt')}
+                className="img-fluid w-70"
+                style={{ borderRadius: '20px' }}
+                width={800}
+                height={600}
+                priority={true}
+              />
+            </div>
+          </div>
             <div className="col-xl-8 col-lg-8 offset-xl-4 offset-lg-4">
               <div className="tf__testimonial_slider">
                 <div className="row">
@@ -43,31 +57,39 @@ export default function AboutPage() {
                     {
                       title: t('ai_insights.title'),
                       description: t('ai_insights.description'),
-                      impact: t('ai_insights.impact')
+                      impact: t('ai_insights.impact'),
+                      image: "/images/mockmac.png"
                     },
                     {
                       title: t('ui_ux.title'),
                       description: t('ui_ux.description'),
-                      impact: t('ui_ux.impact')
+                      impact: t('ui_ux.impact'),
+                      image: "/images/mockmac2.png"
                     },
                     {
                       title: t('scalable.title'),
                       description: t('scalable.description'),
-                      impact: t('scalable.impact')
+                      impact: t('scalable.impact'),
+                      image: "/images/slav1.png"
                     }
-                  ].map((value, index) => (
+                  ].map((item, index) => (
                     <div key={index} className="col-xl-12 mb-4">
                       <div className="tf__single_testimonial">
                         <div className="tf__single_testimonial_img">
-                          <div className="tf__single_about_icon">
-                            <i className="far fa-check-circle"></i>
-                          </div>
+                          <img
+                            src={item.image}
+                            alt={item.title}
+                            style={{
+                              width: '200px',
+                              height: '200px',
+                              borderRadius: '50%'
+                            }}
+                          />
                         </div>
                         <div className="tf__single_testimonial_text">
-                          <h3 data-text-animation="rotate-in" data-split="word">
-                            {value.title}
-                          </h3>
-                          <p>{value.description}</p>
+                          <h3>{item.title}</h3>
+                          <p>{item.description}</p>
+                          <span>{item.impact}</span>
                         </div>
                       </div>
                     </div>

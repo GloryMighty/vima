@@ -9,22 +9,22 @@ export const Home1Banner = () => {
       style={{ background: "url(images/banner_bg.jpg)" }}
     >
       <div className="container-fluid h-100">
-        <div className="row align-items-center h-100">
-          <div className="col-xxl-6 col-xl-6">
+        <div className="row align-items-center h-500">
+          <div className="col-xxl-6 col-xl-6" style={{ zIndex: 1000 }}>
             <div className="tf__banner_img">
               <Image
                 src="/images/hero.jpg"
                 alt="portfolio img"
-                className="img-fluid w-100"
+                className="img-fluid w-100 parallax-image"
                 width={1200}
                 height={800}
-                priority={true}
+                priority={false}
               />
             </div>
           </div>
           <div className="col-xxl-5 col-xl-6 ms-auto">
             <div className="tf__banner_text">
-              <h3 className="banner_title">{t('we_are_vima')}</h3>
+              <h3 className="banner_title" data-text-animation="slide-up" data-split="word">{t('we_are_vima')}</h3>
               <h1 className="banner_title">{t('passionate_website_developers')}</h1>
               <p>
                 {t('banner_paragraph')}

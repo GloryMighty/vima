@@ -124,7 +124,6 @@ npm run lint  # Run ESLint
 - Accessibility improvements
 
 ## Next Steps
-1. SEO Optimization for each page
 
 ## Notes
 - Project is in production stage (v1.0.0)
