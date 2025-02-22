@@ -7,7 +7,7 @@ import { Footer } from "./Footer";
 import Header from "./Header";
 import ScrollBtn from "./ScrollBtn";
 
-const IstiLayout = ({ children, onePage, footer, homepage }) => {
+const IstiLayout = ({ children, footer }) => {
   useEffect(() => {
     istiUtility.scrollAnimation();
     istiUtility.scrollTextAnimation();
@@ -18,7 +18,7 @@ const IstiLayout = ({ children, onePage, footer, homepage }) => {
   return (
     <Fragment>
       <div className="main">
-        <Header onePage={onePage} homepage={homepage} />
+        <Header />
         {children}
         <Footer footer={footer} />
         <Copyright />

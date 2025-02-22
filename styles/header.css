@@ -40,33 +40,10 @@
 }
 
 /* Responsive font size for nav links */
-@media (max-width: 1200px) {
-  .nav-link {
-    font-size: 0.9rem !important;
-  }
-}
-
-@media (max-width: 991px) {
-  .nav-link {
-    font-size: 0.7rem !important;
-  }
-}
 
 @media (max-width: 767px) {
   .nav-link {
-    font-size: 0.5rem !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .nav-link {
-    font-size: 0.15rem !important;
-  }
-}
-
-@media (max-width: 360px) {
-  .nav-link {
-    font-size: 0.1rem !important;
+    font-size: 0.6rem !important;
   }
 }
 
