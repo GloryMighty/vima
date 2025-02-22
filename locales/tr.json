@@ -138,6 +138,11 @@
         "author": "VIMA Takım",
         "title": "Premium Web Sitesi için Kapsamlı Çözüm Örneği",
         "content": "Web Sitesi Geliştirmenin gücünü ve kullanıcı etkileşimi ve memnuniyeti üzerindeki etkisini gösteren Premium Web Sitesinin kapsamlı bir çözüm örneği. Web sitesi, tüm cihazlarda sorunsuz bir kullanıcı deneyimi sağlayan modern ve duyarlı bir tasarıma sahip. Uygulanan AI Chatbot Yetenekleri, navigasyon desteği sağlamanın yanı sıra dönüşümü de iyileştiriyor."
+      },
+      "parsinta": {
+        "title": "Fin Otomotiv Servisi için Temel Plan",
+        "content": "Kullanıcıların yönlendirilmesine odaklanan basit ve temiz bir web tasarımına sahip tek sayfalık bir web sitesi. Proje 6 saat içinde tamamlandı ve siparişten sonraki gün müşteriye teslim edildi, bu da son derece olumlu bir sonuç sağladı.",
+        "author": "VIMA Takımı"
       }
     },
     "recent_posts": {
@@ -205,7 +210,7 @@
       "message_required": "Mesaj gereklidir"
     },
     "errors": {
-      "network": "Ağ hatası. Lütfen tekrar deneyin."
+      "network": "Lütfen sol taraftaki üç düğmeden biri aracılığıyla bizimle iletişime geçin"
     },
     "meta_title": "Bize Ulaşın | Vima Web Solutions - Web ve AI Uzmanlarıyla İletişime Geçin",
     "meta_description": "Web geliştiriciler ve AI uzmanlarımızdan oluşan profesyonel ekibimizle iletişime geçin. Dijital dönüşüm ihtiyaçlarınızı görüşün, kişiselleştirilmiş çözümler alın ve yenilikçi teknolojiye doğru ilk adımı atın.",

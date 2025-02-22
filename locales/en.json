@@ -72,7 +72,8 @@
       "title": "Recent Posts",
       "basic": "Basic Web Development",
       "advanced": "Advanced Web Development",
-      "future": "Future of Web Development"
+      "future": "Future of Web Development",
+      "parsinta": "Parsinta - A Business Landing Page"
     },
     "contact": {
       "message": "Need help with your project?",
@@ -98,6 +99,16 @@
       "premium": {
         "title": "Premium Website Solution",
         "content": "Premium implementation of a comprehensive Web Application with multiple pages handling SEO with metadata and hrefs translation, showcasing Web Development excellence. Featuring modern and responsive design, seamless user experience across all devices, and integrated AI Chatbot capabilities for enhanced navigation and engaging user experience. The chatbot is equipped with personalized data, wrapped in a user-friendly interface and is ready to provide instant answers to user inquiries. Ultimate choise for businesses seeking cutting-edge technology and exceptional user experience.",
+        "author": "VIMA Team"
+      },
+      "parsinta": {
+        "title": "Basic Plan for Finnish Auto Service",
+        "content": "A one-page website with a simple and clean web design focused on user-friendliness. The project was completed within 6 hours and delivered to the client the next day after the order, resulting in an extremely positive outcome.",
+        "author": "VIMA Team"
+      },
+      "parsinta-fi": {
+        "title": "Basic Plan for Finnish Auto Service",
+        "content": "Yksisivuinen verkkosivusto yksinkertaisella ja puhtaan verkkosuunnittelulla, joka keskittyy käyttäjäystävällisyyteen. Projekti valmistui kuuden tunnin kuluessa ja toimitettiin asiakkaalle seuraavana päivänä tilauksesta, mikä johti erittäin positiiviseen lopputulokseen.",
         "author": "VIMA Team"
       }
     },
@@ -210,7 +221,7 @@
       "message_required": "Message is required"
     },
     "errors": {
-      "network": "Network error. Please try again."
+      "network": "Please contact us via one of three buttons on the left side"
     },
     "meta_title": "Contact Us | Vima Web Solutions - Get in Touch with AI Web Experts",
     "meta_description": "Connect with our expert team of web developers and AI specialists. Discuss your digital transformation needs, get personalized solutions, and take the first step towards innovative technology.",

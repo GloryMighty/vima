@@ -86,18 +86,12 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: {locale: string};
 }) {
-  // Validate locale - Ensure only supported locales are rendered
-  // IMPORTANT: Removed explicit locale check to allow dynamic locale handling
-  
-  // Dynamic message loading - Fetch translations for the current locale
+  // Load messages based on locale
   let messages;
   try {
     messages = (await import(`../../locales/${locale}.json`)).default;
   } catch (error) {
-    // Fallback to default locale if translation loading fails
     console.error(`Failed to load messages for locale: ${locale}`, error);
-    
-    // Optional: You might want to load default locale messages instead of 404
     try {
       messages = (await import(`../../locales/${defaultLocale}.json`)).default;
     } catch {
@@ -108,23 +102,17 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        {/* HelmetWrapper - Manages dynamic metadata */}
         <HelmetWrapper>
-          {/* NextIntl Provider - Manages internationalization context */}
           <NextIntlClientProvider 
             locale={locale} 
             messages={messages} 
             timeZone="Europe/London"
             defaultTranslationValues={{
-              // Provide default values for translations to prevent rendering errors
               name: 'Guest',
-              // Add more default translation values as needed
             }}
           >
             {/* Main content rendering */}
             {children}
-            
-            {/* Global widgets - Consistently available across all pages */}
             <ToastContainer />
             <ChatWidget />
             <SocialLinksWidget />

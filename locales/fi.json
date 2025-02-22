@@ -138,6 +138,11 @@
         "author": "VIMA Web",
         "title": "Kattava ratkaisuesimerkki Premium-verkkosivustosta",
         "content": "Kattava ratkaisuesimerkki Premium-verkkosivustosta, esitellen verkkokehityksen voiman ja sen vaikutuksen käyttäjien sitoutumiseen ja tyytyväisyyteen. Verkkosivusto sisältää modernin ja responsiivisen suunnittelun, varmistaen saumattoman käyttäjäkokemuksen kaikilla laitteilla. Toteutetut tekoälypohjaisen chatbotin ominaisuudet tarjoavat navigointitukea sekä parantavat konversiota."
+      },
+      "parsinta": {
+        "title": "Perussuunnitelma suomalaiselle autokorjaamolle",
+        "content": "Yhden sivun verkkosivusto, joka on suunniteltu yksinkertaiseksi ja selkeäksi, keskittyen käyttäjäystävällisyyteen. Projekti toteutettiin kuudessa tunnissa ja toimitettiin asiakkaalle seuraavana päivänä tilauksen jälkeen, mikä johti erittäin positiiviseen lopputulokseen.",
+        "author": "VIMA-tiimi"
       }
     },
     "recent_posts": {
@@ -208,7 +213,7 @@
       "message_required": "Viesti vaaditaan"
     },
     "errors": {
-      "network": "Verkkovirhe. Yritä uudelleen."
+      "network": "Ota meihin yhteyttä yhdellä kolmesta painikkeesta vasemmalla puolella"
     }
   },
   "TermsAndConditions": {

@@ -103,13 +103,6 @@ const Blog = () => {
                   >
                     {t(`posts.${item.key}.title`)}
                   </a>
-                  <a
-                    href={`/blog#blog-${item.id}`}
-                    className="tf__common_btn tf__blog_btn"
-                  >
-                    {t('read_more')}
-                    <i className="fa-solid fa-arrow-right-long" />
-                  </a>
                 </div>
               </div>
             </div>

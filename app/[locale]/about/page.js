@@ -26,9 +26,9 @@ export default function AboutPage() {
       <Breadcrumbs pageTitle={t('page_title')} />
       <section className="tf__about pt_150 pb_150" id="about">
         <div className="container">
-          <div className="row align-items-center">
-            <div className="col-12 col-md-6 col-lg-4 mb-4">
-              <div className="tf__common_heading tf__about_text text-left text-md-start">
+          <div className="row justify-content-center">
+            <div className="col-12 col-md-8 col-lg-6 mb-5">
+              <div className="tf__common_heading tf__about_text text-center">
                 <h2 data-text-animation="rotate-in" data-split="word" className="mb-3">
                   {t('main_title')}
                 </h2>
@@ -50,52 +50,39 @@ export default function AboutPage() {
               />
             </div>
           </div>
-            <div className="col-xl-8 col-lg-8 offset-xl-4 offset-lg-4">
-              <div className="tf__testimonial_slider">
+            <div className="tf_testimonial justify-content-center">
                 <div className="row">
                   {[
                     {
                       title: t('ai_insights.title'),
                       description: t('ai_insights.description'),
                       impact: t('ai_insights.impact'),
-                      image: "/images/mockmac.png"
+                      image: "/images/ai.jpg"
                     },
                     {
                       title: t('ui_ux.title'),
                       description: t('ui_ux.description'),
                       impact: t('ui_ux.impact'),
-                      image: "/images/mockmac2.png"
+                      image: "/images/intu.png"
                     },
                     {
                       title: t('scalable.title'),
                       description: t('scalable.description'),
                       impact: t('scalable.impact'),
-                      image: "/images/slav1.png"
+                      image: "/images/scale.webp"
                     }
                   ].map((item, index) => (
-                    <div key={index} className="col-xl-12 mb-4">
-                      <div className="tf__single_testimonial">
-                        <div className="tf__single_testimonial_img">
-                          <img
-                            src={item.image}
-                            alt={item.title}
-                            style={{
-                              width: '200px',
-                              height: '200px',
-                              borderRadius: '50%'
-                            }}
-                          />
-                        </div>
-                        <div className="tf__single_testimonial_text">
-                          <h3>{item.title}</h3>
-                          <p>{item.description}</p>
-                          <span>{item.impact}</span>
-                        </div>
+                    <div className="col-12 col-md-4 mb-4" key={index}>
+                      <div className="testimonial-item d-flex flex-column align-items-center">
+                        <img src={item.image} alt={item.title} className="img-fluid mb-3" style={{ maxWidth: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
+                        <h1 className="mt-3">{item.title}</h1>
+                        <h5 className="text-center">{item.description}</h5>
+                        <h5 className="text-center">{item.impact}</h5>
                       </div>
                     </div>
                   ))}
                 </div>
-              </div>
+            </div>
             </div>
           </div>
 
@@ -109,7 +96,6 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
-        </div>
       </section>
     </IstiLayout>
   );

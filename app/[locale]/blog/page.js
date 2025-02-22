@@ -6,6 +6,7 @@ import IstiLayout from "@/layout/IstiLayout";
 import TravelCarousel from '@/app/TravelCarousel';
 import BeautyCarousel from '@/app/BeautyCarousel';
 import PersonalCarousel from '@/app/PersonalCarousel';
+import ParsintaCarousel from '@/app/ParsintaCarousel';
 import ClientHelmet from '@/components/ClientHelmet';
 
 const Page = () => {
@@ -17,7 +18,7 @@ const Page = () => {
       Carousel: TravelCarousel,
       author: t('posts.travel.author'),
       category: t('categories.web_developer'),
-      commentsCount: 8,
+      commentsCount: 4,
       title: t('posts.travel.title'),
       content: t('posts.travel.content'),
       link: 'https:/tur.it.com/'
@@ -27,7 +28,7 @@ const Page = () => {
       Carousel: BeautyCarousel,
       author: t('posts.beauty.author'),
       category: t('categories.web_designer'),
-      commentsCount: 10,
+      commentsCount: 3,
       title: t('posts.beauty.title'),
       content: t('posts.beauty.content'),
       link: 'https:/showcase.it.com/'
@@ -37,10 +38,20 @@ const Page = () => {
       Carousel: PersonalCarousel,
       author: t('posts.premium.author'),
       category: t('categories.ui_ux_designer'),
-      commentsCount: 12,
+      commentsCount: 6,
       title: t('posts.premium.title'),
       content: t('posts.premium.content'),
       link: 'https://viacheslav.my'
+    },
+    {
+      id: 'blog-4',
+      Carousel: ParsintaCarousel,
+      author: t('posts.parsinta.author'),
+      category: t('categories.ui_ux_designer'),
+      commentsCount: 2,
+      title: t('posts.parsinta.title'),
+      content: t('posts.parsinta.content'),
+      link: 'https://autoparsinta.fi'
     }
   ];
 
@@ -53,19 +64,24 @@ const Page = () => {
 
   const recentPosts = [
     {
-      date: 'February 15, 2022',
+      date: 'February 22, 2022',
       title: t('recent_posts.basic'),
       link: 'https://showcase.it.com'
     },
     {
-      date: 'February 17, 2025',
+      date: 'February 18, 2025',
       title: t('recent_posts.advanced'),
       link: 'https://tur.it.com'
     },
     {
-      date: 'February 19, 2025',
+      date: 'February 16, 2025',
       title: t('recent_posts.future'),
       link: 'https://viacheslav.my'
+    },
+    {
+      date: 'February 13, 2025',
+      title: t('recent_posts.parsinta'),
+      link: 'https://autoparsinta.fi'
     }
   ];
 
