@@ -18,10 +18,12 @@ const About = () => {
         <div className="row align-items-center">
           <div className="col-xl-4 col-lg-4 mb-4">
             <div className="tf__common_heading tf__about_text">
-              <h5>{t('immerse_in')}</h5>
-              <h2 data-text-animation="slide-up" data-split="line">
+              <h5 data-text-animation="slide-up" data-split="line">
+                {t('immerse_in')}
+              </h5>
+              <h1 data-text-animation="slide-up" data-split="line" style={{ textTransform: 'uppercase' }}>
                 {t('title')}
-              </h2>
+              </h1>
               <p>{t('bio')}</p>
             </div>
           </div>

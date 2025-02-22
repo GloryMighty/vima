@@ -268,12 +268,12 @@ button:focus {
   font-weight: 800;
   color: var(--colorWhite);
   text-transform: uppercase;
-  padding: 20px;
+  padding: 5px 10px;
   margin: 0;
   letter-spacing: 1px;
   /* line-height: 100px; */
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 
 .tf__main_menu .navbar-nav .nav-item > a i {

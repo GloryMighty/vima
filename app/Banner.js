@@ -24,9 +24,13 @@ export const Home1Banner = () => {
           </div>
           <div className="col-xxl-5 col-xl-6 ms-auto">
             <div className="tf__banner_text">
-              <h3 className="banner_title" data-text-animation="slide-up" data-split="word">{t('we_are_vima')}</h3>
-              <h1 className="banner_title">{t('passionate_website_developers')}</h1>
-              <p>
+              <h3 className="banner_title" data-text-animation="slide-up" data-split="char">
+                {t('we_are_vima')}
+              </h3>
+              <h2 className="banner_title" data-text-animation="slide-up" data-split="word">
+                {t('passionate_website_developers')}
+              </h2>
+              <p className="banner_title" data-text-animation="slide-from-right" data-split="line">
                 {t('banner_paragraph')}
               </p>
               <ul className="d-flex flex-wrap">

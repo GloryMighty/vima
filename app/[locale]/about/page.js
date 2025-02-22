@@ -74,10 +74,14 @@ export default function AboutPage() {
                   ].map((item, index) => (
                     <div className="col-12 col-md-4 mb-4" key={index}>
                       <div className="testimonial-item d-flex flex-column align-items-center">
+                      <h1 className="mt-3" data-text-animation="scrub" data-split="char" style={{ textTransform: 'uppercase' }}>{item.title}</h1>
                         <img src={item.image} alt={item.title} className="img-fluid mb-3" style={{ maxWidth: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
-                        <h1 className="mt-3">{item.title}</h1>
                         <h5 className="text-center">{item.description}</h5>
-                        <h5 className="text-center">{item.impact}</h5>
+                        <br />
+                        <br />
+
+
+                        <h1 className="text-center" data-text-animation="rotate-in" data-split="word">{item.impact}</h1>
                       </div>
                     </div>
                   ))}
