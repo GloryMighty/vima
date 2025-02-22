@@ -8,20 +8,8 @@ export const Home1Banner = () => {
       className="tf__banner pt_100 pl_60 pr_60 bg-fixed"
       style={{ background: "url(images/background.jpg)" }}
     >
-      <div className="container-fluid h-100">
+      <div className="container-fluid h-50">
         <div className="row align-items-center">
-          <div className="col-xxl-6 col-xl-6">
-            <div className="tf__banner_img">
-              <Image
-                src="/images/hero.jpg"
-                alt="hero img"
-                className="img-fluid w-100 parallax-image"
-                width={1200}
-                height={800}
-                priority={false}
-              />
-            </div>
-          </div>
           <div className="col-xxl-5 col-xl-6 ms-auto">
             <div className="tf__banner_text">
               <h3 className="banner_title" data-text-animation="slide-up" data-split="char">
