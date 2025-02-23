@@ -66,9 +66,6 @@ const Header1 = ({ homepage }) => {
           </button>
           <div className={`collapse navbar-collapse ${isMobileMenuOpen ? 'show' : ''}`} id="navbarSupportedContent">
             <ul className={`navbar-nav ms-auto ${isMobileMenuOpen ? 'open flex-column' : 'd-none d-md-flex'}`}>  
-              <div className="language-selector-container">
-                <LanguageSelector />
-              </div>
               <li className={`nav-item ${isActiveLink('/') ? 'active' : ''}`}>  
                 <Link href="/" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/')}>{t('HOME')}</Link>
               </li>
@@ -85,6 +82,9 @@ const Header1 = ({ homepage }) => {
                 <Link href="/contact" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/contact')}>{t('CONTACT')}</Link>
               </li>
             </ul>
+            <div className="language-selector-container">
+              <LanguageSelector />
+            </div>
           </div>
         </div>
       </nav>

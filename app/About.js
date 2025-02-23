@@ -3,34 +3,31 @@ import { getImagePath } from '@/utility/imageUtils';
 import Image from 'next/image';
 
 const aboutData = {
-  title: "Visual Journey through our Portfolio",
-  subtitle: "Web Solutions for your business elevations",
-  bio: "",
-  // Path to the dojo image in public directory
-  image: "/images/dojo.png",
+  title: "Visual Journey through my Portfolio",
+  subtitle: "making this the first true generator on the Internet",
+  bio: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illonge inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam",
+  img: "/images/about_img.jpg",
 };
 
 const About = () => {
   const t = useTranslations("About");
   return (
-    <section className="tf__about py-5 px-4 px-4" id="about">
+    <section className="tf__about pt_150" id="about">
       <div className="container">
-        <div className="row align-items-center">
-          <div className="col-xl-4 col-lg-4 mb-4">
+        <div className="row">
+          <div className="col-xl-4 col-lg-4">
             <div className="tf__common_heading tf__about_text">
-              <h5 data-text-animation="slide-up" data-split="line">
-                {t('immerse_in')}
-              </h5>
-              <h1 data-text-animation="slide-up" data-split="line" style={{ textTransform: 'uppercase' }}>
+              <h5>{t('immerse_in')}</h5>
+              <h2 data-text-animation="rotate-in" data-split="word">
                 {t('title')}
-              </h1>
+              </h2>
               <p>{t('bio')}</p>
             </div>
           </div>
-          <div className="col-xl-8 col-lg-8 mb-4">
+          <div className="col-xl-8 col-lg-8">
             <div className="tf__about_img">
               <Image
-                src={getImagePath(aboutData.image)}
+                src={getImagePath(aboutData.img)}
                 alt={t('image_alt')}
                 width={800}
                 height={600}
