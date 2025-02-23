@@ -116,7 +116,7 @@ const LanguageSelector = () => {
                   lineHeight: '1.2',    // Tighten line height
                   height: 'auto',        // Allow height to adjust to content
                   borderRadius: '50%',
-                  display: 'block',      // Ensure buttons stack vertically        // Full width for each button
+                  display: 'block',      // Ensure buttons stack vertically
                 }}
               >
                 <span className="tf__language_flag">{languages[locale].flag}</span>

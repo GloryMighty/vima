@@ -69,7 +69,7 @@ export default function AboutPage() {
             <div className="col-xl-8 col-lg-8 mb-4">
             <div className="tf__about_details_img">
               <Image
-                src="/images/mockmac1.png"
+                src="/images/about.png"
                 alt={t('image_alt')}
                 className="img-fluid w-70"
                 style={{ borderRadius: '20px' }}

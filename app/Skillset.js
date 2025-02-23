@@ -14,22 +14,19 @@ const Skills = () => {
       },
       {
         id: 2,
-        startDate: 2009,
-        endDate: 2018,
+        startDate: 2023,
         degicnation: t('skills.aiint'),
         desc: t('skills.aiint1'),
       },
       {
         id: 3,
         startDate: 2001,
-        endDate: 2025,
         degicnation: t('skills.multiling'),
         desc: t('skills.multiling1'),
       },
       {
         id: 4,
         startDate: 1987,
-        endDate: 2025,
         degicnation: t('skills.adapt'),
         desc: t('skills.adapt1'),
       },
