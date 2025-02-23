@@ -111,6 +111,7 @@
 
 .tf__language_selector.open .tf__language_dropdown {
   opacity: 1;
+  width: 11%;
   visibility: visible;
   transform: translateY(0);
 }

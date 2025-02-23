@@ -204,7 +204,7 @@
   }
 
   .tf__main_menu .navbar-nav .nav-item > a {
-    padding: 15px 20px;
+    padding: 15px 2px;
   }
 
   .tf__manubar {
@@ -474,33 +474,34 @@
   }
 
   .tf__main_menu .navbar-nav {
+    align-items: flex-end;
+    margin-left: auto;
+    width: 100%;
     background: transparent;
   }
 
   .tf__main_menu #navbarSupportedContent {
-    margin-top: 15px;
+    margin-top: 10px;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
   }
 
   .tf__main_menu .tf__menu_btn {
     background: transparent;
     padding: 20px 25px;
-    border-bottom: 1px solid #00000040;
   }
 
   .tf__main_menu .navbar-brand {
     width: 120px;
   }
 
-  .tf__main_menu .navbar-nav .nav-item > a {
-    border-bottom: 1px solid #eee;
-    color: var(--colorBlack);
-  }
+
 
   .tf__dropdown {
     left: 20px;
-    max-height: 250px;
+    max-height: 100px;
   }
-
   .tf__main_menu .navbar-toggler {
     width: 50px;
     height: 50px;
@@ -514,6 +515,7 @@
     box-shadow: none;
     border-radius: 5px;
   }
+
 
   .tf__main_menu .navbar-toggler .close_icon_close {
     display: none;
@@ -898,11 +900,14 @@
   }
 
   .tf__main_menu .navbar-nav {
+    align-items: flex-end;
+    margin-left: auto;
+    width: 100%;
     background: transparent;
   }
 
   .tf__main_menu #navbarSupportedContent {
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .tf__main_menu .tf__menu_btn {
@@ -913,11 +918,6 @@
 
   .tf__main_menu .navbar-brand {
     width: 120px;
-  }
-
-  .tf__main_menu .navbar-nav .nav-item > a {
-    border-bottom: 1px solid #eee;
-    color: var(--colorBlack);
   }
 
   .tf__dropdown {
@@ -936,7 +936,6 @@
     font-size: 24px;
     margin-right: 12px;
     box-shadow: none;
-    border-radius: 5px;
   }
 
   .tf__main_menu .navbar-toggler .close_icon_close {
@@ -1347,6 +1346,9 @@
   }
 
   .tf__main_menu .navbar-nav {
+    align-items: flex-end;
+    margin-left: auto;
+    width: 100%;
     background: transparent;
   }
 
@@ -1357,7 +1359,6 @@
   .tf__main_menu .tf__menu_btn {
     background: transparent;
     padding: 20px 25px;
-    border-bottom: 1px solid #00000040;
   }
 
   .tf__main_menu .navbar-brand {
@@ -1365,7 +1366,6 @@
   }
 
   .tf__main_menu .navbar-nav .nav-item > a {
-    border-bottom: 1px solid #eee;
     color: var(--colorBlack);
   }
 
