@@ -268,12 +268,12 @@ button:focus {
   font-weight: 800;
   color: var(--colorWhite);
   text-transform: uppercase;
-  padding: 5px 10px;
+  padding: 20px;
   margin: 0;
   letter-spacing: 1px;
   /* line-height: 100px; */
   display: flex;
-  align-items: left;
+  align-items: center;
 }
 
 .tf__main_menu .navbar-nav .nav-item > a i {
@@ -564,6 +564,8 @@ button:focus {
   color: var(--colorBlack);
 }
 
+/* manu end */
+
 /* banner start */
 .tf__banner {
   background-position: center !important;
@@ -573,6 +575,9 @@ button:focus {
   position: relative;
 }
 
+.tf__banner div {
+  /* height: 100%; */
+}
 
 .tf__banner_img {
   width: 750px;
@@ -646,23 +651,18 @@ button:focus {
 
 .tf__about_text {
   margin-top: 80px;
-  width: auto;
-  max-width: 100%;
+  width: 608px !important;
   position: relative;
   z-index: 2;
 }
 
 .tf__about_text h2 {
   margin-bottom: 0;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 
 .tf__about_text p {
   margin-top: 45px;
   line-height: 25px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 
 .tf__about_img {
@@ -784,7 +784,7 @@ button:focus {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: start;
 }
 
 .tf__team_skills_bar_single p {
@@ -2888,6 +2888,11 @@ html.lenis {
   position: relative;
   overflow: hidden;
   height: 100%;
+}
+
+[data-text-animation] {
+  /* opacity: 0;
+  overflow: hidden; */
 }
 
 .line {

@@ -152,24 +152,21 @@ body:after {
 }
 
 .navbar-toggler {
-  background-color: var(--colorPrimary);
+  background-color: transparent; /* Set transparent background */
+  border: none; /* Remove border */
   color: white;
-  border: none;
   font-size: 24px;
   padding: 10px;
 }
 
 .navbar-nav {
   display: none; /* Hide by default */
+  flex-direction: column; /* Display links vertically */
+  align-items: center; /* Center links horizontally */
 }
 
 .navbar-nav.open {
   display: flex; /* Show when open */
-}
-
-.nav-item {
-  padding: 10px 0;
-  text-align: center;
 }
 
 @media (max-width: 575.99px) {
@@ -181,4 +178,10 @@ body:after {
     left: 0;
     z-index: 1000;
   }
+}
+
+.nav-item {
+  padding: 10px 0;
+  text-align: center;
+  background-color: transparent; /* Apply a transparent background */
 }

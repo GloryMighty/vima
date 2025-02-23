@@ -1,28 +1,28 @@
 /* Ensure the menu items remain in a row on all screen sizes */
 .navbar-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; /* Prevent items from wrapping on smaller screens */
-  gap: 10px;
-  white-space: wrap;
-  overflow: hidden;
-  justify-content: space-between;
+  display: none; /* Hide by default */
 }
 
+.navbar-nav.open {
+  display: flex; /* Show when open */
+}
 
 /* Position LanguageSelector */
 .language-selector-container {
-  position: flex; /* Position it absolutely within the navbar */
-  right: 10; /* Adjust this value to move it more to the right */
-  top: 5; /* Keep it aligned with the navbar */
+  display: flex;
+  align-items: center; /* Center vertically */
+  margin-left: auto; /* Push it to the right */
   z-index: 1000; /* Ensure it stays above other elements */
 }
 
 .tf__language_dropdown {
-  position: flex; /* Position dropdown relative to button */
+  position: absolute; /* Position dropdown relative to button */
   top: 30px; /* Move dropdown down to avoid interrupting the header */
   left: 0px; /* Align dropdown with the LanguageSelector button */
   z-index: 1000; /* Ensure dropdown is above other elements */
 }
 
-
+.navbar-toggler {
+  background-color: transparent; /* Set transparent background */
+  border: none; /* Remove border */
+}

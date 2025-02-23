@@ -4,25 +4,28 @@ export const Home1Banner = () => {
   const t = useTranslations("Banner");
   return (
     <section
-      className="tf__banner pt-8 py-5 px-4"
-      style={{ background: "url(images/background.jpg)" }}
+      className="tf__banner pt_100 pl_60 pr_60 bg-fixed"
+      style={{ background: "url(images/breadcrumb.jpg)" }}
     >
-      <div className="container py-4">
-        <div className="col-xxl-5 col-xl-6 ms-auto">
-          <div className="tf__banner_text">
-            <h3 className="tf__banner_text" data-text-animation="slide-up" data-split="char">
-              {t('we_are_vima')}
-            </h3>
-            <h2 className="tf__banner_text">
-              {t('passionate_website_developers')}
-            </h2>
-            <p className="tf__banner_text">
-              {t('banner_paragraph')}
+      <div className="container-fluid h-100">
+        <div className="row align-items-center h-100">
+          <div className="col-xxl-5 col-xl-6 ms-auto">
+            <div className="tf__banner_text">
+              <h3 className="banner-title" data-text-animation="slide-up" data-split="char">
+                {t('we_are_vima')}
+              </h3>
+              <h2 className="banner-title">
+                {t('passionate_website_developers')}
+              </h2>
+              <p>
+                {t('banner_paragraph')}
               </p>
               <ul className="d-flex flex-wrap">
                 <li>
                   <a
                     className="tf__common_btn tf___video_btn venobox"
+                    data-autoplay="true"
+                    data-vbtype="video"
                     href="https://youtu.be/668nUCeBHyY?si=sHtcsCQRzAET5GOt"
                   >
                     <i className="fa-sharp fa-solid fa-circle-play" />
@@ -33,6 +36,7 @@ export const Home1Banner = () => {
             </div>
           </div>
         </div>
+      </div>
     </section>
   );
 };
