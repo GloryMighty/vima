@@ -14,10 +14,10 @@ export const Home1Banner = () => {
               <h3 className="banner_title" data-text-animation="slide-up" data-split="char">
                 {t('we_are_vima')}
               </h3>
-              <h2 className="banner_title" data-text-animation="slide-up" data-split="word">
+              <h2 className="banner_title">
                 {t('passionate_website_developers')}
               </h2>
-              <p className="banner_title" data-text-animation="slide-from-right" data-split="line">
+              <p className="banner_title">
                 {t('banner_paragraph')}
               </p>
               <ul className="d-flex flex-wrap">
