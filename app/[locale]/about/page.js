@@ -7,6 +7,7 @@ import IstiLayout from "@/layout/IstiLayout";
 import dynamic from 'next/dynamic';
 import ClientHelmet from '@/components/ClientHelmet';
 import Image from 'next/image';
+import Skills from '@/app/Skillset';
 
 // Dynamically import Nivo to ensure client-side rendering
 const NivoLine = dynamic(() => import('@nivo/line').then((mod) => mod.ResponsiveLine), {
@@ -25,28 +26,8 @@ export default function AboutPage() {
       />
       <Breadcrumbs pageTitle={t('page_title')} />
       <section className="tf__about" id="about">
-        <div className="container">
           <div className="row justify-content-center">
-              <div className="tf__common_heading tf__about_text text-center">
-                <h2 data-text-animation="rotate-in" data-split="word" className="mb-3">
-                  {t('main_title')}
-                </h2>
-            </div>
-
-
-            <div className="col-xl-8 col-lg-8 mb-4">
-            <div className="tf__blog_details_img">
-              <Image
-                src="/images/mockmac1.png"
-                alt={t('image_alt')}
-                className="img-fluid w-70"
-                style={{ borderRadius: '20px' }}
-                width={800}
-                height={600}
-                priority={true}
-              />
-            </div>
-          </div>
+            <Skills />
             <div className="tf_testimonial justify-content-center">
                 <div className="row">
                   {[
@@ -83,19 +64,39 @@ export default function AboutPage() {
                   ))}
                 </div>
             </div>
+          </div>
+          <div className="row justify-content-center">
+              <div className="tf__common_heading tf__about_text text-center">
+                <h2 data-text-animation="rotate-in" data-split="char" className="mb-3">
+                  {t('main_title')}
+                </h2>
             </div>
           </div>
-
-          <div className="row mt-5">
-            <div className="col-12 text-center">
-              <div className="tf__blog_link">
-                <Link href="/contact">
-                  {t('cta_button')}
-                  <i className="fa-solid fa-arrow-right-long" />
-                </Link>
-              </div>
+          <div className="row justify-content-center">
+            <div className="col-xl-8 col-lg-8 mb-4">
+            <div className="tf__about_details_img">
+              <Image
+                src="/images/mockmac1.png"
+                alt={t('image_alt')}
+                className="img-fluid w-70"
+                style={{ borderRadius: '20px' }}
+                width={800}
+                height={600}
+                priority={true}
+              />
             </div>
           </div>
+        </div>
+        <div className="row mt-5">
+          <div className="col-12 text-center">
+            <div className="tf__blog_link">
+              <Link href="/contact">
+                {t('cta_button')}
+                <i className="fa-solid fa-arrow-right-long" />
+              </Link>
+            </div>
+          </div>
+        </div>
       </section>
     </IstiLayout>
   );

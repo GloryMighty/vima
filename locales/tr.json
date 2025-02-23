@@ -312,5 +312,16 @@
     "meta_title": "Vima Web Solutions - Yapay Zeka Destekli Web Geliştirme ve Dijital Dönüşüm",
     "meta_description": "Gelişmiş web geliştirme, yapay zeka entegrasyonu ve çok dilli çözümlerle işletmenizi dönüştürün. Akıllı teknoloji ve sezgisel tasarımla büyüme potansiyelini açığa çıkarın.",
     "meta_keywords": "web geliştirme, yapay zeka entegrasyonu, dijital dönüşüm, çok dilli web siteleri, kullanıcı arayüzü tasarımı, iş teknoloji çözümleri"
+  },
+  "skills": {
+    "title": "Becerilerimiz",
+    "webdev": "Web Geliştirme",
+    "webdev1": "React, Next.js, Tailwind ve Bootstrap konusundaki uzmanlık. Modern bir yaklaşım ve sezgisel tasarım.",
+    "aiint": "Yapay Zeka Entegrasyonu",
+    "aiint1": "Yapay zeka API'sini entegre etme ve iş ihtiyaçlarına göre uyarlama yeteneği.",
+    "multiling": "Çok Dilli",
+    "multiling1": "Müşterilere 6 dilde hizmet verme: İngilizce, Fince, Rusça, Arapça, İbranice, Türkçe.",
+    "adapt": "Uyum Sağlama",
+    "adapt1": "Geliştirme alanının ihtiyaçlarına hızla uyum sağlama ve yaklaşımımızın güncel olmasını sağlama."
   }
 }

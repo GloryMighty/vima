@@ -9,9 +9,6 @@ const Breadcrumbs = ({ pageTitle }) => {
         <div className="row align-items-center h-100">
           <div className="tf__breadcrumbs_text d-sm-flex flex-wrap justify-content-between pt-5">
             <h5>{pageTitle}</h5>
-            <ul>
-              <li>{pageTitle}</li>
-            </ul>
           </div>
         </div>
       </div>

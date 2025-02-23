@@ -313,5 +313,16 @@
     "meta_title": "Vima Web Solutions - Tekoälyavusteinen verkkokehitys ja digitaalinen muodonmuutos",
     "meta_description": "Muuta liiketoimintaasi huipputason verkkokehityksellä, tekoälyn integroinnilla ja monikielisillä ratkaisuilla. Avaa kasvun mahdollisuudet älykästä teknologiaa ja intuitiivista suunnittelua hyödyntäen.",
     "meta_keywords": "verkkokehitys, tekoälyn integrointi, digitaalinen muodonmuutos, monikieliset verkkosivustot, käyttöliittymäsuunnittelu, liiketoiminnan teknologiaratkaisut"
+  }, 
+  "skills": {
+    "title": "Meidän taidot",
+    "webdev": "Verkkokehitys",
+    "webdev1": "Asiantuntemus Reactissa, Next.js:ssä, Tailwindissa ja Bootstrapissa. Moderni lähestymistapa ja intuitiivinen suunnittelu.",
+    "aiint": "Tekoälyn integrointi",
+    "aiint1": "Kyky integroida tekoälyn API ja mukauttaa se liiketoiminnan tarpeisiin.",
+    "multiling": "Monikielisyys",
+    "multiling1": "Palvelemme asiakkaita 6 kielellä: englanti, suomi, venäjä, arabia, heprea, turkki.",
+    "adapt": "Sopeutettavuus",
+    "adapt1": "Sopeudumme nopeasti kehityksen tarpeisiin ja varmistamme, että lähestymistapamme on ajan tasalla."
   }
 }

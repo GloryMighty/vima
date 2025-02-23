@@ -51,7 +51,7 @@
   "Blog": {
     "section_title": "Our Projects",
     "by_author": "By {author}",
-    "heading": "Deliver excellence in every detail",
+    "heading": "Explore in detail",
     "page_title": "BLOG",
     "search": "Search",
     "search_placeholder": "Search blog posts...",
@@ -318,5 +318,16 @@
     "meta_title": "Vima Web Solutions - AI-Powered Web Development and Digital Transformation",
     "meta_description": "Transform your business with cutting-edge web development, AI integration, and multilingual solutions. Unlock growth through intelligent technology and intuitive design.",
     "meta_keywords": "web development, AI integration, digital transformation, multilingual websites, UI/UX design, business technology solutions"
+  },
+  "skills": {
+    "title": "Our Skills",
+    "webdev": "Web Development",
+    "webdev1": "Expertise in React, Next.js, Tailwind, and Bootstrap.",
+    "aiint": "AI Integration",
+    "aiint1": "Ability to integrate AI API and adjust to business needs.",
+    "multiling": "Multilinguistic",
+    "multiling1": "Serving clients in 6 languages: English, Finnish, Russian, Arabic, Hebrew, Turkish.",
+    "adapt": "Adaptability",
+    "adapt1": "Quickly adjust to the needs of the development sphere and ensure our approach is up to date."
   }
 }

@@ -55,7 +55,7 @@ const Experiance = () => {
                 <h2 
                   className="tf__heading"
                   data-text-animation="rotate-in" 
-                  data-split="word"
+                  data-split="char"
                 >
                   {t('pricing.heading')}
                 </h2>

@@ -55,7 +55,7 @@ const Blog = () => {
             <div className="col-xl-10">
               <div className="tf__common_heading tf__common_heading2 tf__blog_heading">
                 <h5>{t('section_title')}</h5>
-                <h2 data-text-animation="rotate-in">{t('heading')}</h2>
+                <h2 data-text-animation="rotate-in" data-split="char">{t('heading')}</h2>
               </div>
             </div>
           </div>
