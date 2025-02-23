@@ -24,7 +24,6 @@ const page = () => {
         <meta name="google-site-verification" content="SehANDDhj3LTVodEsYzH4X4CN6LMUH_q_KvNrMaZA9o" />
         <meta name="google-site-verification" content="google-search-console-verification-token" />
       </Head>
-      <Home1Banner />
       <About />
       <Portfolio />
       <Testomonial />
