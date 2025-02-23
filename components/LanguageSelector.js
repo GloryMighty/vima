@@ -77,8 +77,6 @@ const LanguageSelector = () => {
       ref={dropdownRef} 
       className={`tf__language_selector ${isOpen ? 'open' : ''}`} 
       style={{
-        width: 'auto', // Allow width to adjust based on content
-        maxWidth: '100%', // Prevent overflow
         overflow: 'hidden', // Hide overflow
       }}
     >
@@ -118,8 +116,7 @@ const LanguageSelector = () => {
                   lineHeight: '1.2',    // Tighten line height
                   height: 'auto',        // Allow height to adjust to content
                   borderRadius: '50%',
-                  display: 'block',      // Ensure buttons stack vertically
-                  width: '100%',         // Full width for each button
+                  display: 'block',      // Ensure buttons stack vertically        // Full width for each button
                 }}
               >
                 <span className="tf__language_flag">{languages[locale].flag}</span>
