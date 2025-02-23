@@ -29,46 +29,39 @@ const Header1 = ({ homepage }) => {
     return pathname.endsWith(path);
   };
 
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   /**
    * Handle navigation with proper locale preservation
    */
   const handleNavigation = (path) => {
     router.push(path);
+    setMobileMenuOpen(false); // Close mobile menu on navigation
   };
-
-
-
 
   return (
     <nav className="navbar tf__main_menu main_menu">
-      <ul className="navbar-nav ms-auto">
+      <button className="navbar-toggler" onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
+        ☰
+      </button>
+      <ul className={`navbar-nav ms-auto ${isMobileMenuOpen ? 'open flex-column' : 'd-none d-md-flex'}`}>  
         <div className="language-selector-container">
           <LanguageSelector />
         </div>
-        <li className={`nav-item ${isActiveLink('/') ? 'active' : ''}`}>
-          <Link href="/" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/')}>
-            {t('HOME')}
-          </Link>
+        <li className={`nav-item ${isActiveLink('/') ? 'active' : ''}`}>  
+          <Link href="/" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/')}>{t('HOME')}</Link>
         </li>
-        <li className={`nav-item ${isActiveLink('/about') ? 'active' : ''}`}>
-          <Link href="/about" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/about')}>
-            {t('ABOUT')}
-          </Link>
+        <li className={`nav-item ${isActiveLink('/about') ? 'active' : ''}`}>  
+          <Link href="/about" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/about')}>{t('ABOUT')}</Link>
         </li>
-        <li className={`nav-item ${isActiveLink('/pricing') ? 'active' : ''}`}>
-          <Link href="/pricing" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/pricing')}>
-            {t('PRICING')}
-          </Link>
+        <li className={`nav-item ${isActiveLink('/pricing') ? 'active' : ''}`}>  
+          <Link href="/pricing" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/pricing')}>{t('PRICING')}</Link>
         </li>
-        <li className={`nav-item ${isActiveLink('/blog') ? 'active' : ''}`}>
-          <Link href="/blog" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/blog')}>
-            {t('BLOG')}
-          </Link>
+        <li className={`nav-item ${isActiveLink('/blog') ? 'active' : ''}`}>  
+          <Link href="/blog" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/blog')}>{t('BLOG')}</Link>
         </li>
-        <li className={`nav-item ${isActiveLink('/contact') ? 'active' : ''}`}>
-          <Link href="/contact" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/contact')}>
-            {t('CONTACT')}
-          </Link>
+        <li className={`nav-item ${isActiveLink('/contact') ? 'active' : ''}`}>  
+          <Link href="/contact" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/contact')}>{t('CONTACT')}</Link>
         </li>
       </ul>
     </nav>
