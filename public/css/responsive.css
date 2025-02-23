@@ -210,7 +210,7 @@
   }
 
   .tf__main_menu .navbar-nav .nav-item > a {
-    padding: 1px 5px; /* vertical and horizontal padding */
+    padding: 1px px; /* vertical and horizontal padding */
   }
 
   .tf__manubar {

@@ -7,3 +7,4 @@ Always reference the mentioned earlier rules and basics.
 Our main styling is defined in /styles , /css folders. 
 Always consider mobile responsive design, therefore do not use overflow for any layout and any elements.
 Don't be lazy when it's coming to investigation of changes and errors. 
+Document your changes very readible and apply very clean code changes overall.

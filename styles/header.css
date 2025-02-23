@@ -4,62 +4,25 @@
   flex-direction: row;
   flex-wrap: wrap; /* Prevent items from wrapping on smaller screens */
   gap: 10px;
-  white-space: nowrap;
-  overflow: hidden;
+  white-space: wrap;
+  overflow: auto;
   justify-content: space-between;
 }
 
 
 /* Position LanguageSelector */
 .language-selector-container {
-  position: absolute; /* Position it absolutely within the navbar */
-  right: 10px; /* Adjust this value to move it more to the right */
-  top: 5px; /* Keep it aligned with the navbar */
+  position: flex; /* Position it absolutely within the navbar */
+  right: 10; /* Adjust this value to move it more to the right */
+  top: 5; /* Keep it aligned with the navbar */
   z-index: 1000; /* Ensure it stays above other elements */
 }
 
 .tf__language_dropdown {
-  position: absolute; /* Position dropdown relative to button */
+  position: flex; /* Position dropdown relative to button */
   top: 30px; /* Move dropdown down to avoid interrupting the header */
   left: 0px; /* Align dropdown with the LanguageSelector button */
   z-index: 1000; /* Ensure dropdown is above other elements */
 }
 
-.nav-link {
-  font-size: 1rem !important;
-}
 
-/* Responsive font size for nav links */
-
-@media (max-width: 767px) {
-  .nav-link {
-    font-size: 0.8rem !important;
-  }
-  .tf__main_menu .navbar-nav .nav-item > a {
-    padding: 1px 0px;
-  }
-  .tf__language_selector {
-    width: 100%;
-    padding: 5px;
-  }
-  .tf__language_selector button {
-    font-size: 10px;
-    padding: 4px;
-  }
-  .tf__language_dropdown {
-    width: 100%;
-  }
-}
-
-@media (max-width: 380px) {
-  .nav-link {
-    font-size: 0.6rem !important;
-  }
-  .tf__main_menu .navbar-nav .nav-item > a {
-    padding: 1px 0px !important;
-  }
-}
-
-.pr_60 {
-  padding-right: 0px !important;
-}
