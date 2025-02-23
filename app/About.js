@@ -13,7 +13,7 @@ const aboutData = {
 const About = () => {
   const t = useTranslations("About");
   return (
-    <section className="tf__about pt_150 pb_150" id="about">
+    <section className="tf__about py-5 px-4 px-4" id="about">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-xl-4 col-lg-4 mb-4">

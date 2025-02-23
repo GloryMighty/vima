@@ -4,10 +4,10 @@ export const Home1Banner = () => {
   const t = useTranslations("Banner");
   return (
     <section
-      className="tf__banner pt_100 pl_60 pr_60 bg-fixed"
+      className="tf__banner pt-8 py-5 px-4"
       style={{ background: "url(images/background.jpg)" }}
     >
-      <div className="container">
+      <div className="container py-4">
         <div className="row align-items-center">
           <div className="col-xxl-5 col-xl-6 ms-auto">
             <div className="tf__banner_text">
