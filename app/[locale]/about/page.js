@@ -32,7 +32,7 @@ export default function AboutPage() {
                 <h2 data-text-animation="rotate-in" data-split="word" className="mb-3">
                   {t('main_title')}
                 </h2>
-                <h5 className="mb-1">{t('main_paragraph_1')}</h5>
+                <h5 className="mb-2">{t('main_paragraph_1')}</h5>
               </div>
             </div>
 
