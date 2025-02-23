@@ -1,5 +1,4 @@
-"use client";
-import About from "app/About";
+"use client"
 import { Home1Banner } from "@/app/Banner";
 import Blog from "@/app/Blog";
 import Experiance from "app/Prices";

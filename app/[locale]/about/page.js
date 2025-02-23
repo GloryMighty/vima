@@ -24,16 +24,13 @@ export default function AboutPage() {
         keywords={t('meta_keywords')}
       />
       <Breadcrumbs pageTitle={t('page_title')} />
-      <section className="tf__about pt_150 pb_150" id="about">
+      <section className="tf__about" id="about">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-12 col-md-8 col-lg-6 mb-5">
               <div className="tf__common_heading tf__about_text text-center">
                 <h2 data-text-animation="rotate-in" data-split="word" className="mb-3">
                   {t('main_title')}
                 </h2>
-                <h5 className="mb-2">{t('main_paragraph_1')}</h5>
-              </div>
             </div>
 
 
