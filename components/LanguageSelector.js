@@ -75,7 +75,12 @@ const LanguageSelector = () => {
   return (
     <div 
       ref={dropdownRef} 
-      className={`tf__language_selector ${isOpen ? 'open' : ''}`}
+      className={`tf__language_selector ${isOpen ? 'open' : ''}`} 
+      style={{
+        width: 'auto', // Allow width to adjust based on content
+        maxWidth: '100%', // Prevent overflow
+        overflow: 'hidden', // Hide overflow
+      }}
     >
       <button 
         onClick={() => setIsOpen(!isOpen)} 
