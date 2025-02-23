@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
 
 export const Footer = (footer) => {
   switch (footer) {
