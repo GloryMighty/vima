@@ -329,5 +329,10 @@
     "multiling1": "Serving clients in 6 languages: English, Finnish, Russian, Arabic, Hebrew, Turkish.",
     "adapt": "Adaptability",
     "adapt1": "Quickly adjust to the needs of the development sphere and ensure our approach is up to date."
+  },
+  "Scalable": {
+    "title": "Scalable Solutions",
+    "description": "Solutions that grow with your needs.",
+    "impact": "High Impact"
   }
 }

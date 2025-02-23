@@ -8,6 +8,8 @@ import dynamic from 'next/dynamic';
 import ClientHelmet from '@/components/ClientHelmet';
 import Image from 'next/image';
 import Skills from '@/app/Skillset';
+import RollingGallery from '../../../public/effects/RollingGallery'; // Correct import
+  
 
 // Dynamically import Nivo to ensure client-side rendering
 const NivoLine = dynamic(() => import('@nivo/line').then((mod) => mod.ResponsiveLine), {
@@ -17,6 +19,29 @@ const NivoLine = dynamic(() => import('@nivo/line').then((mod) => mod.Responsive
 export default function AboutPage() {
   const t = useTranslations('About');
   
+  /*
+  const aboutPageData = [
+    {
+      title: t('ai_insights.title'),
+      description: t('ai_insights.description'),
+      impact: t('ai_insights.impact'),
+      image: "/images/ai.png"
+    },
+    {
+      title: t('ui_ux.title'),
+      description: t('ui_ux.description'),
+      impact: t('ui_ux.impact'),
+      image: "/images/intu.png"
+    },
+    {
+      title: t('scalable.title'),
+      description: t('scalable.description'),
+      impact: t('scalable.impact'),
+      image: "/images/scale.png"
+    }
+  ];
+  */
+
   return (
     <IstiLayout>
       <ClientHelmet 
@@ -26,45 +51,13 @@ export default function AboutPage() {
       />
       <Breadcrumbs pageTitle={t('page_title')} />
       <section className="tf__about" id="about">
+
           <div className="row justify-content-center">
             <Skills />
             <div className="tf_testimonial justify-content-center">
-                <div className="row">
-                  {[
-                    {
-                      title: t('ai_insights.title'),
-                      description: t('ai_insights.description'),
-                      impact: t('ai_insights.impact'),
-                      image: "/images/ai.png"
-                    },
-                    {
-                      title: t('ui_ux.title'),
-                      description: t('ui_ux.description'),
-                      impact: t('ui_ux.impact'),
-                      image: "/images/intu.png"
-                    },
-                    {
-                      title: t('scalable.title'),
-                      description: t('scalable.description'),
-                      impact: t('scalable.impact'),
-                      image: "/images/scale.png"
-                    }
-                  ].map((item, index) => (
-                    <div className="col-12 col-md-4 mb-4" key={index}>
-                      <div className="testimonial-item d-flex flex-column align-items-center">
-                        <img src={item.image} alt={item.title} className="img-fluid mb-3" style={{ maxWidth: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }} />
-                        <h5 className="text-center">{item.description}</h5>
-                        <br />
-                        <br />
-
-
-                        <h1 className="text-center" data-text-animation="rotate-in" data-split="word">{item.impact}</h1>
-                      </div>
-                    </div>
-                  ))}
-                </div>
             </div>
           </div>
+          <RollingGallery autoplay={true} pauseOnHover={false} />
           <div className="row justify-content-center">
               <div className="tf__common_heading tf__about_text text-center">
                 <h2 data-text-animation="rotate-in" data-split="char" className="mb-3">
