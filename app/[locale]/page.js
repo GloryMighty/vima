@@ -25,7 +25,6 @@ const page = () => {
         <meta name="google-site-verification" content="google-search-console-verification-token" />
       </Head>
       <Home1Banner />
-      <About />
       <Portfolio />
       <Testomonial />
       <Experiance />
