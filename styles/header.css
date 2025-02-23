@@ -2,7 +2,7 @@
 .navbar-nav {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; /* Prevent items from wrapping on smaller screens */
   gap: 10px;
   white-space: nowrap;
   overflow: hidden;

@@ -36,12 +36,11 @@ const Header1 = ({ homepage }) => {
     router.push(path);
   };
 
-  // Update button styles to remove fixed positioning
+
 
 
   return (
-    
-    <nav className="navbar navbar-expand-lg tf__main_menu pl_50 pr_60 main_menu">
+    <nav className="navbar tf__main_menu main_menu">
       <ul className="navbar-nav ms-auto">
         <div className="language-selector-container">
           <LanguageSelector />
