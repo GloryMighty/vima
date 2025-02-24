@@ -204,7 +204,7 @@
   }
 
   .tf__main_menu .navbar-nav .nav-item > a {
-    padding: 15px 2px;
+    padding: 10px 10px;
   }
 
   .tf__manubar {
@@ -894,24 +894,24 @@
   }
 
   .tf__main_menu .container-fluid {
+    width: 100%;
     padding: 19px 0;
   }
 
   .tf__main_menu .navbar-nav {
     align-items: flex-end;
-    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
     width: 100%;
-    background: transparent;
   }
 
 
   .tf__main_menu .tf__menu_btn {
     background: transparent;
-    padding: 20px 25px;
   }
 
   .tf__main_menu .navbar-brand {
-    width: 120px;
+    width: 100%;
   }
 
   .tf__dropdown {
@@ -1336,27 +1336,19 @@
   }
 
   .tf__main_menu .container-fluid {
-    padding: 19px 0;
+    width: 100%;
   }
 
   .tf__main_menu .navbar-nav {
     align-items: flex-end;
     margin-left: auto;
     width: 100%;
-    background: transparent;
   }
 
-  .tf__main_menu #navbarSupportedContent {
-    margin-top: 15px;
-  }
 
-  .tf__main_menu .tf__menu_btn {
-    background: transparent;
-    padding: 20px 25px;
-  }
 
   .tf__main_menu .navbar-brand {
-    width: 120px;
+    width: 100%;
   }
 
   .tf__main_menu .navbar-nav .nav-item > a {
@@ -1374,7 +1366,7 @@
     line-height: 39px;
     text-align: center;
     padding: 0;
-    background: var(--colorPrimary);
+    background: var(--colorPrimary);  
     color: var(--colorBlack);
     font-size: 24px;
     margin-right: 12px;
@@ -1776,7 +1768,6 @@
   .tf__main_2 {
     background: var(--colorBlack);
     border: 1px solid #eeeeee24;
-    left: -120px;
   }
 
   .tf__banner_2 {

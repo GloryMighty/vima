@@ -8,18 +8,31 @@ This document outlines the implementation of internationalization (i18n) in the 
 - Finnish (fi)
 - Arabic (ar)
 - Turkish (tr)
+- Russian (ru)
 
 ## File Structure
 ```
 vima/
 ├── app/
 │   ├── [locale]/
-│   │   ├── layout.js         # Locale-aware layout with provider
+│   │   ├── layout.tsx         # Locale-aware layout with provider
 │   │   ├── providers.js      # Client-side provider setup
 │   │   ├── page.js          # Home page
 │   │   ├── about/
+│   │   │   └── page.js # About page
 │   │   ├── blog/
-│   │   └── contact/
+│   │   │   └── page.js # Blog page
+│   │   ├── contact/
+│   │   │   └── page.js # Contact page
+│   │   ├── pricing/
+│   │   │   └── page.js # Pricing page
+│   │   ├── privacy-policy/
+│   │   │   └── page.js # Privacy policy page
+│   │   └── terms-and-conditions/
+│   │       └── page.js # Terms and conditions page
+├── api/ 
+    ├──chat/        # API routes
+│        ├──route.ts   # AI Chat route
 ├── components/
 │   └── LanguageSelector.js   # Language switching component
 ├── messages/
@@ -30,6 +43,8 @@ vima/
 │   └── tr.json              # Turkish translations
 ├── styles/
 │   └── languageSelector.css # Language selector styles
+│   └── social-links.css    # Social links styles
+
 ├── config.js                # Language configuration
 ├── middleware.js            # Routing middleware
 └── i18n.js                 # i18n configuration
@@ -110,10 +125,6 @@ export default function MyComponent() {
 2. Import and use `useTranslations` hook
 3. Add necessary translations to all language files
 
-### 4. RTL Support
-- Arabic pages automatically use RTL layout
-- CSS classes use logical properties (start/end instead of left/right)
-- RTL-specific styles use `[dir="rtl"]` selector
 
 ## Best Practices
 
