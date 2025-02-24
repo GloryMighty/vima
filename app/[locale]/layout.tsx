@@ -75,7 +75,7 @@ export const metadata = {
   // Optional: Additional verification or site ownership meta tags
   verification: {
     // Example: Add Google Search Console verification
-    // google: 'googleXXXXXXXXXXXXXX',
+    google: 'SehANDDhj3LTVodEsYzH4X4CN6LMUH_q_KvNrMaZA9o',
   }
 };
 
@@ -102,6 +102,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        <meta name="google-site-verification" content="SehANDDhj3LTVodEsYzH4X4CN6LMUH_q_KvNrMaZA9o" />
+      </head>
       <body className={inter.className}>
         <HelmetWrapper>
           <NextIntlClientProvider 
