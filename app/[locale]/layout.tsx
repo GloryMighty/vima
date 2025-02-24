@@ -2,6 +2,7 @@ import {Inter} from 'next/font/google';
 import {NextIntlClientProvider} from 'next-intl';
 import {locales, defaultLocale} from '../../config/navigation';
 import {notFound} from 'next/navigation';
+import { Analytics } from "@vercel/analytics/react"
 
 // Global CSS imports - CRITICAL: Maintain all global styles and resets
 import "@css/font-awesome-pro.css";
@@ -116,6 +117,7 @@ export default async function LocaleLayout({
             <ToastContainer />
             <ChatWidget />
             <SocialLinksWidget />
+            <Analytics />
           </NextIntlClientProvider>
         </HelmetWrapper>
       </body>
