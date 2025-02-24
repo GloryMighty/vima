@@ -57,7 +57,7 @@ export default function AboutPage() {
             <div className="tf_testimonial justify-content-center">
             </div>
           </div>
-          <RollingGallery classname="tf_about_details_img" autoplay={true} pauseOnHover={false} />
+          <RollingGallery classname="tf_about_details_img" autoplay={true} pauseOnHover={true} />
           <div className="row justify-content-center">
               <div className="tf__common_heading tf__about_text text-center">
                 <h2 data-text-animation="rotate-in" data-split="char" className="mb-3">

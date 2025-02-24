@@ -47,8 +47,8 @@
   border: none;
   padding: 10px 0;
   cursor: pointer;
-  display: flex;
-  align-items: center;
+  display: flex-end;
+  align-items: flex-end;
   gap: 8px;
   font-size: 16px;
   font-weight: 500;
@@ -95,7 +95,7 @@
   background: transparent;
   border: none;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   width: auto;
   height: auto;
@@ -118,7 +118,7 @@
 
 .tf__language_current {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 8px;
 }
 
@@ -159,7 +159,6 @@
 
   .tf__language_dropdown {
     position: static;
-    box-shadow: none;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 

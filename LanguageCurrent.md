@@ -24,6 +24,7 @@ vima/
 │   └── LanguageSelector.js   # Language switching component
 ├── messages/
 │   ├── en.json              # English translations
+│   ├── ru.json              # Russian translations
 │   ├── fi.json              # Finnish translations
 │   ├── ar.json              # Arabic translations
 │   └── tr.json              # Turkish translations

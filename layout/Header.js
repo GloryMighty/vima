@@ -42,7 +42,7 @@ const Header1 = ({ homepage }) => {
   };
 
   return (
-    <div className="container">
+    <div className="container" >
       <div className="row">
         <nav className="navbar navbar-expand-lg tf__main_menu main_menu">
           <div className={`container${homepage ? "-fluid" : ""}`}>  
@@ -82,10 +82,10 @@ const Header1 = ({ homepage }) => {
                 <li className={`nav-item ${isActiveLink('/contact') ? 'active' : ''}`}>  
                   <Link href="/contact" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/contact')}>{t('CONTACT')}</Link>
                 </li>
-              </ul>
-              <div className="language-selector-container">
+                <div className="language-selector-container">
                 <LanguageSelector />
               </div>
+              </ul>
             </div>
           </div>
         </nav>

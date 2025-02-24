@@ -483,8 +483,6 @@
   .tf__main_menu #navbarSupportedContent {
     margin-top: 10px;
     align-items: flex-end;
-    display: flex;
-    flex-direction: column;
   }
 
   .tf__main_menu .tf__menu_btn {
@@ -906,14 +904,10 @@
     background: transparent;
   }
 
-  .tf__main_menu #navbarSupportedContent {
-    margin-top: 10px;
-  }
 
   .tf__main_menu .tf__menu_btn {
     background: transparent;
     padding: 20px 25px;
-    border-bottom: 1px solid #00000040;
   }
 
   .tf__main_menu .navbar-brand {

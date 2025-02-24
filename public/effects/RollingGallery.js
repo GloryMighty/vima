@@ -9,7 +9,7 @@ const IMGS = [
   "/images/Rolling/4.png",
 ];
 
-const RollingGallery = ({ autoplay = false, pauseOnHover = false, images = [] }) => {
+const RollingGallery = ({ autoplay = false, pauseOnHover = true, images = [] }) => {
   images = IMGS;
   const [isScreenSizeSm, setIsScreenSizeSm] = useState(window.innerWidth <= 640);
 
@@ -44,7 +44,7 @@ const RollingGallery = ({ autoplay = false, pauseOnHover = false, images = [] })
       autoplayRef.current = setInterval(() => {
         controls.start({
           rotateY: rotation.get() - (360 / faceCount),
-          transition: { duration: 2, ease: "linear" },
+          transition: { duration: 3, ease: "linear" },
         });
         rotation.set(rotation.get() - (360 / faceCount));
       }, 2000);
