@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
-import ShinyText from '../public/effects/ShinyText';
 import ReactPlayer from 'react-player';
 import { useState } from 'react';
+import CircularText from '../public/effects/CircularText';
 
 export const Home1Banner = () => {
   const t = useTranslations("Banner");
@@ -39,7 +39,12 @@ export const Home1Banner = () => {
                   <ul className="d-flex flex-wrap">
                     <li>
                       <div onClick={handleVideoClick}>
-                        <ShinyText text="CLICK HERE" className="tf__common_btn" disabled={false} speed={2} hoverClass="tf__common_btn_hover" />
+                        <CircularText 
+                          text="VIMA*WEB*SOLUTIONS*" 
+                          spinDuration={20} 
+                          className="pointer" 
+                          onHover="pause"
+                        />
                       </div>
                     </li>
                   </ul>
