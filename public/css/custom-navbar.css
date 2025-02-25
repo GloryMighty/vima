@@ -197,12 +197,13 @@
   
   .custom-navbar-nav {
     flex-direction: column;
-    width: 20%;
+    width: 30%;
+    
   }
   
   .custom-nav-item {
     margin: 5px 0;
-    text-align: center;
+    text-align: right;
   }
 }
 
