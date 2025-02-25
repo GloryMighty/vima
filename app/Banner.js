@@ -61,6 +61,7 @@ export const Home1Banner = () => {
                 controls={true}
                 width='100%'
                 height='100%'
+                onEnded={closeModal}
               />
             </div>
           </div>
