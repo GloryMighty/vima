@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useTranslations } from 'next-intl';
 import { Link, usePathname, useRouter } from '../config/navigation';
 import LanguageSelector from '@/components/LanguageSelector';
+import "@/public/css/custom-navbar.css"; // Import the custom navbar CSS
 
 const Header = ({ onePage, homepage }) => {
   useEffect(() => {
@@ -42,54 +43,41 @@ const Header1 = ({ homepage }) => {
   };
 
   return (
-    <div className="container" >
-      <div className="row">
-        <nav className="navbar navbar-expand-lg tf__main_menu main_menu">
-          <div className={`container${homepage ? "-fluid" : ""}`}>  
-            <Link className="navbar-brand" href="/">
-              <img src="images/logo.png" alt="logo" className="img-fluid w-100" />
-            </Link>
-            <button
-              className="navbar-toggler"
-              type="button"
-              onClick={() => {
-                console.log("Button clicked, current state:", isMobileMenuOpen);
-                setMobileMenuOpen(!isMobileMenuOpen);
-              }}
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i className="far fa-stream menu_icon_bar" />
-            </button>
-            <div className={`collapse navbar-collapse ${isMobileMenuOpen ? 'show' : ''}`} id="navbarSupportedContent">
-              <ul className={`navbar-nav ms-auto ${isMobileMenuOpen ? 'open flex-column' : 'd-none d-md-flex'}`}>  
-                <li className={`nav-item ${isActiveLink('/') ? 'active' : ''}`}>  
-                  <Link href="/" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/')}>{t('HOME')}</Link>
+    <header className="custom-main-menu">
+      <div className={`custom-container${homepage ? "-fluid" : ""}`}>
+        <nav className="custom-navbar">
+          <Link className="custom-navbar-brand" href="/">
+            <img src="/images/logo.png" alt="logo" className="img-fluid" />
+          </Link>
+          <button
+            className="custom-navbar-toggler"
+            type="button"
+            onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle navigation"
+          >
+            <i className="far fa-stream custom-menu-icon-bar" />
+          </button>
+          <div className={`custom-navbar-collapse ${isMobileMenuOpen ? "custom-show" : ""}`}>
+            <ul className="custom-navbar-nav">
+              {['/', '/about', '/pricing', '/blog', '/contact'].map((path) => (
+                <li key={path} className={`custom-nav-item ${isActiveLink(path) ? 'custom-active' : ''}`}>
+                  <Link
+                    href={path}
+                    className="custom-nav-link custom-text-hover-animation"
+                    onClick={() => handleNavigation(path)}
+                  >
+                    {t(path === '/' ? 'HOME' : path.slice(1).toUpperCase())}
+                  </Link>
                 </li>
-                <li className={`nav-item ${isActiveLink('/about') ? 'active' : ''}`}>  
-                  <Link href="/about" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/about')}>{t('ABOUT')}</Link>
-                </li>
-                <li className={`nav-item ${isActiveLink('/pricing') ? 'active' : ''}`}>  
-                  <Link href="/pricing" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/pricing')}>{t('PRICING')}</Link>
-                </li>
-                <li className={`nav-item ${isActiveLink('/blog') ? 'active' : ''}`}>  
-                  <Link href="/blog" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/blog')}>{t('BLOG')}</Link>
-                </li>
-                <li className={`nav-item ${isActiveLink('/contact') ? 'active' : ''}`}>  
-                  <Link href="/contact" className="nav-link text_hover_animaiton" onClick={() => handleNavigation('/contact')}>{t('CONTACT')}</Link>
-                </li>
-                <div className="language-selector-container">
+              ))}
+              <li className="custom-nav-item custom-language-selector-container">
                 <LanguageSelector />
-              </div>
-              </ul>
-            </div>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>
-    </div>
+    </header>
   );
 };
 

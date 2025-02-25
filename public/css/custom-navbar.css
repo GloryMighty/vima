@@ -1,0 +1,245 @@
+/* Custom Navbar Styles - Responsive and Mobile-Friendly */
+
+/* Main menu container */
+.custom-main-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: transparent;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Container styles */
+.custom-container,
+.custom-container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.custom-container {
+  max-width: 1140px;
+}
+
+/* Navbar styles */
+.custom-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem; /* Adjusted padding to reduce space */
+  width: 100%;
+}
+
+/* Brand/logo styles */
+.custom-navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.custom-navbar-brand img {
+  max-height: 50px;
+}
+
+/* Toggle button for mobile */
+.custom-navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: none;
+}
+
+.custom-menu-icon-bar {
+  font-size: 24px;
+  color: #c7d300;
+}
+
+/* Navbar collapse area */
+.custom-navbar-collapse {
+  display: flex;
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background: transparent;
+}
+
+.custom-navbar-collapse {
+  display: none;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.custom-navbar-collapse.custom-show {
+  display: block;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Navigation items */
+.custom-navbar-nav {
+  display: flex;
+  flex-direction: row; /* Ensure items are in a row for larger screens */
+  width: auto; /* Set width to auto for better visibility */
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  margin-left: auto;
+}
+
+.custom-nav-item {
+  margin: 0 10px;
+}
+
+.custom-nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  color: #c7d300;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.custom-nav-link:hover,
+.custom-active .custom-nav-link {
+  color: #0d6efd;
+}
+
+.custom-text-hover-animation {
+  position: relative;
+}
+
+.custom-text-hover-animation::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0d6efd;
+  transition: width 0.3s ease;
+}
+
+.custom-text-hover-animation:hover::after,
+.custom-active .custom-text-hover-animation::after {
+  width: 100%;
+}
+
+
+
+/* Media query for larger screens */
+@media (min-width: 992px) {
+  .custom-navbar-collapse {
+    display: flex !important; /* Force display on larger screens */
+    position: static;
+    width: auto;
+    background: transparent;
+    box-shadow: none;
+    margin-top: -15px; /* Reduce space from top for the navbar items */
+  }
+  
+  .custom-navbar-nav {
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+    padding-top: 0; /* Remove top padding */
+  }
+  
+  .custom-nav-link {
+    padding-top: 0.2rem; /* Reduce top padding for links */
+    padding-bottom: 0.2rem; /* Reduce bottom padding for links */
+  }
+  
+  .custom-navbar-toggler {
+    display: none; /* Hide toggle button on larger screens */
+  }
+}
+
+/* Mobile responsive styles */
+@media (max-width: 991.98px) {
+  .custom-navbar-toggler {
+    display: block;
+  }
+  
+  .custom-navbar-collapse {
+    display: none;
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  .custom-navbar-collapse.custom-show {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  
+  .custom-navbar-nav {
+    flex-direction: column;
+    width: 20%;
+  }
+  
+  .custom-nav-item {
+    margin: 5px 0;
+    text-align: center;
+  }
+}
+
+/* Sticky Navbar */
+.custom-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(46, 255, 9, 0.1);
+  z-index: 1000;
+}
+
+/* Animation for mobile menu */
+@keyframes customSlideDown {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 80vh;
+  }
+}
+
+@keyframes customSlideUp {
+  from {
+    max-height: 80vh;
+  }
+  to {
+    max-height: 0;
+  }
+}
+
+.custom-navbar-collapse.custom-collapsing {
+  animation: customSlideUp 0.3s ease;
+}
+
+.custom-navbar-collapse.custom-show {
+  animation: customSlideDown 0.3s ease;
+}
