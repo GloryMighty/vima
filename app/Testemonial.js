@@ -32,24 +32,52 @@ const Testomonial = () => {
     {
       id: 1,
       image: '/images/testimonial_1.png',
-      translationKey: 'batuhan'
     },
     {
       id: 2,
       image: '/images/testimonial_2.png',
-      translationKey: 'sarah'
     },
     {
       id: 3,
       image: '/images/testimonial_3.png',
-      translationKey: 'michael'
     },
     { 
       id: 4,
       image: '/images/testimonial_4.png',
-      translationKey: 'kerem'
-    }
+    },
+    { 
+      id: 5,
+      image: '/images/testimonial_5.png',
+    },
   ];
+
+  const testimonialData = {
+    1: {
+      name: 'Batuhan Sezar',
+      role: 'Application user',
+      content: 'Interesting idea flawlessly implemented into reality with great attention to detail and creativity. I like the application because of efficiency and powerful AI solutions!'
+    },
+    2: {
+      name: 'Sarah Kim',
+      role: 'Startup Founder',
+      content: 'This AI-powered solution has been a game-changer for our team. It streamlines complex workflows and provides insights that would have taken weeks to uncover manually.'
+    },
+    3: {
+      name: 'Kerem Guven',
+      role: 'Application User',
+      content: 'Wonderful realization of innovative solution for my daily usage. The AI-driven insights have opened many possibilities for my life!'
+    },
+    4: {
+      name: 'Michael Rodriguez',
+      role: 'Product Manager',
+      content: 'Incredibly intuitive and powerful. The AI capabilities have helped our team make data-driven decisions faster and more accurately than ever before.'
+    },
+    5: {
+      name: 'Syrian Guy',
+      role: 'Business Owner',
+      content: 'When I addressed the guys I wasn not prepared for the quality and speed of service they provided. More than reasonable price for ridiculously fast and competent solution. Totally recommend.'
+    }
+  };
 
   return (
     <section className="tf__testimonial pt_145">
@@ -79,28 +107,9 @@ const Testomonial = () => {
                       height={200}
                     />
                   </div>
-                  <h4>
-                    {testimonial.translationKey === 'batuhan' ? 'Batuhan Sezar' :
-                     testimonial.translationKey === 'sarah' ? 'Sarah Kim' :
-                     testimonial.translationKey === 'kerem' ? 'Kerem Guven' :
-                     'Michael Rodriguez'}
-                  </h4>
-                  <span>
-                    {testimonial.translationKey === 'batuhan' ? 'Application user' :
-                     testimonial.translationKey === 'sarah' ? 'Startup Founder' :
-                     testimonial.translationKey === 'kerem' ? 'Application User' :
-                     'Product Manager' 
-                     }
-                  </span>
-                  <p>
-                    { testimonial.translationKey === 'kerem' ?
-                      'Wonderful realization of innovative solution for my daily usage. The AI-driven insights have opened many possibilities for my life!' :
-                    testimonial.translationKey === 'batuhan' ?
-                      'Interesting idea flawlessly implemented into reality with great attention to detail and creativity. I like the application because of efficiency and powerful AI solutions!' :
-                     testimonial.translationKey === 'sarah' ?
-                      'This AI-powered solution has been a game-changer for our team. It streamlines complex workflows and provides insights that would have taken weeks to uncover manually.' :
-                      'Incredibly intuitive and powerful. The AI capabilities have helped our team make data-driven decisions faster and more accurately than ever before.'}
-                  </p>
+                  <h4>{testimonialData[testimonial.id].name}</h4>
+                  <span>{testimonialData[testimonial.id].role}</span>
+                  <p>{testimonialData[testimonial.id].content}</p>
                 </div>
               </div>
             ))}

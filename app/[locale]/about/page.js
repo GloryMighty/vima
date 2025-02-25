@@ -8,6 +8,7 @@ import dynamic from 'next/dynamic';
 import ClientHelmet from '@/components/ClientHelmet';
 import Image from 'next/image';
 import Skills from '@/app/Skillset';
+import ShinyText from '../../../public/effects/ShinyText';
 import RollingGallery from '../../../public/effects/RollingGallery'; // Correct import
   
 
@@ -84,7 +85,7 @@ export default function AboutPage() {
           <div className="col-12 text-center">
             <div className="tf__blog_link">
               <Link href="/contact">
-                {t('cta_button')}
+                <ShinyText text={t('cta_button')} disabled={false} speed={2} className='custom-class' />
                 <i className="fa-solid fa-arrow-right-long" />
               </Link>
             </div>

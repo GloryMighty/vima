@@ -63,7 +63,6 @@ const Header1 = ({ homepage }) => {
               aria-label="Toggle navigation"
             >
               <i className="far fa-stream menu_icon_bar" />
-              <i className="far fa-times close_icon_close" />
             </button>
             <div className={`collapse navbar-collapse ${isMobileMenuOpen ? 'show' : ''}`} id="navbarSupportedContent">
               <ul className={`navbar-nav ms-auto ${isMobileMenuOpen ? 'open flex-column' : 'd-none d-md-flex'}`}>  

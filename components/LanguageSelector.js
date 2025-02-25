@@ -87,7 +87,7 @@ const LanguageSelector = () => {
           padding: '5px 13px',  // Reduce padding
           fontSize: '12px',     // Reduce font size
           lineHeight: '1.2',    // Tighten line height
-          height: '',        // Allow height to adjust to content
+          height: 'auto',        // Allow height to adjust to content
           borderRadius: '50%'
         }}
         aria-haspopup="listbox"
