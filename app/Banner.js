@@ -1,5 +1,4 @@
 import { useTranslations } from 'next-intl';
-import CircularText from '../public/effects/CircularText';
 import ShinyText from '../public/effects/ShinyText';
 import ReactPlayer from 'react-player';
 import { useState } from 'react';
