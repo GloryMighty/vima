@@ -73,7 +73,7 @@ const Testomonial = () => {
       content: 'Incredibly intuitive and powerful. The AI capabilities have helped our team make data-driven decisions faster and more accurately than ever before.'
     },
     5: {
-      name: 'Zuheir Menem',
+      name: 'Zuheir Al-darwesh',
       role: 'Business Owner',
       content: 'When I addressed the guys I wasn not prepared for the quality and speed of service they provided. More than reasonable price for ridiculously fast and competent solution. Totally recommend.'
     }
