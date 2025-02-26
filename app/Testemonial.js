@@ -76,7 +76,7 @@ const Testomonial = () => {
     5: {
       name: 'Zuheir Al-darwesh',
       role: 'Business Owner',
-      content: 'When I addressed the VIMA team I wasn not prepared for the quality and speed of service they provided. More than reasonable price for ridiculously fast and competent solution.'
+      content: 'When I addressed the VIMA team I was not prepared for the quality and speed of service they provided. More than reasonable price for ridiculously fast and competent solution.'
     }
   };
 

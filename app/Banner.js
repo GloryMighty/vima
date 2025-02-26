@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import ShinyText from '../public/effects/ShinyText';
 import ReactPlayer from 'react-player';
 import { useState } from 'react';
+import '../public/css/customhero.css';
 
 export const Home1Banner = () => {
   const t = useTranslations("Banner");
@@ -18,8 +19,7 @@ export const Home1Banner = () => {
 
   return (
     <section
-      className="tf__banner pt_100 pl_60 pr_60 bg-fixed"
-      style={{ background: "url(images/breadcrumb.jpg)" }}
+      className="hero-section tf__banner pt_100 pl_60 pr_60"
     >
       <div className="container-fluid h-100">
         <div className="row align-items-center h-100">
