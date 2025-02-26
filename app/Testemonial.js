@@ -53,29 +53,30 @@ const Testomonial = () => {
 
   const testimonialData = {
     1: {
-      name: 'Batuhan Sezar',
+      name: 'Batuhan Yorur',
       role: 'Application user',
       content: 'Interesting idea flawlessly implemented into reality with great attention to detail and creativity. I like the application because of efficiency and powerful AI solutions!'
     },
     2: {
-      name: 'Sarah Kim',
+      name: 'Batuhan Alberaber',
       role: 'Startup Founder',
-      content: 'This AI-powered solution has been a game-changer for our team. It streamlines complex workflows and provides insights that would have taken weeks to uncover manually.'
+      content: 'This team of developers has provided a wonderful assistance to our project. From idea to implementation, the speed with which these guys provide their services is extraordinary.'
     },
     3: {
+      name: 'Your Name',
+      role: 'Your Role',
+      content: 'Your amazing review of our brilliant collaboration.'
+    },
+    4: {
       name: 'Kerem Guven',
       role: 'Application User',
       content: 'Wonderful realization of innovative solution for my daily usage. The AI-driven insights have opened many possibilities for my life!'
     },
-    4: {
-      name: 'Michael Rodriguez',
-      role: 'Product Manager',
-      content: 'Incredibly intuitive and powerful. The AI capabilities have helped our team make data-driven decisions faster and more accurately than ever before.'
-    },
+
     5: {
       name: 'Zuheir Al-darwesh',
       role: 'Business Owner',
-      content: 'When I addressed the guys I wasn not prepared for the quality and speed of service they provided. More than reasonable price for ridiculously fast and competent solution. Totally recommend.'
+      content: 'When I addressed the VIMA team I wasn not prepared for the quality and speed of service they provided. More than reasonable price for ridiculously fast and competent solution.'
     }
   };
 

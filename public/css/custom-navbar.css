@@ -16,14 +16,14 @@
 .custom-container,
 .custom-container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 5px;
+  padding-left: 25px;
   margin-right: auto;
   margin-left: auto;
 }
 
 .custom-container {
-  max-width: 1140px;
+  max-width: 100%;
 }
 
 /* Navbar styles */
@@ -68,20 +68,19 @@
   color: #c7d300;
 }
 
-/* Navbar collapse area */
+/* Navbar collapse area - Desktop display */
 .custom-navbar-collapse {
-  display: flex;
-  flex-basis: 100%;
+  flex-basis: auto;
   flex-grow: 1;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-end;
   background: transparent;
 }
 
+/* Hide by default for mobile */
 .custom-navbar-collapse {
   display: none;
   width: 100%;
-  padding: 10px 0;
 }
 
 .custom-navbar-collapse.custom-show {
@@ -143,8 +142,6 @@
   width: 100%;
 }
 
-
-
 /* Media query for larger screens */
 @media (min-width: 992px) {
   .custom-navbar-collapse {
@@ -153,7 +150,7 @@
     width: auto;
     background: transparent;
     box-shadow: none;
-    margin-top: -15px; /* Reduce space from top for the navbar items */
+    margin-top: 0; /* Remove space from top for the navbar items */
   }
   
   .custom-navbar-nav {
@@ -198,6 +195,7 @@
   .custom-navbar-nav {
     flex-direction: column;
     width: 30%;
+    overflow: hidden;
     
   }
   
@@ -238,7 +236,7 @@
 }
 
 .custom-navbar-collapse.custom-collapsing {
-  animation: customSlideUp 0.3s ease;
+  animation: customSlideUp 1.3s ease;
 }
 
 .custom-navbar-collapse.custom-show {
