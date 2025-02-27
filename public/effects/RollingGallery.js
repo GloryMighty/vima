@@ -16,10 +16,10 @@ const RollingGallery = ({ autoplay = false, pauseOnHover = true, images = [] }) 
   const cylinderWidth = isScreenSizeSm ? 1200 : 1800;
   const faceCount = images.length;
   const faceWidth = (cylinderWidth / faceCount) * 1.5; // Items width
-  const dragFactor = 0.005;
-  const radius = cylinderWidth / (2 * Math.PI);
+  const dragFactor = 0.05;
+  const radius = cylinderWidth / (1.5 * Math.PI);
 
-  const rotation = useMotionValue(20);
+  const rotation = useMotionValue(0);
   const controls = useAnimation();
   const autoplayRef = useRef();
 
@@ -47,7 +47,7 @@ const RollingGallery = ({ autoplay = false, pauseOnHover = true, images = [] }) 
           transition: { duration: 3, ease: "linear" },
         });
         rotation.set(rotation.get() - (360 / faceCount));
-      }, 3000);
+      }, 2000);
 
       return () => clearInterval(autoplayRef.current);
     }
@@ -81,10 +81,10 @@ const RollingGallery = ({ autoplay = false, pauseOnHover = true, images = [] }) 
       autoplayRef.current = setInterval(() => {
         controls.start({
           rotateY: rotation.get() - (360 / faceCount),
-          transition: { duration: 3, ease: "linear" },
+          transition: { duration: 2, ease: "linear" },
         });
         rotation.set(rotation.get() - (360 / faceCount));
-      }, 3000);
+      }, 2000);
     }
   };
 
