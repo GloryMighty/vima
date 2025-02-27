@@ -54,10 +54,7 @@ const Skills = () => {
                 data-offset={100}
               >
                 <h2>{index + 1 > 10 ? index : `0${index + 1}`}</h2>
-                <span className="tf__skill_2_icon">
-                  <i className="fal fa-long-arrow-up" />
-                </span>
-                <div className="tf__single_skill_2_text">
+                <div className="tf__single_skill_text">
                   <h5>{data.degicnation}</h5>
                   <span>
                     {data.startDate} - {data.endDate ? data.endDate : "Present"}
