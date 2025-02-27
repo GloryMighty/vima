@@ -10,7 +10,7 @@
   },
   "Banner": {
     "we_are_vima": "WE ARE VIMA",
-    "passionate_website_developers": "PASSIONATE WEBSITE DEVELOPERS",
+    "passionate_website_developers": "PASSIONATE WEB DEVELOPERS",
     "banner_paragraph": "As driven Website Developers, We thrive on creating beautiful and intuitive digital experiences that delight users.",
     "watch_video": "Watch The Video"
   },
@@ -51,7 +51,7 @@
   "Blog": {
     "section_title": "Our Projects",
     "by_author": "By {author}",
-    "heading": "Explore in detail",
+    "heading": "Explore in details",
     "page_title": "BLOG",
     "search": "Search",
     "search_placeholder": "Search blog posts...",

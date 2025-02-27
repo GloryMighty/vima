@@ -19,28 +19,25 @@ export const Home1Banner = () => {
 
   return (
     <section
-      className="hero-section tf__banner pt_100 pl_60 pr_60"
+      className="vima-hero-section pt_100 pl_60 pr_60"
     >
-      <div className="container-fluid h-100">
-        <div className="row align-items-center h-100">
+      <div className="vima-container-fluid h-100">
+        <div className="vima-row-centered row align-items-center h-100">
           <div className="col-xxl-5 col-xl-6 ms-auto">
-            <div className="tf__banner_text">
+            <div className="tf__banner_text tf__common_heading">
               <h3 className="banner-title" data-text-animation="slide-up" data-split="char">
                 {t('we_are_vima')}
               </h3>
-              <h2 className="banner-title">
+              <h2 className="vima-banner-title">
                 {t('passionate_website_developers')}
               </h2>
-              <p>
-                {t('banner_paragraph')}
-              </p>
               <div className="container">
-                <div className="banner-content">
+                <div className="vima-banner-content">
                   <ul className="d-flex flex-wrap">
                     <li>
-                      <div onClick={handleVideoClick}>
+                      {/* <div onClick={handleVideoClick}>
                         <ShinyText text="CLICK HERE" className="tf__common_btn" disabled={false} speed={2} hoverClass="tf__common_btn_hover" />
-                      </div>
+                      </div> */}
                     </li>
                   </ul>
                 </div>
@@ -50,10 +47,10 @@ export const Home1Banner = () => {
         </div>
       </div>
       {isModalOpen && (
-        <div className="video-modal">
-          <div className="video-modal-content">
-            <span className="video-modal-close" onClick={closeModal}>&times;</span>
-            <div className="video-container">
+        <div className="vima-video-modal">
+          <div className="vima-video-modal-content">
+            <span className="vima-video-modal-close" onClick={closeModal}>&times;</span>
+            <div className="vima-video-container">
               <ReactPlayer
                 url='https://www.youtube.com/watch?v=LXb3EKWsInQ'
                 playing={true}
@@ -67,7 +64,7 @@ export const Home1Banner = () => {
         </div>
       )}
       <style jsx>{`
-        .video-modal {
+        .vima-video-modal {
           position: fixed;
           top: 0;
           left: 0;
@@ -80,7 +77,7 @@ export const Home1Banner = () => {
           z-index: 1000;
         }
         
-        .video-modal-content {
+        .vima-video-modal-content {
           position: relative;
           width: 80%;
           height: 80%;
@@ -89,12 +86,12 @@ export const Home1Banner = () => {
           border-radius: 8px;
         }
         
-        .video-container {
+        .vima-video-container {
           width: 100%;
           height: 100%;
         }
         
-        .video-modal-close {
+        .vima-video-modal-close {
           position: absolute;
           right: -30px;
           top: -30px;
@@ -104,7 +101,7 @@ export const Home1Banner = () => {
           z-index: 1001;
         }
         
-        .video-modal-close:hover {
+        .vima-video-modal-close:hover {
           color: #ddd;
         }
       `}</style>

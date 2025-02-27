@@ -17,11 +17,26 @@ interface Message {
 }
 
 const ChatWidget: React.FC = () => {
+  // Initial welcome message
+  const initialMessage: Message = {
+    id: 'initial-message',
+    role: 'ai',
+    content: "How VIMA Webs can help you today?",
+    timestamp: Date.now()
+  }
+
   const [messages, setMessages] = useState<Message[]>([])
   const [inputMessage, setInputMessage] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
+  const [initialMessageShown, setInitialMessageShown] = useState(false)
+  const [position, setPosition] = useState({ x: 0, y: 0 })
+  const [isDragging, setIsDragging] = useState(false)
+  
   const messagesEndRef = useRef<HTMLDivElement>(null)
+  const widgetRef = useRef<HTMLDivElement>(null)
+  const dragStartPos = useRef({ x: 0, y: 0 })
+  const originalPos = useRef({ x: 0, y: 0 })
 
   const scrollToBottom = useCallback(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
@@ -30,6 +45,55 @@ const ChatWidget: React.FC = () => {
   useEffect(() => {
     scrollToBottom()
   }, [messages, scrollToBottom])
+
+  // Show initial message when chat is opened
+  useEffect(() => {
+    if (isOpen && !initialMessageShown) {
+      setMessages([initialMessage])
+      setInitialMessageShown(true)
+    }
+  }, [isOpen, initialMessageShown])
+
+  // Handle drag events
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!isDragging) return
+      
+      const deltaX = e.clientX - dragStartPos.current.x
+      const deltaY = e.clientY - dragStartPos.current.y
+      
+      setPosition({
+        x: originalPos.current.x + deltaX,
+        y: originalPos.current.y + deltaY
+      })
+    }
+    
+    const handleMouseUp = () => {
+      setIsDragging(false)
+      document.body.style.cursor = 'default'
+    }
+    
+    if (isDragging) {
+      document.addEventListener('mousemove', handleMouseMove)
+      document.addEventListener('mouseup', handleMouseUp)
+    }
+    
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove)
+      document.removeEventListener('mouseup', handleMouseUp)
+    }
+  }, [isDragging])
+
+  const startDrag = (e: React.MouseEvent) => {
+    // Only start dragging if we're clicking on the header and not on a button
+    if ((e.target as HTMLElement).closest('button')) return
+    
+    e.preventDefault()
+    setIsDragging(true)
+    dragStartPos.current = { x: e.clientX, y: e.clientY }
+    originalPos.current = { x: position.x, y: position.y }
+    document.body.style.cursor = 'move'
+  }
 
   const handleSendMessage = async () => {
     if (!inputMessage.trim() || isLoading) return
@@ -92,14 +156,21 @@ const ChatWidget: React.FC = () => {
           </m.button>
         ) : (
           <m.div 
+            ref={widgetRef}
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.2 }}
             className="chat-widget-container"
+            style={{
+              transform: `translate(${position.x}px, ${position.y}px)`,
+            }}
           >
             {/* Header */}
-            <div className="chat-widget-header">
+            <div 
+              className="chat-widget-header"
+              onMouseDown={startDrag}
+            >
               <div className="title-container">
                 <MessageSquare className="w-6 h-6 text-[#32CD32]" />
                 <h3 className="text-lg font-semibold text-[#32CD32]">VIMA AI</h3>
@@ -115,18 +186,13 @@ const ChatWidget: React.FC = () => {
             {/* Messages Container */}
             <div className="chat-widget-body">
               {messages.map((msg) => (
-                <m.div               key={msg.id} 
+                <m.div key={msg.id} 
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
+                  className={`message-container ${msg.role === 'user' ? 'user-message' : 'ai-message'}`}
                 >
                   <div 
-                    className={`
-                      max-w-[80%] p-3 rounded-2xl shadow-md
-                      ${msg.role === 'user' 
-                        ? 'bg-[#16213E] text-white' 
-                        : 'bg-[#1A1A2E] text-white'}
-                    `}
+                    className={`message-bubble ${msg.role === 'user' ? 'user-bubble' : 'ai-bubble'}`}
                   >
                     {msg.content}
                   </div>

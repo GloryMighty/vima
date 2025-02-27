@@ -1,29 +1,29 @@
 /* Responsive Hero Section Background Styles */
 :root {
   /* Define color variables for easy theming */
-  --hero-bg-color-primary: #0a192f;
-  --hero-bg-color-secondary: #112240;
-  --hero-text-color: #ffffff;
-  --hero-accent-color: #64ffda;
+  --vima-hero-bg-color-primary: #0a192f;
+  --vima-hero-bg-color-secondary: #112240;
+  --vima-hero-text-color: #ffffff;
+  --vima-hero-accent-color: #64ffda;
 }
 
 /* Base Hero Section Styling */
-.hero-section {
+.vima-hero-section {
   position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--hero-bg-color-primary), var(--hero-bg-color-secondary));
-  color: var(--hero-text-color);
+  background: linear-gradient(135deg, var(--vima-hero-bg-color-primary), var(--vima-hero-bg-color-secondary));
+  color: var(--vima-hero-text-color);
   overflow: hidden;
   padding: 2rem;
   box-sizing: border-box;
 }
 
 /* Responsive Container Adjustments */
-.container-fluid {
+.vima-container-fluid {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -31,27 +31,27 @@
 }
 
 /* Responsive Text Styling */
-.tf__banner_text {
+.vima-banner-text {
   text-align: left;
   max-width: 600px;
   margin: 0 auto;
 }
 
-.banner-title {
+.vima-banner-title {
   font-size: clamp(2rem, 5vw, 4rem);
   line-height: 1.2;
   margin-bottom: 1rem;
-  color: var(--hero-text-color);
+  color: var(--vima-hero-text-color);
 }
 
-.tf__banner_text p {
+.vima-banner-text p {
   font-size: clamp(1rem, 3vw, 1.25rem);
   margin-bottom: 1.5rem;
   color: rgba(255, 255, 255, 0.8);
 }
 
 /* Responsive Banner Content */
-.banner-content ul {
+.vima-banner-content ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -62,27 +62,49 @@
 
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
-  .hero-section {
+  .vima-hero-section {
     min-height: 80vh;
     padding: 1rem;
   }
 
-  .tf__banner_text {
+  .vima-banner-text {
     text-align: center;
     max-width: 100%;
   }
 
-  .banner-title {
+  .vima-banner-title {
     font-size: clamp(1.5rem, 7vw, 3rem);
   }
 
-  .banner-content ul {
+  .vima-banner-content ul {
     justify-content: center;
   }
 }
 
+/* Overflow Debug Styles */
+@media screen and (max-width: 768px) {
+  body {
+    outline: 3px solid red;
+    overflow-x: hidden;
+  }
+  
+  .vima-hero-section {
+    outline: 2px solid blue;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .vima-container-fluid {
+    outline: 2px solid green;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+}
+
 /* Background Animation (Optional) */
-.hero-section::before {
+.vima-hero-section::before {
   content: '';
   position: absolute;
   top: -50%;
@@ -94,12 +116,12 @@
     rgba(100, 255, 218, 0.1) 0%, 
     transparent 70%
   );
-  animation: hero-bg-pulse 10s ease-in-out infinite alternate;
+  animation: vima-hero-bg-pulse 10s ease-in-out infinite alternate;
   z-index: 1;
   pointer-events: none;
 }
 
-@keyframes hero-bg-pulse {
+@keyframes vima-hero-bg-pulse {
   0% {
     transform: scale(0.9);
     opacity: 0.7;
@@ -111,12 +133,12 @@
 }
 
 /* Ensure full height and vertical centering */
-.row.align-items-center {
+.vima-row-centered {
   min-height: 100vh;
 }
 
 /* Responsive Video Modal Styles */
-.video-modal {
+.vima-video-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -129,7 +151,7 @@
   z-index: 1000;
 }
 
-.video-modal-content {
+.vima-video-modal-content {
   position: relative;
   width: 90%;
   max-width: 1000px;
@@ -139,12 +161,12 @@
   border-radius: 8px;
 }
 
-.video-container {
+.vima-video-container {
   width: 100%;
   height: 100%;
 }
 
-.video-modal-close {
+.vima-video-modal-close {
   position: absolute;
   right: -30px;
   top: -30px;
@@ -155,13 +177,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .video-modal-content {
+  .vima-video-modal-content {
     width: 95%;
     height: 60vh;
     padding: 10px;
   }
 
-  .video-modal-close {
+  .vima-video-modal-close {
     right: 0;
     top: -40px;
   }

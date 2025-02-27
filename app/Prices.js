@@ -50,11 +50,11 @@ const Experiance = () => {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div className="row">
             <div className="col-12 wow fadeInUp">
-              <div className="tf__section_heading mb_40">
-                <h5 className="tf__sub_heading">{t('pricing.sub_heading')}</h5>
-                <h2 
-                  className="tf__heading"
-                  data-text-animation="rotate-in" 
+              <div className="tf_common_heading mb_40">
+                <h5>{t('pricing.sub_heading')}</h5>
+                <h2
+                  className="tf__common_heading"
+                  data-text-animation="rotate-in"
                   data-split="char"
                 >
                   {t('pricing.heading')}
@@ -75,10 +75,10 @@ const Experiance = () => {
                     marginBottom: '30px'
                     }}
                   >
-                    <div className="tf__pricing_header" data-text-animation="rotate-in" data-split="char">
-                      <h3 style={{ fontSize: '28px', fontWeight: '700', color: '#1a1a1a', marginBottom: '15px' }}>
+                    <div className="tf__common_header" data-text-animation="rotate-in" data-split="char">
+                      <h2 style={{ fontSize: '28px', fontWeight: '700', color: '#1a1a1a', marginBottom: '15px' }}>
                         {t(`pricing.plans.${plan.key}.title`)}
-                      </h3>
+                      </h2>
                       <h2 style={{ fontSize: '42px', fontWeight: '800', color: '#000', marginBottom: '20px' }}>
                         {t(`pricing.plans.${plan.key}.price`)}
                         <span style={{ fontSize: '18px', fontWeight: '500', color: '#444' }}>

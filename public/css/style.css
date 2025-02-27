@@ -107,7 +107,7 @@ button:focus {
 }
 
 .tf__common_heading h2 {
-  font-size: 55px;
+  font-size: clamp(32px, 5vw + 1rem, 55px);
   font-weight: 800;
   text-transform: capitalize;
   margin-bottom: 75px;
