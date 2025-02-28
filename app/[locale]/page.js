@@ -27,8 +27,8 @@ const page = () => {
       <Home1Banner />
       <Portfolio />
       <Testomonial />
-      <Experiance />
       <Blog />
+      <Experiance />
     </IstiLayout>
   );
 };
