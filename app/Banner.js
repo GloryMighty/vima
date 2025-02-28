@@ -44,6 +44,15 @@ export const Home1Banner = () => {
               </div>
             </div>
           </div>
+          <div className="col-xxl-7 col-xl-6">
+            <div className="tf__about_img">
+              <img 
+                src="/images/hero.png" 
+                alt="VIMA Hero Image" 
+                className="img-fluid" 
+              />
+            </div>
+          </div>
         </div>
       </div>
       {isModalOpen && (
