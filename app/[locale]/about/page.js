@@ -85,7 +85,6 @@ export default function AboutPage() {
             <div className="tf__blog_link">
               <Link href="/contact">
                 <ShinyText text={t('cta_button')} disabled={false} speed={2} className='custom-class' />
-                <i className="fa-solid fa-arrow-right-long" />
               </Link>
             </div>
           </div>
