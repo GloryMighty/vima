@@ -2,71 +2,99 @@ import { useEffect, useRef, useState } from "react";
 import { motion, useMotionValue, useAnimation, useTransform } from "framer-motion";
 import "./RollingGallery.css";
 
-const IMGS = [
+const DEFAULT_IMGS = [
   "/images/Rolling/1.png",
   "/images/Rolling/2.png",
   "/images/Rolling/3.png",
   "/images/Rolling/4.png",
 ];
 
-const RollingGallery = ({ autoplay = false, pauseOnHover = true, images = [] }) => {
-  images = IMGS;
-  const [isScreenSizeSm, setIsScreenSizeSm] = useState(window.innerWidth <= 640);
-
-  const cylinderWidth = isScreenSizeSm ? 1200 : 1800;
-  const faceCount = images.length;
-  const faceWidth = (cylinderWidth / faceCount) * 1.5; // Items width
-  const dragFactor = 0.05;
+const RollingGallery = ({ 
+  autoplay = true, 
+  pauseOnHover = false, 
+  images = DEFAULT_IMGS 
+}) => {
+  // Use passed images or default images
+  const [currentImages, setCurrentImages] = useState(DEFAULT_IMGS);
+  
+  // Responsive width calculation with SSR safety
+  const [screenWidth, setScreenWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200);
+  const cylinderWidth = screenWidth <= 640 ? 1200 : 1800;
+  
+  const faceCount = currentImages.length;
+  const faceWidth = (cylinderWidth / faceCount) * 1.5;
   const radius = cylinderWidth / (1.5 * Math.PI);
-
+  
   const rotation = useMotionValue(0);
   const controls = useAnimation();
-  const autoplayRef = useRef();
+  const autoplayRef = useRef(null);
 
+  // Update images if prop changes
+  useEffect(() => {
+    setCurrentImages(images.length > 0 ? images : DEFAULT_IMGS);
+  }, [images]);
+
+  // More precise and controlled drag handling
   const handleDrag = (_, info) => {
-    rotation.set(rotation.get() + info.offset.x * dragFactor);
+    const dragSensitivity = 0.01;
+    rotation.set(rotation.get() + info.offset.x * dragSensitivity);
   };
 
   const handleDragEnd = (_, info) => {
+    const rotationVelocity = info.velocity.x * 0.1;
     controls.start({
-      rotateY: rotation.get() + info.velocity.x * dragFactor,
-      transition: { type: "spring", stiffness: 60, damping: 20, mass: 0.1, ease: "easeOut" },
+      rotateY: rotation.get() + rotationVelocity,
+      transition: { 
+        type: "spring", 
+        stiffness: 60, 
+        damping: 20 
+      },
     });
   };
 
-  const transform = useTransform(rotation, (value) => {
-    return `rotate3d(0, 1, 0, ${value}deg)`;
-  });
+  const transform = useTransform(rotation, (value) => 
+    `rotate3d(0, 1, 0, ${value}deg)`
+  );
 
-  // Autoplay effect with adjusted timing
+  // Improved autoplay effect with cleanup
   useEffect(() => {
-    if (autoplay) {
+    // Only run on client-side
+    if (typeof window === 'undefined' || !autoplay) return;
+
+    const startAutoRotation = () => {
+      if (autoplayRef.current) clearInterval(autoplayRef.current);
+      
       autoplayRef.current = setInterval(() => {
+        const nextRotation = rotation.get() - (360 / faceCount);
         controls.start({
-          rotateY: rotation.get() - (360 / faceCount),
-          transition: { duration: 3, ease: "linear" },
+          rotateY: nextRotation,
+          transition: { duration: 2, ease: "linear" },
         });
-        rotation.set(rotation.get() - (360 / faceCount));
-      }, 2000);
-
-      return () => clearInterval(autoplayRef.current);
-    }
-  }, [autoplay, rotation, controls, faceCount]);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsScreenSizeSm(window.innerWidth <= 640);
+        rotation.set(nextRotation);
+      }, 3000);
     };
 
+    startAutoRotation();
+    return () => {
+      if (autoplayRef.current) clearInterval(autoplayRef.current);
+    };
+  }, [autoplay, faceCount]);
+
+  // Responsive resize handling
+  useEffect(() => {
+    // Only run on client-side
+    if (typeof window === 'undefined') return;
+
+    const handleResize = () => setScreenWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Pause on hover with smooth transition
+  // Pause on hover logic
   const handleMouseEnter = () => {
-    if (autoplay && pauseOnHover) {
+    if (autoplay && pauseOnHover && autoplayRef.current) {
       clearInterval(autoplayRef.current);
-      controls.stop(); // Stop the animation smoothly
+      controls.stop();
     }
   };
 
@@ -76,17 +104,13 @@ const RollingGallery = ({ autoplay = false, pauseOnHover = true, images = [] }) 
         rotateY: rotation.get() - (360 / faceCount),
         transition: { duration: 2, ease: "linear" },
       });
-      rotation.set(rotation.get() - (360 / faceCount));
-
-      autoplayRef.current = setInterval(() => {
-        controls.start({
-          rotateY: rotation.get() - (360 / faceCount),
-          transition: { duration: 2, ease: "linear" },
-        });
-        rotation.set(rotation.get() - (360 / faceCount));
-      }, 2000);
     }
   };
+
+  // Client-side rendering check
+  if (typeof window === 'undefined') {
+    return null;
+  }
 
   return (
     <div className="gallery-container">
@@ -96,7 +120,8 @@ const RollingGallery = ({ autoplay = false, pauseOnHover = true, images = [] }) 
         <motion.div
           drag="x"
           className="gallery-track"
-          onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+          onMouseEnter={handleMouseEnter} 
+          onMouseLeave={handleMouseLeave}
           style={{
             transform: transform,
             rotateY: rotation,
@@ -107,7 +132,7 @@ const RollingGallery = ({ autoplay = false, pauseOnHover = true, images = [] }) 
           onDragEnd={handleDragEnd}
           animate={controls}
         >
-          {images.map((url, i) => (
+          {currentImages.map((url, i) => (
             <div
               key={i}
               className="gallery-item"
@@ -116,7 +141,7 @@ const RollingGallery = ({ autoplay = false, pauseOnHover = true, images = [] }) 
                 transform: `rotateY(${i * (360 / faceCount)}deg) translateZ(${radius}px)`,
               }}
             >
-              <img src={url} alt="gallery" className="gallery-img" />
+              <img src={url} alt={`Gallery image ${i + 1}`} className="gallery-img" />
             </div>
           ))}
         </motion.div>
