@@ -1,6 +1,5 @@
 import { useTranslations } from 'next-intl';
 import Iridiscence from '@/public/effects/descence';
-import { textChangeRangeIsUnchanged } from 'typescript';
 
 /**
  * Pricing plan configuration
@@ -34,7 +33,7 @@ const Experiance = () => {
   return (
     <section className="tf__experiance pt_50 pb_50" style={{ position: 'relative', overflow: 'hidden' }}>
       <Iridiscence
-        color={[0.3, 0.8, 0.3]} // Green tint
+        color={[0.8, 0.4, 0.9]} // Magenta-like tint
         speed={0.5}
         amplitude={0.05}
         style={{

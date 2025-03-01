@@ -29,7 +29,7 @@ const PricingPage = () => {
         }}
       >
         <Iridiscence
-          color={[0.3, 0.8, 0.3]} // Green tint
+          color={[0.8, 0.4, 0.9]} // Magenta-like tint
           speed={0.5}
           amplitude={0.05}
           style={{
