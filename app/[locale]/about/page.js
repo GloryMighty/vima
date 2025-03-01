@@ -50,13 +50,69 @@ export default function AboutPage() {
         keywords={t('meta_keywords')}
       />
       <Breadcrumbs pageTitle={t('page_title')} />
-      <section className="tf__about" id="about">
-
-          <div className="row justify-content-center">
-            <Skills />
+      <section className="tf__about pt-5" id="about">
+        {/* Viacheslav section - image on right, text on left */}
+        <div className="row mb-5 align-items-center">
+          <div className="col-xl-8 col-lg-8 col-md-7 order-md-1 order-2 px-4">
+            <div className="tf__common_heading pt-5">
+              <h5 className="mb-3">{t('viacheslav_title') || 'Viacheslav Mamatov'}</h5>
+              <p className="text-break pt-2">
+                {t('viacheslav_description') || `
+                  23 years old passionate software developer 
+                  with experience in Data Analytics, 
+                  AI Integrations and Web Development.
+                `}
+              </p>
+            </div>
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-5 order-md-2 order-1 px-4">
+            <div className="tf__about_img" style={{ maxWidth: '100%', maxHeight: '300px', margin: '0 auto' }}>
+              <Image
+                src="/images/slav.png"
+                alt="Viacheslav Mamatov"
+                className="img-fluid"
+                style={{ borderRadius: '20px', objectFit: 'cover' }}
+                width={300}
+                height={300}
+                priority={true}
+              />
+            </div>
+          </div>
+        </div>
+        {/* Markus section - image on left, text on right */}
+        <div className="row mb-5 align-items-center">
+          <div className="col-xl-4 col-lg-4 col-md-5 px-4">
+            <div className="tf__about_img" style={{ maxWidth: '100%', maxHeight: '300px', margin: '0 auto' }}>
+              <Image
+                src="/images/ai.jpg"
+                alt="Markus Ketonen"
+                className="img-fluid"
+                style={{ borderRadius: '20px', objectFit: 'cover' }}
+                width={300}
+                height={300}
+                priority={true}
+              />
+            </div>
+          </div>
+          <div className="col-xl-8 col-lg-8 col-md-7 px-4">
+            <div className="tf__common_heading pt-5">
+              <h5 className="mb-3">{t('markus_title') || 'Markus Ketonen'}</h5>
+              <p className="text-break pt-2">
+                {t('markus_description') || `
+                  37 years old entrepreneur 
+                  knowing everything about local businesses, 
+                  which helps a lot in understanding of customers needs.
+                `}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center">
+          <Skills />
             <div className="tf_testimonial justify-content-center">
             </div>
           </div>
+          
           <RollingGallery classname="tf_about_details_img" pauseOnHover={false} />
           <div className="row justify-content-center">
               <div className="tf__common_heading tf__about_text text-center">

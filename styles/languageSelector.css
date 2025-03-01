@@ -15,52 +15,51 @@
   --language-selector-transition: all 0.3s ease;
 }
 
-.tf__language_btn.text_hover_animaiton {
-  line-height: 16px;
+/* Main language selector container */
+.tf__language_selector {
   position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.tf__language_btn.text_hover_animaiton .menu-text {
-  display: flex;
   overflow: hidden;
-  text-shadow: 0 16px 0 var(--language-selector-hover-text);
 }
 
-.tf__language_btn.text_hover_animaiton .menu-text div {
-  transition: transform 0.3s ease;
-}
-
-.tf__language_btn.text_hover_animaiton:hover {
-  --y: -8px;
-}
-
-.tf__language_btn.text_hover_animaiton:hover .menu-text div {
-  --m: calc(16px * -1);
-  transform: translateY(var(--m, 0));
-}
-
-.tf__language_btn {
-  background: transparent;
-  color: var(--language-selector-text);
-  border: none;
-  padding: 10px 0;
+/* Common button styles used for language buttons */
+.tf__common_btn {
+  padding: 6px;
   cursor: pointer;
-  display: flex-end;
+  color: var(--language-selector-text);
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  transition: var(--language-selector-transition);
+}
+
+.tf__common_btn:hover {
+  background: var(--language-selector-hover-bg);
+  color: var(--language-selector-hover-text);
+}
+
+/* Current language display */
+.tf__language_current {
+  display: flex;
   align-items: flex-end;
   gap: 8px;
-  font-size: 16px;
-  font-weight: 500;
-  transition: var(--language-selector-transition);
-  position: relative;
 }
 
+/* Flag emoji styling */
+.tf__language_flag {
+  font-size: 16px;
+}
+
+/* Dropdown menu that appears when selector is open */
 .tf__language_dropdown {
-  display: block; /* Stack items vertically */
-  margin-top: 5px; /* Space between button and dropdown */
-  position: absolute; /* Position dropdown relative to button */
-  z-index: 1000; /* Ensure dropdown is above other elements */
+  display: none;
+  margin-top: 5px;
+  position: absolute;
+  z-index: 1000;
   min-width: 50px;
   background: #ffffff;
   border: 1px solid #e9e9e9;
@@ -73,101 +72,29 @@
 }
 
 .tf__language_dropdown button {
-  display: block; /* Ensure buttons stack vertically */
-  width: 100%; /* Full width for each button */
+  display: block;
+  width: 100%;
 }
 
-.tf__language_dropdown_item,
-.tf__language_option {
-  transition: background 0.2s ease, var(--language-selector-transition);
-}
-
-.tf__common_btn:hover {
-  background: var(--language-selector-hover-bg);
-  color: var(--language-selector-hover-text);
-}
-
-.tf__language_dropdown_item,
-.tf__common_btn {
-  padding: 6px;
-  cursor: pointer;
-  color: var(--language-selector-text);
-  background: transparent;
-  border: none;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  width: auto;
-  height: auto;
-  border-radius: 50%;
-  transition: var(--language-selector-transition);
-}
-
-.tf__language_dropdown_item.active {
-  background: #f0f0f0;
-  font-weight: 600;
-  color: var(--language-selector-hover-text);
-}
-
+/* Show dropdown when selector is open */
 .tf__language_selector.open .tf__language_dropdown {
   opacity: 1;
-  width: 11%;
   visibility: visible;
   transform: translateY(0);
 }
 
-.tf__language_current {
-  display: flex;
-  align-items: flex-end;
-  gap: 8px;
-}
-
-.tf__language_flag {
-  font-size: 16px;
-}
-
-.tf__language_name {
-  font-size: 14px;
-}
-
-.tf__language_option {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  width: 100%;
-  padding: 10px 15px;
-  border: none;
-  background: none;
-  cursor: pointer;
-  text-align: left;
-}
-
-.tf__language_option.active {
-  background: var(--language-selector-hover-text);
-  color: #ffffff;
-  cursor: default;
-}
-
-/* Consolidated mobile-specific styles */
+/* Mobile-specific styles */
 @media (max-width: 991px) {
-  .tf__language_btn {
-    width: 100%;
-    justify-content: space-between;
-    padding: 15px 0;
-    border-top: 1px solid #e9e9e9;
-  }
-
   .tf__language_dropdown {
     position: static;
+    align-items: flex-end;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .tf__language_dropdown_item {
-    padding: 15px;
-    border-top: 1px solid #e9e9e9;
-  }
-
   .tf__common_btn {
+    align-items: flex-end;
+    display: grid;
+    justify-content: flex-end;
     font-size: 0.7rem !important;
   }
 
@@ -183,8 +110,7 @@
 }
 
 /* Accessibility and focus states */
-.tf__language_btn:focus,
-.tf__language_dropdown_item:focus {
-    outline: none;
-    color: var(--language-selector-hover-text);
+.tf__common_btn:focus {
+  outline: none;
+  color: var(--language-selector-hover-text);
 }
