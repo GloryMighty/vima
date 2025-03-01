@@ -11,7 +11,7 @@
   "Banner": {
     "we_are_vima": "VIMA'YIZ",
     "passionate_website_developers": "TUTKULU WEB SİTESİ GELİŞTİRİCİLERİ",
-    "banner_paragraph": "Tutkulu Web Sitesi Geliştiricileri olarak, kullanıcıları memnun eden güzel ve sezgisel dijital deneyimler yaratmaktan keyif alıyoruz.",
+    "banner_paragraph": "Tutkulu Web Sitesi Geliştiricileri olarak, kullanıcıları memnun eden güzel ve sezgisel dijital deneyimler yaratmaktAN keyif alıyoruz.",
     "watch_video": "Videoyu İzle"
   },
   "About": {
@@ -19,14 +19,13 @@
     "title": "Portföyümüzde Görsel Bir Yolculuk",
     "bio": "Hakkımızda ve çalışmalarımız hakkında bilgi.",
     "page_title": "HAKKIMIZDA",
-    "main_title": "Nasıl Görünüyor?",
     "main_paragraph_1": "Günümüzün rekabetçi ortamında, işletmeler sadece yazılıma değil, somut sonuçlar üreten akıllı çözümlere ihtiyaç duyuyor. İleri düzey AI ve UI teknolojilerimiz, operasyonel verimliliğinizi dönüştürmek, üretkenliği artırmak ve benzeri görülmemiş iş büyümesinin önünü açmak için özenle tasarlanmıştır.",
     "main_paragraph_2": "Sadece teknoloji üretmiyoruz; işletmelere pazarlarında kritik bir avantaj sağlayan stratejik avantajlar yaratıyoruz. Gelişmiş AI yeteneklerini sezgisel kullanıcı arayüzleriyle sorunsuz bir şekilde entegre ederek, karmaşık zorlukları optimize edilmiş fırsatlara dönüştürüyoruz.",
     "commitment_title": "BAŞARINIZA OLAN BAĞLILIĞIMIZ",
     "viacheslav_title": "Viacheslav Mamatov",
     "viacheslav_description": "Veri Analitiği, Yapay Zeka Entegrasyonları ve Web Geliştirme konularında deneyime sahip 23 yaşında tutkulu yazılım geliştirici. Dünya çapındaki farklı ortaklarla bağlantı kurmak ve işbirliği yapmak için heyecanlıyım, hızlı değişen bir ortamda daha fazla kritik beceri ve ağ ediniyorum.",
     "markus_title": "Markus Ketonen",
-    "markus_description": "2012'den beri girişimciyim ve programlama ve web geliştirme geçmişim var. Şu anda kendi e-Ticaret mağazamı ve İthalat-İhracat işletmemi yönetiyorum. Dil becerilerimin kritik bir varlık olduğu uluslararası ortamlarda çalışmaktan heyecan duyuyorum.",
+    "markus_description": "2012'den beri girişimciyim ve programlama ve web geliştirme geçmişim var. Şu anda kendi e-Ticaret mağazamı ve İthalat-İhracat işletmemi yönetiyorum. Dil becerilerimin kritik bir varlık olduğu uluslararası ortamlarda çalışmaktAN heyecan duyuyorum.",
     "ai_insights": {
       "title": "AI Destekli İçgörüler",
       "description": "Alt çizginizi doğrudan etkileyen veri odaklı kararlar almak için öngörücü analitiği kullanın.",
@@ -54,6 +53,7 @@
   },
   "Experience": {
     "pricing": {
+      "main_title": "NASIL GÖRÜNÜYOR",
       "sub_heading": "Fiyatlandırma Planları",
       "heading": "Planınızı Seçin",
       "plans": {
@@ -70,7 +70,7 @@
           "features": "Hazır çözüm|Yılda 3 ÜCRETSİZ güncelleme|1 yıl ÜCRETSİZ sunucu dahil|Ayda 3 ÜCRETSİZ blog yazısı ile SEO|Daha iyi dijital varlık|Gelişmiş web sitesi tasarımı|3 Dil"
         },
         "vip": {
-          "title": "VIP Deneyim",
+          "title": "Premium Plan",
           "price": "$999",
           "price_subtext": "başlayan fiyatlarla",
           "features": "Gelişmiş Plandaki Her Şey, ARTI|Premium alan adı dahil|Yılda 5'e kadar güncelleme|AI Chatbot Entegrasyonu|Üstün web sitesi tasarımı|Kullanıcı kimlik doğrulama|2 yıl barındırma|5 Dile kadar"

@@ -10,6 +10,7 @@
   },
   "Experience": {
     "pricing": {
+      "main_title": "MILTÄ SE NÄYTTÄÄ",
       "sub_heading": "Hinnoittelu",
       "heading": "Valitse Suunnitelmasi",
       "plans": {
@@ -74,7 +75,6 @@
     "bio": "Tietoa meistä ja töistämme.",
     "page_title": "MEISTÄ",
     "image_alt": "VIMA-tiimin Portfolio",
-    "main_title": "Liiketoiminnan kasvattaminen älykkäillä ratkaisuilla",
     "main_paragraph_1": "Nykyisessä kilpailutilanteessa yritykset tarvitsevat enemmän kuin pelkkää ohjelmistoa – tarvitaan älykkäitä ratkaisuja, jotka tuottavat konkreettisia tuloksia. Kehittyneet tekoäly- ja käyttöliittymäteknologiamme on suunniteltu lisäämään operatiivista tehokkuutta, kasvattamaan tuottavuutta ja mahdollistamaan ennennäkemätöntä liiketoiminnan kasvua.",
     "main_paragraph_2": "Me emme vain luo teknologiaa, vaan luomme strategisia etuja, jotka antavat yrityksille kriittisen edun markkinoilla. Integroimalla saumattomasti kehittyneet tekoälyn ominaisuudet intuitiivisiin käyttöliittymiin, muutamme monimutkaiset haasteet mahdollisuuksiksi.",
     "commitment_title": "SITOUTUMISEMME MENESTYKSEENNE",

@@ -114,28 +114,6 @@ export default function AboutPage() {
           </div>
           
           <RollingGallery classname="tf_about_details_img" pauseOnHover={false} />
-          <div className="row justify-content-center">
-              <div className="tf__common_heading tf__about_text text-center">
-                <h2 data-text-animation="rotate-in" data-split="char" className="mb-3">
-                  {t('main_title')}
-                </h2>
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-xl-8 col-lg-8 mb-4">
-            <div className="tf__about_details_img">
-              <Image
-                src="/images/about.png"
-                alt={t('image_alt')}
-                className="img-fluid w-70"
-                style={{ borderRadius: '20px' }}
-                width={800}
-                height={600}
-                priority={true}
-              />
-            </div>
-          </div>
-        </div>
         <div className="row mt-5">
           <div className="col-12 text-center">
             <div className="tf__blog_link">

@@ -50,21 +50,21 @@ const Experiance = () => {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div className="row">
             <div className="col-12 wow fadeInUp">
-              <div className="tf_common_heading mb_40">
+              <div className="tf_common_heading text-center mb_40">
                 <h5>{t('pricing.sub_heading')}</h5>
-                <h2
-                  className="tf__common_heading"
+                <h1
+                  className="tf__common_heading text-center"
                   data-text-animation="rotate-in"
                   data-split="char"
                 >
                   {t('pricing.heading')}
-                </h2>
+                </h1>
               </div>
             </div>
           </div>
           <div className="row">
             {pricingPlans.map((plan, index) => (
-              <div className="col-xl-4 col-md-6 wow fadeInUp" key={index}>
+              <div className="col-xl-4 col-md-6 wow fadeInUp pt-5 px-4" key={index}>
                   <div
                     className="tf__single_pricing"
                     style={{ 
@@ -72,10 +72,10 @@ const Experiance = () => {
                       borderRadius: '15px', 
                       padding: '40px 30px',
                       height: '100%',
-                    marginBottom: '30px'
+                    marginBottom: '10px'
                     }}
                   >
-                    <div className="tf__common_header" data-text-animation="rotate-in" data-split="char">
+                    <div className="tf__common_header text-center" data-text-animation="rotate-in" data-split="char">
                       <h2 style={{ fontSize: '28px', fontWeight: '700', color: '#1a1a1a', marginBottom: '15px' }}>
                         {t(`pricing.plans.${plan.key}.title`)}
                       </h2>
@@ -89,7 +89,7 @@ const Experiance = () => {
                     <div className="tf__pricing_body" data-text-animation="slide-down" data-split="word"> 
                       <ul style={{ listStyle: 'none', padding: 0 }}>
                         {/* Map through translated features for each plan */}
-                        <div data-text-animation="fade-bottom"></div>
+                        <div className="tf__common_feature text-center" data-text-animation="fade-bottom"></div>
                         {t(`pricing.plans.${plan.key}.features`).split('|').map((feature, featureIndex) => (
                           <li 
                             key={featureIndex}
