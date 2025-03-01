@@ -57,20 +57,20 @@ const PricingPage = () => {
                 >
                   {t('sub_heading')}
                 </h2>
-                <h2 
+                <h1 
                   className="tf__heading text-center" 
                   data-text-animation="rotate-in" 
                   data-split="word"
                   style={{ color: '#ffffff' }}
                 >
                   {t('heading')}
-                </h2>
+                </h1>
               </div>
             </div>
           </div>
           <div className="row">
             {['basic', 'advanced', 'vip'].map((plan, index) => (
-              <div className="col-xl-4 col-md-6 wow fadeInUp" key={index}>
+              <div className="col-xl-4 col-md-6 wow fadeInUp pt-5 px-3" key={index}>
                 <div
                   className="tf__single_pricing"
                   style={{
