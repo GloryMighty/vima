@@ -128,16 +128,16 @@ const Page = () => {
                 <nav aria-label="...">
                   <ul className="pagination justify-content-center">
                     <li className="page-item">
-                      <a className="page-link" href="#">01</a>
+                      <a className="page-link" href="#blog-1">01</a>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">02</a>
+                      <a className="page-link" href="#blog-2">02</a>
                     </li>
                     <li className="page-item">
-                      <a className="page-link" href="#">03</a>
+                      <a className="page-link" href="#blog-3">03</a>
                     </li>
                     <li className="page-item">
-                      <a className="page-link active" href="#">
+                      <a className="page-link active" href="/contact">
                         <i className="fa fa-chevron-right" />
                       </a>
                     </li>
@@ -172,7 +172,7 @@ const Page = () => {
                 <div className="tf__blog_common_header">
                   <h5>{t('recent_posts.title')}</h5>
                   {recentPosts.map((post, index) => (
-                    <div key={index} className="tf__recent_post">
+                    <div key={index} className="tf__recent_post"> 
                       <p>
                         <i className="fas fa-calendar-alt" />
                         {post.date}
