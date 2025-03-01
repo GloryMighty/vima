@@ -19,7 +19,7 @@ export const Home1Banner = () => {
 
   return (
     <section
-      className="vima-hero-section pt_100 pl_60 pr_60"
+      className="vima-hero-section pt_100"
     >
       <div className="vima-container-fluid h-100">
         <div className="vima-row-centered row align-items-center h-100">
