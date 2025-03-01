@@ -138,7 +138,94 @@ const PricingPage = () => {
             </div>
           </div>
         </div>
+      {/* FAQ Section */}
+<section className="tf__faq_section section_padding" style={{ backgroundColor: '#0f1525', marginTop: '5.0rem' }}>
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-xl-8">
+              <div className="tf__common_heading text-center mb_50">
+                <h2 className="text-center" data-text-animation="rotate-in" data-split="char" style={{ color: '#ffffff' }}>
+                  {t('faq_title')}
+                </h2>
+              </div>
+            </div>
+          </div>
+          
+          <div className="row justify-content-center">
+            <div className="col-xl-10">
+              <div className="tf__faq_box">
+                <div className="tf__faq_item" style={{ 
+                  backgroundColor: 'rgba(30, 40, 70, 0.6)', 
+                  borderRadius: '10px', 
+                  padding: '20px 25px',
+                  marginBottom: '15px',
+                  backdropFilter: 'blur(10px)'
+                }}>
+                  <h4 style={{ color: '#4e80ff', marginBottom: '10px' }}>
+                    {t('faq_question_1')}
+                  </h4>
+                  <p style={{ color: '#ffffff' }}>
+                    {t('faq_answer_1')}
+                  </p>
+                </div>
+                
+                <div className="tf__faq_item" style={{ 
+                  backgroundColor: 'rgba(30, 40, 70, 0.6)', 
+                  borderRadius: '10px', 
+                  padding: '20px 25px',
+                  marginBottom: '15px',
+                  backdropFilter: 'blur(10px)'
+                }}>
+                  <h4 style={{ color: '#4e80ff', marginBottom: '10px' }}>
+                    {t('faq_question_2')}
+                  </h4>
+                  <p style={{ color: '#ffffff' }}>
+                    {t('faq_answer_2')}
+                  </p>
+                </div>
+                
+                <div className="tf__faq_item" style={{ 
+                  backgroundColor: 'rgba(30, 40, 70, 0.6)', 
+                  borderRadius: '10px', 
+                  padding: '20px 25px',
+                  marginBottom: '15px',
+                  backdropFilter: 'blur(10px)'
+                }}>
+                  <h4 style={{ color: '#4e80ff', marginBottom: '10px' }}>
+                    {t('faq_question_3')}
+                  </h4>
+                  <p style={{ color: '#ffffff' }}>
+                    {t('faq_answer_3')}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row justify-content-center mt_70">
+            <div className="col-xl-8 text-center">
+
+                <a href="https://wa.me/+905070711259" target="_blank" rel="noopener noreferrer" className="tf__common_btn" style={{
+                  display: 'inline-block',
+                  padding: '12px 30px',
+                  backgroundColor: '#4e80ff',
+                  color: '#ffffff',
+                  borderRadius: '30px',
+                  fontWeight: '600',
+                  textDecoration: 'none',
+                  transition: 'all 0.3s ease-in-out',
+                  zIndex: '1000',
+                  position: 'relative',
+                  boxShadow: '0 4px 15px rgba(78, 128, 255, 0.4)',
+                  transform: 'scale(1)',
+                }}>
+                  {t('contact_for_custom_pricing')}
+                </a>
+            </div>
+          </div>
+        </div>
+</section>
       </section>
+      
     </IstiLayout>
   );
 };

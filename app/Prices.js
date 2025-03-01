@@ -50,7 +50,7 @@ const Experiance = () => {
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div className="row">
             <div className="col-12 wow fadeInUp">
-              <div className="tf_common_heading text-center mb_40">
+              <div className="tf_common_heading text-center">
                 <h5>{t('pricing.sub_heading')}</h5>
                 <h1
                   className="tf__common_heading text-center"

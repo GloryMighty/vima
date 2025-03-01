@@ -145,12 +145,12 @@ ${message}`;
                   <p>{t('form.description')}</p>
                   <ul className="d-flex flex-wrap">
                     <li>
-                      <a href="https://wa.me/+905070711259">
+                      <a href="https://wa.me/+905070711259" target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-whatsapp" aria-hidden="true" />
                       </a>
                     </li>
                     <li>
-                      <a href="tel:+905070711259">
+                      <a href="tel:+905070711259" target="_blank" rel="noopener noreferrer">  
                         <i className="fab fa-viber" aria-hidden="true" />
                       </a>
                     </li>

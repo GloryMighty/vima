@@ -111,12 +111,12 @@ const Page = () => {
                         <li>{post.category}</li>
                         <li>{t('comments', { count: post.commentsCount })}</li>
                       </ul>
-                      <a className="blog_title" href={'#' + post.id}>
+                      <a className="blog_title" href={'#' + post.id } target="_blank" rel="noopener noreferrer" >
                         {post.title}
                       </a>
                       <p>{post.content}</p>
                       <div className="tf__blog_link d-flex flex-wrap justify-content-between">
-                        <a href={post.link} className="tf__blog_share">
+                        <a href={post.link} target="_blank" rel="noopener noreferrer" className="tf__blog_share">
                           <i className="far fa-share-alt" />
                         </a>
                       </div>
@@ -137,7 +137,7 @@ const Page = () => {
                       <a className="page-link" href="#blog-3">03</a>
                     </li>
                     <li className="page-item">
-                      <a className="page-link active" href="/contact">
+                      <a className="page-link active" href="/contact" target="_blank" rel="noopener noreferrer">
                         <i className="fa fa-chevron-right" />
                       </a>
                     </li>
@@ -183,7 +183,7 @@ const Page = () => {
                 </div>
                 <div className="tf_blog_contact">
                   <p>{t('contact.message')}</p>
-                  <Link href="/contact" className="tf__common_btn tf_blog_contact_btn">
+                  <Link href="/contact" target="_blank" rel="noopener noreferrer" className="tf__common_btn tf_blog_contact_btn">
                     {t('contact.button')}
                   </Link>
                 </div>

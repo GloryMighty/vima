@@ -54,8 +54,19 @@
   "Experience": {
     "pricing": {
       "main_title": "NASIL GÖRÜNÜYOR",
-      "sub_heading": "Fiyatlandırma Planları",
+      "sub_heading": "FİYATLANDIRMA PLANLARI",
+      "image_alt": "Bizden ne alacaksınız",
       "heading": "Planınızı Seçin",
+      "faq_title": "Sıkça Sorulan Sorular",
+      "faq_question_1": "Her planda neler var?",
+      "faq_answer_1": "Her plan, temel web sitesi tasarımından tam özellikli, sürekli destekli özel çözümlere kadar giderek daha kapsamlı hizmetler sunar.",
+      "faq_question_2": "Planımı daha sonra yükseltebilir miyim?",
+      "faq_answer_2": "Kesinlikle! Web sitenizin iş ihtiyaçlarınızla birlikte büyümesini sağlamak için esnek yükseltmeler sunuyoruz.",
+      "faq_question_3": "Özel çözümler sunuyor musunuz?",
+      "faq_answer_3": "Evet, standart planlarımızın ötesinde özel çözümler sunuyoruz. Özel gereksinimlerinizi görüşmek için bizimle iletişime geçin.",
+      "need_custom_solution": "Özel Bir Çözüme mi İhtiyacınız Var?",
+      "custom_solution_description": "Her işletme benzersizdir. Standart planlarımız tam olarak ihtiyaçlarınızı karşılamıyorsa, gereksinimlerinize mükemmel bir şekilde uyan özel bir çözüm oluşturmaktan mutluluk duyarız.",
+      "contact_for_custom_pricing": "Bize Ulaşın",
       "plans": {
         "basic": {
           "title": "Temel Plan",

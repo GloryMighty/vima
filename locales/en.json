@@ -100,6 +100,7 @@
     "pricing": {
       "main_title": "HOW IT LOOKS",
       "sub_heading": "PRICING PLANS",
+      "image_alt": "What you get from us",
       "heading": "Choose Your Plan",
       "plans": {
         "basic": {
@@ -122,6 +123,16 @@
         }
       },
       "choose_plan": "CHOOSE PLAN",
+      "faq_title": "Frequently Asked Questions",
+      "faq_question_1": "What's included in each plan?",
+      "faq_answer_1": "Each plan offers progressively more comprehensive services, from basic website design to full-featured, custom solutions with ongoing support.",
+      "faq_question_2": "Can I upgrade my plan later?",
+      "faq_answer_2": "Absolutely! We offer flexible upgrades to ensure your website grows with your business needs.",
+      "faq_question_3": "Do you offer custom solutions?",
+      "faq_answer_3": "Yes, we provide tailored solutions beyond our standard plans. Contact us to discuss your specific requirements.",
+      "need_custom_solution": "Need a Custom Solution?",
+      "custom_solution_description": "Every business is unique. If our standard plans don't quite fit your needs, we're happy to create a tailored solution that perfectly matches your requirements.",
+      "contact_for_custom_pricing": "Contact for Custom Pricing",
       "meta_title": "Pricing | Vima Web Solutions - Flexible Web Development Packages",
       "meta_description": "Choose from our tailored web development packages designed to meet your business needs. From basic to premium solutions, find the perfect plan for your digital transformation.",
       "meta_keywords": "web development pricing, website packages, digital transformation, AI integration, multilingual websites, business technology solutions"

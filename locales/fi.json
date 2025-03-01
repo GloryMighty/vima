@@ -11,8 +11,19 @@
   "Experience": {
     "pricing": {
       "main_title": "MILTÄ SE NÄYTTÄÄ",
-      "sub_heading": "Hinnoittelu",
+      "sub_heading": "HINNOITTELUSUUNNITELMAT",
+      "image_alt": "Mitä saat meiltä",
       "heading": "Valitse Suunnitelmasi",
+      "faq_title": "Usein Kysytyt Kysymykset",
+      "faq_question_1": "Mitä kukin suunnitelma sisältää?",
+      "faq_answer_1": "Jokaisessa suunnitelmassa on enenevässä määrin kattavampia palveluita, perusverkkosivusuunnittelusta täysiin, räätälöityihin ratkaisuihin jatkuvalla tuella.",
+      "faq_question_2": "Voinko päivittää suunnitelmaani myöhemmin?",
+      "faq_answer_2": "Ehdottomasti! Tarjoamme joustavat päivitykset, jotta verkkosivustosi voi kasvaa liiketoimintatarpeidesi mukana.",
+      "faq_question_3": "Tarjoatteko räätälöityjä ratkaisuja?",
+      "faq_answer_3": "Kyllä, tarjoamme räätälöityjä ratkaisuja vakiosuunnitelmiemme ulkopuolella. Ota yhteyttä keskustellaksesi erityisvaatimuksistasi.",
+      "need_custom_solution": "Tarvitsetko räätälöidyn ratkaisun?",
+      "custom_solution_description": "Jokainen yritys on ainutlaatuinen. Jos vakiosuunnitelmamme eivät täysin vastaa tarpeitasi, autamme mielellämme luomaan räätälöidyn ratkaisun, joka vastaa täydellisesti vaatimuksiasi.",
+      "contact_for_custom_pricing": "Ota yhteyttä",
       "plans": {
         "basic": {
           "title": "Basic Plan",
