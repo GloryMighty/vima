@@ -229,6 +229,13 @@
 .viewport-fixed {
     position: fixed;
     bottom: 1rem;
+    left: 1rem;
+    z-index: 9999;
+}
+
+.viewport-fixed-right {
+    position: fixed;
+    bottom: 1rem;
     right: 1rem;
     z-index: 9999;
 }

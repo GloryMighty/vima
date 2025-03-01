@@ -56,7 +56,7 @@ export default function AboutPage() {
           <div className="col-xl-8 col-lg-8 col-md-7 order-md-1 order-2 px-4">
             <div className="tf__common_heading pt-5">
               <h5 className="mb-3">{t('viacheslav_title') || 'Viacheslav Mamatov'}</h5>
-              <p className="text-break pt-2">
+              <p className="text-break pt-2" data-text-animation="slide-from-left" data-split="word">
                 {t('viacheslav_description') || `
                   23 years old passionate software developer 
                   with experience in Data Analytics, 
@@ -84,7 +84,7 @@ export default function AboutPage() {
           <div className="col-xl-4 col-lg-4 col-md-5 px-4">
             <div className="tf__about_img" style={{ maxWidth: '100%', maxHeight: '300px', margin: '0 auto' }}>
               <Image
-                src="/images/ai.jpg"
+                src="/images/markus.png"
                 alt="Markus Ketonen"
                 className="img-fluid"
                 style={{ borderRadius: '20px', objectFit: 'cover' }}
@@ -97,7 +97,7 @@ export default function AboutPage() {
           <div className="col-xl-8 col-lg-8 col-md-7 px-4">
             <div className="tf__common_heading pt-5">
               <h5 className="mb-3">{t('markus_title') || 'Markus Ketonen'}</h5>
-              <p className="text-break pt-2">
+              <p className="text-break pt-2" data-text-animation="rotate-in" data-split="char">
                 {t('markus_description') || `
                   37 years old entrepreneur 
                   knowing everything about local businesses, 

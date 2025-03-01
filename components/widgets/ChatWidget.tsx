@@ -141,7 +141,7 @@ const ChatWidget: React.FC = () => {
   }
 
   return (
-    <div className="fixed bottom-4 right-4 z-[9999] viewport-fixed">
+    <div className="fixed bottom-4 right-4 z-[9999] viewport-fixed-right">
       <AnimatePresence>
         {!isOpen ? (
           <m.button
