@@ -6,33 +6,22 @@ import IstiLayout from "@/layout/IstiLayout";
 import { useState } from "react";
 import Image from 'next/image';
 import ClientHelmet from '@/components/ClientHelmet';
+import { Mail } from "lucide-react";
 
 const Contact = () => {
   const t = useTranslations('Contact');
   
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
-  });
-  const [submitStatus, setSubmitStatus] = useState({
-    loading: false,
-    success: false,
-    error: null
-  });
+  // Using individual state values for form fields as in the example
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [error, setError] = useState(null);
+  const [success, setSuccess] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
+  // Validation function
   const validateForm = () => {
-    const { name, email, message } = formData;
     const errors = [];
 
     if (!name.trim()) errors.push(t('validation.name_required'));
@@ -43,59 +32,49 @@ const Contact = () => {
     return errors;
   };
 
-  const handleSubmit = async (e) => {
+  // Email redirect approach from example.js
+  const handleEmailRedirect = (e) => {
     e.preventDefault();
     
+    // Validate the form first
     const validationErrors = validateForm();
     if (validationErrors.length > 0) {
-      setSubmitStatus({
-        loading: false,
-        success: false,
-        error: validationErrors.join(', ')
-      });
+      setError(validationErrors.join(', '));
+      setSuccess(false);
       return;
     }
 
-    setSubmitStatus({ loading: true, success: false, error: null });
+    // Reset error state
+    setError(null);
+    
+    // Recipient email address
+    const recipientEmail = 'vimawebsolutions@gmail.com';
+    
+    // Create the email subject
+    const emailSubject = subject ? `${subject} from ${name}` : `Inquiry from ${name}`;
+    
+    // Format the email body with all form information
+    const emailBody = `
+Name: ${name}
+Email: ${email}
+Phone: ${phone || 'Not provided'}
 
-    try {
-      const response = await fetch(`/${locale}/api/contact`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-      });
-
-      const result = await response.json();
-
-      if (result.success) {
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          subject: '',
-          message: ''
-        });
-        setSubmitStatus({ 
-          loading: false, 
-          success: true, 
-          error: null 
-        });
-      } else {
-        setSubmitStatus({ 
-          loading: false, 
-          success: false, 
-          error: result.message 
-        });
-      }
-    } catch (error) {
-      setSubmitStatus({ 
-        loading: false, 
-        success: false, 
-        error: t('errors.network') 
-      });
-    }
+Message:
+${message}`;
+    
+    // Create the mailto link with all parameters
+    const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+    
+    // Open the email client
+    window.location.href = mailtoLink;
+    
+    // Show success message and reset form
+    setSuccess(true);
+    setName('');
+    setEmail('');
+    setPhone('');
+    setSubject('');
+    setMessage('');
   };
 
   const offices = [
@@ -184,15 +163,14 @@ const Contact = () => {
                 </div>
               </div>
               <div className="col-lg-8">
-                <form className="tf__main_contact_area_text" onSubmit={handleSubmit}>
+                <form className="tf__main_contact_area_text" onSubmit={handleEmailRedirect}>
                   <div className="row">
                     <div className="col-xl-6 col-lg-6">
                       <input
                         type="text"
                         placeholder={t('form.name_placeholder')}
-                        value={formData.name}
-                        onChange={handleChange}
-                        name="name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                         required
                       />
                     </div>
@@ -200,9 +178,8 @@ const Contact = () => {
                       <input
                         type="email"
                         placeholder={t('form.email_placeholder')}
-                        value={formData.email}
-                        onChange={handleChange}
-                        name="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         required
                       />
                     </div>
@@ -210,37 +187,34 @@ const Contact = () => {
                       <input
                         type="text"
                         placeholder={t('form.phone_placeholder')}
-                        value={formData.phone}
-                        onChange={handleChange}
-                        name="phone"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
                       />
                     </div>
                     <div className="col-xl-6 col-lg-6">
                       <input
                         type="text"
                         placeholder={t('form.subject_placeholder')}
-                        value={formData.subject}
-                        onChange={handleChange}
-                        name="subject"
+                        value={subject}
+                        onChange={(e) => setSubject(e.target.value)}
                       />
                     </div>
                     <div className="col-xl-12">
                       <textarea
                         placeholder={t('form.message_placeholder')}
-                        value={formData.message}
-                        onChange={handleChange}
-                        name="message"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                         required
                       />
                     </div>
-                    {submitStatus.error && (
+                    {error && (
                       <div className="col-12">
                         <div className="alert alert-danger">
-                          {submitStatus.error}
+                          {error}
                         </div>
                       </div>
                     )}
-                    {submitStatus.success && (
+                    {success && (
                       <div className="col-12">
                         <div className="alert alert-success">
                           {t('form.success_message')}
@@ -251,9 +225,8 @@ const Contact = () => {
                       <button 
                         type="submit" 
                         className="tf__common_btn tf__contactarea_btn"
-                        disabled={submitStatus.loading}
                       >
-                        {submitStatus.loading ? t('form.sending') : t('form.submit')}
+                        {t('form.submit')} <Mail className="ml-2" style={{ marginLeft: '8px' }} />
                       </button>
                     </div>
                   </div>
