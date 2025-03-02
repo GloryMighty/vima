@@ -50,7 +50,7 @@ const PricingPage = () => {
         >
           <div className="row">
             <div className="col-xl-12">
-              <div className="tf__section_heading mb_40">
+              <div className="tf__section_heading mb_10">
                 <h2 
                   className="tf__sub_heading text-center" 
                   style={{ color: '#ffffff' }}
@@ -110,16 +110,23 @@ const PricingPage = () => {
               </div>
             ))}
           </div>
+          <div className="row justify-content-center">
+            <div className="col-xl-12 text-center mt-3 mb-4">
+              <p className="text-muted" style={{ fontSize: '1.9rem', color: '#ffffff' }}>
+                {t('VAT')}
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="row justify-content-center">
-              <div className="tf__common_heading tf__about_text text-center">
-                <h2 data-text-animation="rotate-in" data-split="char" className="mb-3">
-                  {t('main_title')}
-                </h2>
-            </div>
+          <div className="tf__common_heading tf__about_text text-center">
+            <h2 data-text-animation="rotate-in" data-split="char" className="mb-3">
+              {t('main_title')}
+            </h2>
           </div>
-          <div className="row justify-content-center">
+        </div>
+        <div className="row justify-content-center">
             <div className="col-xl-8 col-lg-8 mb-4">
             <div className="tf__about_details_img">
               <Image

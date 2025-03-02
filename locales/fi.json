@@ -10,6 +10,7 @@
   },
   "Experience": {
     "pricing": {
+      "VAT": "ALV 24% lisätään jokaiseen suunnitelmaan",
       "main_title": "MILTÄ SE NÄYTTÄÄ",
       "sub_heading": "HINNOITTELUSUUNNITELMAT",
       "image_alt": "Mitä saat meiltä",
@@ -27,19 +28,19 @@
       "plans": {
         "basic": {
           "title": "Basic Plan",
-          "price": "299€",
+          "price": "249€",
           "price_subtext": "alkaen",
           "features": "Alkukonsultaatio|Suunnittelu ja tuotanto|Hostaus teidän palvelimella|Moderni ja hieno verkkosivusto|2 kieltä"
         },
         "advanced": {
           "title": "Advanced Plan",
-          "price": "599€",
+          "price": "499€",
           "price_subtext": "alkaen",
           "features": "Avaimet käteen ratkaisu|3 ILMAISTA päivitystä vuodessa|1 vuoden ILMAINEN hostaus|SEO ja 3 ILMAISTA blogikirjoitusta vuodessa|Parempi digitaalinen näkyvyys|Erittäin laadukas verkkosivuston suunnittelu|3 kieltä"
         },
         "vip": {
           "title": "Premium Plan",
-          "price": "999€",
+          "price": "829 €",
           "price_subtext": "alkaen",
           "features": "Kaikki Advanced Plan:issa ja lisäksi:|Premium verkkotunnus (com/fi..)|5 Ilmaista päivitystä|AI Chatbot-integraatio|Huipputason animoitu verkkosivusto|Käyttäjätunnukset|2 Vuoden sivustohostaus|Jopa 5 kieltä"
         }

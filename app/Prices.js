@@ -94,7 +94,7 @@ const Experiance = () => {
                             key={featureIndex}
                             style={{ 
                               fontSize: '17px',
-                              fontWeight: '500',
+                              fontWeight: '400',
                               color: '#2c2c2c',
                               lineHeight: '1.6',
                               padding: '12px 15px',
