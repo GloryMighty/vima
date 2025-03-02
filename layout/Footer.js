@@ -125,8 +125,13 @@ const Footer2 = () => {
                   <i className="fal fa-phone-alt" />
                   Contact us
                 </h5>
-                <p>+90 507 071 12 59</p>
-                <p>+90 535 676 58 99</p>
+                
+                <p>
+                  <Link href="https://wa.me/+905070711259" target="_blank" rel="noopener noreferrer">+90 507 071 12 59</Link>
+                </p>
+                <p>
+                  <Link href="https://wa.me/+905356765899" target="_blank" rel="noopener noreferrer">+90 535 676 58 99</Link>
+                </p>
               </div>
             </div>
           </div>

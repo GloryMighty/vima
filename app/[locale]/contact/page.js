@@ -1,17 +1,17 @@
 "use client";
 
 import { useTranslations } from 'next-intl';
+import { useState } from 'react';
+import Link from 'next/link';
 import Breadcrumbs from "@/components/Breadcrumbs";
 import IstiLayout from "@/layout/IstiLayout";
-import { useState } from "react";
 import Image from 'next/image';
 import ClientHelmet from '@/components/ClientHelmet';
 import { Mail } from "lucide-react";
 
 const Contact = () => {
   const t = useTranslations('Contact');
-  
-  // Using individual state values for form fields as in the example
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
@@ -20,7 +20,6 @@ const Contact = () => {
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
 
-  // Validation function
   const validateForm = () => {
     const errors = [];
 
@@ -32,11 +31,9 @@ const Contact = () => {
     return errors;
   };
 
-  // Email redirect approach from example.js
   const handleEmailRedirect = (e) => {
     e.preventDefault();
-    
-    // Validate the form first
+
     const validationErrors = validateForm();
     if (validationErrors.length > 0) {
       setError(validationErrors.join(', '));
@@ -44,16 +41,10 @@ const Contact = () => {
       return;
     }
 
-    // Reset error state
     setError(null);
-    
-    // Recipient email address
+
     const recipientEmail = 'vimawebsolutions@gmail.com';
-    
-    // Create the email subject
     const emailSubject = subject ? `${subject} from ${name}` : `Inquiry from ${name}`;
-    
-    // Format the email body with all form information
     const emailBody = `
 Name: ${name}
 Email: ${email}
@@ -61,14 +52,11 @@ Phone: ${phone || 'Not provided'}
 
 Message:
 ${message}`;
-    
-    // Create the mailto link with all parameters
+
     const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
-    
-    // Open the email client
+
     window.location.href = mailtoLink;
-    
-    // Show success message and reset form
+
     setSuccess(true);
     setName('');
     setEmail('');
@@ -83,14 +71,20 @@ ${message}`;
       title: t('offices.dev.title'),
       type: t('offices.dev.type'),
       location: t('offices.dev.location'),
-      phones: ["+90 507 071 12 59", "+90 535 676 58 99"]
+      phones: [
+        <p key="0"><Link href="tel:+905070711259">+90 507 071 12 59</Link></p>,
+        <p key="1"><Link href="tel:+905356765899">+90 535 676 58 99</Link></p>
+      ]
     },
     {
       number: "02",
       title: t('offices.sales.title'),
       type: t('offices.sales.type'),
       location: t('offices.sales.location'),
-      phones: ["+90 507 071 12 59", "+90 535 676 58 99"]
+      phones: [
+        <p key="0"><Link href="tel:+905070711259">+90 507 071 12 59</Link></p>,
+        <p key="1"><Link href="tel:+905356765899">+90 535 676 58 99</Link></p>
+      ]
     }
   ];
 
