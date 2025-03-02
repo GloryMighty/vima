@@ -68,7 +68,7 @@ export default function AboutPage() {
           <div className="col-xl-4 col-lg-4 col-md-5 order-md-2 order-1 px-4">
             <div className="tf__about_img" style={{ maxWidth: '100%', maxHeight: '300px', margin: '0 auto' }}>
               <Image
-                src="/images/slav.png"
+                src="/images/Slavaa.png"
                 alt="Viacheslav Mamatov"
                 className="img-fluid"
                 style={{ borderRadius: '20px', objectFit: 'cover' }}
