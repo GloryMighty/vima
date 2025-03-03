@@ -48,7 +48,7 @@
   border: none;
   cursor: pointer;
   padding: 0.25rem;
-  color: #32CD32;
+  color: hsl(63, 100%, 41%);
   transition: transform 0.2s ease;
   display: flex;
   align-items: center;
@@ -62,7 +62,7 @@
 /* Chat button to open widget */
 .chat-widget-button {
     background-color: rgba(24, 24, 24, 0.98);
-    color: #32CD32;
+    color: rgb(199, 209, 0);
     padding: 1rem;
     border-radius: 50%;
     box-shadow: 0 4px 16px rgba(50, 205, 50, 0.2);
@@ -199,7 +199,7 @@
 /* Send button styling in the footer */
 .chat-widget-send-button {
     background-color: rgba(50, 205, 50, 0.1);
-    color: #32CD32;
+    color: hsl(63, 100%, 41%);
     padding: 0.75rem;
     border-radius: 0.75rem;
     border: 1px solid rgba(50, 205, 50, 0.2);

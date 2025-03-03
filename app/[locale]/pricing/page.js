@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl';
 import { useParams } from 'next/navigation';
 import ClientHelmet from '@/components/ClientHelmet';
 import Image from 'next/image';
+import PricingCard from '@/components/pricing/PricingCard';
 
 const PricingPage = () => {
   const t = useTranslations('Experience.pricing');
@@ -50,63 +51,27 @@ const PricingPage = () => {
         >
           <div className="row">
             <div className="col-xl-12">
-              <div className="tf__section_heading mb_10">
+              <div className="tf__common_heading mb_10 text-center">
+                <h5>{t('sub_heading')}</h5>
                 <h2 
-                  className="tf__sub_heading text-center" 
-                  style={{ color: '#ffffff' }}
-                >
-                  {t('sub_heading')}
-                </h2>
-                <h1 
-                  className="tf__heading text-center" 
                   data-text-animation="rotate-in" 
                   data-split="word"
-                  style={{ color: '#ffffff' }}
                 >
                   {t('heading')}
-                </h1>
+                </h2>
               </div>
             </div>
           </div>
           <div className="row">
             {['basic', 'advanced', 'vip'].map((plan, index) => (
               <div className="col-xl-4 col-md-6 wow fadeInUp pt-5 px-3" key={index}>
-                <div
-                  className="tf__single_pricing"
-                  style={{
-                    background: 'rgba(255, 255, 255, 0.95)',
-                    borderRadius: '15px',
-                    padding: '40px 30px',
-                    height: '100%',
-                    marginBottom: '30px',
-                    backdropFilter: 'blur(10px)'
-                  }}
-                >
-                  <div className="tf__common_heading text-center">
-                    <h2 style={{ fontSize: '28px', fontWeight: '700', color: '#1a1a1a', marginBottom: '15px' }}>
-                      {t(`plans.${plan}.title`)}
-                    </h2>
-                    <h2 style={{ fontSize: '42px', fontWeight: '800', color: '#000', marginBottom: '20px' }}>
-                      {t(`plans.${plan}.price`)}
-                      <sub style={{ fontSize: '16px', fontWeight: '400', color: '#666' }}>
-                        {t(`plans.${plan}.price_subtext`)}
-                      </sub>
-                    </h2>
-                  </div>
-                  <div className="tf__pricing_body">
-                    <ul>
-                      {t(`plans.${plan}.features`).split('|').map((feature, i) => (
-                        <li key={i} style={{ marginBottom: '10px', color: '#666' }}>
-                          <i className="fas fa-check" style={{ color: '#28a745', marginRight: '10px' }}></i>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <a href={`https://wa.me/+905070711259`} className="tf__common_btn" style={{ marginTop: '20px' }}>
-                      {t('choose_plan')}  
-                    </a>
-                  </div>
-                </div>
+                <PricingCard
+                  title={t(`plans.${plan}.title`)}
+                  price={t(`plans.${plan}.price`)}
+                  priceSubtext={t(`plans.${plan}.price_subtext`)}
+                  features={t(`plans.${plan}.features`).split('|')}
+                  ctaText={t('choose_plan')}
+                />
               </div>
             ))}
           </div>
