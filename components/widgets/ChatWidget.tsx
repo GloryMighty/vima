@@ -4,6 +4,8 @@
 
 import React, { useState, useEffect, useRef, useCallback } from "react"
 import { motion as m, AnimatePresence } from "framer-motion"
+import { ResizableBox } from 'react-resizable'
+import 'react-resizable/css/styles.css'
 type MotionDivProps = React.ComponentProps<typeof m.div>
 import { Loader2, XCircle, MessageSquare, Send } from "lucide-react"
 import '../../public/css/chatWidget.css';
@@ -30,13 +32,13 @@ const ChatWidget: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
   const [initialMessageShown, setInitialMessageShown] = useState(false)
-  const [position, setPosition] = useState({ x: 0, y: 0 })
-  const [isDragging, setIsDragging] = useState(false)
-  
+  const [dimensions, setDimensions] = useState({
+    width: 350,
+    height: 500
+  })
+
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const widgetRef = useRef<HTMLDivElement>(null)
-  const dragStartPos = useRef({ x: 0, y: 0 })
-  const originalPos = useRef({ x: 0, y: 0 })
 
   const scrollToBottom = useCallback(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
@@ -54,45 +56,11 @@ const ChatWidget: React.FC = () => {
     }
   }, [isOpen, initialMessageShown])
 
-  // Handle drag events
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!isDragging) return
-      
-      const deltaX = e.clientX - dragStartPos.current.x
-      const deltaY = e.clientY - dragStartPos.current.y
-      
-      setPosition({
-        x: originalPos.current.x + deltaX,
-        y: originalPos.current.y + deltaY
-      })
-    }
-    
-    const handleMouseUp = () => {
-      setIsDragging(false)
-      document.body.style.cursor = 'default'
-    }
-    
-    if (isDragging) {
-      document.addEventListener('mousemove', handleMouseMove)
-      document.addEventListener('mouseup', handleMouseUp)
-    }
-    
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove)
-      document.removeEventListener('mouseup', handleMouseUp)
-    }
-  }, [isDragging])
-
-  const startDrag = (e: React.MouseEvent) => {
-    // Only start dragging if we're clicking on the header and not on a button
-    if ((e.target as HTMLElement).closest('button')) return
-    
-    e.preventDefault()
-    setIsDragging(true)
-    dragStartPos.current = { x: e.clientX, y: e.clientY }
-    originalPos.current = { x: position.x, y: position.y }
-    document.body.style.cursor = 'move'
+  const handleResize = (event: any, { size }: any) => {
+    setDimensions({
+      width: size.width,
+      height: size.height
+    })
   }
 
   const handleSendMessage = async () => {
@@ -155,77 +123,86 @@ const ChatWidget: React.FC = () => {
             <MessageSquare className="w-6 h-6 text-[#32CD32]" />
           </m.button>
         ) : (
-          <m.div 
-            ref={widgetRef}
-            initial={{ opacity: 0, y: 20, scale: 0.95 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            transition={{ duration: 0.2 }}
-            className="chat-widget-container"
-            style={{
-              transform: `translate(${position.x}px, ${position.y}px)`,
-            }}
+          <ResizableBox
+            width={dimensions.width}
+            height={dimensions.height}
+            minConstraints={[300, 400]}
+            maxConstraints={[600, 800]}
+            resizeHandles={['nw']}
+            onResize={handleResize}
+            className="chat-widget-resizable"
           >
-            {/* Header */}
-            <div 
-              className="chat-widget-header"
-              onMouseDown={startDrag}
-            >
-              <div className="title-container">
-                <MessageSquare className="w-6 h-6 text-[#32CD32]" />
-                <h3 className="text-lg font-semibold text-[#32CD32]">VIMA AI</h3>
-              </div>
-              <button 
-                onClick={() => setIsOpen(false)} 
-                className="chat-widget-close-button"
+            <div className="chat-widget-container-wrapper">
+              <m.div 
+                ref={widgetRef}
+                initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: 20, scale: 0.95 }}
+                transition={{ duration: 0.2 }}
+                className="chat-widget-container"
+                style={{ width: '100%', height: '100%' }}
               >
-                <XCircle className="w-6 h-6 text-[#32CD32]" />
-              </button>
-            </div>
-
-            {/* Messages Container */}
-            <div className="chat-widget-body">
-              {messages.map((msg) => (
-                <m.div key={msg.id} 
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className={`message-container ${msg.role === 'user' ? 'user-message' : 'ai-message'}`}
-                >
-                  <div 
-                    className={`message-bubble ${msg.role === 'user' ? 'user-bubble' : 'ai-bubble'}`}
-                  >
-                    {msg.content}
-                  </div>
-                </m.div>
-              ))}
-              <div ref={messagesEndRef} />
-            </div>
-
-            {/* Input Area */}
-            <div className="chat-widget-footer">
-              <div className="input-container">
-                <input 
-                  type="text" 
-                  value={inputMessage}
-                  onChange={(e) => setInputMessage(e.target.value)}
-                  onKeyPress={handleKeyPress}
-                  placeholder="Type your message..."
-                  className="chat-widget-input"
-                  disabled={isLoading}
-                />
+              {/* Header */}
+              <div 
+                className="chat-widget-header"
+              >
+                <div className="title-container">
+                  <MessageSquare className="w-6 h-6 text-[#32CD32]" />
+                  <h3 className="text-lg font-semibold text-[#32CD32]">VIMA AI</h3>
+                </div>
                 <button 
-                  onClick={handleSendMessage} 
-                  disabled={isLoading}
-                  className="chat-widget-send-button"
+                  onClick={() => setIsOpen(false)} 
+                  className="chat-widget-close-button"
                 >
-                  {isLoading ? 
-                    <Loader2 className="w-5 h-5 animate-spin text-[#32CD32]" /> : 
-                    <Send className="w-5 h-5 text-[#32CD32]" />
-                  }
+                  <XCircle className="w-6 h-6 text-[#32CD32]" />
                 </button>
               </div>
+
+              {/* Messages Container */}
+              <div className="chat-widget-body">
+                {messages.map((msg) => (
+                  <m.div key={msg.id} 
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className={`message-container ${msg.role === 'user' ? 'user-message' : 'ai-message'}`}
+                  >
+                    <div 
+                      className={`message-bubble ${msg.role === 'user' ? 'user-bubble' : 'ai-bubble'}`}
+                    >
+                      {msg.content}
+                    </div>
+                  </m.div>
+                ))}
+                <div ref={messagesEndRef} />
+              </div>
+
+              {/* Input Area */}
+              <div className="chat-widget-footer">
+                <div className="input-container">
+                  <input 
+                    type="text" 
+                    value={inputMessage}
+                    onChange={(e) => setInputMessage(e.target.value)}
+                    onKeyPress={handleKeyPress}
+                    placeholder="Type your message..."
+                    className="chat-widget-input"
+                    disabled={isLoading}
+                  />
+                  <button 
+                    onClick={handleSendMessage} 
+                    disabled={isLoading}
+                    className="chat-widget-send-button"
+                  >
+                    {isLoading ? 
+                      <Loader2 className="w-5 h-5 animate-spin text-[#32CD32]" /> : 
+                      <Send className="w-5 h-5 text-[#32CD32]" />
+                    }
+                  </button>
+                </div>
+              </div>
+            </m.div>
             </div>
-          </m.div>
+          </ResizableBox>
         )}
       </AnimatePresence>
     </div>

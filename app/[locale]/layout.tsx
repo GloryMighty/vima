@@ -119,7 +119,6 @@ export default async function LocaleLayout({
             {children}
             <ToastContainer />
             <ChatWidget />
-            <SocialLinksWidget />
             <Analytics />
           </NextIntlClientProvider>
         </HelmetWrapper>
