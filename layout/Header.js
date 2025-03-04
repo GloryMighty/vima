@@ -43,7 +43,7 @@ const Header1 = ({ homepage }) => {
   };
 
   return (
-    <header className="custom-main-menu">
+    <header className={`custom-main-menu ${isMobileMenuOpen ? "menu-opened" : ""}`}>
       <div className={`custom-container${homepage ? "-fluid" : ""}`}>
         <nav className="custom-navbar">
           <Link className="custom-navbar-brand" href="/">

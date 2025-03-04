@@ -12,6 +12,11 @@
   transition: all 0.3s ease-in-out;
 }
 
+/* Black overlay for menu when opened */
+.custom-main-menu.menu-opened {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 /* Container styles */
 .custom-container,
 .custom-container-fluid {
@@ -54,10 +59,10 @@
 /* Toggle button for mobile */
 .custom-navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
+  font-size: 0.25rem;
   line-height: 1;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 0.25rem;
   cursor: pointer;
   display: none;
@@ -86,7 +91,6 @@
 .custom-navbar-collapse.custom-show {
   display: block;
   position: absolute;
-  top: 70px;
   left: 0;
   right: 0;
   background: transparent;
@@ -174,6 +178,7 @@
 @media (max-width: 991.98px) {
   .custom-navbar-toggler {
     display: block;
+    z-index: 1001; /* Ensure button stays above the menu */
   }
   
   .custom-navbar-collapse {
@@ -195,8 +200,10 @@
   .custom-navbar-nav {
     flex-direction: column;
     width: 30%;
+    height: calc(100vh - 70px);
     overflow: hidden;
-    
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
   
   .custom-nav-item {
