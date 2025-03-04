@@ -21,7 +21,7 @@ const Page = () => {
       commentsCount: 4,
       title: t('posts.travel.title'),
       content: t('posts.travel.content'),
-      link: 'https:/tur.it.com/'
+      link: 'https://tur.it.com/'
     },
     {
       id: 'blog-2',
@@ -31,7 +31,7 @@ const Page = () => {
       commentsCount: 3,
       title: t('posts.beauty.title'),
       content: t('posts.beauty.content'),
-      link: 'https:/showcase.it.com/'
+      link: 'https://showcase.it.com/'
     },
     {
       id: 'blog-3',
