@@ -117,7 +117,7 @@ export default function AboutPage() {
         <div className="row mt-5">
           <div className="col-12 text-center">
             <div className="tf__blog_link">
-              <Link href="/contact">
+              <Link href="/contact" className="tf__common_btn">
                 <ShinyText text={t('cta_button')} disabled={false} speed={2} className='custom-class' />
               </Link>
             </div>
