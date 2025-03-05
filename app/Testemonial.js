@@ -49,6 +49,10 @@ const Testomonial = () => {
       id: 5,
       image: '/images/testimonial_5.jpeg',
     },
+    {
+      id: 6,
+      image: '/images/testimonial_6.png',
+    }
   ];
 
   const testimonialData = {
@@ -77,6 +81,11 @@ const Testomonial = () => {
       name: 'Zuheir Al-darwesh',
       role: 'Business Owner',
       content: 'When I addressed the VIMA team I was not prepared for the quality and speed of service they provided. More than reasonable price for ridiculously fast and competent solution.'
+    },
+    6: {
+      name: 'Mammad Mamadov',
+      role: 'Entrepreneur',
+      content: 'Coming up with my idea about personal website to VIMA I got my website done in two days which empowered my personal brand. Do not miss out on the opportunity to create something amazing with VIMA.'
     }
   };
 
