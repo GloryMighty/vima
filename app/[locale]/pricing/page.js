@@ -8,6 +8,7 @@ import { useParams } from 'next/navigation';
 import ClientHelmet from '@/components/ClientHelmet';
 import Image from 'next/image';
 import PricingCard from '@/components/pricing/PricingCard';
+import '@/public/effects/ShinyBorder.css';
 
 const PricingPage = () => {
   const t = useTranslations('Experience.pricing');
@@ -65,13 +66,15 @@ const PricingPage = () => {
           <div className="row">
             {['basic', 'advanced', 'vip'].map((plan, index) => (
               <div className="col-xl-4 col-md-6 wow fadeInUp pt-5 px-3" key={index}>
-                <PricingCard
-                  title={t(`plans.${plan}.title`)}
-                  price={t(`plans.${plan}.price`)}
-                  priceSubtext={t(`plans.${plan}.price_subtext`)}
-                  features={t(`plans.${plan}.features`).split('|')}
-                  ctaText={t('choose_plan')}
-                />
+                <div className={plan === 'advanced' ? 'shiny-border' : ''}>
+                  <PricingCard
+                    title={t(`plans.${plan}.title`)}
+                    price={t(`plans.${plan}.price`)}
+                    priceSubtext={t(`plans.${plan}.price_subtext`)}
+                    features={t(`plans.${plan}.features`).split('|')}
+                    ctaText={t('choose_plan')}
+                  />
+                </div>
               </div>
             ))}
           </div>

@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import Iridiscence from '@/public/effects/descence';
 import PricingCard from '@/components/pricing/PricingCard';
+import '@/public/effects/ShinyBorder.css';
 
 /**
  * Pricing section component for the main page
@@ -57,13 +58,15 @@ const Experiance = () => {
           <div className="row">
             {['basic', 'advanced', 'vip'].map((plan, index) => (
               <div className="col-xl-4 col-md-6 wow fadeInUp pt-5 px-3" key={index}>
-                <PricingCard
-                  title={t(`pricing.plans.${plan}.title`)}
-                  price={t(`pricing.plans.${plan}.price`)}
-                  priceSubtext={t(`pricing.plans.${plan}.price_subtext`)}
-                  features={t(`pricing.plans.${plan}.features`).split('|')}
-                  ctaText={t('pricing.choose_plan')}
-                />
+                <div className={plan === 'advanced' ? 'shiny-border' : ''}>
+                  <PricingCard
+                    title={t(`pricing.plans.${plan}.title`)}
+                    price={t(`pricing.plans.${plan}.price`)}
+                    priceSubtext={t(`pricing.plans.${plan}.price_subtext`)}
+                    features={t(`pricing.plans.${plan}.features`).split('|')}
+                    ctaText={t('pricing.choose_plan')}
+                  />
+                </div>
               </div>
             ))}
           </div>

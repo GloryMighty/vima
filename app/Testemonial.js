@@ -62,7 +62,7 @@ const Testomonial = () => {
       content: 'Interesting idea flawlessly implemented into reality with great attention to detail and creativity. I like the application because of efficiency and powerful AI solutions!'
     },
     2: {
-      name: 'Batuhan Alberaber',
+      name: 'Batuhan Yüksel',
       role: 'Startup Founder',
       content: 'This team of developers has provided a wonderful assistance to our project. From idea to implementation, the speed with which these guys provide their services is extraordinary.'
     },
@@ -85,7 +85,8 @@ const Testomonial = () => {
     6: {
       name: 'Mammad Mamadov',
       role: 'Entrepreneur',
-      content: 'Coming up with my idea about personal website to VIMA I got my website done in two days which empowered my personal brand. Do not miss out on the opportunity to create something amazing with VIMA.'
+      content:
+        'When I approached VIMA with my idea for a personal website, I was blown away by how quickly they brought it to life. In just two days, I had a professional website that not only showcased my skills but also empowered my personal brand. Don\'t miss out on the opportunity to create something amazing with VIMA.',
     }
   };
 

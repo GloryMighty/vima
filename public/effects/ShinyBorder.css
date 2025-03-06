@@ -1,0 +1,53 @@
+/**
+ * ShinyBorder.css
+ * Provides a shiny border effect for elements
+ * Inspired by ShinyText.css
+ */
+
+.shiny-border {
+  position: relative;
+  z-index: 1;
+  overflow: visible !important;
+}
+
+.shiny-border::before {
+  content: '';
+  position: absolute;
+  inset: -9px;
+  background: linear-gradient(
+    120deg,
+    rgb(156, 120, 122) 0%,
+    rgba(2, 240, 249, 0.7) 30%,
+    rgba(1, 255, 5, 0.5) 60%,
+    rgb(60, 0, 255) 100%
+  );
+  background-size: 200% 100%;
+  border-radius: 18px;
+  z-index: -1;
+  animation: shineBorder 5s linear infinite;
+  filter: blur(5px);
+}
+
+@keyframes shineBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Subtle elevation for the card */
+.shiny-border {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(78, 128, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.shiny-border:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(78, 128, 255, 0.25);
+}
