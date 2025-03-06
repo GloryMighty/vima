@@ -31,11 +31,11 @@ export default function MammadCarousel() {
 
   // Array of Mammad project image paths
   const mammadImages = [
-    '/images/VimaProj/mammad/1.png',
-    '/images/VimaProj/mammad/2.png',
-    '/images/VimaProj/mammad/3.png',
-    '/images/VimaProj/mammad/4.png',
-    '/images/VimaProj/mammad/5.png'
+    '/images-webp/VimaProj/mammad/1.webp',
+    '/images-webp/VimaProj/mammad/2.webp',
+    '/images-webp/VimaProj/mammad/3.webp',
+    '/images-webp/VimaProj/mammad/4.webp',
+    '/images-webp/VimaProj/mammad/5.webp'
   ];
 
   return (

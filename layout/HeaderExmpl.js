@@ -22,7 +22,7 @@ const Header1 = ({ homepage }) => {
     <nav className="navbar navbar-expand-lg tf__main_menu pl_50 pr_60 main_menu">
       <div className={`container${homepage ? "-fluid" : ""}`}>
         <Link className="navbar-brand" href="/">
-          <img src="images/logo_1.png" alt="logo" className="img-fluid w-100" />
+          <img src="images-webp/logo_1.webp" alt="logo" className="img-fluid w-100" />
         </Link>
         <button
           className="navbar-toggler"

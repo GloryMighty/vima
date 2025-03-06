@@ -20,21 +20,21 @@ export default function Carousel({
       title: t('ai_insights.title'),
       description: t('ai_insights.description'),
       impact: t('ai_insights.impact'),
-      image: "/images/ai.png",
+      image: "/images-webp/ai.webp",
       id: 1
     },
     {
       title: t('ui_ux.title'),
       description: t('ui_ux.description'),
       impact: t('ui_ux.impact'),
-      image: "/images/intu.png",
+      image: "/images-webp/intu.webp",
       id: 2
     },
     {
       title: t('scalable.title'),
       description: t('scalable.description'),
       impact: t('scalable.impact'),
-      image: "/images/scale.png",
+      image: "/images-webp/scale.webp",
       id: 3
     },
   ];

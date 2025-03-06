@@ -6,7 +6,7 @@ const aboutData = {
   title: "Visual Journey through my Portfolio",
   subtitle: "making this the first true generator on the Internet",
   bio: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illonge inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam",
-  img: "/images/about_img.jpg",
+  img: "/images-webp/about_img.webp",
 };
 
 const About = () => {

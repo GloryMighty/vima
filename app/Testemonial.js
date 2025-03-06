@@ -31,27 +31,27 @@ const Testomonial = () => {
   const testimonials = [
     {
       id: 1,
-      image: '/images/testimonial_1.png',
+      image: '/images-webp/testimonial_1.webp',
     },
     {
       id: 2,
-      image: '/images/testimonial_2.png',
+      image: '/images-webp/testimonial_2.webp',
     },
     {
       id: 3,
-      image: '/images/testimonial_3.png',
+      image: '/images-webp/testimonial_3.webp',
     },
     { 
       id: 4,
-      image: '/images/testimonial_4.png',
+      image: '/images-webp/testimonial_4.webp',
     },
     { 
       id: 5,
-      image: '/images/testimonial_5.jpeg',
+      image: '/images-webp/testimonial_5.webp',
     },
     {
       id: 6,
-      image: '/images/testimonial_6.png',
+      image: '/images-webp/testimonial_6.webp',
     }
   ];
 

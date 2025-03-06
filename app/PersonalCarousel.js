@@ -28,12 +28,12 @@ export default function PersonalCarousel() {
 
   // Array of personal image paths
   const personalImages = [
-    '/images/VimaProj/Personal/1.png',
-    '/images/VimaProj/Personal/2.png',
-    '/images/VimaProj/Personal/3.png',
-    '/images/VimaProj/Personal/4.png',
-    '/images/VimaProj/Personal/5.png',
-    '/images/VimaProj/Personal/6.png'
+    '/images-webp/VimaProj/Personal/1.webp',
+    '/images-webp/VimaProj/Personal/2.webp',
+    '/images-webp/VimaProj/Personal/3.webp',
+    '/images-webp/VimaProj/Personal/4.webp',
+    '/images-webp/VimaProj/Personal/5.webp',
+    '/images-webp/VimaProj/Personal/6.webp'
   ];
 
   return (

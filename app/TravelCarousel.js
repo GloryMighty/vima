@@ -31,11 +31,11 @@ export default function TravelCarousel() {
 
   // Array of travel image paths - will be localized by getImagePath
   const travelImages = [
-    '/images/VimaProj/Travel/1.png',
-    '/images/VimaProj/Travel/2.png',
-    '/images/VimaProj/Travel/3.png',
-    '/images/VimaProj/Travel/4.png',
-    '/images/VimaProj/Travel/5.png'
+    '/images-webp/VimaProj/Travel/1.webp',
+    '/images-webp/VimaProj/Travel/2.webp',
+    '/images-webp/VimaProj/Travel/3.webp',
+    '/images-webp/VimaProj/Travel/4.webp',
+    '/images-webp/VimaProj/Travel/5.webp'
   ];
 
   return (

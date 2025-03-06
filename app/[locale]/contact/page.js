@@ -102,7 +102,7 @@ ${message}`;
             <div className="col-xl-8 col-lg-7">
               <div className="tf__contact_img" data-animation="img-blur">
                 <Image
-                  src="/images/istanbul.jpg"
+                  src="/images-webp/istanbul.webp"
                   alt={t('image_alt')}
                   className="img-fluid w-100"
                   width={800}

@@ -25,7 +25,12 @@ export const getImagePath = (imagePath) => {
     return '/images/placeholder.png';
   }
 
-  // Clean the path and ensure it starts with /images/
+  // If the path already includes images-webp, don't modify it
+  if (imagePath.includes('images-webp')) {
+    return imagePath;
+  }
+  
+  // For regular images, ensure they start with /images/
   const cleanPath = imagePath.replace(/^\/+/, '').replace(/^images\//, '');
   return `/images/${cleanPath}`;
 };

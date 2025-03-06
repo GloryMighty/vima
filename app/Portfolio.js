@@ -23,15 +23,15 @@ import { getImagePath } from '@/utility/imageUtils';
  */
 // Transform image paths to ensure they work across all locales
 const portfolioData = [
-  { id: 1, src: getImagePath("/images/beauty.png"), key: 'beauty' },
-  { id: 2, src: getImagePath("/images/land.png"), key: 'land' },
-  { id: 3, src: getImagePath("/images/land1.png"), key: 'land1' },
-  { id: 4, src: getImagePath("/images/pars.png"), key: 'pars' },
+  { id: 1, src: "/images-webp/beauty.webp", key: 'beauty' },
+  { id: 2, src: "/images-webp/land.webp", key: 'land' },
+  { id: 3, src: "/images-webp/land1.webp", key: 'land1' },
+  { id: 4, src: "/images-webp/pars.webp", key: 'pars' },
   // For later use
-  // { id: 5, src: "/images/slav2.png" },
-  // { id: 6, src: "/images/mockmac.png" },
-  // { id: 7, src: "/images/mockmac1.png"},
-  // { id: 8, src: "/images/mockmac2.png"},
+  // { id: 5, src: "/images-webp/slav2.webp" },
+  // { id: 6, src: "/images-webp/mockmac.webp" },
+  // { id: 7, src: "/images-webp/mockmac1.webp"},
+  // { id: 8, src: "/images-webp/mockmac2.webp"},
 ];
 
 /**

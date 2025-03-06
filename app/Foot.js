@@ -5,7 +5,7 @@ const Foot = () => {
   return (
     <div style={{ width: '100%', height: 'auto', position: 'relative' }}>
   <GridDistortion
-    imageSrc="../public/images/hero.jpg"
+    imageSrc="/images-webp/hero.webp"
     grid={5}
     mouse={0.1}
     strength={0.15}

@@ -10,14 +10,14 @@ export const Home1Banner = () => {
   return (
     <section
       className="tf__banner pt_100 pl_60 pr_60 bg-fixed"
-      style={{ background: "url(images/banner_bg.jpg)" }}
+      style={{ background: "url(/images-webp/banner_bg.webp)" }}
     >
       <div className="container-fluid h-100">
         <div className="row align-items-center h-100">
           <div className="col-xxl-6 col-xl-6">
             <div className="tf__banner_img">
               <img
-                src="images/banner_img.png"
+                src="/images-webp/banner_img.webp"
                 alt="portfolio img"
                 className="img-fluid w-100"
               />

@@ -47,7 +47,7 @@ const Header1 = ({ homepage }) => {
       <div className={`custom-container${homepage ? "-fluid" : ""}`}>
         <nav className="custom-navbar">
           <Link className="custom-navbar-brand" href="/">
-            <img src="/images/logo.png" alt="logo" className="img-fluid" />
+            <img src="/images-webp/logo.webp" alt="logo" className="img-fluid" />
           </Link>
           <button
             className="custom-navbar-toggler"

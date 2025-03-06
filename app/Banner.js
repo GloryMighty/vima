@@ -47,7 +47,7 @@ export const Home1Banner = () => {
           <div className="col-xxl-7 col-xl-6">
             <div className="tf__about_img">
               <img 
-                src="/images/hero.png" 
+                src="/images-webp/hero.webp" 
                 alt="VIMA Hero Image" 
                 className="img-fluid" 
               />

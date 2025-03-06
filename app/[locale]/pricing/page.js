@@ -95,7 +95,7 @@ const PricingPage = () => {
             <div className="col-xl-8 col-lg-8 mb-4">
             <div className="tf__about_details_img">
               <Image
-                src="/images/about.png"
+                src="/images-webp/about.webp"
                 alt={t('image_alt')}
                 className="img-fluid"
                 style={{ 

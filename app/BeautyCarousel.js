@@ -9,10 +9,10 @@ export default function BeautyCarousel() {
 
   // Array of beauty image paths
   const beautyImages = [
-    '/images/VimaProj/Beauty/1.png',
-    '/images/VimaProj/Beauty/2.png',
-    '/images/VimaProj/Beauty/3.png',
-    '/images/VimaProj/Beauty/4.png'
+    '/images-webp/VimaProj/Beauty/1.webp',
+    '/images-webp/VimaProj/Beauty/2.webp',
+    '/images-webp/VimaProj/Beauty/3.webp',
+    '/images-webp/VimaProj/Beauty/4.webp'
   ];
 
   return (

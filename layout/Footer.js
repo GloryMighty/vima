@@ -20,12 +20,8 @@ const Footer2 = () => {
         <div className="row justify-content-between">
           <div className="col-xl-4 col-md-12 col-lg-4">
             <div className="tf__footer_left">
-              <a href="index.html" className="tf__footer_logo mb-3">
-                <img
-                  src="images/logo_3.png"
-                  alt="footer logo"
-                  className="img-fluid w-100"
-                />
+              <a className="tf__footer_logo mb-3">
+                {/* this serves just as a space breaker */}
               </a>
               <p>
                 In VIMA we transform modern standards of web development!

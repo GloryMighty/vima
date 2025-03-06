@@ -6,17 +6,25 @@ const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 const config = {
   reactStrictMode: true,
   
-  /**
-   * Configure image handling and optimization
-   * - Ensures images are served from correct paths
-   * - Handles locale-prefixed image requests
-   */
+  // Image configuration
+  images: {
+    remotePatterns: [],
+    unoptimized: true, // Disable Next.js image optimization to use pre-optimized WebP images
+    domains: [],
+  },
+  
+  // Handle locale-prefixed paths
   async rewrites() {
     return [
       // Handle locale-prefixed image paths
       {
         source: '/:locale/images/:path*',
         destination: '/images/:path*',
+      },
+      // Handle locale-prefixed WebP image paths
+      {
+        source: '/:locale/images-webp/:path*',
+        destination: '/images-webp/:path*',
       },
     ];
   },

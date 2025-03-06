@@ -3,10 +3,10 @@ import { motion, useMotionValue, useAnimation, useTransform } from "framer-motio
 import "./RollingGallery.css";
 
 const DEFAULT_IMGS = [
-  "/images/Rolling/1.png",
-  "/images/Rolling/2.png",
-  "/images/Rolling/3.png",
-  "/images/Rolling/4.png",
+  "/images-webp/Rolling/1.webp",
+  "/images-webp/Rolling/2.webp",
+  "/images-webp/Rolling/3.webp",
+  "/images-webp/Rolling/4.webp",
 ];
 
 const RollingGallery = ({ 

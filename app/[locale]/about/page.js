@@ -25,19 +25,19 @@ export default function AboutPage() {
       title: t('ai_insights.title'),
       description: t('ai_insights.description'),
       impact: t('ai_insights.impact'),
-      image: "/images/ai.png"
+      image: "/images-webp/ai.webp"
     },
     {
       title: t('ui_ux.title'),
       description: t('ui_ux.description'),
       impact: t('ui_ux.impact'),
-      image: "/images/intu.png"
+      image: "/images-webp/intu.webp"
     },
     {
       title: t('scalable.title'),
       description: t('scalable.description'),
       impact: t('scalable.impact'),
-      image: "/images/scale.png"
+      image: "/images-webp/scale.webp"
     }
   ];
   */
@@ -68,7 +68,7 @@ export default function AboutPage() {
           <div className="col-xl-4 col-lg-4 col-md-5 order-md-2 order-1 px-4">
             <div className="tf__about_img" style={{ maxWidth: '100%', maxHeight: '300px', margin: '0 auto' }}>
               <Image
-                src="/images/Slavaa.png"
+                src="/images-webp/Slavaa.webp"
                 alt="Viacheslav Mamatov"
                 className="img-fluid"
                 style={{ borderRadius: '20px', objectFit: 'cover' }}
@@ -84,7 +84,7 @@ export default function AboutPage() {
           <div className="col-xl-4 col-lg-4 col-md-5 px-4">
             <div className="tf__about_img" style={{ maxWidth: '100%', maxHeight: '300px', margin: '0 auto' }}>
               <Image
-                src="/images/Markus.png"
+                src="/images-webp/Markus.webp"
                 alt="Markus Ketonen"
                 className="img-fluid"
                 style={{ borderRadius: '20px', objectFit: 'cover' }}
