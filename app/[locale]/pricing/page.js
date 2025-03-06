@@ -170,6 +170,97 @@ const PricingPage = () => {
                     {t('faq_answer_3')}
                   </p>
                 </div>
+                
+                <div className="tf__faq_item wow fadeInUp" style={{ 
+                  backgroundColor: 'rgba(30, 40, 70, 0.6)', 
+                  borderRadius: '10px', 
+                  padding: '20px 25px',
+                  marginBottom: '15px',
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(78, 128, 255, 0.3)',
+                  boxShadow: '0 8px 20px rgba(0, 0, 0, 0.2)',
+                  transition: 'all 0.3s ease-in-out',
+                }}>
+                  <h4 style={{ 
+                    color: '#4e80ff', 
+                    marginBottom: '10px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    fontSize: '1.2rem',
+                    fontWeight: '600'
+                  }}>
+                    <span style={{ 
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      width: '30px',
+                      height: '30px',
+                      backgroundColor: '#4e80ff',
+                      borderRadius: '50%',
+                      marginRight: '10px',
+                      color: '#ffffff',
+                      fontSize: '0.9rem',
+                      fontWeight: 'bold'
+                    }}>★</span>
+                    {t('faq_question_4')}
+                  </h4>
+                  <div style={{ color: '#ffffff', lineHeight: '1.6' }}>
+                    <ul style={{ 
+                      listStyleType: 'none', 
+                      padding: '0', 
+                      margin: '0'
+                    }}>
+                      <li style={{ 
+                        padding: '8px 0', 
+                        display: 'flex', 
+                        alignItems: 'flex-start'
+                      }}>
+                        <span style={{ 
+                          color: '#4e80ff', 
+                          marginRight: '10px',
+                          fontSize: '1.1rem'
+                        }}>•</span>
+                        <span>{t('faq_answer_4').split(',')[0]}</span>
+                      </li>
+                      <li style={{ 
+                        padding: '8px 0', 
+                        display: 'flex', 
+                        alignItems: 'flex-start'
+                      }}>
+                        <span style={{ 
+                          color: '#4e80ff', 
+                          marginRight: '10px',
+                          fontSize: '1.1rem'
+                        }}>•</span>
+                        <span>{t('faq_answer_4').split(',')[1]}</span>
+                      </li>
+                      <li style={{ 
+                        padding: '8px 0', 
+                        display: 'flex', 
+                        alignItems: 'flex-start'
+                      }}>
+                        <span style={{ 
+                          color: '#4e80ff', 
+                          marginRight: '10px',
+                          fontSize: '1.1rem'
+                        }}>•</span>
+                        <span>{t('faq_answer_4').split(',')[2]}</span>
+                      </li>
+                      <li style={{ 
+                        padding: '8px 0', 
+                        display: 'flex', 
+                        alignItems: 'flex-start'
+                      }}>
+                        <span style={{ 
+                          color: '#4e80ff', 
+                          marginRight: '10px',
+                          fontSize: '1.1rem'
+                        }}>•</span>
+                        <span>{t('faq_answer_4').split(',')[3]}</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

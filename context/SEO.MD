@@ -30,4 +30,4 @@ Multilingual web solutions for global businesses
 
 On-Page SEO Optimization
 Optimize various on-page elements to improve visibility and user experience:
-Title Tags and Meta Descriptions: Ensure each page has unique title tags and meta descriptions that include target keywords. Keep title tags under 60 characters and meta descriptions under 160 characters78.
+Title Tags and Meta Descriptions: Ensure each page has unique title tags and meta descriptions that include target keywords. Keep title tags under 60 characters and meta descriptions under 160 characters.

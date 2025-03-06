@@ -22,6 +22,8 @@
       "faq_answer_2": "Ehdottomasti! Tarjoamme joustavat päivitykset, jotta verkkosivustosi voi kasvaa liiketoimintatarpeidesi mukana.",
       "faq_question_3": "Tarjoatteko räätälöityjä ratkaisuja?",
       "faq_answer_3": "Kyllä, tarjoamme räätälöityjä ratkaisuja vakiosuunnitelmiemme ulkopuolella. Ota yhteyttä keskustellaksesi erityisvaatimuksistasi.",
+      "faq_question_4": "Miksi meidän pitäisi valita juuri teidät?",
+      "faq_answer_4": "Yksilöllinen lähestymistapa jokaiseen asiakkaaseen, Kattava hakukoneoptimointi, Nopea kehitys ja käyttöönotto, Järkevät hinnat erinomaisella arvolla",
       "need_custom_solution": "Tarvitsetko räätälöidyn ratkaisun?",
       "custom_solution_description": "Jokainen yritys on ainutlaatuinen. Jos vakiosuunnitelmamme eivät täysin vastaa tarpeitasi, autamme mielellämme luomaan räätälöidyn ratkaisun, joka vastaa täydellisesti vaatimuksiasi.",
       "contact_for_custom_pricing": "Ota yhteyttä",
@@ -159,6 +161,11 @@
         "title": "Perussuunnitelma suomalaiselle autokorjaamolle",
         "content": "Yhden sivun verkkosivusto, joka on suunniteltu yksinkertaiseksi ja selkeäksi, keskittyen käyttäjäystävällisyyteen. Projekti toteutettiin kuudessa tunnissa ja toimitettiin asiakkaalle seuraavana päivänä tilauksen jälkeen, mikä johti erittäin positiiviseen lopputulokseen.",
         "author": "VIMA-tiimi"
+      },
+      "mammad": {
+        "title": "Perushenkilökohtainen verkkosivusto turkkilaiselle yrittäjälle",
+        "content": "Yhden sivun verkkosivusto, jossa on yksinkertainen ja selkeä verkkosuunnittelu, joka keskittyy kuviin ja kokemuksen esittelyyn. Projekti valmistui kahdessa päivässä ja varmisti, että yrittäjä voi nyt osoittaa persoonallisuutensa ja osaamisensa eri alueilla jakamalla henkilökohtaisen portfolio-verkkosivustonsa.",
+        "author": "VIMA-tiimi"
       }
     },
     "recent_posts": {
@@ -166,7 +173,8 @@
       "basic": "Tutustu yrityksesi vaihtoehtoihin",
       "advanced": "Edistynyt ratkaisu yrittäjille",
       "future": "Sijoita tulevaisuuteesi, hanki verkkosovellus!", 
-      "parsinta": "Autoparsinta - Yrityksen Laskeutumissivu"
+      "parsinta": "Autoparsinta - Yrityksen Laskeutumissivu",
+      "mammad": "Perushenkilökohtainen verkkosivusto turkkilaiselle yrittäjälle"
     },
     "contact": {
       "message": "Toteuta unelmasi!",

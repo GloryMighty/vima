@@ -7,6 +7,7 @@ import TravelCarousel from '@/app/TravelCarousel';
 import BeautyCarousel from '@/app/BeautyCarousel';
 import PersonalCarousel from '@/app/PersonalCarousel';
 import ParsintaCarousel from '@/app/ParsintaCarousel';
+import MammadCarousel from '@/app/MammadCarousel';
 import ClientHelmet from '@/components/ClientHelmet';
 
 const Page = () => {
@@ -52,6 +53,16 @@ const Page = () => {
       title: t('posts.parsinta.title'),
       content: t('posts.parsinta.content'),
       link: 'https://autoparsinta.fi'
+    },
+    {
+      id: 'blog-5',
+      Carousel: MammadCarousel,
+      author: t('posts.mammad.author'),
+      category: t('categories.web_developer'),
+      commentsCount: 0,
+      title: t('posts.mammad.title'),
+      content: t('posts.mammad.content'),
+      link: 'https://mammad.biz'
     }
   ];
 
@@ -66,7 +77,7 @@ const Page = () => {
     {
       date: 'February 22, 2022',
       title: t('recent_posts.basic'),
-      link: 'https://showcase.it.com'
+      link: 'https://showcase.it.com',
     },
     {
       date: 'February 18, 2025',
@@ -82,6 +93,11 @@ const Page = () => {
       date: 'February 13, 2025',
       title: t('recent_posts.parsinta'),
       link: 'https://autoparsinta.fi'
+    },
+    {
+      date: 'March 5, 2025',
+      title: t('posts.mammad.title'),
+      link: 'https://mammad.biz'
     }
   ];
 
@@ -137,6 +153,12 @@ const Page = () => {
                       <a className="page-link" href="#blog-3">03</a>
                     </li>
                     <li className="page-item">
+                      <a className="page-link" href="#blog-4">04</a>
+                    </li>
+                    <li className="page-item">
+                      <a className="page-link" href="#blog-5">05</a>
+                    </li>
+                    <li className="page-item">
                       <a className="page-link active" href="/contact" target="_blank" rel="noopener noreferrer">
                         <i className="fa fa-chevron-right" />
                       </a>
@@ -172,12 +194,12 @@ const Page = () => {
                 <div className="tf__blog_common_header">
                   <h5>{t('recent_posts.title')}</h5>
                   {recentPosts.map((post, index) => (
-                    <div key={index} className="tf__recent_post"> 
+                    <div key={index} className="tf__recent_post">
                       <p>
                         <i className="fas fa-calendar-alt" />
                         {post.date}
                       </p>
-                      <a href={post.link}>{post.title}</a>
+                      <a href={post.link} target="_blank" rel="noopener noreferrer">{post.title}</a>
                     </div>
                   ))}
                 </div>

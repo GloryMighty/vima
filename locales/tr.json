@@ -65,6 +65,8 @@
       "faq_answer_2": "Kesinlikle! Web sitenizin iş ihtiyaçlarınızla birlikte büyümesini sağlamak için esnek yükseltmeler sunuyoruz.",
       "faq_question_3": "Özel çözümler sunuyor musunuz?",
       "faq_answer_3": "Evet, standart planlarımızın ötesinde özel çözümler sunuyoruz. Özel gereksinimlerinizi görüşmek için bizimle iletişime geçin.",
+      "faq_question_4": "Neden sizi seçmeliyiz?",
+      "faq_answer_4": "Her müşteriye bireysel yaklaşım, Kapsamlı SEO yönetimi, Hızlı geliştirme ve devreye alma, Mükemmel değer sunan makul fiyatlar",
       "need_custom_solution": "Özel Bir Çözüme mi İhtiyacınız Var?",
       "custom_solution_description": "Her işletme benzersizdir. Standart planlarımız tam olarak ihtiyaçlarınızı karşılamıyorsa, gereksinimlerinize mükemmel bir şekilde uyan özel bir çözüm oluşturmaktan mutluluk duyarız.",
       "contact_for_custom_pricing": "Bize Ulaşın",
@@ -159,6 +161,11 @@
         "title": "Fin Otomotiv Servisi için Temel Plan",
         "content": "Kullanıcıların yönlendirilmesine odaklanan basit ve temiz bir web tasarımına sahip tek sayfalık bir web sitesi. Proje 6 saat içinde tamamlandı ve siparişten sonraki gün müşteriye teslim edildi, bu da son derece olumlu bir sonuç sağladı.",
         "author": "VIMA Takımı"
+      },
+      "mammad": {
+        "title": "Türk Girişimci için Temel Kişisel Web Sitesi",
+        "content": "Görsellere ve deneyim sergilemeye odaklanan basit ve temiz bir web tasarımına sahip tek sayfalık bir web sitesi. Proje 2 gün içinde tamamlandı ve girişimcinin kişisel portföy web sitesini paylaşarak kişiliğini ve farklı alanlardaki yetkinliğini gösterebilmesini sağladı.",
+        "author": "VIMA Takımı"
       }
     },
     "recent_posts": {
@@ -166,7 +173,8 @@
       "basic": "İşletmeniz için temel seçenekleri keşfedin",
       "advanced": "Akıllı işletme sahipleri için gelişmiş çözüm",
       "future": "Geleceğinize Yatırım Yapın, bir Web Uygulamasına Sahip Olun!", 
-      "parsinta": "Autoparsinta - Yrityksen Laskeutumissivu"
+      "parsinta": "Autoparsinta - Yrityksen Laskeutumissivu",
+      "mammad": "Türk Girişimci için Temel Kişisel Web Sitesi"
     },
     "contact": {
       "message": "Hayallerinizi gerçeğe dönüştürün!",

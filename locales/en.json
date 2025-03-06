@@ -87,7 +87,12 @@
       },
       "parsinta": {
         "title": "Basic Plan for Finnish Auto Service",
-        "content": "A one-page website with a simple and clean web design focused on user-friendliness. The project was completed within 6 hours and delivered to the client the next day after the order, resulting in an extremely positive outcome.",
+        "content": "A one-page website with a simple and clean web design focused on user-friendliness. The project was completed within 6 hours and delivered to the client the next day after the order, resulting in an extremely positive feedback.",
+        "author": "VIMA Team"
+      },
+      "mammad": {
+        "title": "Basic Personal Website for Turkish Entrepreneur",
+        "content": "A one-page website with a simple and clean web design focused on images and experience showcase. The project was completed within 2 days and ensured that the entrepreneur now can demonstrate his personality and proficiency in different areas by sharing his personal portfolio-website.",
         "author": "VIMA Team"
       }
     },
@@ -131,6 +136,8 @@
       "faq_answer_2": "Absolutely! We offer flexible upgrades to ensure your website grows with your business needs.",
       "faq_question_3": "Do you offer custom solutions?",
       "faq_answer_3": "Yes, we provide tailored solutions beyond our standard plans. Contact us to discuss your specific requirements.",
+      "faq_question_4": "Why should we choose you?",
+      "faq_answer_4": "Individual approach to every client, Comprehensive SEO handling, Rapid-fast development and deployment, Rational prices with excellent value",
       "need_custom_solution": "Need a Custom Solution?",
       "custom_solution_description": "Every business is unique. If our standard plans don't quite fit your needs, we're happy to create a tailored solution that perfectly matches your requirements.",
       "contact_for_custom_pricing": "Contact for Custom Pricing",
