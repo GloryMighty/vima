@@ -9,6 +9,9 @@ const Copyright = () => {
         <div className="col-xl-12">
           <div className="tf__main_copyright d-flex flex-wrap justify-content-between">
             <p>{t('text')}</p>
+            <li className="tf__main_copyright_text" style={{ color: '#b5b5b5a4' }}>
+              By VIMA with ❤️
+            </li>
             <ul className="d-flex flex-wrap">
               <li>
                 <Link href="/terms-and-conditions" className="text_hover_animaiton">
