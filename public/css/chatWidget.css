@@ -18,6 +18,19 @@
     margin-bottom: 1rem;
     margin-right: 1rem;
     position: relative;
+    max-width: 100%;
+}
+
+/* Media query for small mobile screens */
+@media (max-width: 420px) {
+    .chat-widget-container {
+        width: 100%;
+        max-width: 90vw;
+        height: auto;
+        min-height: 400px;
+        margin-bottom: 0.5rem;
+        margin-right: 0.5rem;
+    }
 }
 
 /* Header styling */
@@ -67,6 +80,14 @@
     border-radius: 50%;
     box-shadow: 0 4px 16px rgba(50, 205, 50, 0.2);
     transition: all 0.3s ease;
+}
+
+/* Media query for small mobile screens */
+@media (max-width: 420px) {
+    .chat-widget-button {
+        padding: 0.75rem;
+        transform: scale(0.9);
+    }
 }
 
 .chat-widget-button:hover {
@@ -238,6 +259,17 @@
     bottom: 1rem;
     right: 1rem;
     z-index: 9999;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+/* Media query for small mobile screens */
+@media (max-width: 420px) {
+    .viewport-fixed-right {
+        right: 0.5rem;
+        bottom: 0.5rem;
+        max-width: 95vw;
+    }
 }
 
 /* Resizable chat widget */
@@ -250,6 +282,21 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   z-index: 9999;
+  max-width: 95vw;
+}
+
+/* Media query for small mobile screens */
+@media (max-width: 420px) {
+  .chat-widget-resizable {
+    bottom: 10px;
+    right: 10px;
+    max-width: 90vw;
+  }
+  
+  /* Adjust minimum constraints for small screens */
+  .react-resizable {
+    max-width: 90vw !important;
+  }
 }
 
 .chat-widget-container-wrapper {

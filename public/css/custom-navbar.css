@@ -212,6 +212,35 @@
   }
 }
 
+/* Additional styles for very small screens */
+@media (max-width: 420px) {
+  .custom-navbar-nav {
+    width: 50%; /* Wider menu for very small screens */
+    max-width: 200px;
+    right: 0;
+    left: auto;
+  }
+  
+  .custom-navbar-brand img {
+    max-width: 80px; /* Smaller logo on very small screens */
+  }
+  
+  .custom-navbar-collapse.custom-show {
+    width: 100%;
+    max-width: 100vw;
+  }
+  
+  .custom-main-menu {
+    max-width: 100vw;
+  }
+  
+  /* Prevent horizontal overflow on initial load */
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
 /* Sticky Navbar */
 .custom-sticky {
   position: fixed;
