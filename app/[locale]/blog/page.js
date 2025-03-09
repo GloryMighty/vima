@@ -144,21 +144,6 @@ const Page = () => {
                 <nav aria-label="...">
                   <ul className="pagination justify-content-center">
                     <li className="page-item">
-                      <a className="page-link" href="#blog-1">01</a>
-                    </li>
-                    <li className="page-item">
-                      <a className="page-link" href="#blog-2">02</a>
-                    </li>
-                    <li className="page-item">
-                      <a className="page-link" href="#blog-3">03</a>
-                    </li>
-                    <li className="page-item">
-                      <a className="page-link" href="#blog-4">04</a>
-                    </li>
-                    <li className="page-item">
-                      <a className="page-link" href="#blog-5">05</a>
-                    </li>
-                    <li className="page-item">
                       <a className="page-link active" href="/contact" target="_blank" rel="noopener noreferrer">
                         <i className="fa fa-chevron-right" />
                       </a>
