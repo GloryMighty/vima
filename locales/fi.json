@@ -48,7 +48,7 @@
         }
       },
       "choose_plan": "Valitse Taso",
-      "meta_title": "Hinnoittelu | Vima Web Solutions - Joustavat verkkokehityspaketit",
+      "meta_title": "Hinnoittelu | Target Reached Software - Joustavat verkkokehityspaketit",
       "meta_description": "Valitse räätälöidyistä verkkokehityspaketeistamme, jotka on suunniteltu vastaamaan liiketoimintasi tarpeita. Perusratkaisuista premium-ratkaisuihin, löydä täydellinen suunnitelma digitaaliseen muodonmuutokseesi.",
       "meta_keywords": "verkkokehityksen hinnoittelu, verkkosivustopaketit, digitaalinen muodonmuutos, tekoälyn integrointi, monikieliset verkkosivustot, liiketoiminnan teknologiaratkaisut"
     }
@@ -116,8 +116,8 @@
       "growth": "Kasvu"
     },
     "cta_button": "Varaa konsultaatio",
-    "meta_title": "Meistä | Vima Web Solutions - Tekoälyavusteinen verkkokehitys",
-    "meta_description": "Tutustu Vima Web Solutionsiin, asiantuntijoihin tekoälyvetoisessa verkkokehityksessä, monikielisissä ratkaisuissa ja innovatiivisissa digitaalisissa kokemuksissa, jotka muuttavat liiketoimintaa.",
+    "meta_title": "Meistä | Target Reached Software - Tekoälyavusteinen verkkokehitys",
+    "meta_description": "Tutustu Target Reached Softwareiin, asiantuntijoihin tekoälyvetoisessa verkkokehityksessä, monikielisissä ratkaisuissa ja innovatiivisissa digitaalisissa kokemuksissa, jotka muuttavat liiketoimintaa.",
     "meta_keywords": "verkkokehitys, tekoälyn integrointi, monikieliset verkkosivustot, digitaalinen muodonmuutos, käyttöliittymäsuunnittelu, liiketoiminnan teknologiaratkaisut"
   },
   "Blog": {
@@ -143,17 +143,17 @@
     },
     "posts": {
       "travel": {
-        "author": "VIMA Web",
+        "author": "Target Reached",
         "title": "Advanced Plan turkkilaiselle matkailuyritykselle",
         "content": "Edistynyt ja responsiivinen käyttöliittymäsuunnittelu Turkish Travelille, esitellen modernin lähestymistavan verkkokehitykseen. Hakukoneoptimoinnin ja verkkosivuston suorituskyvyn optimoinnin hallinta optimaalisen käyttäjäkokemuksen saavuttamiseksi, verkkosivusto sisältää käännöksen 3 kielelle (arabia, englanti ja turkki), varmistaen sujuvan navigoinnin jokaiselle käyttäjälle."
       },
       "beauty": {
-        "author": "VIMA Web",
+        "author": "Target Reached",
         "title": "Perussuunnitelman toteutus kauneushoitolalle",
         "content": "Tyylikäs esimerkki yhden sivun verkkosivuston kehityksestä, esitellen responsiivisen suunnittelun voiman. Puhdas ja hyvin jäsennelty laskeutumissivu, keskittyen asiakkaiden konversioon ominaisuuksien ja hinnoittelun yksinkertaisuuden ansiosta."
       },
       "premium": {
-        "author": "VIMA Web",
+        "author": "Target Reached",
         "title": "Kattava ratkaisuesimerkki Premium-verkkosivustosta",
         "content": "Kattava ratkaisuesimerkki Premium-verkkosivustosta, esitellen verkkokehityksen voiman ja sen vaikutuksen käyttäjien sitoutumiseen ja tyytyväisyyteen. Verkkosivusto sisältää modernin ja responsiivisen suunnittelun, varmistaen saumattoman käyttäjäkokemuksen kaikilla laitteilla. Toteutetut tekoälypohjaisen chatbotin ominaisuudet tarjoavat navigointitukea sekä parantavat konversiota."
       },
@@ -184,7 +184,7 @@
       "title": "Tunnisteet"
     },
     "image_alt": "Blogin projektikuva",
-    "meta_title": "Blogi | Vima Web Solutions - Verkkokehityksen oivallukset ja innovaatiot",
+    "meta_title": "Blogi | Target Reached Software - Verkkokehityksen oivallukset ja innovaatiot",
     "meta_description": "Tutustu blogiimme, joka tarjoaa huipputason verkkokehityksen näkemyksiä, tekoälyn innovaatioita, suunnittelutrendejä ja asiantuntijoiden näkökulmia, jotka ajavat digitaalista muodonmuutosta.",
     "meta_keywords": "verkkokehityksen blogi, tekoälyn innovaatiot, suunnittelutrendit, digitaalinen muodonmuutos, verkkoteknologiat, teknologiset näkemykset"
   },
@@ -201,7 +201,7 @@
     "image_alt": "Asiakkaan suosittelukuva"
   },
   "Contact": {
-    "meta_title": "Ota yhteyttä | Vima Web Solutions - Ota yhteyttä verkkoteknologia- ja AI-asiantuntijoihin",
+    "meta_title": "Ota yhteyttä | Target Reached Software - Ota yhteyttä verkkoteknologia- ja AI-asiantuntijoihin",
     "meta_description": "Ota yhteyttä asiantuntijatyöryhmäämme, joka koostuu verkkokehittäjistä ja tekoälyn erikoisasiantuntijoista. Keskustele digitaalisesta muodonmuutoksestasi, saa räätälöityjä ratkaisuja ja ota ensimmäinen askel kohti innovatiivista teknologiaa.",
     "meta_keywords": "ota yhteyttä verkkokehittäjiin, tekoälyn teknologiakonsultaatio, digitaalisen muodonmuutoksen tiedustelu, verkkosivustoratkaisujen tuki, monikielisten verkkosivustojen asiantuntijat, teknologiakonsultaatio",
     "page_title": "Ota yhteyttä",
@@ -245,11 +245,11 @@
     "title": "Käyttöehdot",
     "acceptance": {
       "heading": "1. Ehtojen hyväksyminen",
-      "description": "Käyttämällä VIMA Web Solutions -alustaa (\"Palvelu\") hyväksyt nämä käyttöehdot. Jos et hyväksy näitä ehtoja, älä käytä Palvelua."
+      "description": "Käyttämällä Target Reached Software -alustaa (\"Palvelu\") hyväksyt nämä käyttöehdot. Jos et hyväksy näitä ehtoja, älä käytä Palvelua."
     },
     "changes": {
       "heading": "2. Ehtojen muutokset",
-      "description": "VIMA Web Solutions pidättää oikeuden muuttaa näitä Ehtoja milloin tahansa. Ilmoitamme merkittävistä muutoksista julkaisemalla uudet Ehdot tällä sivulla. Palvelun jatkuva käyttö muutosten jälkeen merkitsee uusien Ehtojen hyväksymistä."
+      "description": "Target Reached Software pidättää oikeuden muuttaa näitä Ehtoja milloin tahansa. Ilmoitamme merkittävistä muutoksista julkaisemalla uudet Ehdot tällä sivulla. Palvelun jatkuva käyttö muutosten jälkeen merkitsee uusien Ehtojen hyväksymistä."
     },
     "userAccount": {
       "heading": "3. Käyttäjätili ja vastuut",
@@ -262,11 +262,11 @@
     },
     "intellectualProperty": {
       "heading": "4. Immateriaalioikeudet",
-      "description": "Kaikki sisältö, ominaisuudet ja toiminnallisuudet ovat ja pysyvät VIMA Web Solutions -yhtiön ja sen lisenssinantajien yksinomaisena omaisuutena. Tavaramerkkejämme ja toimintatyyliämme ei saa käyttää ilman etukäteen annettua kirjallista lupaa."
+      "description": "Kaikki sisältö, ominaisuudet ja toiminnallisuudet ovat ja pysyvät Target Reached Software -yhtiön ja sen lisenssinantajien yksinomaisena omaisuutena. Tavaramerkkejämme ja toimintatyyliämme ei saa käyttää ilman etukäteen annettua kirjallista lupaa."
     },
     "userContent": {
       "heading": "5. Käyttäjäsisältö ja käyttäytyminen",
-      "description": "Lähettämällä sisältöä Palveluumme myönnät VIMA Web Solutions -yhtiölle ei-yksinomaisen, maailmanlaajuisen, rojaltivapaan käyttöoikeuden käyttää, jäljentää ja levittää kyseistä sisältöä.",
+      "description": "Lähettämällä sisältöä Palveluumme myönnät Target Reached Software -yhtiölle ei-yksinomaisen, maailmanlaajuisen, rojaltivapaan käyttöoikeuden käyttää, jäljentää ja levittää kyseistä sisältöä.",
       "prohibited": "Sitoudut siihen, että et:",
       "prohibitedItems": {
         "item1": "Julkaise sisältöä, joka on lainvastainen, haitallinen, uhkaava tai säädytön",
@@ -277,7 +277,7 @@
     },
     "limitationOfLiability": {
       "heading": "6. Vastuunrajoitus",
-      "description": "VIMA Web Solutions ei ole vastuussa mistään epäsuorista, satunnaisista, erityisistä, seurannaisista tai rangaistusluonteisista vahingoista, jotka johtuvat Palvelumme käytöstä tai liittyvät siihen."
+      "description": "Target Reached Software ei ole vastuussa mistään epäsuorista, satunnaisista, erityisistä, seurannaisista tai rangaistusluonteisista vahingoista, jotka johtuvat Palvelumme käytöstä tai liittyvät siihen."
     },
     "termination": {
       "heading": "7. Lopettaminen",
@@ -285,7 +285,7 @@
     },
     "governingLaw": {
       "heading": "8. Sovellettava laki",
-      "description": "Näitä Ehtoja säännellään sen lainkäyttöalueen laeilla, jossa VIMA Web Solutions sijaitsee, ottamatta huomioon lainvalintasäännöksiä."
+      "description": "Näitä Ehtoja säännellään sen lainkäyttöalueen laeilla, jossa Target Reached Software sijaitsee, ottamatta huomioon lainvalintasäännöksiä."
     },
     "contactInformation": {
       "heading": "9. Yhteystiedot",
@@ -294,14 +294,14 @@
       "address": "Osoite: Istanbul, Turkki / Pietarsaari, Suomi"
     },
     "lastUpdated": "Viimeksi päivitetty: Helmikuu 2025",
-    "meta_title": "Käyttöehdot | Vima Web Solutions - Digitaalisten palveluiden oikeudellinen kehys",
-    "meta_description": "Tutustu kattaviin käyttöehtoihimme, jotka määrittelevät oikeudellisen kehyksen, käyttäjän vastuut ja ohjeet Vima Web Solutionsin digitaalisten palveluiden ja tekoälyn teknologioiden käyttämiseen.",
+    "meta_title": "Käyttöehdot | Target Reached Software - Digitaalisten palveluiden oikeudellinen kehys",
+    "meta_description": "Tutustu kattaviin käyttöehtoihimme, jotka määrittelevät oikeudellisen kehyksen, käyttäjän vastuut ja ohjeet Target Reached Softwarein digitaalisten palveluiden ja tekoälyn teknologioiden käyttämiseen.",
     "meta_keywords": "palveluehdot, oikeudelliset ehdot, digitaalisten palveluiden sopimus, käyttäjän vastuut, tekoälyn teknologian ehdot, verkkokehityksen oikeudelliset ohjeet"
  
   },
   "PrivacyPolicy": {
     "title": "Tietosuojakäytäntö",
-    "introduction": "VIMA Web Solutions on sitoutunut suojelemaan yksityisyyttäsi. Tämä tietosuojakäytäntö selittää, miten keräämme, käytämme ja suojaamme henkilökohtaisia tietojasi.",
+    "introduction": "Target Reached Software on sitoutunut suojelemaan yksityisyyttäsi. Tämä tietosuojakäytäntö selittää, miten keräämme, käytämme ja suojaamme henkilökohtaisia tietojasi.",
     "informationCollected": {
       "heading": "1. Keräämämme tiedot",
       "description": "Keräämme tiedot, jotka annat meille suoraan, kuten luodessasi tilin, käyttäessäsi palveluitamme tai ollessa yhteydessä meihin."
@@ -313,7 +313,7 @@
     "dataProtection": {
       "heading": "3. Tietosuoja",
       "description": "Toteutamme asianmukaiset tekniset ja organisatoriset toimenpiteet henkilökohtaisten tietojesi suojaamiseksi luvattomalta tai laittomalta käsittelyltä.",
-    "meta_title": "Tietosuojakäytäntö | Vima Web Solutions - Tietosuoja ja käyttäjän yksityisyys",
+    "meta_title": "Tietosuojakäytäntö | Target Reached Software - Tietosuoja ja käyttäjän yksityisyys",
     "meta_description": "Tutustu kattavaan tietosuojakäytäntöömme, joka varmistaa henkilökohtaisten tietojesi suojaamisen, selvittää tietojen keräyskäytäntömme ja osoittaa sitoutumisemme käyttäjän yksityisyyteen ja turvallisuuteen.",
     "meta_keywords": "tietosuojakäytäntö, tietosuoja, käyttäjän tietosuoja, digitaalisten palveluiden tietosuoja, tekoälyn teknologian tietojen käsittely, verkkokehityksen tietoturva"
     }
@@ -335,7 +335,7 @@
     "fi": "Suomi"
   },
   "HomePage": {
-    "meta_title": "Vima Web Solutions - Tekoälyavusteinen verkkokehitys ja digitaalinen muodonmuutos",
+    "meta_title": "Target Reached Software - Tekoälyavusteinen verkkokehitys ja digitaalinen muodonmuutos",
     "meta_description": "Muuta liiketoimintaasi huipputason verkkokehityksellä, tekoälyn integroinnilla ja monikielisillä ratkaisuilla. Avaa kasvun mahdollisuudet älykästä teknologiaa ja intuitiivista suunnittelua hyödyntäen.",
     "meta_keywords": "verkkokehitys, tekoälyn integrointi, digitaalinen muodonmuutos, monikieliset verkkosivustot, käyttöliittymäsuunnittelu, liiketoiminnan teknologiaratkaisut"
   }, 

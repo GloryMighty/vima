@@ -24,7 +24,7 @@ const Footer2 = () => {
                 {/* this serves just as a space breaker */}
               </a>
               <p>
-                In VIMA we transform modern standards of web development!
+                In Target Reached we transform modern standards of web development!
               </p>
               <form className="tf__footer_subscrib d-flex flex-wrap">
                 <input type="text" placeholder="Stay Updated" />
