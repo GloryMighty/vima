@@ -3,6 +3,7 @@ import ShinyText from '../public/effects/ShinyText';
 import ReactPlayer from 'react-player';
 import { useState } from 'react';
 import '../public/css/customhero.css';
+import '../public/css/banner-animation.css';
 
 export const Home1Banner = () => {
   const t = useTranslations("Banner");
@@ -25,7 +26,7 @@ export const Home1Banner = () => {
         <div className="vima-row-centered row align-items-center h-100">
           <div className="col-xxl-5 col-xl-6 ms-auto">
             <div className="tf__banner_text tf__common_heading">
-              <h3 className="banner-title" data-text-animation="slide-up" data-split="char">
+              <h3 className="banner-title" data-text-animation="slide-up">
                 {t('we_are_vima')}
               </h3>
               <h2 className="vima-banner-title">
