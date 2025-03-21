@@ -135,7 +135,7 @@ button:focus {
 .tf__common_btn:hover {
   background: transparent;
   border: 2px solid var(--colorPrimary);
-  color: var(--colorWhite);
+  color: var(--colorPrimary);
 }
 
 .tf__common_btn i {

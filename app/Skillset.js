@@ -26,7 +26,7 @@ const Skills = () => {
       },
       {
         id: 4,
-        startDate: 1987,
+        startDate: 2019,
         degicnation: t('skills.adapt'),
         desc: t('skills.adapt1'),
       },

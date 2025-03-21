@@ -324,15 +324,15 @@
     "meta_keywords": "web development, AI integration, digital transformation, multilingual websites, UI/UX design, business technology solutions"
   },
   "skills": {
-    "title": "Our Skills",
+    "title": "Our Services",
     "webdev": "Web Development",
-    "webdev1": "Expertise in React, Next.js, Tailwind, and Bootstrap.",
+    "webdev1": "Expertise in React, Next.js, Tailwind, and Bootstrap. Responsive design for seamless user experience.",
     "aiint": "AI Integration",
-    "aiint1": "Ability to integrate AI API and adjust to business needs.",
+    "aiint1": "Integrating AI API and tailoring knowledge bases and tools for personalized user experience.",
     "multiling": "Multilinguistic",
     "multiling1": "Serving clients in 6 languages: English, Finnish, Russian, Arabic, Hebrew, Turkish.",
-    "adapt": "Adaptability",
-    "adapt1": "Quickly adjust to the needs of the development sphere and ensure our approach is up to date."
+    "adapt": "Web Design",
+    "adapt1": "Concisely creating hand-crafted designs for your business needs to improve your brand's presence."
   },
   "Scalable": {
     "title": "Scalable Solutions",
