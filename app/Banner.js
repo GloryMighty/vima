@@ -47,9 +47,9 @@ export const Home1Banner = () => {
           <div className="col-xxl-7 col-xl-6">
             <div className="tf__about_img">
               <img 
-                src="/images-webp/hero.webp" 
+                src="/images-webp/targetreached.webp" 
                 alt="VIMA Hero Image" 
-                className="img-fluid" 
+                className="img-fluid gradient-mask" 
               />
             </div>
           </div>
@@ -112,6 +112,19 @@ export const Home1Banner = () => {
         
         .vima-video-modal-close:hover {
           color: #ddd;
+        }
+        
+        .gradient-mask {
+          mask-image: radial-gradient(
+            circle at center,
+            black 50%,
+            transparent 75%
+          );
+          -webkit-mask-image: radial-gradient(
+            circle at center,
+            black 50%,
+            transparent 75%
+          );
         }
       `}</style>
     </section>

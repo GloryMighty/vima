@@ -82,7 +82,7 @@ const LanguageSelector = () => {
     >
       <button 
         onClick={() => setIsOpen(!isOpen)} 
-        className="tf__common_btn "
+        className="tf__common_btn"
         style={{ 
           padding: '5px 13px',  // Reduce padding
           fontSize: '12px',     // Reduce font size
