@@ -9,7 +9,7 @@ const config = {
   // Image configuration
   images: {
     remotePatterns: [],
-    unoptimized: true, // Disable Next.js image optimization to use pre-optimized WebP images
+    unoptimized: false, // Disable Next.js image optimization to use pre-optimized WebP images
     domains: [],
   },
   

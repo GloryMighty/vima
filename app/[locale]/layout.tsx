@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/react"
 import "@css/font-awesome-pro.css";
 import "@css/plugin.css";
 import "@css/responsive.css";
-import "@css/scroll_top.css";
+import "@css/scroll_top.css"; 
 import "@css/spacing.css";
 import "@css/style.css";
 import "@istiIcon/style.css";
@@ -37,19 +37,24 @@ export function generateStaticParams() {
 // Combines global site metadata with language-specific configurations
 export const metadata = {
   // Core site identity and description
-  title: "VIMA Web Development",
-  description: "Professional developers with unique approach and exceptional sense of style",
+  title: "Target Reached Agency",
+  description: "Reach more clients with unique approach and exceptional sense of style developed by professionals.",
   
   // SEO keywords covering our core competencies
   keywords: [
+    "multilingual websites",
+    "istanbul web design",
+    "turkey web ajensi",
+    "web design turkiye",
     "web development", 
+    "web agency istanbul",
     "AI-powered websites", 
     "custom web solutions", 
     "full-stack development", 
     "responsive design", 
     "Next.js", 
     "React", 
-    "multilingual websites"
+    
   ],
   
   // Internationalization and canonical URL configuration
