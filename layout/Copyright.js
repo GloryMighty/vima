@@ -10,7 +10,7 @@ const Copyright = () => {
           <div className="tf__main_copyright d-flex flex-wrap justify-content-between">
             <p>{t('text')}</p>
             <li className="tf__main_copyright_text" style={{ color: '#b5b5b5a4' }}>
-              By VIMA with ❤️
+              Target Reached with ❤️
             </li>
             <ul className="d-flex flex-wrap">
               <li>
