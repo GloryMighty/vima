@@ -22,7 +22,7 @@
 }
 
 .banner-title[data-text-animation="slide-up"] {
-  animation: slideUpInfinite 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation: slideUpInfinite 4s cubic-bezier(0.4, 0.3, 0.2, 1) infinite;
   display: inline-block;
   will-change: transform, opacity;
   transform-origin: center bottom;
