@@ -32,7 +32,7 @@ const LanguageSelector = () => {
    * Note: Flags are unicode emojis for better compatibility
    */
   const languages = {
-    en: { flag: '🇺🇸' },
+    en: { flag: '🇬🇧' },
     fi: { flag: '🇫🇮' },
     ru: { flag: '🇷🇺' },
     ar: { flag: '🇸🇦' },
