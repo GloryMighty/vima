@@ -51,7 +51,7 @@ const Portfolio = () => {
             )}
           </div>
           <div className="col-xl-4 my-auto order-xl-2 order-1">
-            <div className="tf__common_heading tf__portfolio_heading">
+            <div className="tf__banner_text tf__common_heading">
               <h5>{t('sub_title')}</h5>
               <h2 className="banner-title" data-text-animation="slide-from-right" data-split="char">
                 {t('title')}

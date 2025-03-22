@@ -35,7 +35,7 @@
   "Blog": {
     "section_title": "Our Projects",
     "by_author": "By {author}",
-    "heading": "Explore in details",
+    "heading": "EXPLORE IN DETAILS",
     "page_title": "BLOG",
     "search": "Search",
     "search_placeholder": "Search blog posts...",
@@ -71,17 +71,17 @@
     "image_alt": "Blog Post Image",
     "posts": {
       "travel": {
-        "title": "Turkish Travel as an Advanced example",
+        "title": "ADVANCED PLAN FOR TURKISH TRAVEL",
         "content": "Experience the magic of modern design implemented with seamless simplicity for amazing customers navigation. The advanced and responsive UI design showcases the contemporary approach to Website Development, with SEO optimization and translation support for Arabic, English, and Turkish languages.",
         "author": "Target Reached"
       },
       "beauty": {
-        "title": "Basic Plan for a Beauty Salon",
+        "title": "BASIC PLAN IMPLEMENTATION",
         "content": "Elegantly designed landing page showcasing the main advantages of your business including services, pricing and google maps widget. A graceful demonstration of one-page Website development, showcasing responsive design principles. Clean and well-structured design ensures optimization for client conversion.",
         "author": "Target Reached"
       },
       "premium": {
-        "title": "Premium Website Solution",
+        "title": "PREMIUM WEBSITE SOLUTION",
         "content": "Premium implementation of a comprehensive Web Application with multiple pages handling SEO with metadata and hrefs translation, showcasing Web Development excellence. Featuring modern and responsive design, seamless user experience across all devices, and integrated AI Chatbot capabilities for enhanced navigation and engaging user experience. The chatbot is equipped with personalized data, wrapped in a user-friendly interface and is ready to provide instant answers to user inquiries. Ultimate choise for businesses seeking cutting-edge technology and exceptional user experience.",
         "author": "Target Reached"
       },
@@ -107,7 +107,7 @@
       "main_title": "HOW IT LOOKS",
       "sub_heading": "PRICING PLANS",
       "image_alt": "What you get from us",
-      "heading": "Choose Your Plan",
+      "heading": "CHOOSE YOUR PLAN",
       "plans": {
         "basic": {
           "title": "Basic Plan",
@@ -147,7 +147,7 @@
     }
   },
   "Portfolio": {
-    "title": "Latest Portfolio",
+    "title": "LATEST PORTFOLIO",
     "sub_title": "Gallery",
     "description": "Explore our latest works in our portfolio",
     "image_alt": "Portfolio project image",
@@ -157,7 +157,7 @@
   },
   "Testimonial": {
     "section_title": "Testimonials",
-    "heading": "What our clients say?",
+    "heading": "WHAT OUR CLIENTS SAY?",
     "image_alt": "Client testimonial image",
     "testimonials": {
       "batuhan": {
@@ -202,7 +202,7 @@
     },
     "form": {
       "title": "CONTACT US",
-      "question": "Do you have any question?",
+      "question": "HAVE QUESTIONS?",
       "description": "We will provide top-level services and elevate your brand with our expertise. Join our group of successful entrepreneurs and experience the difference with our advanced Web Development!",
       "name_placeholder": "Your Name",
       "email_placeholder": "Your Email",

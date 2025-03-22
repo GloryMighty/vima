@@ -95,7 +95,7 @@ const Testomonial = () => {
       <div className="container">
         <div className="row">
           <div className="col-xl-5">
-            <div className="tf__common_heading tf__testimonial_heading">
+            <div className="tf__banner_text tf__common_heading">
               <h5>{t('section_title')}</h5>
               <h2 data-text-animation="slide-from-left" data-split="char">{t('heading')}</h2>
             </div>
