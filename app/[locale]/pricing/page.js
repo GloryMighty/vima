@@ -80,7 +80,7 @@ const PricingPage = () => {
           </div>
           <div className="row justify-content-center">
             <div className="col-xl-12 text-center mt-3 mb-4">
-              <p className="text-muted" style={{ fontSize: '1.9rem', color: '#ffffff' }}>
+              <p className="text" style={{ fontSize: '1.9rem', color: '#FFFFFF', textDecoration: 'underline' }}>
                 {t('VAT')}
               </p>
             </div>

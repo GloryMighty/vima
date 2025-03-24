@@ -2128,6 +2128,15 @@ button:focus {
   margin-top: 5px;
 }
 
+.tf__footer_right_address p a {
+  color: #c7d300;
+  transition: all linear 0.3s;
+}
+
+.tf__footer_right_address p a:hover {
+  color: var(--colorPrimary);
+}
+
 /*==============================
   BLOG CLASIC END
 ===============================*/

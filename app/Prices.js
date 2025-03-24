@@ -72,7 +72,7 @@ const Experiance = () => {
           </div>
           <div className="row justify-content-center">
             <div className="col-xl-12 text-center mt-3 mb-4">
-              <p className="text-muted" style={{ color: '#c7d100' }}>
+              <p className="text-" style={{ color: '#FFFFFF', textDecoration: 'underline' }}>
                 {t('pricing.VAT')}
               </p>
             </div>
