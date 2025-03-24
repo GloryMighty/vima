@@ -8,6 +8,7 @@ import BeautyCarousel from '@/app/BeautyCarousel';
 import PersonalCarousel from '@/app/PersonalCarousel';
 import ParsintaCarousel from '@/app/ParsintaCarousel';
 import MammadCarousel from '@/app/MammadCarousel';
+import ToorieCarousel from '@/app/ToorieCarousel';
 import ClientHelmet from '@/components/ClientHelmet';
 
 const Page = () => {
@@ -15,14 +16,14 @@ const Page = () => {
 
   const blogPosts = [
     {
-      id: 'blog-1',
-      Carousel: TravelCarousel,
-      author: t('posts.travel.author'),
+      id: 'blog-6',
+      Carousel: ToorieCarousel,
+      author: t('posts.toorie.author'),
       category: t('categories.web_developer'),
-      commentsCount: 4,
-      title: t('posts.travel.title'),
-      content: t('posts.travel.content'),
-      link: 'https://tur.it.com/'
+      commentsCount: 0,
+      title: t('posts.toorie.title'),
+      content: t('posts.toorie.content'),
+      link: 'https://toorie.lovable.app'
     },
     {
       id: 'blog-2',
@@ -63,7 +64,17 @@ const Page = () => {
       title: t('posts.mammad.title'),
       content: t('posts.mammad.content'),
       link: 'https://mammad.biz'
-    }
+    },
+    {
+      id: 'blog-6',
+      Carousel: TravelCarousel,
+      author: t('posts.travel.author'),
+      category: t('categories.web_developer'),
+      commentsCount: 4,
+      title: t('posts.travel.title'),
+      content: t('posts.travel.content'),
+      link: 'https://tur.it.com/'
+    },
   ];
 
   const categories = [
@@ -74,6 +85,16 @@ const Page = () => {
   ];
 
   const recentPosts = [
+    {
+      date: 'March 24, 2025',
+      title: t('posts.toorie.title'),
+      link: 'https://toorie.lovable.app'
+    },
+    {
+      date: 'March 5, 2025',
+      title: t('posts.mammad.title'),
+      link: 'https://mammad.biz'
+    },
     {
       date: 'February 22, 2022',
       title: t('recent_posts.basic'),
@@ -94,11 +115,6 @@ const Page = () => {
       title: t('recent_posts.parsinta'),
       link: 'https://autoparsinta.fi'
     },
-    {
-      date: 'March 5, 2025',
-      title: t('posts.mammad.title'),
-      link: 'https://mammad.biz'
-    }
   ];
 
   const tags = [
