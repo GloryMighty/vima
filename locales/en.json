@@ -116,19 +116,19 @@
       "plans": {
         "basic": {
           "title": "Basic Plan",
-          "price": " £249",
+          "price": "£249",
           "price_subtext": "starting from",
           "features": "Initial Consultation|Design and production|Hosting on your own server|Simple website design|2 Languages"
         },
         "advanced": {
           "title": "Advanced Plan",
-          "price": " £499",
+          "price": "£499",
           "price_subtext": "starting from",
           "features": "Ready to go solution|3 FREE updates per year|1 year FREE server included|SEO with 3 FREE blog posts per year|Better digital presence|Advanced website design|3 Languages"
         },
         "vip": {
           "title": "Premium Plan",
-          "price": " £829",
+          "price": "£829",
           "price_subtext": "starting from",
           "features": "Everything in Advanced PLUS|Premium domain included|5 FREE updates|AI Chatbot Integration|Superior website design|User authentication|2 years hosting|Up to 5 Languages"  
         } 
