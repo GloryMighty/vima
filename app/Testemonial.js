@@ -62,7 +62,7 @@ const Testomonial = () => {
       content: 'Interesting idea flawlessly implemented into reality with great attention to detail and creativity. I like the application because of efficiency and powerful AI solutions!'
     },
     2: {
-      name: 'Batuhan Yüksel',
+      name: 'Batuhan Yükselen',
       role: 'Startup Founder',
       content: 'This team of developers has provided a wonderful assistance to our project. From idea to implementation, the speed with which these guys provide their services is extraordinary.'
     },
