@@ -16,11 +16,6 @@ const config = {
   // Handle locale-prefixed paths
   async rewrites() {
     return [
-      // Handle locale-prefixed image paths
-      {
-        source: '/:locale/images/:path*',
-        destination: '/images/:path*',
-      },
       // Handle locale-prefixed WebP image paths
       {
         source: '/:locale/images-webp/:path*',
@@ -39,7 +34,7 @@ const config = {
   },
 
   // Webpack Configuration
-  webpack: (config, { isServer }) => {
+  webpack: (config) => {
     // Improve performance by minimizing and optimizing chunks
     config.optimization.minimize = true;
     
