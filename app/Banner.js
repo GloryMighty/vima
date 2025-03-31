@@ -48,7 +48,7 @@ export const Home1Banner = () => {
           <div className="col-xxl-7 col-xl-6">
             <div className="tf__about_img">
               <img 
-                src="/images-webp/targetreached.webp" 
+                src="/images-webp/targetreached.png" 
                 alt="VIMA Hero Image" 
                 className="img-fluid gradient-mask" 
               />
