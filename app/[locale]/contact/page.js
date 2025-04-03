@@ -152,6 +152,15 @@ ${message}`;
                       <a href="mailto:vimawebsolutions@gmail.com">
                         <i className="fab fa-telegram" aria-hidden="true" />
                       </a>
+                      <a href="https://www.instagram.com/targetreachedweb/" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-instagram" aria-hidden="true" />
+                      </a>
+                      <a href="https://x.com/wearevima" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-twitter" aria-hidden="true" />
+                      </a>
+                      <a href="https://www.facebook.com/profile.php?id=61573839564839" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-facebook" aria-hidden="true" />
+                      </a>
                     </li>
                   </ul>
                 </div>
