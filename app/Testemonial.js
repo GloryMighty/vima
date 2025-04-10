@@ -78,15 +78,15 @@ const Testomonial = () => {
     },
 
     5: {
-      name: 'Zuheir Al-darwesh',
+      name: 'Zuheir Al-Darwesh',
       role: 'Business Owner',
-      content: 'When I addressed the VIMA team I was not prepared for the quality and speed of service they provided. More than reasonable price for ridiculously fast and competent solution.'
+      content: 'When I contacted the Target Reached team I was not prepared for the quality and speed of service they provided! More than reasonable price for ridiculously fast and competent solution.'
     },
     6: {
       name: 'Mammad Mamadov',
       role: 'Entrepreneur',
       content:
-        'When I approached VIMA with my idea for a personal website, I was blown away by how quickly they brought it to life. In just two days, I had a professional website that not only showcased my skills but also empowered my personal brand. Don\'t miss out on the opportunity to create something amazing with VIMA.',
+        'When I approached Target Reached with my idea for a personal website, I was blown away by how quickly they brought it to life. In just two days, I had a professional website that not only showcased my skills but also empowered my personal brand. Don\'t miss out on the opportunity to create something amazing with Target Reached.',
     }
   };
 
