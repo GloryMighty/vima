@@ -214,13 +214,18 @@
     "offices": {
       "dev": {
         "title": "Istanbulin toimisto",
-        "type": "Verkkokehityksen osoite",
-        "location": "Osmanbey"
+        "type": "Ohjelmistokehitys ja Asiakastuki",
+        "location": "Sisli"
       },
       "sales": {
-        "title": "Suomen toimisto",
-        "type": "Myyntitoimisto",
+        "title": "Pietarsaaren toimisto",
+        "type": "Ohjelmistokehitys ja Myyntiedustus",
         "location": "Pietarsaari"
+      },
+      "sales2": {
+        "title": "Jyväskylän toimisto",
+        "type": "Myyntiedustus",
+        "location": "Jyväskylä"
       }
     },
     "form": {
@@ -262,7 +267,7 @@
         "item1": "Antaa tarkat ja täydelliset tiedot tilin luomisen yhteydessä",
         "item2": "Säilyttää tilisi tunnistetietojen luottamuksellisuus",
         "item3": "Vastata kaikista tilisi alla tapahtuvista toiminnoista",
-        "item4": "Olla vähintään 13 vuotta vanha käyttääksesi Palvelua"
+        "item4": "Olla vähintään 16 vuotta vanha käyttääksesi Palvelua"
       }
     },
     "intellectualProperty": {

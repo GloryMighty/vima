@@ -211,13 +211,18 @@
     "offices": {
       "dev": {
         "title": "İstanbul Ofisi",
-        "type": "Web Geliştirme Adresi",
-        "location": "Levent"
+        "type": "Yazılım Geliştirme ve Müşteri Hizmetleri",
+        "location": "İstanbul, Türkiye"
       },
       "sales": {
-        "title": "İstanbul Ofisi",
+        "title": "Pietarsaari Ofisi",
+        "type": "Yazılım Geliştirme ve Satış Ofisi",
+        "location": "Pietarsaari, Finlandiya"
+      },
+      "sales2": {
+        "title": "Jyväskylä Ofisi",
         "type": "Satış Ofisi",
-        "location": "Nişantaşı"
+        "location": "Jyväskylä, Finlandiya"
       }
     },
     "form": {
@@ -262,7 +267,7 @@
         "item1": "Hesap oluştururken doğru ve eksiksiz bilgi sağlamak",
         "item2": "Hesap kimlik bilgilerinizin gizliliğini korumak",
         "item3": "Hesabınız altında gerçekleşen tüm faaliyetlerden sorumlu olmak",
-        "item4": "Hizmetimizi kullanmak için en az 13 yaşında olmak"
+        "item4": "Hizmetimizi kullanmak için en az 16 yaşında olmak"
       }
     },
     "intellectualProperty": {
