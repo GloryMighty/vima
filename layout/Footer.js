@@ -134,7 +134,7 @@ const Footer2 = () => {
                   <Link href="https://wa.me/+905070711259" target="_blank" rel="noopener noreferrer">+90 507 071 12 59</Link>
                 </p>
                 <p>
-                  <Link href="https://wa.me/+3584578753412" target="_blank" rel="noopener noreferrer">+35845 7875 3412</Link>
+                  <Link href="https://wa.me/+3584578753412" target="_blank" rel="noopener noreferrer">+358 45 7875 3412</Link>
                 </p>
               </div>
             </div>

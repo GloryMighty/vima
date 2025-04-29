@@ -120,7 +120,7 @@ ${message}`;
             <div className="col-xl-4 col-lg-5">
               {offices.map((office, index) => (
                 <div key={index} className="tf__contact_text d-flex gap-3">
-                  <span className={index === 0 ? "tf__numbaring" : ""}>{office.number}</span>
+                  <span className={index === 0 ? "tf__numbaring" : index === 1 ? "tf__numbaring-02" : ""}>{office.number}</span>
                   <div className="tf__contact_text_address">
                     <h3>{office.title}</h3>
                     <h5>{office.type}</h5>
