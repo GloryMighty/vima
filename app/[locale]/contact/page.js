@@ -72,7 +72,7 @@ ${message}`;
       type: t('offices.dev.type'),
       location: t('offices.dev.location'),
       phones: [
-        <p key="0"><Link href="tel:+905070711259">+90 50707 11259</Link></p>,
+        <p key="0"><Link href="tel:+905070711259">+90 50 707 11259</Link></p>,
       ]
     },
     {
@@ -81,7 +81,7 @@ ${message}`;
       type: t('offices.sales.type'),
       location: t('offices.sales.location'),
       phones: [
-        <p key="0"><Link href="tel:+3584578753412">+35845 7875 3412</Link></p>,
+        <p key="0"><Link href="tel:+3584578753412">+358 45 7875 3412</Link></p>,
               ]
     },
     {
@@ -90,7 +90,7 @@ ${message}`;
       type: t('offices.sales2.type'),
       location: t('offices.sales2.location'),
       phones: [
-        <p key="0"><Link href="tel:+3584578753416">+35845 7875 3416</Link></p>,
+        <p key="0"><Link href="tel:+3584578753416">+358 45 7875 3416</Link></p>,
               ]
     }
   ];
