@@ -15,7 +15,7 @@ const page = () => {
   return (
     <IstiLayout homepage className="overflow-hidden">
       <ClientHelmet 
-        title={`${t('meta_title')} | Vima Web Solutions`}
+        title={`${t('meta_title')} | Target Reached Software`}
         description={t('meta_description')}
         keywords={t('meta_keywords')}
       />
