@@ -2451,7 +2451,17 @@ button:focus {
 .tf__numbaring-02::after {
   position: absolute;
   content: "";
-  top: 133px;
+  top: 33px;
+  left: 15px;
+  width: 2px;
+  height: 188px;
+  background: var(--colorPrimary);
+}
+
+.tf__numbaring-03::after {
+  position: absolute;
+  content: "";
+  top: 33px;
   left: 15px;
   width: 2px;
   height: 188px;
