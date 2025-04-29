@@ -115,6 +115,14 @@ const Footer2 = () => {
                   <i className="far fa-map-marker-alt" />
                  Istanbul
                 </h5>
+                <h5>
+                  <i className="far fa-map-marker-alt" />
+                 Pietarsaari
+                </h5>
+                <h5>
+                  <i className="far fa-map-marker-alt" />
+                 Jyväskylä
+                </h5>
               </div>
               <div className="tf__footer_right_address">
                 <h5>
@@ -126,7 +134,7 @@ const Footer2 = () => {
                   <Link href="https://wa.me/+905070711259" target="_blank" rel="noopener noreferrer">+90 507 071 12 59</Link>
                 </p>
                 <p>
-                  <Link href="https://wa.me/+905356765899" target="_blank" rel="noopener noreferrer">+90 535 676 58 99</Link>
+                  <Link href="https://wa.me/+3584578753412" target="_blank" rel="noopener noreferrer">+35845 7875 3412</Link>
                 </p>
               </div>
             </div>
