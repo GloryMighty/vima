@@ -10,7 +10,7 @@
   },
   "Banner": {
     "we_are_vima": "TARGET REACHED",
-    "passionate_website_developers": "WEB AGENCY. REAL RESULTS",
+    "passionate_website_developers": "SOFTWARE AGENCY - Real Results",
     "banner_paragraph": "As driven Website Developers, We thrive on creating beautiful and intuitive digital experiences that delight users.",
     "watch_video": "Watch The Video"
   },
@@ -196,13 +196,18 @@
     "offices": {
       "dev": {
         "title": "Istanbul Office",
-        "type": "Web Development Address",
-        "location": "Levent"
+        "type": "Software Development and Customer Support",
+        "location": "Istanbul, Turkey"
       },
       "sales": {
-        "title": "Istanbul Office",
+        "title": "Pietarsaari Office",
+        "type": "Software Development and Sales",
+        "location": "Pietarsaari, Finland"
+      },
+      "sales2": {
+        "title": "Jyväskylä Office",
         "type": "Sales Office",
-        "location": "Nisantasi"
+        "location": "Jyväskylä, Finland"
       }
     },
     "form": {
@@ -263,7 +268,7 @@
         "item1": "Provide accurate and complete information when creating an account",
         "item2": "Maintain the confidentiality of your account credentials",
         "item3": "Accept responsibility for all activities under your account",
-        "item4": "Be at least 13 years old to use our Service"
+        "item4": "Be at least 16 years old to use our Service"
       }
     },
     "intellectualProperty": {

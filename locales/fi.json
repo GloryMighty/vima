@@ -207,20 +207,25 @@
   },
   "Contact": {
     "meta_title": "Ota yhteyttä | Target Reached Software - Ota yhteyttä verkkoteknologia- ja AI-asiantuntijoihin",
-    "meta_description": "Ota yhteyttä asiantuntijatyöryhmäämme, joka koostuu verkkokehittäjistä ja tekoälyn erikoisasiantuntijoista. Keskustele digitaalisesta muodonmuutoksestasi, saa räätälöityjä ratkaisuja ja ota ensimmäinen askel kohti innovatiivista teknologiaa.",
-    "meta_keywords": "ota yhteyttä verkkokehittäjiin, tekoälyn teknologiakonsultaatio, digitaalisen muodonmuutoksen tiedustelu, verkkosivustoratkaisujen tuki, monikielisten verkkosivustojen asiantuntijat, teknologiakonsultaatio",
+    "meta_description": "Ota yhteyttä asiantuntijatyöryhmäämme, joka koostuu verkkokehittäjistä ja tekoälyn erikoisasiantuntijoista. Keskustele sivustosi digitaalisesta muodonmuutoksesta ja räätälöidyistä ratkaisuista ja ota ensimmäinen askel kohti innovatiivista teknologiaa.",
+    "meta_keywords": "ota yhteyttä verkkokehittäjiin, tekoälyn teknologiakonsultaatio, sivuston digitaalisen muodonmuutoksen tiedustelu, verkkosivustoratkaisujen tuki, monikielisten verkkosivustojen asiantuntijat, teknologiakonsultaatio",
     "page_title": "Ota yhteyttä",
     "image_alt": "yhteydenotto kuva",
     "offices": {
       "dev": {
         "title": "Istanbulin toimisto",
-        "type": "Verkkokehityksen osoite",
-        "location": "Osmanbey"
+        "type": "Ohjelmistokehitys ja Asiakastuki",
+        "location": "Istanbul, Turkki"
       },
       "sales": {
-        "title": "Suomen toimisto",
-        "type": "Myyntitoimisto",
-        "location": "Pietarsaari"
+        "title": "Pietarsaaren toimisto",
+        "type": "Ohjelmistokehitys ja Myyntiedustus",
+        "location": "Pietarsaari, Suomi"
+      },
+      "sales2": {
+        "title": "Jyväskylän toimisto",
+        "type": "Myyntiedustus",
+        "location": "Jyväskylä, Suomi"
       }
     },
     "form": {
@@ -262,7 +267,7 @@
         "item1": "Antaa tarkat ja täydelliset tiedot tilin luomisen yhteydessä",
         "item2": "Säilyttää tilisi tunnistetietojen luottamuksellisuus",
         "item3": "Vastata kaikista tilisi alla tapahtuvista toiminnoista",
-        "item4": "Olla vähintään 13 vuotta vanha käyttääksesi Palvelua"
+        "item4": "Olla vähintään 16 vuotta vanha käyttääksesi Palvelua"
       }
     },
     "intellectualProperty": {
@@ -301,7 +306,7 @@
     "lastUpdated": "Viimeksi päivitetty: Helmikuu 2025",
     "meta_title": "Käyttöehdot | Target Reached Software - Digitaalisten palveluiden oikeudellinen kehys",
     "meta_description": "Tutustu kattaviin käyttöehtoihimme, jotka määrittelevät oikeudellisen kehyksen, käyttäjän vastuut ja ohjeet Target Reached Softwarein digitaalisten palveluiden ja tekoälyn teknologioiden käyttämiseen.",
-    "meta_keywords": "palveluehdot, oikeudelliset ehdot, digitaalisten palveluiden sopimus, käyttäjän vastuut, tekoälyn teknologian ehdot, verkkokehityksen oikeudelliset ohjeet"
+    "meta_keywords": "palveluehdot, oikeudelliset ehdot,  digitaalisten palveluiden sopimus, käyttäjän vastuut, tekoälyn teknologian ehdot, verkkokehityksen oikeudelliset ohjeet"
  
   },
   "PrivacyPolicy": {

@@ -43,7 +43,7 @@ const Contact = () => {
 
     setError(null);
 
-    const recipientEmail = 'vimawebsolutions@gmail.com';
+    const recipientEmail = 'targetreachedsoftware@gmail.com';
     const emailSubject = subject ? `${subject} from ${name}` : `Inquiry from ${name}`;
     const emailBody = `
 Name: ${name}
@@ -72,8 +72,7 @@ ${message}`;
       type: t('offices.dev.type'),
       location: t('offices.dev.location'),
       phones: [
-        <p key="0"><Link href="tel:+905070711259">+90 507 071 12 59</Link></p>,
-        <p key="1"><Link href="tel:+905356765899">+90 535 676 58 99</Link></p>
+        <p key="0"><Link href="tel:+905070711259">+90 50707 11259</Link></p>,
       ]
     },
     {
@@ -82,16 +81,24 @@ ${message}`;
       type: t('offices.sales.type'),
       location: t('offices.sales.location'),
       phones: [
-        <p key="0"><Link href="tel:+905070711259">+90 507 071 12 59</Link></p>,
-        <p key="1"><Link href="tel:+905356765899">+90 535 676 58 99</Link></p>
-      ]
+        <p key="0"><Link href="tel:+3584578753412">+35845 7875 3412</Link></p>,
+              ]
+    },
+    {
+      number: "03",
+      title: t('offices.sales2.title'),
+      type: t('offices.sales2.type'),
+      location: t('offices.sales2.location'),
+      phones: [
+        <p key="0"><Link href="tel:+3584578753416">+35845 7875 3416</Link></p>,
+              ]
     }
   ];
 
   return (
     <IstiLayout>
       <ClientHelmet 
-        title={`${t('meta_title')} | Vima Web Solutions`}
+        title={`${t('meta_title')} | Target Reached Software`}
         description={t('meta_description')}
         keywords={t('meta_keywords')}
       />
@@ -149,7 +156,7 @@ ${message}`;
                       </a>
                     </li>
                     <li>
-                      <a href="mailto:vimawebsolutions@gmail.com">
+                      <a href="mailto:targetreachedsoftware@gmail.com">
                         <i className="fab fa-telegram" aria-hidden="true" />
                       </a>
                       <a href="https://www.instagram.com/targetreachedweb/" target="_blank" rel="noopener noreferrer">
