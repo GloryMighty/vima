@@ -23,7 +23,7 @@ const ChatWidget: React.FC = () => {
   const initialMessage: Message = {
     id: 'initial-message',
     role: 'ai',
-    content: "How VIMA Webs can help you today?",
+    content: "How can Target Reached help you today?",
     timestamp: Date.now()
   }
 
@@ -148,7 +148,7 @@ const ChatWidget: React.FC = () => {
               >
                 <div className="title-container">
                   <MessageSquare className="w-6 h-6 text-[#32CD32]" />
-                  <h3 className="text-lg font-semibold text-[#32CD32]">VIMA AI</h3>
+                  <h3 className="text-lg font-semibold text-[#32CD32]">Target AI</h3>
                 </div>
                 <button 
                   onClick={() => setIsOpen(false)} 
