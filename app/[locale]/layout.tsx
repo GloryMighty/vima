@@ -42,6 +42,13 @@ export const metadata = {
   
   // SEO keywords covering our core competencies
   keywords: [
+    "kotisivut yrityksille",
+    "nettisivut yrityksille",
+    "verkkosivut yrityksille",
+    "verkkokauppa yrityksille",
+    "verkkokaupan suunnittelu",
+    "verkkosivut edullisesti",
+    "nettisivut edullisesti",
     "multilingual websites",
     "istanbul web design",
     "turkey web ajensi",
