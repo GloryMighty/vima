@@ -51,6 +51,7 @@ export const Home1Banner = () => {
                 src="/images-webp/targetreached.webp" 
                 alt="VIMA Hero Image" 
                 className="img-fluid gradient-mask" 
+                style={{ maxWidth: '100%', height: 'auto', display: 'block', margin: '0 auto' }}
               />
             </div>
           </div>
