@@ -50,7 +50,7 @@ export const Home1Banner = () => {
               <img 
                 src="/images-webp/targetreached.webp" 
                 alt="VIMA Hero Image" 
-                className="img-fluid gradient-mask" 
+                className="img-fluid gradient-mask vima-hero-image" 
                 style={{ maxWidth: '100%', height: 'auto', display: 'block', margin: '0 auto' }}
               />
             </div>
@@ -127,7 +127,24 @@ export const Home1Banner = () => {
             black 50%,
             transparent 75%
           );
+              
+          }
+        .vima-hero-img {
+          max-width: 600px;
+          width: 100%;
+          height: auto;
+          display: block;
+          margin: 0 auto;
         }
+
+          @media (max-width: 768px) {
+        .vima-hero-img {
+            max-width: 300px;
+         }
+          .tf__about_img {
+          text-align: center;
+           margin-top: 24px;
+       }
       `}</style>
     </section>
   );
