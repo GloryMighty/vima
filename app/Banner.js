@@ -139,25 +139,25 @@ export const Home1Banner = () => {
 
           @media (max-width: 1080px) {
         .vima-hero-img {
-            max-width: 350px;
+            max-width: 300px;
             width: 100%;
             height: auto;
          }
 
            @media (max-width: 768px) {
         .vima-hero-img {
-            max-width: 300px;
+            max-width: 250px;
             width: 100%;
             height: auto;
          }
 
            @media (max-width: 480px) {
         .vima-hero-img {
-            max-width: 250px;
+            max-width: 150px;
             width: 100;
             height: auto;
          }
-            
+
           .tf__about_img {
           text-align: center;
            margin-top: 24px;
