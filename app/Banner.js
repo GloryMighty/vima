@@ -75,94 +75,91 @@ export const Home1Banner = () => {
         </div>
       )}
       <style jsx>{`
-        .vima-video-modal {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.8);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          z-index: 1000;
-        }
-        
-        .vima-video-modal-content {
-          position: relative;
-          width: 80%;
-          height: 80%;
-          background: #000;
-          padding: 20px;
-          border-radius: 8px;
-        }
-        
-        .vima-video-container {
-          width: 100%;
-          height: 100%;
-        }
-        
-        .vima-video-modal-close {
-          position: absolute;
-          right: -30px;
-          top: -30px;
-          color: white;
-          font-size: 28px;
-          cursor: pointer;
-          z-index: 1001;
-        }
-        
-        .vima-video-modal-close:hover {
-          color: #ddd;
-        }
-        
-        .gradient-mask {
-          mask-image: radial-gradient(
-            circle at center,
-            black 50%,
-            transparent 75%
-          );
-          -webkit-mask-image: radial-gradient(
-            circle at center,
-            black 50%,
-            transparent 75%
-          );
-              
-          }
-        .vima-hero-img {
-          max-width: 600px;
-          width: 100%;
-          height: auto;
-          display: block;
-          margin: 0 auto;
-        }
+  .vima-video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
 
-          @media (max-width: 1080px) {
-        .vima-hero-img {
-            max-width: 300px;
-            width: 100%;
-            height: auto;
-         }
+  .vima-video-modal-content {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background: #000;
+    padding: 20px;
+    border-radius: 8px;
+  }
 
-           @media (max-width: 768px) {
-        .vima-hero-img {
-            max-width: 250px;
-            width: 100%;
-            height: auto;
-         }
+  .vima-video-container {
+    width: 100%;
+    height: 100%;
+  }
 
-           @media (max-width: 480px) {
-        .vima-hero-img {
-            max-width: 150px;
-            width: 100;
-            height: auto;
-         }
+  .vima-video-modal-close {
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1001;
+  }
 
-          .tf__about_img {
-          text-align: center;
-           margin-top: 24px;
-       }
-      `}</style>
+  .vima-video-modal-close:hover {
+    color: #ddd;
+  }
+
+  .gradient-mask {
+    mask-image: radial-gradient(
+      circle at center,
+      black 50%,
+      transparent 75%
+    );
+    -webkit-mask-image: radial-gradient(
+      circle at center,
+      black 50%,
+      transparent 75%
+    );
+  }
+
+  .vima-hero-img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1080px) {
+    .vima-hero-img {
+      max-width: 300px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .vima-hero-img {
+      max-width: 250px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .vima-hero-img {
+      max-width: 150px;
+    }
+  }
+
+  .tf__about_img {
+    text-align: center;
+    margin-top: 24px;
+  }
+`}</style>
     </section>
   );
 };
