@@ -137,7 +137,7 @@ export const Home1Banner = () => {
           margin: 0 auto;
         }
 
-          @media (max-width: 768px) {
+          @media (max-width: 1080px) {
         .vima-hero-img {
             max-width: 300px;
          }
